@@ -71,7 +71,7 @@ export default async function CollectionDetailPage({
                         {school.city}, {school.state}
                       </p>
                     </div>
-                    <ScoreBadge score={school.scores.overall} compact />
+                    <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} compact />
                   </div>
                   <p className="text-sm leading-6 text-slate-600">{school.summary[locale]}</p>
                 </CardContent>

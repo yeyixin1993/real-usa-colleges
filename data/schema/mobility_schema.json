@@ -1,0 +1,15 @@
+{
+  "school_name": "string",
+  "location_type": "urban | suburban | rural",
+  "uber_tier": "tier_1 | tier_2 | tier_3",
+  "uber_wait_time_day": 0,
+  "uber_wait_time_night": 0,
+  "uber_eats_score": 0,
+  "public_transit_score": 0,
+  "walkability_score": 0,
+  "car_dependency_score": 0,
+  "mobility_score": 0,
+  "mobility_grade": "A | B | C | D | F",
+  "tags": ["string"],
+  "summary": "string"
+}

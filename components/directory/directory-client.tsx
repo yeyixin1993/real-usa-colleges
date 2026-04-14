@@ -130,7 +130,7 @@ export function DirectoryClient({ locale, dictionary, schools }: { locale: Local
                           </p>
                           <p className="max-w-2xl text-sm leading-6 text-slate-600">{school.summary[locale]}</p>
                         </div>
-                        <ScoreBadge score={school.scores.overall} label={dictionary.metrics.overallScore} />
+                        <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} label={dictionary.metrics.overallScore} />
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {school.tags.map((tag) => (

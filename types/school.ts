@@ -72,6 +72,8 @@ export interface SchoolScoreSet {
   overall: number;
 }
 
+export type SchoolGradeSet = Partial<Record<ScoreKey, Grade>>;
+
 export interface MonthlyClimate {
   month: string;
   highF: number;
@@ -142,6 +144,7 @@ export interface School {
     lng: number;
   };
   scores: SchoolScoreSet;
+  scoreGrades?: SchoolGradeSet;
   summary: LocalizedString;
   methodologyNote: LocalizedString;
   tags: TagKey[];

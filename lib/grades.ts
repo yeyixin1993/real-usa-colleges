@@ -1,10 +1,18 @@
 import type { Grade } from '@/types/school';
+import type { GradeThresholds } from '@/types/scoring';
 
-export function getGrade(score: number): Grade {
-  if (score >= 85) return 'A';
-  if (score >= 70) return 'B';
-  if (score >= 55) return 'C';
-  if (score >= 40) return 'D';
+export const defaultSchoolGradeThresholds: GradeThresholds = {
+  A: 85,
+  B: 70,
+  C: 55,
+  D: 40,
+};
+
+export function getGrade(score: number, thresholds: GradeThresholds = defaultSchoolGradeThresholds): Grade {
+  if (score >= thresholds.A) return 'A';
+  if (score >= thresholds.B) return 'B';
+  if (score >= thresholds.C) return 'C';
+  if (score >= thresholds.D) return 'D';
   return 'F';
 }
 

@@ -165,7 +165,7 @@ export function UsMap({
                 <p className="text-xs uppercase tracking-[0.2em] text-white/65">Overall</p>
                 <div className="mt-3 flex items-end gap-3">
                   <span className="text-4xl font-semibold">{activeSchool.scores.overall}</span>
-                  <span className="text-base font-medium text-white/70">{getGrade(activeSchool.scores.overall)}</span>
+                  <span className="text-base font-medium text-white/70">{activeSchool.scoreGrades?.overall ?? getGrade(activeSchool.scores.overall)}</span>
                 </div>
               </div>
               <div className="space-y-2">

@@ -7,6 +7,7 @@ import { AccessibilityTable } from '@/components/school/accessibility-table';
 import { AirportMetrics } from '@/components/school/airport-metrics';
 import { ClimateSummaryMetrics } from '@/components/school/climate-summary-metrics';
 import { DemographicsPanel } from '@/components/school/demographics-panel';
+import { MobilitySection } from '@/components/school/mobility-section';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { ScoreBadge } from '@/components/shared/score-badge';
 import { ScoreCard } from '@/components/shared/score-card';
@@ -16,6 +17,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { getCollectionBySlug, getLocalizedText, getSchoolBySlug, getSchools } from '@/lib/data';
 import { getGrade } from '@/lib/grades';
 import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
+import { getMobilityProfileForSchool } from '@/lib/server/mobility';
 import type { AccessibilityPoint, CategoryKey, Locale } from '@/types/school';
 import { locales } from '@/types/school';
 
@@ -80,6 +82,7 @@ export default async function SchoolDetailPage({
 
   const foodItems = Object.entries(school.foodConvenience) as Array<[CategoryKey, AccessibilityPoint]>;
   const lifeItems = Object.entries(school.lifeConvenience) as Array<[CategoryKey, AccessibilityPoint]>;
+  const mobility = await getMobilityProfileForSchool(school);
   const avgHigh = average(school.climate.monthly.map((entry) => entry.highF));
   const avgLow = average(school.climate.monthly.map((entry) => entry.lowF));
 
@@ -116,7 +119,7 @@ export default async function SchoolDetailPage({
               <p className="max-w-3xl text-lg leading-8 text-slate-700">{school.summary[locale]}</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
-              <ScoreBadge score={school.scores.overall} label={dictionary.metrics.overallScore} />
+              <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} label={dictionary.metrics.overallScore} />
               <Button asChild variant="secondary">
                 <Link href={`/${locale}/compare?schools=${school.slug},ucla,northeastern-university`}>{dictionary.common.compare}</Link>
               </Button>
@@ -132,12 +135,12 @@ export default async function SchoolDetailPage({
             <div className="rounded-[28px] bg-slate-100 p-5">
               <p className="text-sm text-slate-500">{dictionary.metrics.climateScore}</p>
               <p className="mt-3 text-4xl font-semibold text-slate-950">{school.scores.climate}</p>
-              <p className="mt-1 text-sm text-slate-500">{getGrade(school.scores.climate)}</p>
+              <p className="mt-1 text-sm text-slate-500">{school.scoreGrades?.climate ?? getGrade(school.scores.climate)}</p>
             </div>
             <div className="rounded-[28px] bg-slate-100 p-5">
               <p className="text-sm text-slate-500">{dictionary.metrics.airportScore}</p>
               <p className="mt-3 text-4xl font-semibold text-slate-950">{school.scores.airport}</p>
-              <p className="mt-1 text-sm text-slate-500">{getGrade(school.scores.airport)}</p>
+              <p className="mt-1 text-sm text-slate-500">{school.scoreGrades?.airport ?? getGrade(school.scores.airport)}</p>
             </div>
             <div className="rounded-[28px] bg-slate-50 p-5 sm:col-span-2">
               <p className="text-sm text-slate-500">{dictionary.common.overview}</p>
@@ -150,11 +153,11 @@ export default async function SchoolDetailPage({
       <section className="space-y-5">
         <SectionHeading title={dictionary.detail.quickScores} description={school.methodologyNote[locale]} />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-          <ScoreCard title={dictionary.metrics.climateScore} description={getLocalizedText(locale, school.climate.seasonalLifestyleSummary)} score={school.scores.climate} />
-          <ScoreCard title={dictionary.metrics.demographicsScore} description={dictionary.detail.contextRichness} score={school.scores.demographics} />
-          <ScoreCard title={dictionary.metrics.foodScore} description={getLocalizedText(locale, school.foodConvenience.asian_grocery.note ?? school.summary)} score={school.scores.food} />
-          <ScoreCard title={dictionary.metrics.lifeScore} description={school.lifeConvenience.hospital.name} score={school.scores.life} />
-          <ScoreCard title={dictionary.metrics.airportScore} description={school.airportAccess.airportName} score={school.scores.airport} />
+          <ScoreCard title={dictionary.metrics.climateScore} description={getLocalizedText(locale, school.climate.seasonalLifestyleSummary)} score={school.scores.climate} grade={school.scoreGrades?.climate} />
+          <ScoreCard title={dictionary.metrics.demographicsScore} description={dictionary.detail.contextRichness} score={school.scores.demographics} grade={school.scoreGrades?.demographics} />
+          <ScoreCard title={dictionary.metrics.foodScore} description={getLocalizedText(locale, school.foodConvenience.asian_grocery.note ?? school.summary)} score={school.scores.food} grade={school.scoreGrades?.food} />
+          <ScoreCard title={dictionary.metrics.lifeScore} description={school.lifeConvenience.hospital.name} score={school.scores.life} grade={school.scoreGrades?.life} />
+          <ScoreCard title={dictionary.metrics.airportScore} description={school.airportAccess.airportName} score={school.scores.airport} grade={school.scoreGrades?.airport} />
         </div>
       </section>
 
@@ -163,7 +166,7 @@ export default async function SchoolDetailPage({
           <CardContent className="p-6">
             <div className="mb-4 flex items-center justify-between gap-3">
               <SectionHeading title={dictionary.detail.climate} description={dictionary.detail.climateNarrative} />
-              <ScoreBadge score={school.scores.climate} />
+              <ScoreBadge score={school.scores.climate} grade={school.scoreGrades?.climate} />
             </div>
             <TemperatureChart data={school.climate.monthly} />
           </CardContent>
@@ -212,7 +215,7 @@ export default async function SchoolDetailPage({
       <section className="space-y-5">
         <div className="flex items-center justify-between gap-3">
           <SectionHeading title={dictionary.detail.demographics} description={school.demographics.note[locale]} />
-          <ScoreBadge score={school.scores.demographics} />
+          <ScoreBadge score={school.scores.demographics} grade={school.scoreGrades?.demographics} />
         </div>
         <div className="grid gap-4 lg:grid-cols-2">
           <DemographicsPanel title={dictionary.detail.campusDemographics} data={school.demographics.campus} dictionary={dictionary} />
@@ -223,7 +226,7 @@ export default async function SchoolDetailPage({
       <section className="space-y-5">
         <div className="flex items-center justify-between gap-3">
           <SectionHeading title={dictionary.detail.food} description={school.summary[locale]} />
-          <ScoreBadge score={school.scores.food} />
+          <ScoreBadge score={school.scores.food} grade={school.scoreGrades?.food} />
         </div>
         <AccessibilityTable title={dictionary.detail.food} items={foodItems} dictionary={dictionary} />
       </section>
@@ -231,10 +234,12 @@ export default async function SchoolDetailPage({
       <section className="space-y-5">
         <div className="flex items-center justify-between gap-3">
           <SectionHeading title={dictionary.detail.life} description={school.methodologyNote[locale]} />
-          <ScoreBadge score={school.scores.life} />
+          <ScoreBadge score={school.scores.life} grade={school.scoreGrades?.life} />
         </div>
         <AccessibilityTable title={dictionary.detail.life} items={lifeItems} dictionary={dictionary} />
       </section>
+
+      <MobilitySection profile={mobility} locale={locale} />
 
       <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
         <Card className="bg-gradient-to-br from-slate-50 to-white">
@@ -247,7 +252,7 @@ export default async function SchoolDetailPage({
               transitMinutes={school.airportAccess.publicTransitMinutes}
               dictionary={dictionary}
             />
-            <ScoreBadge score={school.scores.airport} label={AirportAccessLabel(school.airportAccess.accessLevel, locale)} />
+            <ScoreBadge score={school.scores.airport} grade={school.scoreGrades?.airport} label={AirportAccessLabel(school.airportAccess.accessLevel, locale)} />
           </CardContent>
         </Card>
         <Card>

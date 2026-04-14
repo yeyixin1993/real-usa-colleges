@@ -3,16 +3,34 @@ import { cache } from 'react';
 import { collections } from '@/data/collections';
 import { extraSchools } from '@/data/schools-top100';
 import { schools } from '@/data/schools';
+import { getGrade } from '@/lib/grades';
+import { getScoringConfig } from '@/lib/server/scoring-config';
 import { applySchoolOverride, getAllSchoolOverrides } from '@/lib/server/school-overrides';
 import type { DiscoveryCollection, Locale, School } from '@/types/school';
+
+const scoreKeys = ['climate', 'demographics', 'food', 'life', 'airport', 'overall'] as const;
 
 // Server components already consume repository-style functions, so the mock layer can
 // later be swapped for PostgreSQL + PostGIS queries without rewriting page components.
 export async function getSchools(): Promise<School[]> {
   const baseSchools = [...schools, ...extraSchools];
-  const overrides = await getAllSchoolOverrides();
+  const [overrides, scoringConfig] = await Promise.all([getAllSchoolOverrides(), getScoringConfig()]);
 
-  return baseSchools.map((school) => applySchoolOverride(school, overrides[school.slug]));
+  return baseSchools.map((school) => {
+    const merged = applySchoolOverride(school, overrides[school.slug]);
+
+    const autoGrades = Object.fromEntries(
+      scoreKeys.map((key) => [key, getGrade(merged.scores[key], scoringConfig.schoolGradeThresholds)]),
+    ) as NonNullable<School['scoreGrades']>;
+
+    return {
+      ...merged,
+      scoreGrades: {
+        ...autoGrades,
+        ...(merged.scoreGrades ?? {}),
+      },
+    };
+  });
 }
 
 export async function getSchoolBySlug(slug: string) {

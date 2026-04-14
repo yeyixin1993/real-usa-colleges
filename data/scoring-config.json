@@ -1,0 +1,30 @@
+{
+  "schoolGradeThresholds": {
+    "A": 85,
+    "B": 70,
+    "C": 55,
+    "D": 40
+  },
+  "mobilityGradeThresholds": {
+    "A": 90,
+    "B": 75,
+    "C": 60,
+    "D": 40
+  },
+  "mobilityWeights": {
+    "uberAvailability": 0.3,
+    "uberEats": 0.15,
+    "publicTransit": 0.25,
+    "walkability": 0.15,
+    "carDependency": 0.15
+  },
+  "mobilityTierRules": {
+    "ruralNightTier3Min": 25,
+    "tier1DayMax": 10,
+    "tier1NightMax": 15,
+    "tier1UberEatsMin": 70,
+    "tier3NightMin": 30,
+    "tier3DayMin": 20,
+    "tier3UberEatsMax": 35
+  }
+}

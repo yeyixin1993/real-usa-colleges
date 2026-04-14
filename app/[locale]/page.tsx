@@ -62,7 +62,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         {school.city}, {school.state}
                       </p>
                     </div>
-                    <ScoreBadge score={school.scores.overall} compact />
+                    <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} compact />
                   </div>
                   <p className="text-sm leading-6 text-slate-600">{school.summary[locale]}</p>
                   <div className="mt-auto flex flex-wrap gap-2">

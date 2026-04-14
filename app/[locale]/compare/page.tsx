@@ -59,7 +59,7 @@ export default async function ComparePage({
                     {school.city}, {school.state}
                   </p>
                 </div>
-                <ScoreBadge score={school.scores.overall} compact />
+                <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} compact />
               </div>
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div className="rounded-3xl bg-slate-50 p-4">
