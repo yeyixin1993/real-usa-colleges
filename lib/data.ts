@@ -3,18 +3,26 @@ import { cache } from 'react';
 import { collections } from '@/data/collections';
 import { extraSchools } from '@/data/schools-top100';
 import { schools } from '@/data/schools';
+import { applySchoolOverride, getAllSchoolOverrides } from '@/lib/server/school-overrides';
 import type { DiscoveryCollection, Locale, School } from '@/types/school';
 
 // Server components already consume repository-style functions, so the mock layer can
 // later be swapped for PostgreSQL + PostGIS queries without rewriting page components.
-export const getSchools = cache(async (): Promise<School[]> => [...schools, ...extraSchools]);
+export async function getSchools(): Promise<School[]> {
+  const baseSchools = [...schools, ...extraSchools];
+  const overrides = await getAllSchoolOverrides();
 
-export const getSchoolBySlug = cache(async (slug: string) => {
+  return baseSchools.map((school) => applySchoolOverride(school, overrides[school.slug]));
+}
+
+export async function getSchoolBySlug(slug: string) {
   const allSchools = await getSchools();
   return allSchools.find((school) => school.slug === slug);
-});
+}
 
-export const getFeaturedSchools = cache(async () => (await getSchools()).slice(0, 4));
+export async function getFeaturedSchools() {
+  return (await getSchools()).slice(0, 4);
+}
 
 export const getCollections = cache(async (): Promise<DiscoveryCollection[]> => collections);
 

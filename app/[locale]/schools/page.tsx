@@ -5,6 +5,8 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { getSchools } from '@/lib/data';
 import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
 
+export const dynamic = 'force-dynamic';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: localeParam } = await params;
   const locale = getLocaleOrThrow(localeParam);

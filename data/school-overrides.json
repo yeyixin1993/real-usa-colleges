@@ -1,0 +1,319 @@
+{
+  "colgate-university": {
+    "id": "school_colgate_university",
+    "slug": "colgate-university",
+    "name": "Colgate University",
+    "city": "Hamilton",
+    "state": "New York",
+    "stateCode": "NY",
+    "schoolType": "Liberal Arts College",
+    "sector": "Private",
+    "region": "Northeast",
+    "climateBand": "Four Seasons",
+    "rankingLabel": "Top liberal arts college",
+    "rankingBand": "Top 20",
+    "coordinates": {
+      "lat": 42.7886,
+      "lng": -75.5299
+    },
+    "scores": {
+      "climate": 52,
+      "demographics": 69,
+      "food": 45,
+      "life": 47,
+      "airport": 57,
+      "overall": 54
+    },
+    "summary": {
+      "en": "Colgate University is included in the launch ranking set with practical context metrics for climate, convenience, and airport access.",
+      "zh": "Colgate University 已纳入首发榜单，并提供气候、生活便利度与机场可达性的务实指标。",
+      "ja": "Colgate University はローンチランキング対象として、気候・生活利便性・空港アクセス指標を掲載しています。"
+    },
+    "methodologyNote": {
+      "en": "Values are maintained as transparent seed data and are being continuously refined with verified sources.",
+      "zh": "当前数据以可审计种子数据方式维护，并持续用可验证来源迭代。",
+      "ja": "現在の値は監査可能なシードデータとして管理し、検証可能な情報で順次更新しています。"
+    },
+    "tags": [
+      "quiet_residential",
+      "walkable_town"
+    ],
+    "climate": {
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39,
+          "lowF": 24
+        },
+        {
+          "month": "Feb",
+          "highF": 42,
+          "lowF": 26
+        },
+        {
+          "month": "Mar",
+          "highF": 50,
+          "lowF": 33
+        },
+        {
+          "month": "Apr",
+          "highF": 61,
+          "lowF": 43
+        },
+        {
+          "month": "May",
+          "highF": 71,
+          "lowF": 53
+        },
+        {
+          "month": "Jun",
+          "highF": 79,
+          "lowF": 62
+        },
+        {
+          "month": "Jul",
+          "highF": 84,
+          "lowF": 67
+        },
+        {
+          "month": "Aug",
+          "highF": 82,
+          "lowF": 65
+        },
+        {
+          "month": "Sep",
+          "highF": 75,
+          "lowF": 57
+        },
+        {
+          "month": "Oct",
+          "highF": 64,
+          "lowF": 46
+        },
+        {
+          "month": "Nov",
+          "highF": 53,
+          "lowF": 37
+        },
+        {
+          "month": "Dec",
+          "highF": 43,
+          "lowF": 29
+        }
+      ],
+      "annualPrecipitationIn": 45,
+      "annualSnowfallIn": 24,
+      "humidityBand": "Balanced",
+      "summerHeatIntensity": {
+        "en": "Summer comfort varies by latitude and urban density, with occasional heat spikes.",
+        "zh": "夏季体感受纬度与城市密度影响，个别时段会有热浪。",
+        "ja": "夏の体感は緯度と都市密度に左右され、短期的な熱波もあります。"
+      },
+      "winterSeverity": {
+        "en": "Winter impact depends on region, snowfall, and local wind exposure.",
+        "zh": "冬季影响取决于区域、降雪和风暴暴露程度。",
+        "ja": "冬の影響は地域・降雪・風の暴露度に依存します。"
+      },
+      "sunshineSummary": {
+        "en": "Sunshine/cloudiness patterns are shown to support realistic planning.",
+        "zh": "晴天/阴天模式用于支持更现实的生活规划。",
+        "ja": "日照・曇天傾向は現実的な生活計画のために表示しています。"
+      },
+      "severeWeatherNotes": {
+        "en": "Severe weather notes indicate practical planning risk, not ranking value.",
+        "zh": "极端天气说明用于实际风险提示，不作价值判断。",
+        "ja": "異常気象メモは実務上のリスク提示であり、価値判断ではありません。"
+      },
+      "seasonalLifestyleSummary": {
+        "en": "Seasonal rhythm can materially affect commuting and errands.",
+        "zh": "季节节奏会实质影响通勤与日常办事。",
+        "ja": "季節リズムは通学と日常用事に実質的な影響を与えます。"
+      }
+    },
+    "demographics": {
+      "campus": {
+        "white": 46,
+        "black": 6,
+        "hispanicLatino": 9,
+        "asian": 14,
+        "internationalStudents": 10,
+        "populationDensityBand": "Low density"
+      },
+      "area30mi": {
+        "white": 76,
+        "black": 5,
+        "hispanicLatino": 7,
+        "asian": 4,
+        "foreignBornShare": 9,
+        "medianHouseholdIncomeUsd": 74000,
+        "populationDensityBand": "Low density"
+      },
+      "note": {
+        "en": "Campus and surrounding-area context are shown together for practical comparison.",
+        "zh": "校内与周边环境数据并列呈现，用于务实比较。",
+        "ja": "キャンパス内と周辺環境データを並列表示し、実務的に比較できるようにしています。"
+      }
+    },
+    "foodConvenience": {
+      "fast_food": {
+        "name": "Hamilton quick-serve cluster",
+        "distanceMiles": 1.2,
+        "driveMinutes": 7,
+        "publicTransitMinutes": null,
+        "countWithin5": 11,
+        "countWithin10": 41,
+        "countWithin30": 182,
+        "uberAvailable": true,
+        "uberEatsAvailable": true
+      },
+      "grocery_store": {
+        "name": "Hamilton grocery node",
+        "distanceMiles": 1.8,
+        "driveMinutes": 10,
+        "publicTransitMinutes": null,
+        "countWithin5": 6,
+        "countWithin10": 19,
+        "countWithin30": 77,
+        "uberAvailable": true,
+        "uberEatsAvailable": true
+      },
+      "starbucks": {
+        "name": "Starbucks New Hartford",
+        "distanceMiles": 17.2,
+        "driveMinutes": 28,
+        "publicTransitMinutes": null,
+        "countWithin5": 0,
+        "countWithin10": 0,
+        "countWithin30": 4,
+        "uberAvailable": true,
+        "uberEatsAvailable": false
+      },
+      "walmart": {
+        "name": "Hamilton Walmart",
+        "distanceMiles": 11.7,
+        "driveMinutes": 29,
+        "publicTransitMinutes": null,
+        "countWithin10": 1,
+        "countWithin30": 4,
+        "uberAvailable": true,
+        "uberEatsAvailable": true
+      },
+      "costco": {
+        "name": "Hamilton Costco",
+        "distanceMiles": 10.4,
+        "driveMinutes": 27,
+        "publicTransitMinutes": null,
+        "countWithin10": 1,
+        "countWithin30": 4,
+        "uberAvailable": true,
+        "uberEatsAvailable": false
+      },
+      "chinese_restaurant": {
+        "name": "Hamilton Chinese dining",
+        "distanceMiles": 2.4,
+        "driveMinutes": 12,
+        "publicTransitMinutes": null,
+        "countWithin5": 7,
+        "countWithin10": 25,
+        "countWithin30": 116,
+        "uberAvailable": true,
+        "uberEatsAvailable": true
+      },
+      "asian_grocery": {
+        "name": "Hamilton Asian grocery",
+        "distanceMiles": 7.2,
+        "driveMinutes": 24,
+        "publicTransitMinutes": null,
+        "countWithin10": 2,
+        "countWithin30": 13,
+        "uberAvailable": true,
+        "uberEatsAvailable": false
+      },
+      "dim_sum": {
+        "name": "Hamilton Dim sum",
+        "distanceMiles": 8.7,
+        "driveMinutes": 29,
+        "publicTransitMinutes": null,
+        "countWithin10": 1,
+        "countWithin30": 7,
+        "uberAvailable": true,
+        "uberEatsAvailable": true
+      }
+    },
+    "lifeConvenience": {
+      "dmv": {
+        "name": "Norwich NYS DMV",
+        "distanceMiles": 18.6,
+        "driveMinutes": 31,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "social_security": {
+        "name": "Hamilton Social Security office",
+        "distanceMiles": 9,
+        "driveMinutes": 28,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "bank_of_america": {
+        "name": "Hamilton Bank of America",
+        "distanceMiles": 1.3,
+        "driveMinutes": 8,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "toyota_dealership": {
+        "name": "Hamilton Toyota dealership",
+        "distanceMiles": 7.8,
+        "driveMinutes": 23,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "hospital": {
+        "name": "Hamilton hospital",
+        "distanceMiles": 2,
+        "driveMinutes": 9,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "usps": {
+        "name": "Hamilton USPS",
+        "distanceMiles": 1.4,
+        "driveMinutes": 8,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "shopping_destination": {
+        "name": "Hamilton major shopping",
+        "distanceMiles": 7.3,
+        "driveMinutes": 22,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      },
+      "target_anchor": {
+        "name": "Hamilton Target",
+        "distanceMiles": 5.9,
+        "driveMinutes": 19,
+        "publicTransitMinutes": null,
+        "uberAvailable": true
+      }
+    },
+    "airportAccess": {
+      "airportName": "John F. Kennedy International Airport",
+      "distanceMiles": 217,
+      "driveMinutes": 270,
+      "publicTransitMinutes": 390,
+      "connectivitySummary": {
+        "en": "Connectivity is evaluated around practical routes to major Asia gateways (Tokyo, Seoul, Shanghai, Beijing, Hong Kong, Taipei, Singapore).",
+        "zh": "连接度围绕东京、首尔、上海、北京、香港、台北、新加坡等亚洲主要门户的实际可达性评估。",
+        "ja": "接続性は東京・ソウル・上海・北京・香港・台北・シンガポール方面の実用性を中心に評価しています。"
+      },
+      "practicalTravelSummary": {
+        "en": "Airport-day friction is based on campus-to-airport distance, drive time, and public transit availability.",
+        "zh": "机场出行摩擦基于校园到机场的距离、开车时间与公共交通可用性。",
+        "ja": "空港移動の負担はキャンパスからの距離・車移動時間・公共交通可用性で評価しています。"
+      },
+      "accessLevel": "inconvenient"
+    }
+  }
+}

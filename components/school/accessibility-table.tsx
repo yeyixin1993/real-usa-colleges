@@ -20,6 +20,15 @@ export function AccessibilityTable({
 }) {
   const { distanceUnit } = useUnitPreference();
 
+  const rideAndDeliveryLabel = `${dictionary.metrics.uber} & ${dictionary.metrics.uberEats}`;
+
+  const getRideAndDeliveryAvailability = (item: AccessibilityPoint) => {
+    if (item.uberAvailable && item.uberEatsAvailable) return 'Yes';
+    if (item.uberAvailable && !item.uberEatsAvailable) return `${dictionary.metrics.uber} only`;
+    if (!item.uberAvailable && item.uberEatsAvailable) return `${dictionary.metrics.uberEats} only`;
+    return 'No';
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -34,8 +43,7 @@ export function AccessibilityTable({
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.distance} ({distanceUnit})</th>
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.drivingTime}</th>
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.transitTime}</th>
-              <th className="pb-2 pr-4 font-medium">{dictionary.metrics.uber}</th>
-              <th className="pb-2 pr-4 font-medium">{dictionary.metrics.uberEats}</th>
+              <th className="pb-2 pr-4 font-medium">{rideAndDeliveryLabel}</th>
             </tr>
           </thead>
           <tbody>
@@ -46,11 +54,10 @@ export function AccessibilityTable({
                 <td className="px-4 py-4">{formatDistance(item.distanceMiles, distanceUnit)}</td>
                 <td className="px-4 py-4">{formatMinutes(item.driveMinutes)}</td>
                 <td className="px-4 py-4">{formatMinutes(item.publicTransitMinutes)}</td>
-                <td className="px-4 py-4">
-                  <Badge className={item.uberAvailable ? 'text-emerald-700' : 'text-slate-500'}>{item.uberAvailable ? 'Yes' : 'No'}</Badge>
-                </td>
                 <td className="rounded-r-2xl px-4 py-4">
-                  <Badge className={item.uberEatsAvailable ? 'text-emerald-700' : 'text-slate-500'}>{item.uberEatsAvailable ? 'Yes' : 'No'}</Badge>
+                  <Badge className={item.uberAvailable || item.uberEatsAvailable ? 'text-emerald-700' : 'text-slate-500'}>
+                    {getRideAndDeliveryAvailability(item)}
+                  </Badge>
                 </td>
               </tr>
             ))}

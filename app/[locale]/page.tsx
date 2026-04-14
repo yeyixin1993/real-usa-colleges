@@ -9,6 +9,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { getCollections, getFeaturedSchools } from '@/lib/data';
 import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
 
+export const dynamic = 'force-dynamic';
+
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = await params;
   const locale = getLocaleOrThrow(localeParam);

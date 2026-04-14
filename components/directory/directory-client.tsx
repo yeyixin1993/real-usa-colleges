@@ -99,7 +99,9 @@ export function DirectoryClient({ locale, dictionary, schools }: { locale: Local
         </CardContent>
       </Card>
 
-      <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+      <div className="space-y-6">
+        <UsMap schools={filteredSchools.length ? filteredSchools : schools} locale={locale} fullPage />
+
         <div className="space-y-4">
           <div className="flex items-center justify-between gap-3">
             <p className="text-sm text-slate-500">
@@ -141,9 +143,6 @@ export function DirectoryClient({ locale, dictionary, schools }: { locale: Local
               ))}
             </div>
           )}
-        </div>
-        <div className="xl:sticky xl:top-28 xl:self-start">
-          <UsMap schools={filteredSchools.length ? filteredSchools : schools} locale={locale} />
         </div>
       </div>
     </div>

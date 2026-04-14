@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { geoAlbersUsa, geoPath } from 'd3-geo';
 import { useMemo, useState } from 'react';
 import { feature } from 'topojson-client';
@@ -20,11 +19,13 @@ export function UsMap({
   locale,
   selectedSlug,
   showLinks = true,
+  fullPage = false,
 }: {
   schools: School[];
   locale: Locale;
   selectedSlug?: string;
   showLinks?: boolean;
+  fullPage?: boolean;
 }) {
   const [hovered, setHovered] = useState<string | null>(selectedSlug ?? null);
 
@@ -71,11 +72,11 @@ export function UsMap({
   }, [schools]);
 
   return (
-    <div className="grid gap-4 lg:grid-cols-[1.4fr_0.6fr]">
+    <div className={cn('grid gap-4', fullPage ? 'xl:grid-cols-[1.8fr_0.7fr]' : 'lg:grid-cols-[1.4fr_0.6fr]')}>
       <Card className="relative overflow-hidden p-4 md:p-6">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.12),_transparent_45%),linear-gradient(180deg,_rgba(248,250,252,0.95),_rgba(241,245,249,0.9))]" />
 
-        <div className="relative z-10 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-slate-200/70 bg-white">
+        <div className={cn('relative z-10 w-full overflow-hidden rounded-2xl border border-slate-200/70 bg-white', fullPage ? 'h-[72vh] min-h-[560px]' : 'aspect-[16/10]')}>
           <svg viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className="absolute inset-0 h-full w-full">
             <rect x="0" y="0" width={MAP_WIDTH} height={MAP_HEIGHT} fill="url(#oceanGradient)" />
             <defs>
@@ -95,6 +96,44 @@ export function UsMap({
                 strokeWidth="0.9"
               />
             ))}
+
+            {mapData.markers.map((marker) => {
+              const isActive = marker.slug === activeSchool?.slug;
+
+              const markerDot = (
+                <>
+                  <circle
+                    cx={marker.x}
+                    cy={marker.y}
+                    r={isActive ? 9 : 6}
+                    fill={isActive ? '#0f172a' : '#2563eb'}
+                    stroke="#ffffff"
+                    strokeWidth={2}
+                  />
+                  {isActive ? <circle cx={marker.x} cy={marker.y} r={16} fill="#0f172a" fillOpacity={0.18} /> : null}
+                </>
+              );
+
+              if (showLinks) {
+                return (
+                  <a
+                    key={marker.slug}
+                    href={`/${locale}/schools/${marker.slug}`}
+                    aria-label={marker.school.name}
+                    onMouseEnter={() => setHovered(marker.slug)}
+                    onFocus={() => setHovered(marker.slug)}
+                  >
+                    {markerDot}
+                  </a>
+                );
+              }
+
+              return (
+                <g key={marker.slug} onMouseEnter={() => setHovered(marker.slug)} onFocus={() => setHovered(marker.slug)}>
+                  {markerDot}
+                </g>
+              );
+            })}
           </svg>
 
           {mapData.statePaths.length === 0 ? (
@@ -103,39 +142,6 @@ export function UsMap({
             </div>
           ) : null}
 
-          {mapData.markers.map((marker) => {
-            const isActive = marker.slug === activeSchool?.slug;
-            const markerClass = cn(
-              'absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/90 shadow-sm transition-all',
-              isActive ? 'h-4 w-4 bg-slate-900 ring-8 ring-slate-900/20' : 'h-3 w-3 bg-blue-600 hover:scale-110',
-            );
-
-            if (showLinks) {
-              return (
-                <Link
-                  key={marker.slug}
-                  href={`/${locale}/schools/${marker.slug}`}
-                  aria-label={marker.school.name}
-                  className={markerClass}
-                  style={{ left: marker.x, top: marker.y }}
-                  onMouseEnter={() => setHovered(marker.slug)}
-                  onFocus={() => setHovered(marker.slug)}
-                />
-              );
-            }
-
-            return (
-              <button
-                key={marker.slug}
-                type="button"
-                aria-label={marker.school.name}
-                className={markerClass}
-                style={{ left: marker.x, top: marker.y }}
-                onMouseEnter={() => setHovered(marker.slug)}
-                onFocus={() => setHovered(marker.slug)}
-              />
-            );
-          })}
         </div>
         <div className="relative z-10 mt-4 flex flex-wrap gap-2 text-xs text-slate-500">
           <span>U.S. map preview with state boundaries</span>
@@ -145,7 +151,7 @@ export function UsMap({
       </Card>
 
       {activeSchool ? (
-        <Card className="p-6">
+        <Card className={cn('p-6', fullPage ? 'xl:h-full' : undefined)}>
           <div className="space-y-4">
             <div className="space-y-2">
               <Badge>{activeSchool.schoolType}</Badge>

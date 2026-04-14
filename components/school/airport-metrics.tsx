@@ -21,16 +21,16 @@ export function AirportMetrics({
   return (
     <div className="grid gap-4 sm:grid-cols-3">
       <div>
-        <p className="text-sm text-white/60">{dictionary.metrics.distance}</p>
-        <p className="mt-2 text-2xl font-semibold">{formatDistance(distanceMiles, distanceUnit)}</p>
+        <p className="text-sm text-slate-500">{dictionary.metrics.distance}</p>
+        <p className="mt-2 text-2xl font-semibold text-slate-950">{formatDistance(distanceMiles, distanceUnit)}</p>
       </div>
       <div>
-        <p className="text-sm text-white/60">{dictionary.metrics.drivingTime}</p>
-        <p className="mt-2 text-2xl font-semibold">{formatMinutes(driveMinutes)}</p>
+        <p className="text-sm text-slate-500">{dictionary.metrics.drivingTime}</p>
+        <p className="mt-2 text-2xl font-semibold text-slate-950">{formatMinutes(driveMinutes)}</p>
       </div>
       <div>
-        <p className="text-sm text-white/60">{dictionary.metrics.transitTime}</p>
-        <p className="mt-2 text-2xl font-semibold">{formatMinutes(transitMinutes)}</p>
+        <p className="text-sm text-slate-500">{dictionary.metrics.transitTime}</p>
+        <p className="mt-2 text-2xl font-semibold text-slate-950">{formatMinutes(transitMinutes)}</p>
       </div>
     </div>
   );

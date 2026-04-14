@@ -9,6 +9,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { getCollectionBySlug, getSchoolsForCollection } from '@/lib/data';
 import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
 
+export const dynamic = 'force-dynamic';
+
 export async function generateMetadata({
   params,
 }: {

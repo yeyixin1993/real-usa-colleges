@@ -19,6 +19,8 @@ import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
 import type { AccessibilityPoint, CategoryKey, Locale } from '@/types/school';
 import { locales } from '@/types/school';
 
+export const dynamic = 'force-dynamic';
+
 function average(values: number[]) {
   return Math.round(values.reduce((sum, value) => sum + value, 0) / values.length);
 }
@@ -99,26 +101,26 @@ export default async function SchoolDetailPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card className="overflow-hidden bg-slate-950 text-white">
+        <Card className="overflow-hidden bg-white text-slate-950">
           <CardContent className="space-y-6 p-8">
             <div className="flex flex-wrap gap-2">
-              <Badge className="border-white/20 bg-white/10 text-white">{school.schoolType}</Badge>
-              <Badge className="border-white/20 bg-white/10 text-white">{school.sector}</Badge>
-              <Badge className="border-white/20 bg-white/10 text-white">{school.rankingBand}</Badge>
+              <Badge className="border-slate-300 bg-slate-100 text-slate-800">{school.schoolType}</Badge>
+              <Badge className="border-slate-300 bg-slate-100 text-slate-800">{school.sector}</Badge>
+              <Badge className="border-slate-300 bg-slate-100 text-slate-800">{school.rankingBand}</Badge>
             </div>
             <div className="space-y-3">
               <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">{school.name}</h1>
-              <p className="text-sm uppercase tracking-[0.22em] text-white/65">
+              <p className="text-sm uppercase tracking-[0.22em] text-slate-600">
                 {school.city}, {school.state}
               </p>
-              <p className="max-w-3xl text-lg leading-8 text-white/78">{school.summary[locale]}</p>
+              <p className="max-w-3xl text-lg leading-8 text-slate-700">{school.summary[locale]}</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <ScoreBadge score={school.scores.overall} label={dictionary.metrics.overallScore} />
               <Button asChild variant="secondary">
                 <Link href={`/${locale}/compare?schools=${school.slug},ucla,northeastern-university`}>{dictionary.common.compare}</Link>
               </Button>
-              <Button variant="ghost" className="border border-white/20 text-white hover:bg-white/10 hover:text-white">
+              <Button variant="ghost" className="border border-slate-300 text-slate-800 hover:bg-slate-100 hover:text-slate-900">
                 {dictionary.common.save}
               </Button>
             </div>
@@ -235,10 +237,10 @@ export default async function SchoolDetailPage({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
-        <Card className="bg-slate-950 text-white">
+        <Card className="bg-gradient-to-br from-slate-50 to-white">
           <CardContent className="space-y-4 p-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-white/60">{dictionary.detail.airport}</p>
-            <h2 className="text-3xl font-semibold">{school.airportAccess.airportName}</h2>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">{dictionary.detail.airport}</p>
+            <h2 className="text-3xl font-semibold text-slate-950">{school.airportAccess.airportName}</h2>
             <AirportMetrics
               distanceMiles={school.airportAccess.distanceMiles}
               driveMinutes={school.airportAccess.driveMinutes}
