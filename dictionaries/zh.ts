@@ -3,7 +3,7 @@ import type { Dictionary } from '@/types/dictionary';
 export const zh: Dictionary = {
   locale: 'zh',
   brand: {
-    name: 'North Atlas',
+    name: 'Leng Cun Bai',
     statement: '面向国际家庭的美国大学情报网站。',
     substatement: '用中立、务实、可比较的方式呈现学校、城市与日常生活环境。',
   },
@@ -31,7 +31,7 @@ export const zh: Dictionary = {
   },
   homepage: {
     eyebrow: '面向中国家庭的多语言美国大学指南',
-    heroTitle: '用更平静、更实际的方式看美国大学。',
+    heroTitle: '用数据说话，用更客观、更接地气的方式看美国大学。',
     heroDescription: '除了学校本身，也看气候、交通、亚洲食材可达性、周边社区结构与回亚洲的出行便利度。',
     primaryCta: '查看地图',
     secondaryCta: '阅读方法论',
@@ -130,6 +130,7 @@ export const zh: Dictionary = {
     distance: '距离',
     drivingTime: '开车时间',
     transitTime: '公共交通时间',
+    walkingTime: '步行时间',
     countWithin5: '5 英里内',
     countWithin10: '10 英里内',
     countWithin30: '30 英里内',

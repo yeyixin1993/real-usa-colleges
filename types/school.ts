@@ -108,6 +108,7 @@ export interface AccessibilityPoint {
   distanceMiles: number;
   driveMinutes: number;
   publicTransitMinutes: number | null;
+  walkingMinutes?: number | null;
   countWithin5?: number;
   countWithin10?: number;
   countWithin30?: number;

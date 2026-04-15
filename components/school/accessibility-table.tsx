@@ -4,10 +4,22 @@ import type { Dictionary } from '@/types/dictionary';
 import type { AccessibilityPoint, CategoryKey } from '@/types/school';
 
 import { useUnitPreference } from '@/components/layout/unit-preference-provider';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { formatDistance } from '@/lib/units';
 import { formatMinutes } from '@/lib/utils';
+
+function estimateWalkingMinutes(distanceMiles: number) {
+  // 3 mph average walking speed ≈ 20 min / mile
+  return Math.round(distanceMiles * 20);
+}
+
+function getWalkingMinutes(item: AccessibilityPoint) {
+  if (typeof item.walkingMinutes === 'number' && Number.isFinite(item.walkingMinutes)) {
+    return item.walkingMinutes;
+  }
+
+  return estimateWalkingMinutes(item.distanceMiles);
+}
 
 export function AccessibilityTable({
   title,
@@ -19,15 +31,6 @@ export function AccessibilityTable({
   dictionary: Dictionary;
 }) {
   const { distanceUnit } = useUnitPreference();
-
-  const rideAndDeliveryLabel = `${dictionary.metrics.uber} & ${dictionary.metrics.uberEats}`;
-
-  const getRideAndDeliveryAvailability = (item: AccessibilityPoint) => {
-    if (item.uberAvailable && item.uberEatsAvailable) return 'Yes';
-    if (item.uberAvailable && !item.uberEatsAvailable) return `${dictionary.metrics.uber} only`;
-    if (!item.uberAvailable && item.uberEatsAvailable) return `${dictionary.metrics.uberEats} only`;
-    return 'No';
-  };
 
   return (
     <Card>
@@ -43,7 +46,7 @@ export function AccessibilityTable({
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.distance} ({distanceUnit})</th>
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.drivingTime}</th>
               <th className="pb-2 pr-4 font-medium">{dictionary.metrics.transitTime}</th>
-              <th className="pb-2 pr-4 font-medium">{rideAndDeliveryLabel}</th>
+              <th className="pb-2 pr-4 font-medium">{dictionary.metrics.walkingTime}</th>
             </tr>
           </thead>
           <tbody>
@@ -54,11 +57,7 @@ export function AccessibilityTable({
                 <td className="px-4 py-4">{formatDistance(item.distanceMiles, distanceUnit)}</td>
                 <td className="px-4 py-4">{formatMinutes(item.driveMinutes)}</td>
                 <td className="px-4 py-4">{formatMinutes(item.publicTransitMinutes)}</td>
-                <td className="rounded-r-2xl px-4 py-4">
-                  <Badge className={item.uberAvailable || item.uberEatsAvailable ? 'text-emerald-700' : 'text-slate-500'}>
-                    {getRideAndDeliveryAvailability(item)}
-                  </Badge>
-                </td>
+                <td className="rounded-r-2xl px-4 py-4">{formatMinutes(getWalkingMinutes(item))}</td>
               </tr>
             ))}
           </tbody>

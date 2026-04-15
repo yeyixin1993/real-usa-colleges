@@ -3,7 +3,7 @@ import type { Dictionary } from '@/types/dictionary';
 export const en: Dictionary = {
   locale: 'en',
   brand: {
-    name: 'North Atlas',
+    name: 'Leng Cun Bai',
     statement: 'U.S. college intelligence for internationally minded families.',
     substatement: 'Neutral school profiles, practical living context, and map-based discovery for families planning with care.',
   },
@@ -31,7 +31,7 @@ export const en: Dictionary = {
   },
   homepage: {
     eyebrow: 'Multilingual U.S. college guidance',
-    heroTitle: 'A calmer way to evaluate life at U.S. colleges.',
+    heroTitle: 'See U.S. colleges through data—objective, practical, and grounded in real life.',
     heroDescription: 'See schools through an international family lens: climate, transport, food access, neighborhood context, and airport practicality, alongside institutional basics.',
     primaryCta: 'Browse the map',
     secondaryCta: 'Read methodology',
@@ -130,6 +130,7 @@ export const en: Dictionary = {
     distance: 'Distance',
     drivingTime: 'Driving time',
     transitTime: 'Public transit time',
+    walkingTime: 'Walking time',
     countWithin5: 'Within 5 mi',
     countWithin10: 'Within 10 mi',
     countWithin30: 'Within 30 mi',

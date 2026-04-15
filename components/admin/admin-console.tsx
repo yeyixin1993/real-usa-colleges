@@ -666,7 +666,7 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                   <p className="mb-3 text-sm font-semibold text-slate-800">
                     {item.group.toUpperCase()} · {item.key}
                   </p>
-                  <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+                  <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
                     <div className="lg:col-span-2">
                       <p className="mb-1 text-xs text-slate-500">Name</p>
                       <TextInput value={item.value.name} onChange={(v) => updatePoint(item.group, item.key, { name: v })} />
@@ -690,8 +690,16 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                         className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
                       />
                     </div>
-                    <div className="lg:col-span-2">
-                      <p className="text-xs text-slate-500">Uber / Uber Eats 已从此处移除，统一由 Mobility 模块与常量规则控制。</p>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">Walking (min/null)</p>
+                      <input
+                        value={item.value.walkingMinutes ?? ''}
+                        onChange={(event) => {
+                          const value = event.target.value.trim();
+                          updatePoint(item.group, item.key, { walkingMinutes: value === '' ? null : Number(value) });
+                        }}
+                        className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
+                      />
                     </div>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import type { Dictionary } from '@/types/dictionary';
 export const ja: Dictionary = {
   locale: 'ja',
   brand: {
-    name: 'North Atlas',
+    name: 'Leng Cun Bai',
     statement: '国際志向の家庭向け、米国大学インテリジェンス。',
     substatement: '大学の基本情報に加え、生活実感に近い文脈を多言語で整理します。',
   },
@@ -31,7 +31,7 @@ export const ja: Dictionary = {
   },
   homepage: {
     eyebrow: '中国系家庭を想定した多言語 U.S. college guide',
-    heroTitle: '米国大学を、もう少し落ち着いて比較する。',
+    heroTitle: 'データで語る。米国大学を、客観的で生活実感に近い視点で見る。',
     heroDescription: '気候、交通、アジア食材へのアクセス、周辺コミュニティ、アジア方面への空港利便性まで、日常目線で確認できます。',
     primaryCta: '地図を見る',
     secondaryCta: '方法論を読む',
@@ -130,6 +130,7 @@ export const ja: Dictionary = {
     distance: '距離',
     drivingTime: '車での所要時間',
     transitTime: '公共交通',
+    walkingTime: '徒歩時間',
     countWithin5: '5 マイル圏',
     countWithin10: '10 マイル圏',
     countWithin30: '30 マイル圏',

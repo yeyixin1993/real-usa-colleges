@@ -130,6 +130,7 @@ export interface Dictionary {
     distance: string;
     drivingTime: string;
     transitTime: string;
+    walkingTime: string;
     countWithin5: string;
     countWithin10: string;
     countWithin30: string;

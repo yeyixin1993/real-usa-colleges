@@ -6,8 +6,8 @@ import type { ReactNode } from 'react';
 export const metadata: Metadata = {
   metadataBase: new URL('https://northatlas.example.com'),
   title: {
-    default: 'North Atlas',
-    template: '%s | North Atlas',
+    default: 'Leng Cun Bai',
+    template: '%s | Leng Cun Bai',
   },
   description: 'Multilingual U.S. college intelligence for Chinese families and internationally minded students.',
 };
