@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H localhost -p 3002",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H localhost -p 3002",
+    "data:import:noaa-recent": "node scripts/import-noaa-recent-extremes.mjs",
+    "data:import:noaa-precip-snow": "node scripts/import-noaa-precip-snow.mjs",
+    "data:import:nasa-humidity": "node scripts/import-nasa-humidity.mjs",
+    "data:import:worldpop-radius": "node scripts/import-worldpop-radius-population.mjs",
+    "data:generate:petal-airport-links": "node scripts/generate-airport-petal-links.mjs",
     "lint": "next lint"
   },
   "dependencies": {

@@ -8,6 +8,10 @@ function clamp(value: number, min = 0, max = 100) {
 }
 
 function toLocationType(school: School): LocationType {
+  const campusSetting = school.demographics.campus.campusSetting;
+  if (campusSetting === 'Urban') return 'urban';
+  if (campusSetting === 'Suburban') return 'suburban';
+  if (campusSetting === 'Rural') return 'rural';
   const density = school.demographics.area30mi.populationDensityBand;
   if (density === 'Urban-accessible') return 'urban';
   if (density === 'Suburban mix') return 'suburban';
@@ -250,5 +254,6 @@ export async function buildMobilityProfile(
     mobility_grade: grade,
     tags: finalTags,
     summary,
+    uberAvailabilitySource: override?.uberAvailabilitySource,
   };
 }

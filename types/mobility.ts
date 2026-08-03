@@ -2,6 +2,13 @@ export type LocationType = 'urban' | 'suburban' | 'rural';
 export type UberTier = 'tier_1' | 'tier_2' | 'tier_3';
 export type MobilityGrade = 'A' | 'B' | 'C' | 'D' | 'F';
 
+export interface MobilitySourceRef {
+  label: string;
+  url: string;
+  checkedAt?: string;
+  notes?: string;
+}
+
 export interface MobilityProfile {
   school_name: string;
   location_type: LocationType;
@@ -16,4 +23,6 @@ export interface MobilityProfile {
   mobility_grade: MobilityGrade;
   tags: string[];
   summary: string;
+  source?: MobilitySourceRef;
+  uberAvailabilitySource?: MobilitySourceRef;
 }

@@ -1,0 +1,1028 @@
+{
+  "generatedAt": "2026-08-02T16:21:40.071Z",
+  "source": {
+    "label": "NASA POWER — MERRA-2 Relative Humidity at 2 Meters",
+    "release": "Custom 1991–2020 climatology",
+    "normalPeriod": "1991–2020",
+    "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+    "apiUrl": "https://power.larc.nasa.gov/api/temporal/climatology/point",
+    "parameter": "RH2M",
+    "units": "%",
+    "checkedAt": "2026-08-02"
+  },
+  "methodology": {
+    "en": "Annual mean relative humidity is NASA POWER RH2M for the verified campus coordinate and 1991–2020 custom climatology. POWER meteorology is derived from NASA MERRA-2; it is gridded model/assimilation data, not an on-campus sensor. Site bands: Dry <50%, Balanced 50–65%, Humid >65%.",
+    "zh": "年平均相对湿度采用已核实校园坐标处的 NASA POWER RH2M 1991–2020 自定义气候常值。POWER 气象数据来自 NASA MERRA-2，是网格化模型/同化数据，并非校园内传感器。本站分档：低于 50% 为 Dry，50–65% 为 Balanced，高于 65% 为 Humid。"
+  },
+  "recordCount": 112,
+  "records": {
+    "rice-university": {
+      "annualMeanRelativeHumidityPercent": 77.77,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 29.717897,
+        "lng": -95.402035
+      },
+      "gridElevationMeters": 24.97
+    },
+    "amherst-college": {
+      "annualMeanRelativeHumidityPercent": 80.84,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.372459,
+        "lng": -72.518493
+      },
+      "gridElevationMeters": 283.31
+    },
+    "pomona-college": {
+      "annualMeanRelativeHumidityPercent": 50.77,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.099027,
+        "lng": -117.714556
+      },
+      "gridElevationMeters": 628.09
+    },
+    "northeastern-university": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.339992,
+        "lng": -71.088782
+      },
+      "gridElevationMeters": 71.06
+    },
+    "ucla": {
+      "annualMeanRelativeHumidityPercent": 64.9,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.07178,
+        "lng": -118.442179
+      },
+      "gridElevationMeters": 183.1
+    },
+    "harvard-university": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.374471,
+        "lng": -71.118313
+      },
+      "gridElevationMeters": 71.06
+    },
+    "university-of-washington": {
+      "annualMeanRelativeHumidityPercent": 83.15,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 47.65538,
+        "lng": -122.30514
+      },
+      "gridElevationMeters": 110.01
+    },
+    "mit": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.359243,
+        "lng": -71.093226
+      },
+      "gridElevationMeters": 71.06
+    },
+    "stanford-university": {
+      "annualMeanRelativeHumidityPercent": 72.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 37.429434,
+        "lng": -122.167359
+      },
+      "gridElevationMeters": 233.2
+    },
+    "yale-university": {
+      "annualMeanRelativeHumidityPercent": 79.65,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.311158,
+        "lng": -72.926688
+      },
+      "gridElevationMeters": 149.05
+    },
+    "university-of-pennsylvania": {
+      "annualMeanRelativeHumidityPercent": 78.69,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.950929,
+        "lng": -75.19391
+      },
+      "gridElevationMeters": 46.88
+    },
+    "california-institute-of-technology": {
+      "annualMeanRelativeHumidityPercent": 57.35,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.137349,
+        "lng": -118.125878
+      },
+      "gridElevationMeters": 395
+    },
+    "duke-university": {
+      "annualMeanRelativeHumidityPercent": 76.24,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 36.001135,
+        "lng": -78.937624
+      },
+      "gridElevationMeters": 123.49
+    },
+    "brown-university": {
+      "annualMeanRelativeHumidityPercent": 79.69,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.82617,
+        "lng": -71.40385
+      },
+      "gridElevationMeters": 63.02
+    },
+    "johns-hopkins-university": {
+      "annualMeanRelativeHumidityPercent": 77.28,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.328977,
+        "lng": -76.621595
+      },
+      "gridElevationMeters": 148.82
+    },
+    "northwestern-university": {
+      "annualMeanRelativeHumidityPercent": 80.96,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.050356,
+        "lng": -87.679858
+      },
+      "gridElevationMeters": 180.72
+    },
+    "columbia-university": {
+      "annualMeanRelativeHumidityPercent": 79.55,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.808286,
+        "lng": -73.961885
+      },
+      "gridElevationMeters": 75.84
+    },
+    "cornell-university": {
+      "annualMeanRelativeHumidityPercent": 81.58,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.4472,
+        "lng": -76.483084
+      },
+      "gridElevationMeters": 401.39
+    },
+    "university-of-chicago": {
+      "annualMeanRelativeHumidityPercent": 80.96,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.787994,
+        "lng": -87.599539
+      },
+      "gridElevationMeters": 180.72
+    },
+    "dartmouth-college": {
+      "annualMeanRelativeHumidityPercent": 84.37,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.704115,
+        "lng": -72.289949
+      },
+      "gridElevationMeters": 384.17
+    },
+    "university-of-california-berkeley": {
+      "annualMeanRelativeHumidityPercent": 77,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 37.871918,
+        "lng": -122.260463
+      },
+      "gridElevationMeters": 86.52
+    },
+    "vanderbilt-university": {
+      "annualMeanRelativeHumidityPercent": 77.48,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 36.14659,
+        "lng": -86.803369
+      },
+      "gridElevationMeters": 209.36
+    },
+    "university-of-notre-dame": {
+      "annualMeanRelativeHumidityPercent": 78.86,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.703058,
+        "lng": -86.238959
+      },
+      "gridElevationMeters": 239.93
+    },
+    "unc-chapel-hill": {
+      "annualMeanRelativeHumidityPercent": 76.24,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 35.911769,
+        "lng": -79.050969
+      },
+      "gridElevationMeters": 123.49
+    },
+    "georgetown-university": {
+      "annualMeanRelativeHumidityPercent": 76.26,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 38.908809,
+        "lng": -77.073463
+      },
+      "gridElevationMeters": 70.81
+    },
+    "carnegie-mellon-university": {
+      "annualMeanRelativeHumidityPercent": 78.27,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.44357,
+        "lng": -79.941993
+      },
+      "gridElevationMeters": 332.12
+    },
+    "emory-university": {
+      "annualMeanRelativeHumidityPercent": 76.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 33.790183,
+        "lng": -84.325512
+      },
+      "gridElevationMeters": 312.69
+    },
+    "university-of-virginia": {
+      "annualMeanRelativeHumidityPercent": 74.91,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 38.035665,
+        "lng": -78.503428
+      },
+      "gridElevationMeters": 328.01
+    },
+    "washington-university-in-st-louis": {
+      "annualMeanRelativeHumidityPercent": 76.31,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 38.647929,
+        "lng": -90.310604
+      },
+      "gridElevationMeters": 152.79
+    },
+    "new-york-university": {
+      "annualMeanRelativeHumidityPercent": 80.16,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.729452,
+        "lng": -73.997264
+      },
+      "gridElevationMeters": 10.17
+    },
+    "university-of-southern-california": {
+      "annualMeanRelativeHumidityPercent": 57.35,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.021281,
+        "lng": -118.284169
+      },
+      "gridElevationMeters": 395
+    },
+    "tufts-university": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.40855,
+        "lng": -71.118293
+      },
+      "gridElevationMeters": 71.06
+    },
+    "boston-university": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.351118,
+        "lng": -71.107942
+      },
+      "gridElevationMeters": 71.06
+    },
+    "university-of-california-san-diego": {
+      "annualMeanRelativeHumidityPercent": 73.17,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 32.877749,
+        "lng": -117.235866
+      },
+      "gridElevationMeters": 76.39
+    },
+    "university-of-florida": {
+      "annualMeanRelativeHumidityPercent": 78.35,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 29.64629,
+        "lng": -82.347911
+      },
+      "gridElevationMeters": 25.35
+    },
+    "university-of-texas-austin": {
+      "annualMeanRelativeHumidityPercent": 69.03,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 30.282825,
+        "lng": -97.738273
+      },
+      "gridElevationMeters": 184.44
+    },
+    "georgia-institute-of-technology": {
+      "annualMeanRelativeHumidityPercent": 76.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 33.77242,
+        "lng": -84.394832
+      },
+      "gridElevationMeters": 312.69
+    },
+    "university-of-california-davis": {
+      "annualMeanRelativeHumidityPercent": 63.76,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 38.539667,
+        "lng": -121.749567
+      },
+      "gridElevationMeters": 67.69
+    },
+    "university-of-california-irvine": {
+      "annualMeanRelativeHumidityPercent": 73.36,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 33.648434,
+        "lng": -117.841248
+      },
+      "gridElevationMeters": 47.07
+    },
+    "university-of-illinois-urbana-champaign": {
+      "annualMeanRelativeHumidityPercent": 77.45,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.104718,
+        "lng": -88.229114
+      },
+      "gridElevationMeters": 208.77
+    },
+    "university-of-wisconsin-madison": {
+      "annualMeanRelativeHumidityPercent": 80.07,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.075409,
+        "lng": -89.404098
+      },
+      "gridElevationMeters": 280.98
+    },
+    "ohio-state-university": {
+      "annualMeanRelativeHumidityPercent": 77.53,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.999803,
+        "lng": -83.007525
+      },
+      "gridElevationMeters": 291.64
+    },
+    "rutgers-university": {
+      "annualMeanRelativeHumidityPercent": 78.87,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.498769,
+        "lng": -74.446251
+      },
+      "gridElevationMeters": 54.87
+    },
+    "wake-forest-university": {
+      "annualMeanRelativeHumidityPercent": 75.37,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 36.133609,
+        "lng": -80.277446
+      },
+      "gridElevationMeters": 237.63
+    },
+    "purdue-university": {
+      "annualMeanRelativeHumidityPercent": 78.47,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.428206,
+        "lng": -86.914435
+      },
+      "gridElevationMeters": 221.92
+    },
+    "university-of-maryland-college-park": {
+      "annualMeanRelativeHumidityPercent": 76.26,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 38.988178,
+        "lng": -76.944721
+      },
+      "gridElevationMeters": 70.81
+    },
+    "lehigh-university": {
+      "annualMeanRelativeHumidityPercent": 79.17,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.606822,
+        "lng": -75.380236
+      },
+      "gridElevationMeters": 179.23
+    },
+    "case-western-reserve-university": {
+      "annualMeanRelativeHumidityPercent": 79.02,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.507419,
+        "lng": -81.609596
+      },
+      "gridElevationMeters": 222.08
+    },
+    "princeton-university": {
+      "annualMeanRelativeHumidityPercent": 78.87,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.348732,
+        "lng": -74.659365
+      },
+      "gridElevationMeters": 54.87
+    },
+    "william-and-mary": {
+      "annualMeanRelativeHumidityPercent": 76.81,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 37.269489,
+        "lng": -76.708214
+      },
+      "gridElevationMeters": 24.64
+    },
+    "villanova-university": {
+      "annualMeanRelativeHumidityPercent": 78.14,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.036463,
+        "lng": -75.340502
+      },
+      "gridElevationMeters": 105.27
+    },
+    "university-of-minnesota-twin-cities": {
+      "annualMeanRelativeHumidityPercent": 77.13,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.972851,
+        "lng": -93.235464
+      },
+      "gridElevationMeters": 273.48
+    },
+    "university-of-rochester": {
+      "annualMeanRelativeHumidityPercent": 78.73,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.126397,
+        "lng": -77.631202
+      },
+      "gridElevationMeters": 217.66
+    },
+    "university-of-michigan": {
+      "annualMeanRelativeHumidityPercent": 78.79,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.278374,
+        "lng": -83.73481
+      },
+      "gridElevationMeters": 267.01
+    },
+    "uc-santa-cruz": {
+      "annualMeanRelativeHumidityPercent": 75.2,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 36.995584,
+        "lng": -122.058801
+      },
+      "gridElevationMeters": 211.23
+    },
+    "brandeis-university": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.365727,
+        "lng": -71.260155
+      },
+      "gridElevationMeters": 71.06
+    },
+    "uc-santa-barbara": {
+      "annualMeanRelativeHumidityPercent": 63.57,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.416297,
+        "lng": -119.846426
+      },
+      "gridElevationMeters": 313.15
+    },
+    "pepperdine-university": {
+      "annualMeanRelativeHumidityPercent": 64.9,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.037786,
+        "lng": -118.707077
+      },
+      "gridElevationMeters": 183.1
+    },
+    "swarthmore-college": {
+      "annualMeanRelativeHumidityPercent": 78.14,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.905159,
+        "lng": -75.354278
+      },
+      "gridElevationMeters": 105.27
+    },
+    "williams-college": {
+      "annualMeanRelativeHumidityPercent": 82.56,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.712725,
+        "lng": -73.203132
+      },
+      "gridElevationMeters": 357.17
+    },
+    "wellesley-college": {
+      "annualMeanRelativeHumidityPercent": 80.11,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.291554,
+        "lng": -71.306605
+      },
+      "gridElevationMeters": 71.06
+    },
+    "carleton-college": {
+      "annualMeanRelativeHumidityPercent": 77.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.462318,
+        "lng": -93.154666
+      },
+      "gridElevationMeters": 304.99
+    },
+    "bowdoin-college": {
+      "annualMeanRelativeHumidityPercent": 83.09,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.907134,
+        "lng": -69.963942
+      },
+      "gridElevationMeters": 62.55
+    },
+    "claremont-mckenna-college": {
+      "annualMeanRelativeHumidityPercent": 50.77,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.102154,
+        "lng": -117.711188
+      },
+      "gridElevationMeters": 628.09
+    },
+    "haverford-college": {
+      "annualMeanRelativeHumidityPercent": 78.69,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.007452,
+        "lng": -75.305207
+      },
+      "gridElevationMeters": 46.88
+    },
+    "davidson-college": {
+      "annualMeanRelativeHumidityPercent": 75.18,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 35.499767,
+        "lng": -80.843979
+      },
+      "gridElevationMeters": 220.03
+    },
+    "washington-and-lee-university": {
+      "annualMeanRelativeHumidityPercent": 76.91,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 37.788939,
+        "lng": -79.443018
+      },
+      "gridElevationMeters": 583.19
+    },
+    "vassar-college": {
+      "annualMeanRelativeHumidityPercent": 80.19,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.686895,
+        "lng": -73.895088
+      },
+      "gridElevationMeters": 161.53
+    },
+    "hamilton-college": {
+      "annualMeanRelativeHumidityPercent": 83.44,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.050245,
+        "lng": -75.408195
+      },
+      "gridElevationMeters": 333.76
+    },
+    "middlebury-college": {
+      "annualMeanRelativeHumidityPercent": 83.77,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.009117,
+        "lng": -73.176068
+      },
+      "gridElevationMeters": 281.07
+    },
+    "colby-college": {
+      "annualMeanRelativeHumidityPercent": 83.77,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.564211,
+        "lng": -69.66337
+      },
+      "gridElevationMeters": 96.87
+    },
+    "colgate-university": {
+      "annualMeanRelativeHumidityPercent": 83.44,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.819475,
+        "lng": -75.536346
+      },
+      "gridElevationMeters": 333.76
+    },
+    "grinnell-college": {
+      "annualMeanRelativeHumidityPercent": 76.9,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.747952,
+        "lng": -92.722094
+      },
+      "gridElevationMeters": 259.11
+    },
+    "wesleyan-university": {
+      "annualMeanRelativeHumidityPercent": 79.46,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.554665,
+        "lng": -72.657146
+      },
+      "gridElevationMeters": 87.69
+    },
+    "bryn-mawr-college": {
+      "annualMeanRelativeHumidityPercent": 78.14,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.02736,
+        "lng": -75.313223
+      },
+      "gridElevationMeters": 105.27
+    },
+    "barnard-college": {
+      "annualMeanRelativeHumidityPercent": 79.55,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.810098,
+        "lng": -73.963346
+      },
+      "gridElevationMeters": 75.84
+    },
+    "harvey-mudd-college": {
+      "annualMeanRelativeHumidityPercent": 50.77,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.106515,
+        "lng": -117.709837
+      },
+      "gridElevationMeters": 628.09
+    },
+    "macalester-college": {
+      "annualMeanRelativeHumidityPercent": 77.13,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.938565,
+        "lng": -93.168053
+      },
+      "gridElevationMeters": 273.48
+    },
+    "bates-college": {
+      "annualMeanRelativeHumidityPercent": 83.09,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.105299,
+        "lng": -70.203333
+      },
+      "gridElevationMeters": 62.55
+    },
+    "colorado-college": {
+      "annualMeanRelativeHumidityPercent": 52.45,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 38.84886,
+        "lng": -104.822697
+      },
+      "gridElevationMeters": 2371.52
+    },
+    "oberlin-college": {
+      "annualMeanRelativeHumidityPercent": 78.8,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.291992,
+        "lng": -82.216795
+      },
+      "gridElevationMeters": 201.45
+    },
+    "scripps-college": {
+      "annualMeanRelativeHumidityPercent": 50.77,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.104147,
+        "lng": -117.711294
+      },
+      "gridElevationMeters": 628.09
+    },
+    "franklin-and-marshall-college": {
+      "annualMeanRelativeHumidityPercent": 78.27,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.048045,
+        "lng": -76.319037
+      },
+      "gridElevationMeters": 149.63
+    },
+    "college-of-the-holy-cross": {
+      "annualMeanRelativeHumidityPercent": 80,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.23752,
+        "lng": -71.808214
+      },
+      "gridElevationMeters": 169.57
+    },
+    "kenyon-college": {
+      "annualMeanRelativeHumidityPercent": 78.32,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.374408,
+        "lng": -82.397977
+      },
+      "gridElevationMeters": 339.22
+    },
+    "skidmore-college": {
+      "annualMeanRelativeHumidityPercent": 82.53,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 43.097035,
+        "lng": -73.785335
+      },
+      "gridElevationMeters": 174.95
+    },
+    "mount-holyoke-college": {
+      "annualMeanRelativeHumidityPercent": 80.84,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.25489,
+        "lng": -72.573916
+      },
+      "gridElevationMeters": 283.31
+    },
+    "pitzer-college": {
+      "annualMeanRelativeHumidityPercent": 50.77,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.104107,
+        "lng": -117.706675
+      },
+      "gridElevationMeters": 628.09
+    },
+    "whitman-college": {
+      "annualMeanRelativeHumidityPercent": 70.32,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 46.069815,
+        "lng": -118.331546
+      },
+      "gridElevationMeters": 903.01
+    },
+    "smith-college": {
+      "annualMeanRelativeHumidityPercent": 80.84,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.318111,
+        "lng": -72.638097
+      },
+      "gridElevationMeters": 283.31
+    },
+    "trinity-college-ct": {
+      "annualMeanRelativeHumidityPercent": 79.46,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.747451,
+        "lng": -72.690882
+      },
+      "gridElevationMeters": 87.69
+    },
+    "lafayette-college": {
+      "annualMeanRelativeHumidityPercent": 79.07,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.69956,
+        "lng": -75.209786
+      },
+      "gridElevationMeters": 123.51
+    },
+    "denison-university": {
+      "annualMeanRelativeHumidityPercent": 77.46,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.071505,
+        "lng": -82.523272
+      },
+      "gridElevationMeters": 289.86
+    },
+    "bucknell-university": {
+      "annualMeanRelativeHumidityPercent": 79.05,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.954317,
+        "lng": -76.882616
+      },
+      "gridElevationMeters": 294.84
+    },
+    "sewanee-university-of-the-south": {
+      "annualMeanRelativeHumidityPercent": 77.46,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 35.204719,
+        "lng": -85.920179
+      },
+      "gridElevationMeters": 383.48
+    },
+    "union-college": {
+      "annualMeanRelativeHumidityPercent": 82.53,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 42.818097,
+        "lng": -73.928788
+      },
+      "gridElevationMeters": 174.95
+    },
+    "connecticut-college": {
+      "annualMeanRelativeHumidityPercent": 79.98,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 41.379833,
+        "lng": -72.107321
+      },
+      "gridElevationMeters": 72.68
+    },
+    "st-olaf-college": {
+      "annualMeanRelativeHumidityPercent": 77.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 44.461529,
+        "lng": -93.182039
+      },
+      "gridElevationMeters": 304.99
+    },
+    "rhodes-college": {
+      "annualMeanRelativeHumidityPercent": 74.93,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 35.154405,
+        "lng": -89.990803
+      },
+      "gridElevationMeters": 87.35
+    },
+    "reed-college": {
+      "annualMeanRelativeHumidityPercent": 81.7,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 45.480959,
+        "lng": -122.630348
+      },
+      "gridElevationMeters": 257.38
+    },
+    "dickinson-college": {
+      "annualMeanRelativeHumidityPercent": 77.72,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.202796,
+        "lng": -77.197854
+      },
+      "gridElevationMeters": 281.76
+    },
+    "gettysburg-college": {
+      "annualMeanRelativeHumidityPercent": 77.72,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.836597,
+        "lng": -77.236792
+      },
+      "gridElevationMeters": 281.76
+    },
+    "furman-university": {
+      "annualMeanRelativeHumidityPercent": 76.26,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 34.924676,
+        "lng": -82.440458
+      },
+      "gridElevationMeters": 474.02
+    },
+    "sarah-lawrence-college": {
+      "annualMeanRelativeHumidityPercent": 79.55,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.9355,
+        "lng": -73.843727
+      },
+      "gridElevationMeters": 75.84
+    },
+    "depauw-university": {
+      "annualMeanRelativeHumidityPercent": 78.52,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.640904,
+        "lng": -86.860363
+      },
+      "gridElevationMeters": 215.73
+    },
+    "centre-college": {
+      "annualMeanRelativeHumidityPercent": 78.24,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 37.645709,
+        "lng": -84.779392
+      },
+      "gridElevationMeters": 283.06
+    },
+    "st-johns-college": {
+      "annualMeanRelativeHumidityPercent": 76.99,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 38.981598,
+        "lng": -76.491359
+      },
+      "gridElevationMeters": 21.44
+    },
+    "agnes-scott-college": {
+      "annualMeanRelativeHumidityPercent": 76.33,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 33.769268,
+        "lng": -84.295459
+      },
+      "gridElevationMeters": 312.69
+    },
+    "wooster-college": {
+      "annualMeanRelativeHumidityPercent": 78.56,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 40.81046,
+        "lng": -81.934674
+      },
+      "gridElevationMeters": 309.08
+    },
+    "trinity-university": {
+      "annualMeanRelativeHumidityPercent": 67.71,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 29.462682,
+        "lng": -98.48186
+      },
+      "gridElevationMeters": 301.97
+    },
+    "goucher-college": {
+      "annualMeanRelativeHumidityPercent": 77.28,
+      "humidityBand": "Humid",
+      "coordinates": {
+        "lat": 39.410175,
+        "lng": -76.594843
+      },
+      "gridElevationMeters": 148.82
+    },
+    "occidental-college": {
+      "annualMeanRelativeHumidityPercent": 57.35,
+      "humidityBand": "Balanced",
+      "coordinates": {
+        "lat": 34.127124,
+        "lng": -118.210908
+      },
+      "gridElevationMeters": 395
+    }
+  }
+}

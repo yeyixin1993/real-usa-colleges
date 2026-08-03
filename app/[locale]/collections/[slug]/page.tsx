@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { ScoreBadge } from '@/components/shared/score-badge';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -63,17 +62,16 @@ export default async function CollectionDetailPage({
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <div className="flex flex-wrap gap-2">
-                        <Badge>{school.schoolType}</Badge>
                         <Badge>{school.sector}</Badge>
+                        <Badge>Verified</Badge>
                       </div>
                       <h3 className="mt-3 text-xl font-semibold text-slate-950">{school.name}</h3>
                       <p className="mt-1 text-sm text-slate-500">
                         {school.city}, {school.state}
                       </p>
                     </div>
-                    <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} compact />
                   </div>
-                  <p className="text-sm leading-6 text-slate-600">{school.summary[locale]}</p>
+                  <p className="text-sm leading-6 text-slate-600">College Scorecard UNITID {school.verification?.unitId}</p>
                 </CardContent>
               </Card>
             </Link>

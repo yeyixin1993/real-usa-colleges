@@ -14,7 +14,7 @@ export function formatPercent(value: number) {
 }
 
 export function formatMinutes(value: number | null) {
-  if (value === null) return 'None';
+  if (value === null) return '—';
   return `${value} min`;
 }
 

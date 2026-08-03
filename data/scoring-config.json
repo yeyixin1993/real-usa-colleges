@@ -26,5 +26,14 @@
     "tier3NightMin": 30,
     "tier3DayMin": 20,
     "tier3UberEatsMax": 35
+  },
+  "rankingWeights": {
+    "cold": 0.4,
+    "village": 0.35,
+    "white": 0.25
+  },
+  "coldRankingWeights": {
+    "januaryTemperature": 0.5,
+    "annualSnowfall": 0.5
   }
 }

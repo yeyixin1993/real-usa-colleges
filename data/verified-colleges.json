@@ -1,0 +1,2700 @@
+{
+  "source": {
+    "label": "U.S. Department of Education College Scorecard",
+    "release": "Most Recent Cohorts Institution-Level Data, May 19, 2025",
+    "url": "https://catalog.data.gov/dataset/college-scorecard",
+    "downloadUrl": "https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_05192025.zip"
+  },
+  "generatedAt": "2026-08-02T14:49:19.569Z",
+  "recordCount": 112,
+  "records": {
+    "princeton-university": {
+      "unitId": "186131",
+      "name": "Princeton University",
+      "city": "Princeton",
+      "stateCode": "NJ",
+      "website": "https://www.princeton.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.348732,
+        "lng": -74.659365
+      },
+      "undergraduateEnrollment": 5579,
+      "campusDemographics": {
+        "white": 36,
+        "black": 8.6,
+        "hispanicLatino": 9.8,
+        "asian": 23.7,
+        "nonresident": 12.3,
+        "men": 49.2,
+        "women": 50.8,
+        "age25OrOlder": 1.5
+      },
+      "localeCode": 13
+    },
+    "ucla": {
+      "unitId": "110662",
+      "name": "University of California-Los Angeles",
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "website": "https://www.ucla.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 34.07178,
+        "lng": -118.442179
+      },
+      "undergraduateEnrollment": 33040,
+      "campusDemographics": {
+        "white": 25.1,
+        "black": 3.3,
+        "hispanicLatino": 23.2,
+        "asian": 29.9,
+        "nonresident": 7.7,
+        "men": 39,
+        "women": 61.1,
+        "age25OrOlder": 3.2
+      },
+      "localeCode": 11
+    },
+    "rice-university": {
+      "unitId": "227757",
+      "name": "Rice University",
+      "city": "Houston",
+      "stateCode": "TX",
+      "website": "https://www.rice.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 29.717897,
+        "lng": -95.402035
+      },
+      "undergraduateEnrollment": 4562,
+      "campusDemographics": {
+        "white": 26.5,
+        "black": 8.2,
+        "hispanicLatino": 16.1,
+        "asian": 29.5,
+        "nonresident": 12.5,
+        "men": 50.9,
+        "women": 49.1,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 11
+    },
+    "university-of-washington": {
+      "unitId": "236948",
+      "name": "University of Washington-Seattle Campus",
+      "city": "Seattle",
+      "stateCode": "WA",
+      "website": "https://www.washington.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 47.65538,
+        "lng": -122.30514
+      },
+      "undergraduateEnrollment": 31588,
+      "campusDemographics": {
+        "white": 33.9,
+        "black": 3.9,
+        "hispanicLatino": 9.7,
+        "asian": 27.3,
+        "nonresident": 12.7,
+        "men": 43.2,
+        "women": 56.8,
+        "age25OrOlder": 5.3
+      },
+      "localeCode": 11
+    },
+    "amherst-college": {
+      "unitId": "164465",
+      "name": "Amherst College",
+      "city": "Amherst",
+      "stateCode": "MA",
+      "website": "https://www.amherst.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.372459,
+        "lng": -72.518493
+      },
+      "undergraduateEnrollment": 1907,
+      "campusDemographics": {
+        "white": 35.9,
+        "black": 11.2,
+        "hispanicLatino": 15.1,
+        "asian": 15.6,
+        "nonresident": 12.2,
+        "men": 46.3,
+        "women": 53.8,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 13
+    },
+    "pomona-college": {
+      "unitId": "121345",
+      "name": "Pomona College",
+      "city": "Claremont",
+      "stateCode": "CA",
+      "website": "https://www.pomona.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.099027,
+        "lng": -117.714556
+      },
+      "undergraduateEnrollment": 1638,
+      "campusDemographics": {
+        "white": 29.2,
+        "black": 10.8,
+        "hispanicLatino": 16.5,
+        "asian": 17.8,
+        "nonresident": 12.4,
+        "men": 45.2,
+        "women": 54.8,
+        "age25OrOlder": 0.8
+      },
+      "localeCode": 21
+    },
+    "university-of-michigan": {
+      "unitId": "170976",
+      "name": "University of Michigan-Ann Arbor",
+      "city": "Ann Arbor",
+      "stateCode": "MI",
+      "website": "https://umich.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 42.278374,
+        "lng": -83.73481
+      },
+      "undergraduateEnrollment": 33488,
+      "campusDemographics": {
+        "white": 48.8,
+        "black": 4.5,
+        "hispanicLatino": 10,
+        "asian": 18.6,
+        "nonresident": 7.9,
+        "men": 46.9,
+        "women": 53.1,
+        "age25OrOlder": 1.6
+      },
+      "localeCode": 12
+    },
+    "northeastern-university": {
+      "unitId": "167358",
+      "name": "Northeastern University",
+      "city": "Boston",
+      "stateCode": "MA",
+      "website": "https://www.northeastern.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.339992,
+        "lng": -71.088782
+      },
+      "undergraduateEnrollment": 15719,
+      "campusDemographics": {
+        "white": 40.4,
+        "black": 5.3,
+        "hispanicLatino": 11.1,
+        "asian": 20.9,
+        "nonresident": 14.7,
+        "men": 43.6,
+        "women": 56.4,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 11
+    },
+    "harvard-university": {
+      "unitId": "166027",
+      "name": "Harvard University",
+      "city": "Cambridge",
+      "stateCode": "MA",
+      "website": "https://www.harvard.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.374471,
+        "lng": -71.118313
+      },
+      "undergraduateEnrollment": 7755,
+      "campusDemographics": {
+        "white": 32.8,
+        "black": 9.3,
+        "hispanicLatino": 11.8,
+        "asian": 22.4,
+        "nonresident": 13.5,
+        "men": 46.9,
+        "women": 53.1,
+        "age25OrOlder": 16.6
+      },
+      "localeCode": 12
+    },
+    "mit": {
+      "unitId": "166683",
+      "name": "Massachusetts Institute of Technology",
+      "city": "Cambridge",
+      "stateCode": "MA",
+      "website": "https://web.mit.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.359243,
+        "lng": -71.093226
+      },
+      "undergraduateEnrollment": 4571,
+      "campusDemographics": {
+        "white": 21,
+        "black": 8.7,
+        "hispanicLatino": 14.5,
+        "asian": 34.6,
+        "nonresident": 10.9,
+        "men": 51.2,
+        "women": 48.8,
+        "age25OrOlder": 0.9
+      },
+      "localeCode": 12
+    },
+    "stanford-university": {
+      "unitId": "243744",
+      "name": "Stanford University",
+      "city": "Stanford",
+      "stateCode": "CA",
+      "website": "https://www.stanford.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 37.429434,
+        "lng": -122.167359
+      },
+      "undergraduateEnrollment": 7841,
+      "campusDemographics": {
+        "white": 24.2,
+        "black": 7.9,
+        "hispanicLatino": 17.7,
+        "asian": 27.5,
+        "nonresident": 11.8,
+        "men": 48.3,
+        "women": 51.7,
+        "age25OrOlder": 1.7
+      },
+      "localeCode": 21
+    },
+    "yale-university": {
+      "unitId": "130794",
+      "name": "Yale University",
+      "city": "New Haven",
+      "stateCode": "CT",
+      "website": "https://www.yale.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.311158,
+        "lng": -72.926688
+      },
+      "undergraduateEnrollment": 6811,
+      "campusDemographics": {
+        "white": 32.4,
+        "black": 8.8,
+        "hispanicLatino": 15.7,
+        "asian": 22.8,
+        "nonresident": 10.6,
+        "men": 48.2,
+        "women": 51.8,
+        "age25OrOlder": 1
+      },
+      "localeCode": 12
+    },
+    "university-of-pennsylvania": {
+      "unitId": "215062",
+      "name": "University of Pennsylvania",
+      "city": "Philadelphia",
+      "stateCode": "PA",
+      "website": "https://www.upenn.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.950929,
+        "lng": -75.19391
+      },
+      "undergraduateEnrollment": 10768,
+      "campusDemographics": {
+        "white": 29.9,
+        "black": 8.6,
+        "hispanicLatino": 10.9,
+        "asian": 27.8,
+        "nonresident": 12.2,
+        "men": 44.7,
+        "women": 55.3,
+        "age25OrOlder": 6.8
+      },
+      "localeCode": 11
+    },
+    "california-institute-of-technology": {
+      "unitId": "110404",
+      "name": "California Institute of Technology",
+      "city": "Pasadena",
+      "stateCode": "CA",
+      "website": "https://www.caltech.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.137349,
+        "lng": -118.125878
+      },
+      "undergraduateEnrollment": 1023,
+      "campusDemographics": {
+        "white": 19.9,
+        "black": 3.7,
+        "hispanicLatino": 19,
+        "asian": 35.4,
+        "nonresident": 12.3,
+        "men": 56.7,
+        "women": 43.3,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 12
+    },
+    "duke-university": {
+      "unitId": "198419",
+      "name": "Duke University",
+      "city": "Durham",
+      "stateCode": "NC",
+      "website": "https://www.duke.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 36.001135,
+        "lng": -78.937624
+      },
+      "undergraduateEnrollment": 6417,
+      "campusDemographics": {
+        "white": 36.1,
+        "black": 8.5,
+        "hispanicLatino": 10.8,
+        "asian": 23.2,
+        "nonresident": 9.7,
+        "men": 46.6,
+        "women": 53.4,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 11
+    },
+    "brown-university": {
+      "unitId": "217156",
+      "name": "Brown University",
+      "city": "Providence",
+      "stateCode": "RI",
+      "website": "https://www.brown.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.82617,
+        "lng": -71.40385
+      },
+      "undergraduateEnrollment": 7273,
+      "campusDemographics": {
+        "white": 35.8,
+        "black": 8.7,
+        "hispanicLatino": 12.2,
+        "asian": 20.4,
+        "nonresident": 12.2,
+        "men": 49.3,
+        "women": 50.7,
+        "age25OrOlder": 1.7
+      },
+      "localeCode": 12
+    },
+    "johns-hopkins-university": {
+      "unitId": "162928",
+      "name": "Johns Hopkins University",
+      "city": "Baltimore",
+      "stateCode": "MD",
+      "website": "https://www.jhu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.328977,
+        "lng": -76.621595
+      },
+      "undergraduateEnrollment": 5617,
+      "campusDemographics": {
+        "white": 20,
+        "black": 9.5,
+        "hispanicLatino": 20.7,
+        "asian": 26.6,
+        "nonresident": 15.1,
+        "men": 45.9,
+        "women": 54.1,
+        "age25OrOlder": 5
+      },
+      "localeCode": 11
+    },
+    "northwestern-university": {
+      "unitId": "147767",
+      "name": "Northwestern University",
+      "city": "Evanston",
+      "stateCode": "IL",
+      "website": "https://www.northwestern.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.050356,
+        "lng": -87.679858
+      },
+      "undergraduateEnrollment": 8960,
+      "campusDemographics": {
+        "white": 34.1,
+        "black": 7.4,
+        "hispanicLatino": 15.1,
+        "asian": 21.7,
+        "nonresident": 10.3,
+        "men": 45.5,
+        "women": 54.5,
+        "age25OrOlder": 3
+      },
+      "localeCode": 13
+    },
+    "columbia-university": {
+      "unitId": "190150",
+      "name": "Columbia University in the City of New York",
+      "city": "New York",
+      "stateCode": "NY",
+      "website": "https://www.columbia.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.808286,
+        "lng": -73.961885
+      },
+      "undergraduateEnrollment": 8899,
+      "campusDemographics": {
+        "white": 29.9,
+        "black": 7.8,
+        "hispanicLatino": 16.3,
+        "asian": 18.4,
+        "nonresident": 18.3,
+        "men": 50.5,
+        "women": 49.5,
+        "age25OrOlder": 14.1
+      },
+      "localeCode": 11
+    },
+    "cornell-university": {
+      "unitId": "190415",
+      "name": "Cornell University",
+      "city": "Ithaca",
+      "stateCode": "NY",
+      "website": "https://www.cornell.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.4472,
+        "lng": -76.483084
+      },
+      "undergraduateEnrollment": 15935,
+      "campusDemographics": {
+        "white": 31.4,
+        "black": 7.5,
+        "hispanicLatino": 14.6,
+        "asian": 25.1,
+        "nonresident": 9.6,
+        "men": 45.5,
+        "women": 54.5,
+        "age25OrOlder": 0.5
+      },
+      "localeCode": 13
+    },
+    "university-of-chicago": {
+      "unitId": "144050",
+      "name": "University of Chicago",
+      "city": "Chicago",
+      "stateCode": "IL",
+      "website": "https://www.uchicago.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.787994,
+        "lng": -87.599539
+      },
+      "undergraduateEnrollment": 7540,
+      "campusDemographics": {
+        "white": 30.9,
+        "black": 7,
+        "hispanicLatino": 17.1,
+        "asian": 19.7,
+        "nonresident": 16,
+        "men": 53.4,
+        "women": 46.6,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 11
+    },
+    "university-of-california-berkeley": {
+      "unitId": "110635",
+      "name": "University of California-Berkeley",
+      "city": "Berkeley",
+      "stateCode": "CA",
+      "website": "https://www.berkeley.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 37.871918,
+        "lng": -122.260463
+      },
+      "undergraduateEnrollment": 33073,
+      "campusDemographics": {
+        "white": 19.5,
+        "black": 2.1,
+        "hispanicLatino": 21.8,
+        "asian": 35.2,
+        "nonresident": 11.5,
+        "men": 44.1,
+        "women": 55.9,
+        "age25OrOlder": 5.1
+      },
+      "localeCode": 12
+    },
+    "dartmouth-college": {
+      "unitId": "182670",
+      "name": "Dartmouth College",
+      "city": "Hanover",
+      "stateCode": "NH",
+      "website": "https://www.dartmouth.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 43.704115,
+        "lng": -72.289949
+      },
+      "undergraduateEnrollment": 4367,
+      "campusDemographics": {
+        "white": 46.4,
+        "black": 6.2,
+        "hispanicLatino": 9.5,
+        "asian": 14,
+        "nonresident": 13.8,
+        "men": 51.1,
+        "women": 48.9,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 33
+    },
+    "vanderbilt-university": {
+      "unitId": "221999",
+      "name": "Vanderbilt University",
+      "city": "Nashville",
+      "stateCode": "TN",
+      "website": "https://www.vanderbilt.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 36.14659,
+        "lng": -86.803369
+      },
+      "undergraduateEnrollment": 7143,
+      "campusDemographics": {
+        "white": 38.9,
+        "black": 10.4,
+        "hispanicLatino": 12,
+        "asian": 18.6,
+        "nonresident": 10,
+        "men": 47.8,
+        "women": 52.3,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 11
+    },
+    "university-of-notre-dame": {
+      "unitId": "152080",
+      "name": "University of Notre Dame",
+      "city": "Notre Dame",
+      "stateCode": "IN",
+      "website": "https://www.nd.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.703058,
+        "lng": -86.238959
+      },
+      "undergraduateEnrollment": 8923,
+      "campusDemographics": {
+        "white": 61.4,
+        "black": 4.6,
+        "hispanicLatino": 13.6,
+        "asian": 5.9,
+        "nonresident": 6.7,
+        "men": 51.2,
+        "women": 48.8,
+        "age25OrOlder": 0.1
+      },
+      "localeCode": 21
+    },
+    "georgetown-university": {
+      "unitId": "131496",
+      "name": "Georgetown University",
+      "city": "Washington",
+      "stateCode": "DC",
+      "website": "https://www.georgetown.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 38.908809,
+        "lng": -77.073463
+      },
+      "undergraduateEnrollment": 7462,
+      "campusDemographics": {
+        "white": 48.5,
+        "black": 5.1,
+        "hispanicLatino": 6.2,
+        "asian": 15.1,
+        "nonresident": 13.8,
+        "men": 41.5,
+        "women": 58.5,
+        "age25OrOlder": 5.4
+      },
+      "localeCode": 11
+    },
+    "unc-chapel-hill": {
+      "unitId": "199120",
+      "name": "University of North Carolina at Chapel Hill",
+      "city": "Chapel Hill",
+      "stateCode": "NC",
+      "website": "https://www.unc.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 35.911769,
+        "lng": -79.050969
+      },
+      "undergraduateEnrollment": 20556,
+      "campusDemographics": {
+        "white": 54.1,
+        "black": 8.2,
+        "hispanicLatino": 9.8,
+        "asian": 14.8,
+        "nonresident": 5.3,
+        "men": 39.3,
+        "women": 60.8,
+        "age25OrOlder": 2.1
+      },
+      "localeCode": 13
+    },
+    "carnegie-mellon-university": {
+      "unitId": "211440",
+      "name": "Carnegie Mellon University",
+      "city": "Pittsburgh",
+      "stateCode": "PA",
+      "website": "https://www.cmu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.44357,
+        "lng": -79.941993
+      },
+      "undergraduateEnrollment": 7187,
+      "campusDemographics": {
+        "white": 21.6,
+        "black": 4.2,
+        "hispanicLatino": 10.8,
+        "asian": 33.6,
+        "nonresident": 19.1,
+        "men": 50,
+        "women": 50,
+        "age25OrOlder": 1.5
+      },
+      "localeCode": 11
+    },
+    "emory-university": {
+      "unitId": "139658",
+      "name": "Emory University",
+      "city": "Atlanta",
+      "stateCode": "GA",
+      "website": "https://www.emory.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 33.790183,
+        "lng": -84.325512
+      },
+      "undergraduateEnrollment": 7275,
+      "campusDemographics": {
+        "white": 31.1,
+        "black": 9.3,
+        "hispanicLatino": 11.8,
+        "asian": 25.2,
+        "nonresident": 16.2,
+        "men": 42.9,
+        "women": 57.1,
+        "age25OrOlder": 1.5
+      },
+      "localeCode": 11
+    },
+    "university-of-virginia": {
+      "unitId": "234076",
+      "name": "University of Virginia-Main Campus",
+      "city": "Charlottesville",
+      "stateCode": "VA",
+      "website": "https://www.virginia.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 38.035665,
+        "lng": -78.503428
+      },
+      "undergraduateEnrollment": 17315,
+      "campusDemographics": {
+        "white": 50.4,
+        "black": 7.6,
+        "hispanicLatino": 7.4,
+        "asian": 19.1,
+        "nonresident": 4.6,
+        "men": 43.4,
+        "women": 56.6,
+        "age25OrOlder": 3.5
+      },
+      "localeCode": 22
+    },
+    "washington-university-in-st-louis": {
+      "unitId": "179867",
+      "name": "Washington University in St Louis",
+      "city": "Saint Louis",
+      "stateCode": "MO",
+      "website": "https://wustl.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 38.647929,
+        "lng": -90.310604
+      },
+      "undergraduateEnrollment": 7897,
+      "campusDemographics": {
+        "white": 41.5,
+        "black": 8.9,
+        "hispanicLatino": 12.6,
+        "asian": 21.1,
+        "nonresident": 8.2,
+        "men": 46.1,
+        "women": 53.9,
+        "age25OrOlder": 8
+      },
+      "localeCode": 21
+    },
+    "university-of-southern-california": {
+      "unitId": "123961",
+      "name": "University of Southern California",
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "website": "https://www.usc.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.021281,
+        "lng": -118.284169
+      },
+      "undergraduateEnrollment": 20817,
+      "campusDemographics": {
+        "white": 27.6,
+        "black": 7,
+        "hispanicLatino": 18.3,
+        "asian": 24.8,
+        "nonresident": 13.7,
+        "men": 48.2,
+        "women": 51.8,
+        "age25OrOlder": 60.6
+      },
+      "localeCode": 11
+    },
+    "new-york-university": {
+      "unitId": "193900",
+      "name": "New York University",
+      "city": "New York",
+      "stateCode": "NY",
+      "website": "https://www.nyu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.729452,
+        "lng": -73.997264
+      },
+      "undergraduateEnrollment": 29430,
+      "campusDemographics": {
+        "white": 21.5,
+        "black": 7.7,
+        "hispanicLatino": 15.9,
+        "asian": 20.8,
+        "nonresident": 26.2,
+        "men": 41.1,
+        "women": 58.9,
+        "age25OrOlder": 3.3
+      },
+      "localeCode": 11
+    },
+    "tufts-university": {
+      "unitId": "168148",
+      "name": "Tufts University",
+      "city": "Medford",
+      "stateCode": "MA",
+      "website": "https://www.tufts.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.40855,
+        "lng": -71.118293
+      },
+      "undergraduateEnrollment": 6804,
+      "campusDemographics": {
+        "white": 42,
+        "black": 6.6,
+        "hispanicLatino": 10.1,
+        "asian": 16.6,
+        "nonresident": 12.3,
+        "men": 43.7,
+        "women": 56.3,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 21
+    },
+    "boston-university": {
+      "unitId": "164988",
+      "name": "Boston University",
+      "city": "Boston",
+      "stateCode": "MA",
+      "website": "https://www.bu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.351118,
+        "lng": -71.107942
+      },
+      "undergraduateEnrollment": 17850,
+      "campusDemographics": {
+        "white": 32.9,
+        "black": 6,
+        "hispanicLatino": 11.3,
+        "asian": 19.9,
+        "nonresident": 21.8,
+        "men": 41.7,
+        "women": 58.3,
+        "age25OrOlder": 2.9
+      },
+      "localeCode": 11
+    },
+    "university-of-california-san-diego": {
+      "unitId": "110680",
+      "name": "University of California-San Diego",
+      "city": "La Jolla",
+      "stateCode": "CA",
+      "website": "https://www.ucsd.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 32.877749,
+        "lng": -117.235866
+      },
+      "undergraduateEnrollment": 33787,
+      "campusDemographics": {
+        "white": 18.2,
+        "black": 1.8,
+        "hispanicLatino": 25.3,
+        "asian": 34.3,
+        "nonresident": 11.8,
+        "men": 46.2,
+        "women": 53.8,
+        "age25OrOlder": 4.2
+      },
+      "localeCode": 11
+    },
+    "university-of-florida": {
+      "unitId": "134130",
+      "name": "University of Florida",
+      "city": "Gainesville",
+      "stateCode": "FL",
+      "website": "https://www.ufl.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 29.64629,
+        "lng": -82.347911
+      },
+      "undergraduateEnrollment": 34102,
+      "campusDemographics": {
+        "white": 50,
+        "black": 5.1,
+        "hispanicLatino": 24.2,
+        "asian": 11.9,
+        "nonresident": 2.1,
+        "men": 44.5,
+        "women": 55.5,
+        "age25OrOlder": 2.8
+      },
+      "localeCode": 12
+    },
+    "university-of-texas-austin": {
+      "unitId": "228778",
+      "name": "The University of Texas at Austin",
+      "city": "Austin",
+      "stateCode": "TX",
+      "website": "https://www.utexas.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 30.282825,
+        "lng": -97.738273
+      },
+      "undergraduateEnrollment": 42100,
+      "campusDemographics": {
+        "white": 31.6,
+        "black": 4.7,
+        "hispanicLatino": 28.3,
+        "asian": 25.4,
+        "nonresident": 4.3,
+        "men": 42,
+        "women": 58,
+        "age25OrOlder": 1.8
+      },
+      "localeCode": 11
+    },
+    "georgia-institute-of-technology": {
+      "unitId": "139755",
+      "name": "Georgia Institute of Technology-Main Campus",
+      "city": "Atlanta",
+      "stateCode": "GA",
+      "website": "https://www.gatech.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 33.77242,
+        "lng": -84.394832
+      },
+      "undergraduateEnrollment": 18260,
+      "campusDemographics": {
+        "white": 36,
+        "black": 8.3,
+        "hispanicLatino": 8.5,
+        "asian": 32.7,
+        "nonresident": 8.8,
+        "men": 60.2,
+        "women": 39.8,
+        "age25OrOlder": 1.7
+      },
+      "localeCode": 11
+    },
+    "university-of-california-davis": {
+      "unitId": "110644",
+      "name": "University of California-Davis",
+      "city": "Davis",
+      "stateCode": "CA",
+      "website": "https://ucdavis.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 38.539667,
+        "lng": -121.749567
+      },
+      "undergraduateEnrollment": 31777,
+      "campusDemographics": {
+        "white": 20.5,
+        "black": 1.7,
+        "hispanicLatino": 24.6,
+        "asian": 31.3,
+        "nonresident": 13.1,
+        "men": 40.8,
+        "women": 59.2,
+        "age25OrOlder": 3.9
+      },
+      "localeCode": 23
+    },
+    "university-of-california-irvine": {
+      "unitId": "110653",
+      "name": "University of California-Irvine",
+      "city": "Irvine",
+      "stateCode": "CA",
+      "website": "https://www.uci.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 33.648434,
+        "lng": -117.841248
+      },
+      "undergraduateEnrollment": 29494,
+      "campusDemographics": {
+        "white": 12.9,
+        "black": 1.9,
+        "hispanicLatino": 26.2,
+        "asian": 38.6,
+        "nonresident": 11.9,
+        "men": 44.1,
+        "women": 55.9,
+        "age25OrOlder": 3.2
+      },
+      "localeCode": 11
+    },
+    "university-of-illinois-urbana-champaign": {
+      "unitId": "145637",
+      "name": "University of Illinois Urbana-Champaign",
+      "city": "Champaign",
+      "stateCode": "IL",
+      "website": "https://www.illinois.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 40.104718,
+        "lng": -88.229114
+      },
+      "undergraduateEnrollment": 34623,
+      "campusDemographics": {
+        "white": 38.7,
+        "black": 5.6,
+        "hispanicLatino": 13.9,
+        "asian": 23,
+        "nonresident": 13.7,
+        "men": 52.6,
+        "women": 47.3,
+        "age25OrOlder": 1.2
+      },
+      "localeCode": 13
+    },
+    "university-of-wisconsin-madison": {
+      "unitId": "240444",
+      "name": "University of Wisconsin-Madison",
+      "city": "Madison",
+      "stateCode": "WI",
+      "website": "https://www.wisc.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 43.075409,
+        "lng": -89.404098
+      },
+      "undergraduateEnrollment": 35665,
+      "campusDemographics": {
+        "white": 60.4,
+        "black": 2.5,
+        "hispanicLatino": 8.3,
+        "asian": 10.5,
+        "nonresident": 10,
+        "men": 47,
+        "women": 53,
+        "age25OrOlder": 3.4
+      },
+      "localeCode": 11
+    },
+    "ohio-state-university": {
+      "unitId": "204796",
+      "name": "Ohio State University-Main Campus",
+      "city": "Columbus",
+      "stateCode": "OH",
+      "website": "https://www.osu.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 39.999803,
+        "lng": -83.007525
+      },
+      "undergraduateEnrollment": 44617,
+      "campusDemographics": {
+        "white": 61.9,
+        "black": 7.9,
+        "hispanicLatino": 5.7,
+        "asian": 9.8,
+        "nonresident": 7.1,
+        "men": 49.5,
+        "women": 50.5,
+        "age25OrOlder": 5.6
+      },
+      "localeCode": 11
+    },
+    "rutgers-university": {
+      "unitId": "186380",
+      "name": "Rutgers University-New Brunswick",
+      "city": "New Brunswick",
+      "stateCode": "NJ",
+      "website": "https://newbrunswick.rutgers.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 40.498769,
+        "lng": -74.446251
+      },
+      "undergraduateEnrollment": 36357,
+      "campusDemographics": {
+        "white": 31.4,
+        "black": 6.8,
+        "hispanicLatino": 15.6,
+        "asian": 33.4,
+        "nonresident": 6.8,
+        "men": 49.9,
+        "women": 50.1,
+        "age25OrOlder": 4.9
+      },
+      "localeCode": 13
+    },
+    "university-of-maryland-college-park": {
+      "unitId": "163286",
+      "name": "University of Maryland-College Park",
+      "city": "College Park",
+      "stateCode": "MD",
+      "website": "https://www.umd.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 38.988178,
+        "lng": -76.944721
+      },
+      "undergraduateEnrollment": 30246,
+      "campusDemographics": {
+        "white": 39.8,
+        "black": 12.9,
+        "hispanicLatino": 10.7,
+        "asian": 24,
+        "nonresident": 3.2,
+        "men": 50.7,
+        "women": 49.3,
+        "age25OrOlder": 4.8
+      },
+      "localeCode": 21
+    },
+    "purdue-university": {
+      "unitId": "243780",
+      "name": "Purdue University-Main Campus",
+      "city": "West Lafayette",
+      "stateCode": "IN",
+      "website": "https://www.purdue.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 40.428206,
+        "lng": -86.914435
+      },
+      "undergraduateEnrollment": 39637,
+      "campusDemographics": {
+        "white": 59.1,
+        "black": 2.6,
+        "hispanicLatino": 7.3,
+        "asian": 14,
+        "nonresident": 10.2,
+        "men": 57.5,
+        "women": 42.5,
+        "age25OrOlder": 2.7
+      },
+      "localeCode": 13
+    },
+    "wake-forest-university": {
+      "unitId": "199847",
+      "name": "Wake Forest University",
+      "city": "Winston-Salem",
+      "stateCode": "NC",
+      "website": "https://www.wfu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 36.133609,
+        "lng": -80.277446
+      },
+      "undergraduateEnrollment": 5471,
+      "campusDemographics": {
+        "white": 64.3,
+        "black": 6.6,
+        "hispanicLatino": 9.6,
+        "asian": 5.3,
+        "nonresident": 7.6,
+        "men": 44.6,
+        "women": 55.4,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 11
+    },
+    "case-western-reserve-university": {
+      "unitId": "201645",
+      "name": "Case Western Reserve University",
+      "city": "Cleveland",
+      "stateCode": "OH",
+      "website": "https://www.case.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.507419,
+        "lng": -81.609596
+      },
+      "undergraduateEnrollment": 6108,
+      "campusDemographics": {
+        "white": 34.6,
+        "black": 6.4,
+        "hispanicLatino": 11.8,
+        "asian": 27.3,
+        "nonresident": 13.4,
+        "men": 52.2,
+        "women": 47.8,
+        "age25OrOlder": 1.2
+      },
+      "localeCode": 11
+    },
+    "lehigh-university": {
+      "unitId": "213543",
+      "name": "Lehigh University",
+      "city": "Bethlehem",
+      "stateCode": "PA",
+      "website": "https://www.lehigh.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.606822,
+        "lng": -75.380236
+      },
+      "undergraduateEnrollment": 5803,
+      "campusDemographics": {
+        "white": 58.8,
+        "black": 5.1,
+        "hispanicLatino": 10.9,
+        "asian": 10.8,
+        "nonresident": 7.5,
+        "men": 52.5,
+        "women": 47.5,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 13
+    },
+    "william-and-mary": {
+      "unitId": "231624",
+      "name": "William & Mary",
+      "city": "Williamsburg",
+      "stateCode": "VA",
+      "website": "https://www.wm.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 37.269489,
+        "lng": -76.708214
+      },
+      "undergraduateEnrollment": 6949,
+      "campusDemographics": {
+        "white": 60.7,
+        "black": 5.9,
+        "hispanicLatino": 8.9,
+        "asian": 11.6,
+        "nonresident": 3.9,
+        "men": 41,
+        "women": 59,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 23
+    },
+    "villanova-university": {
+      "unitId": "216597",
+      "name": "Villanova University",
+      "city": "Villanova",
+      "stateCode": "PA",
+      "website": "https://www.villanova.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.036463,
+        "lng": -75.340502
+      },
+      "undergraduateEnrollment": 7005,
+      "campusDemographics": {
+        "white": 68,
+        "black": 6.1,
+        "hispanicLatino": 10.9,
+        "asian": 7.4,
+        "nonresident": 1.9,
+        "men": 46.1,
+        "women": 53.9,
+        "age25OrOlder": 3.7
+      },
+      "localeCode": 21
+    },
+    "university-of-minnesota-twin-cities": {
+      "unitId": "174066",
+      "name": "University of Minnesota-Twin Cities",
+      "city": "Minneapolis",
+      "stateCode": "MN",
+      "website": "https://twin-cities.umn.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 44.972851,
+        "lng": -93.235464
+      },
+      "undergraduateEnrollment": 30469,
+      "campusDemographics": {
+        "white": 59.2,
+        "black": 8.9,
+        "hispanicLatino": 6,
+        "asian": 13.1,
+        "nonresident": 5.9,
+        "men": 46,
+        "women": 54,
+        "age25OrOlder": 5.3
+      },
+      "localeCode": 11
+    },
+    "university-of-rochester": {
+      "unitId": "195030",
+      "name": "University of Rochester",
+      "city": "Rochester",
+      "stateCode": "NY",
+      "website": "https://www.rochester.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 43.126397,
+        "lng": -77.631202
+      },
+      "undergraduateEnrollment": 6488,
+      "campusDemographics": {
+        "white": 38.7,
+        "black": 4.8,
+        "hispanicLatino": 8.3,
+        "asian": 17.6,
+        "nonresident": 23.3,
+        "men": 46.7,
+        "women": 53.3,
+        "age25OrOlder": 6.3
+      },
+      "localeCode": 12
+    },
+    "brandeis-university": {
+      "unitId": "165015",
+      "name": "Brandeis University",
+      "city": "Waltham",
+      "stateCode": "MA",
+      "website": "https://www.brandeis.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.365727,
+        "lng": -71.260155
+      },
+      "undergraduateEnrollment": 3663,
+      "campusDemographics": {
+        "white": 42.2,
+        "black": 5.7,
+        "hispanicLatino": 8.2,
+        "asian": 17.2,
+        "nonresident": 20.8,
+        "men": 42.5,
+        "women": 57.5,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 13
+    },
+    "uc-santa-barbara": {
+      "unitId": "110705",
+      "name": "University of California-Santa Barbara",
+      "city": "Santa Barbara",
+      "stateCode": "CA",
+      "website": "https://www.ucsb.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 34.416297,
+        "lng": -119.846426
+      },
+      "undergraduateEnrollment": 23205,
+      "campusDemographics": {
+        "white": 31.7,
+        "black": 2,
+        "hispanicLatino": 26,
+        "asian": 18.7,
+        "nonresident": 9.8,
+        "men": 43,
+        "women": 57,
+        "age25OrOlder": 2.2
+      },
+      "localeCode": 22
+    },
+    "uc-santa-cruz": {
+      "unitId": "110714",
+      "name": "University of California-Santa Cruz",
+      "city": "Santa Cruz",
+      "stateCode": "CA",
+      "website": "https://www.ucsc.edu",
+      "sector": "Public",
+      "coordinates": {
+        "lat": 36.995584,
+        "lng": -122.058801
+      },
+      "undergraduateEnrollment": 17812,
+      "campusDemographics": {
+        "white": 30.8,
+        "black": 1.9,
+        "hispanicLatino": 28.5,
+        "asian": 24.6,
+        "nonresident": 3.1,
+        "men": 48.4,
+        "women": 51.6,
+        "age25OrOlder": 3.6
+      },
+      "localeCode": 13
+    },
+    "pepperdine-university": {
+      "unitId": "121150",
+      "name": "Pepperdine University",
+      "city": "Malibu",
+      "stateCode": "CA",
+      "website": "https://www.pepperdine.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.037786,
+        "lng": -118.707077
+      },
+      "undergraduateEnrollment": 3629,
+      "campusDemographics": {
+        "white": 44.6,
+        "black": 3.6,
+        "hispanicLatino": 18.7,
+        "asian": 15,
+        "nonresident": 8.3,
+        "men": 41,
+        "women": 59,
+        "age25OrOlder": 3.1
+      },
+      "localeCode": 21
+    },
+    "williams-college": {
+      "unitId": "168342",
+      "name": "Williams College",
+      "city": "Williamstown",
+      "stateCode": "MA",
+      "website": "https://www.williams.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.712725,
+        "lng": -73.203132
+      },
+      "undergraduateEnrollment": 2060,
+      "campusDemographics": {
+        "white": 47.1,
+        "black": 5.1,
+        "hispanicLatino": 13.7,
+        "asian": 13.9,
+        "nonresident": 8.1,
+        "men": 48.7,
+        "women": 51.3,
+        "age25OrOlder": 1
+      },
+      "localeCode": 31
+    },
+    "swarthmore-college": {
+      "unitId": "216287",
+      "name": "Swarthmore College",
+      "city": "Swarthmore",
+      "stateCode": "PA",
+      "website": "https://www.swarthmore.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.905159,
+        "lng": -75.354278
+      },
+      "undergraduateEnrollment": 1627,
+      "campusDemographics": {
+        "white": 29.5,
+        "black": 9.4,
+        "hispanicLatino": 15.1,
+        "asian": 17.6,
+        "nonresident": 14.2,
+        "men": 48.6,
+        "women": 51.4,
+        "age25OrOlder": 0.5
+      },
+      "localeCode": 21
+    },
+    "wellesley-college": {
+      "unitId": "168218",
+      "name": "Wellesley College",
+      "city": "Wellesley",
+      "stateCode": "MA",
+      "website": "https://www.wellesley.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.291554,
+        "lng": -71.306605
+      },
+      "undergraduateEnrollment": 2318,
+      "campusDemographics": {
+        "white": 30.5,
+        "black": 8.5,
+        "hispanicLatino": 15.9,
+        "asian": 23.6,
+        "nonresident": 13.9,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 21
+    },
+    "bowdoin-college": {
+      "unitId": "161004",
+      "name": "Bowdoin College",
+      "city": "Brunswick",
+      "stateCode": "ME",
+      "website": "https://www.bowdoin.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 43.907134,
+        "lng": -69.963942
+      },
+      "undergraduateEnrollment": 1846,
+      "campusDemographics": {
+        "white": 52.6,
+        "black": 5.5,
+        "hispanicLatino": 13.4,
+        "asian": 11.1,
+        "nonresident": 6.8,
+        "men": 48.1,
+        "women": 51.9,
+        "age25OrOlder": 0.6
+      },
+      "localeCode": 31
+    },
+    "carleton-college": {
+      "unitId": "173258",
+      "name": "Carleton College",
+      "city": "Northfield",
+      "stateCode": "MN",
+      "website": "https://www.carleton.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.462318,
+        "lng": -93.154666
+      },
+      "undergraduateEnrollment": 2019,
+      "campusDemographics": {
+        "white": 51.6,
+        "black": 6.8,
+        "hispanicLatino": 10,
+        "asian": 10.4,
+        "nonresident": 9.8,
+        "men": 49.5,
+        "women": 50.5,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 32
+    },
+    "claremont-mckenna-college": {
+      "unitId": "112260",
+      "name": "Claremont McKenna College",
+      "city": "Claremont",
+      "stateCode": "CA",
+      "website": "https://www.cmc.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.102154,
+        "lng": -117.711188
+      },
+      "undergraduateEnrollment": 1379,
+      "campusDemographics": {
+        "white": 36.6,
+        "black": 5.1,
+        "hispanicLatino": 15.4,
+        "asian": 15.7,
+        "nonresident": 14.4,
+        "men": 49.8,
+        "women": 50.2,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 21
+    },
+    "davidson-college": {
+      "unitId": "198385",
+      "name": "Davidson College",
+      "city": "Davidson",
+      "stateCode": "NC",
+      "website": "https://davidson.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 35.499767,
+        "lng": -80.843979
+      },
+      "undergraduateEnrollment": 1901,
+      "campusDemographics": {
+        "white": 61.2,
+        "black": 6.8,
+        "hispanicLatino": 10.1,
+        "asian": 5.9,
+        "nonresident": 9.7,
+        "men": 46.9,
+        "women": 53.1,
+        "age25OrOlder": 0.1
+      },
+      "localeCode": 21
+    },
+    "haverford-college": {
+      "unitId": "212911",
+      "name": "Haverford College",
+      "city": "Haverford",
+      "stateCode": "PA",
+      "website": "https://www.haverford.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.007452,
+        "lng": -75.305207
+      },
+      "undergraduateEnrollment": 1421,
+      "campusDemographics": {
+        "white": 48.6,
+        "black": 5.2,
+        "hispanicLatino": 12.3,
+        "asian": 12.3,
+        "nonresident": 10.8,
+        "men": 43.4,
+        "women": 56.6,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 21
+    },
+    "vassar-college": {
+      "unitId": "197133",
+      "name": "Vassar College",
+      "city": "Poughkeepsie",
+      "stateCode": "NY",
+      "website": "https://www.vassar.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.686895,
+        "lng": -73.895088
+      },
+      "undergraduateEnrollment": 2430,
+      "campusDemographics": {
+        "white": 55.1,
+        "black": 3.9,
+        "hispanicLatino": 11.9,
+        "asian": 11.8,
+        "nonresident": 6.7,
+        "men": 37.9,
+        "women": 62.1,
+        "age25OrOlder": 1.3
+      },
+      "localeCode": 21
+    },
+    "washington-and-lee-university": {
+      "unitId": "234207",
+      "name": "Washington and Lee University",
+      "city": "Lexington",
+      "stateCode": "VA",
+      "website": "https://www.wlu.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 37.788939,
+        "lng": -79.443018
+      },
+      "undergraduateEnrollment": 1884,
+      "campusDemographics": {
+        "white": 70.1,
+        "black": 4.4,
+        "hispanicLatino": 8.4,
+        "asian": 4.3,
+        "nonresident": 7.1,
+        "men": 48.6,
+        "women": 51.4,
+        "age25OrOlder": 0.6
+      },
+      "localeCode": 32
+    },
+    "hamilton-college": {
+      "unitId": "191515",
+      "name": "Hamilton College",
+      "city": "Clinton",
+      "stateCode": "NY",
+      "website": "https://www.hamilton.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 43.050245,
+        "lng": -75.408195
+      },
+      "undergraduateEnrollment": 2045,
+      "campusDemographics": {
+        "white": 64.7,
+        "black": 2.9,
+        "hispanicLatino": 9,
+        "asian": 8.9,
+        "nonresident": 7.5,
+        "men": 44.5,
+        "women": 55.5,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 22
+    },
+    "colby-college": {
+      "unitId": "161086",
+      "name": "Colby College",
+      "city": "Waterville",
+      "stateCode": "ME",
+      "website": "https://www.colby.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.564211,
+        "lng": -69.66337
+      },
+      "undergraduateEnrollment": 2282,
+      "campusDemographics": {
+        "white": 53.5,
+        "black": 5.4,
+        "hispanicLatino": 8.3,
+        "asian": 10.7,
+        "nonresident": 11,
+        "men": 48.9,
+        "women": 51.1,
+        "age25OrOlder": 0.1
+      },
+      "localeCode": 33
+    },
+    "middlebury-college": {
+      "unitId": "230959",
+      "name": "Middlebury College",
+      "city": "Middlebury",
+      "stateCode": "VT",
+      "website": "https://www.middlebury.edu/college",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.009117,
+        "lng": -73.176068
+      },
+      "undergraduateEnrollment": 2785,
+      "campusDemographics": {
+        "white": 55.5,
+        "black": 5.6,
+        "hispanicLatino": 11.7,
+        "asian": 7.8,
+        "nonresident": 10.9,
+        "men": 46.8,
+        "women": 53.3,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 32
+    },
+    "grinnell-college": {
+      "unitId": "153384",
+      "name": "Grinnell College",
+      "city": "Grinnell",
+      "stateCode": "IA",
+      "website": "https://www.grinnell.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.747952,
+        "lng": -92.722094
+      },
+      "undergraduateEnrollment": 1705,
+      "campusDemographics": {
+        "white": 51.7,
+        "black": 5,
+        "hispanicLatino": 8.3,
+        "asian": 8.4,
+        "nonresident": 19.2,
+        "men": 45.9,
+        "women": 54.1,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 33
+    },
+    "colgate-university": {
+      "unitId": "190099",
+      "name": "Colgate University",
+      "city": "Hamilton",
+      "stateCode": "NY",
+      "website": "https://www.colgate.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.819475,
+        "lng": -75.536346
+      },
+      "undergraduateEnrollment": 3122,
+      "campusDemographics": {
+        "white": 64.7,
+        "black": 4.4,
+        "hispanicLatino": 9.4,
+        "asian": 5.5,
+        "nonresident": 8.3,
+        "men": 44,
+        "women": 56,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 42
+    },
+    "smith-college": {
+      "unitId": "167835",
+      "name": "Smith College",
+      "city": "Northampton",
+      "stateCode": "MA",
+      "website": "https://www.smith.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.318111,
+        "lng": -72.638097
+      },
+      "undergraduateEnrollment": 2501,
+      "campusDemographics": {
+        "white": 52.4,
+        "black": 5.1,
+        "hispanicLatino": 12.2,
+        "asian": 9.8,
+        "nonresident": 12.9,
+        "men": 0.1,
+        "women": 99.9,
+        "age25OrOlder": 2.1
+      },
+      "localeCode": 13
+    },
+    "harvey-mudd-college": {
+      "unitId": "115409",
+      "name": "Harvey Mudd College",
+      "city": "Claremont",
+      "stateCode": "CA",
+      "website": "https://www.hmc.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.106515,
+        "lng": -117.709837
+      },
+      "undergraduateEnrollment": 915,
+      "campusDemographics": {
+        "white": 23.1,
+        "black": 5.3,
+        "hispanicLatino": 23.2,
+        "asian": 22.3,
+        "nonresident": 10.4,
+        "men": 50.4,
+        "women": 49.6,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 21
+    },
+    "bryn-mawr-college": {
+      "unitId": "211273",
+      "name": "Bryn Mawr College",
+      "city": "Bryn Mawr",
+      "stateCode": "PA",
+      "website": "https://www.brynmawr.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.02736,
+        "lng": -75.313223
+      },
+      "undergraduateEnrollment": 1346,
+      "campusDemographics": {
+        "white": 50.1,
+        "black": 5.1,
+        "hispanicLatino": 10.2,
+        "asian": 11.4,
+        "nonresident": 13.2,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 21
+    },
+    "wesleyan-university": {
+      "unitId": "130697",
+      "name": "Wesleyan University",
+      "city": "Middletown",
+      "stateCode": "CT",
+      "website": "https://www.wesleyan.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.554665,
+        "lng": -72.657146
+      },
+      "undergraduateEnrollment": 2973,
+      "campusDemographics": {
+        "white": 54,
+        "black": 5.9,
+        "hispanicLatino": 10.3,
+        "asian": 9.3,
+        "nonresident": 10.4,
+        "men": 46.9,
+        "women": 53.1,
+        "age25OrOlder": 1.6
+      },
+      "localeCode": 13
+    },
+    "barnard-college": {
+      "unitId": "189097",
+      "name": "Barnard College",
+      "city": "New York",
+      "stateCode": "NY",
+      "website": "https://www.barnard.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.810098,
+        "lng": -73.963346
+      },
+      "undergraduateEnrollment": 3219,
+      "campusDemographics": {
+        "white": 34.5,
+        "black": 5.6,
+        "hispanicLatino": 15.6,
+        "asian": 20.4,
+        "nonresident": 14,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 11
+    },
+    "macalester-college": {
+      "unitId": "173902",
+      "name": "Macalester College",
+      "city": "Saint Paul",
+      "stateCode": "MN",
+      "website": "https://www.macalester.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.938565,
+        "lng": -93.168053
+      },
+      "undergraduateEnrollment": 2131,
+      "campusDemographics": {
+        "white": 51.7,
+        "black": 5.8,
+        "hispanicLatino": 11.3,
+        "asian": 8.5,
+        "nonresident": 13.3,
+        "men": 42.3,
+        "women": 57.7,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 11
+    },
+    "bates-college": {
+      "unitId": "160977",
+      "name": "Bates College",
+      "city": "Lewiston",
+      "stateCode": "ME",
+      "website": "https://www.bates.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.105299,
+        "lng": -70.203333
+      },
+      "undergraduateEnrollment": 1753,
+      "campusDemographics": {
+        "white": 61.4,
+        "black": 4.5,
+        "hispanicLatino": 8.8,
+        "asian": 6.6,
+        "nonresident": 9.5,
+        "men": 49.3,
+        "women": 50.7,
+        "age25OrOlder": 0.1
+      },
+      "localeCode": 13
+    },
+    "colorado-college": {
+      "unitId": "126678",
+      "name": "Colorado College",
+      "city": "Colorado Springs",
+      "stateCode": "CO",
+      "website": "https://www.coloradocollege.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 38.84886,
+        "lng": -104.822697
+      },
+      "undergraduateEnrollment": 2139,
+      "campusDemographics": {
+        "white": 67.5,
+        "black": 2.6,
+        "hispanicLatino": 11.3,
+        "asian": 5,
+        "nonresident": 5,
+        "men": 42.7,
+        "women": 57.3,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 11
+    },
+    "oberlin-college": {
+      "unitId": "204501",
+      "name": "Oberlin College",
+      "city": "Oberlin",
+      "stateCode": "OH",
+      "website": "https://www.oberlin.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.291992,
+        "lng": -82.216795
+      },
+      "undergraduateEnrollment": 2950,
+      "campusDemographics": {
+        "white": 62,
+        "black": 4.4,
+        "hispanicLatino": 8.2,
+        "asian": 5.3,
+        "nonresident": 9.5,
+        "men": 41.5,
+        "women": 58.5,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 31
+    },
+    "scripps-college": {
+      "unitId": "123165",
+      "name": "Scripps College",
+      "city": "Claremont",
+      "stateCode": "CA",
+      "website": "https://www.scrippscollege.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.104147,
+        "lng": -117.711294
+      },
+      "undergraduateEnrollment": 1077,
+      "campusDemographics": {
+        "white": 53.6,
+        "black": 4.1,
+        "hispanicLatino": 12.3,
+        "asian": 13.7,
+        "nonresident": 4,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 21
+    },
+    "franklin-and-marshall-college": {
+      "unitId": "212577",
+      "name": "Franklin and Marshall College",
+      "city": "Lancaster",
+      "stateCode": "PA",
+      "website": "https://www.fandm.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.048045,
+        "lng": -76.319037
+      },
+      "undergraduateEnrollment": 1904,
+      "campusDemographics": {
+        "white": 58.1,
+        "black": 5.1,
+        "hispanicLatino": 10.1,
+        "asian": 4.9,
+        "nonresident": 17.2,
+        "men": 47.3,
+        "women": 52.7,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 13
+    },
+    "college-of-the-holy-cross": {
+      "unitId": "166124",
+      "name": "College of the Holy Cross",
+      "city": "Worcester",
+      "stateCode": "MA",
+      "website": "https://www.holycross.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.23752,
+        "lng": -71.808214
+      },
+      "undergraduateEnrollment": 3015,
+      "campusDemographics": {
+        "white": 71.2,
+        "black": 4.2,
+        "hispanicLatino": 11.8,
+        "asian": 3.3,
+        "nonresident": 2.7,
+        "men": 45.5,
+        "women": 54.5,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 12
+    },
+    "kenyon-college": {
+      "unitId": "203535",
+      "name": "Kenyon College",
+      "city": "Gambier",
+      "stateCode": "OH",
+      "website": "https://www.kenyon.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.374408,
+        "lng": -82.397977
+      },
+      "undergraduateEnrollment": 1753,
+      "campusDemographics": {
+        "white": 66.7,
+        "black": 2.5,
+        "hispanicLatino": 7.6,
+        "asian": 4.7,
+        "nonresident": 11.5,
+        "men": 43.6,
+        "women": 56.4,
+        "age25OrOlder": 0.1
+      },
+      "localeCode": 41
+    },
+    "whitman-college": {
+      "unitId": "237057",
+      "name": "Whitman College",
+      "city": "Walla Walla",
+      "stateCode": "WA",
+      "website": "https://www.whitman.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 46.069815,
+        "lng": -118.331546
+      },
+      "undergraduateEnrollment": 1523,
+      "campusDemographics": {
+        "white": 58,
+        "black": 2.9,
+        "hispanicLatino": 11.7,
+        "asian": 5.5,
+        "nonresident": 14,
+        "men": 43.1,
+        "women": 56.9,
+        "age25OrOlder": 1.6
+      },
+      "localeCode": 13
+    },
+    "mount-holyoke-college": {
+      "unitId": "166939",
+      "name": "Mount Holyoke College",
+      "city": "South Hadley",
+      "stateCode": "MA",
+      "website": "https://www.mtholyoke.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.25489,
+        "lng": -72.573916
+      },
+      "undergraduateEnrollment": 2198,
+      "campusDemographics": {
+        "white": 50.4,
+        "black": 5.5,
+        "hispanicLatino": 9.2,
+        "asian": 7.1,
+        "nonresident": 22.1,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 2.4
+      },
+      "localeCode": 21
+    },
+    "skidmore-college": {
+      "unitId": "195526",
+      "name": "Skidmore College",
+      "city": "Saratoga Springs",
+      "stateCode": "NY",
+      "website": "https://www.skidmore.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 43.097035,
+        "lng": -73.785335
+      },
+      "undergraduateEnrollment": 2760,
+      "campusDemographics": {
+        "white": 64.1,
+        "black": 4.3,
+        "hispanicLatino": 9.8,
+        "asian": 5.7,
+        "nonresident": 8.7,
+        "men": 41.3,
+        "women": 58.7,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 23
+    },
+    "pitzer-college": {
+      "unitId": "121257",
+      "name": "Pitzer College",
+      "city": "Claremont",
+      "stateCode": "CA",
+      "website": "https://www.pitzer.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.104107,
+        "lng": -117.706675
+      },
+      "undergraduateEnrollment": 1191,
+      "campusDemographics": {
+        "white": 48.6,
+        "black": 4.5,
+        "hispanicLatino": 12.8,
+        "asian": 11.9,
+        "nonresident": 8.1,
+        "men": 40.4,
+        "women": 59.6,
+        "age25OrOlder": 1.4
+      },
+      "localeCode": 21
+    },
+    "trinity-college-ct": {
+      "unitId": "130590",
+      "name": "Trinity College",
+      "city": "Hartford",
+      "stateCode": "CT",
+      "website": "https://www.trincoll.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.747451,
+        "lng": -72.690882
+      },
+      "undergraduateEnrollment": 2193,
+      "campusDemographics": {
+        "white": 61,
+        "black": 5.6,
+        "hispanicLatino": 9.1,
+        "asian": 4.5,
+        "nonresident": 13.8,
+        "men": 47.4,
+        "women": 52.6,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 12
+    },
+    "lafayette-college": {
+      "unitId": "213385",
+      "name": "Lafayette College",
+      "city": "Easton",
+      "stateCode": "PA",
+      "website": "https://www.lafayette.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.69956,
+        "lng": -75.209786
+      },
+      "undergraduateEnrollment": 2746,
+      "campusDemographics": {
+        "white": 68.3,
+        "black": 5.6,
+        "hispanicLatino": 8.8,
+        "asian": 3.7,
+        "nonresident": 6.8,
+        "men": 51.1,
+        "women": 48.9,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 21
+    },
+    "bucknell-university": {
+      "unitId": "211291",
+      "name": "Bucknell University",
+      "city": "Lewisburg",
+      "stateCode": "PA",
+      "website": "https://www.bucknell.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.954317,
+        "lng": -76.882616
+      },
+      "undergraduateEnrollment": 3818,
+      "campusDemographics": {
+        "white": 74.6,
+        "black": 4.4,
+        "hispanicLatino": 8,
+        "asian": 4.5,
+        "nonresident": 4.4,
+        "men": 47.2,
+        "women": 52.8,
+        "age25OrOlder": 0.5
+      },
+      "localeCode": 32
+    },
+    "denison-university": {
+      "unitId": "202523",
+      "name": "Denison University",
+      "city": "Granville",
+      "stateCode": "OH",
+      "website": "https://www.denison.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.071505,
+        "lng": -82.523272
+      },
+      "undergraduateEnrollment": 2398,
+      "campusDemographics": {
+        "white": 60.3,
+        "black": 5.4,
+        "hispanicLatino": 7.1,
+        "asian": 4.3,
+        "nonresident": 17.1,
+        "men": 47.6,
+        "women": 52.4,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 23
+    },
+    "sewanee-university-of-the-south": {
+      "unitId": "221519",
+      "name": "The University of the South",
+      "city": "Sewanee",
+      "stateCode": "TN",
+      "website": "https://www.sewanee.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 35.204719,
+        "lng": -85.920179
+      },
+      "undergraduateEnrollment": 1598,
+      "campusDemographics": {
+        "white": 80.9,
+        "black": 3.9,
+        "hispanicLatino": 6.5,
+        "asian": 0.9,
+        "nonresident": 4.5,
+        "men": 46.9,
+        "women": 53.1,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 42
+    },
+    "union-college": {
+      "unitId": "196866",
+      "name": "Union College",
+      "city": "Schenectady",
+      "stateCode": "NY",
+      "website": "https://www.union.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 42.818097,
+        "lng": -73.928788
+      },
+      "undergraduateEnrollment": 2070,
+      "campusDemographics": {
+        "white": 66.1,
+        "black": 4,
+        "hispanicLatino": 9.1,
+        "asian": 6.9,
+        "nonresident": 10.1,
+        "men": 55,
+        "women": 45,
+        "age25OrOlder": 1.6
+      },
+      "localeCode": 13
+    },
+    "connecticut-college": {
+      "unitId": "128902",
+      "name": "Connecticut College",
+      "city": "New London",
+      "stateCode": "CT",
+      "website": "https://www.conncoll.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 41.379833,
+        "lng": -72.107321
+      },
+      "undergraduateEnrollment": 1960,
+      "campusDemographics": {
+        "white": 68.7,
+        "black": 4.4,
+        "hispanicLatino": 11.6,
+        "asian": 3.6,
+        "nonresident": 6.1,
+        "men": 38.9,
+        "women": 61.1,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 13
+    },
+    "rhodes-college": {
+      "unitId": "221351",
+      "name": "Rhodes College",
+      "city": "Memphis",
+      "stateCode": "TN",
+      "website": "https://www.rhodes.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 35.154405,
+        "lng": -89.990803
+      },
+      "undergraduateEnrollment": 1931,
+      "campusDemographics": {
+        "white": 62,
+        "black": 9.7,
+        "hispanicLatino": 7,
+        "asian": 8.8,
+        "nonresident": 2.8,
+        "men": 41.8,
+        "women": 58.2,
+        "age25OrOlder": 1.8
+      },
+      "localeCode": 11
+    },
+    "st-olaf-college": {
+      "unitId": "174844",
+      "name": "St Olaf College",
+      "city": "Northfield",
+      "stateCode": "MN",
+      "website": "https://wp.stolaf.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 44.461529,
+        "lng": -93.182039
+      },
+      "undergraduateEnrollment": 3049,
+      "campusDemographics": {
+        "white": 66.7,
+        "black": 3.2,
+        "hispanicLatino": 9.3,
+        "asian": 5.8,
+        "nonresident": 9.9,
+        "men": 42.2,
+        "women": 57.8,
+        "age25OrOlder": 0.5
+      },
+      "localeCode": 32
+    },
+    "reed-college": {
+      "unitId": "209922",
+      "name": "Reed College",
+      "city": "Portland",
+      "stateCode": "OR",
+      "website": "https://www.reed.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 45.480959,
+        "lng": -122.630348
+      },
+      "undergraduateEnrollment": 1407,
+      "campusDemographics": {
+        "white": 59.8,
+        "black": 1.4,
+        "hispanicLatino": 12,
+        "asian": 8.5,
+        "nonresident": 7.2,
+        "men": 41.6,
+        "women": 58.4,
+        "age25OrOlder": 1.1
+      },
+      "localeCode": 11
+    },
+    "gettysburg-college": {
+      "unitId": "212674",
+      "name": "Gettysburg College",
+      "city": "Gettysburg",
+      "stateCode": "PA",
+      "website": "https://www.gettysburg.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.836597,
+        "lng": -77.236792
+      },
+      "undergraduateEnrollment": 2209,
+      "campusDemographics": {
+        "white": 63.9,
+        "black": 5,
+        "hispanicLatino": 11.1,
+        "asian": 2.7,
+        "nonresident": 11.6,
+        "men": 48.9,
+        "women": 51.1,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 31
+    },
+    "dickinson-college": {
+      "unitId": "212009",
+      "name": "Dickinson College",
+      "city": "Carlisle",
+      "stateCode": "PA",
+      "website": "https://www.dickinson.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.202796,
+        "lng": -77.197854
+      },
+      "undergraduateEnrollment": 2157,
+      "campusDemographics": {
+        "white": 65,
+        "black": 3.9,
+        "hispanicLatino": 7.5,
+        "asian": 5.1,
+        "nonresident": 13.3,
+        "men": 39.8,
+        "women": 60.2,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 13
+    },
+    "furman-university": {
+      "unitId": "218070",
+      "name": "Furman University",
+      "city": "Greenville",
+      "stateCode": "SC",
+      "website": "https://www.furman.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.924676,
+        "lng": -82.440458
+      },
+      "undergraduateEnrollment": 2322,
+      "campusDemographics": {
+        "white": 73.2,
+        "black": 6.8,
+        "hispanicLatino": 7.1,
+        "asian": 3.4,
+        "nonresident": 4.9,
+        "men": 42.6,
+        "women": 57.4,
+        "age25OrOlder": 0.4
+      },
+      "localeCode": 21
+    },
+    "sarah-lawrence-college": {
+      "unitId": "195304",
+      "name": "Sarah Lawrence College",
+      "city": "Bronxville",
+      "stateCode": "NY",
+      "website": "https://www.sarahlawrence.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.9355,
+        "lng": -73.843727
+      },
+      "undergraduateEnrollment": 1468,
+      "campusDemographics": {
+        "white": 61.4,
+        "black": 4.4,
+        "hispanicLatino": 10.9,
+        "asian": 4.9,
+        "nonresident": 5,
+        "men": 19.7,
+        "women": 80.3,
+        "age25OrOlder": 0.7
+      },
+      "localeCode": 21
+    },
+    "depauw-university": {
+      "unitId": "150400",
+      "name": "DePauw University",
+      "city": "Greencastle",
+      "stateCode": "IN",
+      "website": "https://www.depauw.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.640904,
+        "lng": -86.860363
+      },
+      "undergraduateEnrollment": 1804,
+      "campusDemographics": {
+        "white": 57.6,
+        "black": 5.8,
+        "hispanicLatino": 7.8,
+        "asian": 2.4,
+        "nonresident": 22.8,
+        "men": 50.4,
+        "women": 49.6,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 32
+    },
+    "centre-college": {
+      "unitId": "156408",
+      "name": "Centre College",
+      "city": "Danville",
+      "stateCode": "KY",
+      "website": "https://www.centre.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 37.645709,
+        "lng": -84.779392
+      },
+      "undergraduateEnrollment": 1346,
+      "campusDemographics": {
+        "white": 73.6,
+        "black": 5.3,
+        "hispanicLatino": 7.9,
+        "asian": 4.4,
+        "nonresident": 4.4,
+        "men": 47.9,
+        "women": 52.1,
+        "age25OrOlder": 0.3
+      },
+      "localeCode": 32
+    },
+    "occidental-college": {
+      "unitId": "120254",
+      "name": "Occidental College",
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "website": "https://www.oxy.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 34.127124,
+        "lng": -118.210908
+      },
+      "undergraduateEnrollment": 1844,
+      "campusDemographics": {
+        "white": 48,
+        "black": 4.1,
+        "hispanicLatino": 17.5,
+        "asian": 13.3,
+        "nonresident": 4.1,
+        "men": 41.2,
+        "women": 58.8,
+        "age25OrOlder": 0.5
+      },
+      "localeCode": 11
+    },
+    "st-johns-college": {
+      "unitId": "163976",
+      "name": "St. John's College",
+      "city": "Annapolis",
+      "stateCode": "MD",
+      "website": "https://www.sjc.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 38.981598,
+        "lng": -76.491359
+      },
+      "undergraduateEnrollment": 488,
+      "campusDemographics": {
+        "white": 63.3,
+        "black": 2.3,
+        "hispanicLatino": 6.6,
+        "asian": 3.9,
+        "nonresident": 15,
+        "men": 50.6,
+        "women": 49.4,
+        "age25OrOlder": 3.5
+      },
+      "localeCode": 21
+    },
+    "agnes-scott-college": {
+      "unitId": "138600",
+      "name": "Agnes Scott College",
+      "city": "Decatur",
+      "stateCode": "GA",
+      "website": "https://www.agnesscott.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 33.769268,
+        "lng": -84.295459
+      },
+      "undergraduateEnrollment": 898,
+      "campusDemographics": {
+        "white": 40.1,
+        "black": 31.4,
+        "hispanicLatino": 13.9,
+        "asian": 4.5,
+        "nonresident": 2.1,
+        "men": 0,
+        "women": 100,
+        "age25OrOlder": 0.8
+      },
+      "localeCode": 21
+    },
+    "trinity-university": {
+      "unitId": "229267",
+      "name": "Trinity University",
+      "city": "San Antonio",
+      "stateCode": "TX",
+      "website": "https://new.trinity.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 29.462682,
+        "lng": -98.48186
+      },
+      "undergraduateEnrollment": 2518,
+      "campusDemographics": {
+        "white": 52.4,
+        "black": 4.3,
+        "hispanicLatino": 24.7,
+        "asian": 7.7,
+        "nonresident": 4.7,
+        "men": 46.4,
+        "women": 53.6,
+        "age25OrOlder": 0.8
+      },
+      "localeCode": 11
+    },
+    "wooster-college": {
+      "unitId": "206589",
+      "name": "The College of Wooster",
+      "city": "Wooster",
+      "stateCode": "OH",
+      "website": "https://wooster.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 40.81046,
+        "lng": -81.934674
+      },
+      "undergraduateEnrollment": 1876,
+      "campusDemographics": {
+        "white": 60.7,
+        "black": 9.1,
+        "hispanicLatino": 6.5,
+        "asian": 4.2,
+        "nonresident": 14.2,
+        "men": 47.8,
+        "women": 52.2,
+        "age25OrOlder": 0.2
+      },
+      "localeCode": 32
+    },
+    "goucher-college": {
+      "unitId": "162654",
+      "name": "Goucher College",
+      "city": "Baltimore",
+      "stateCode": "MD",
+      "website": "https://www.goucher.edu",
+      "sector": "Private",
+      "coordinates": {
+        "lat": 39.410175,
+        "lng": -76.594843
+      },
+      "undergraduateEnrollment": 948,
+      "campusDemographics": {
+        "white": 48.2,
+        "black": 28.3,
+        "hispanicLatino": 7.3,
+        "asian": 4.9,
+        "nonresident": 3.2,
+        "men": 34.1,
+        "women": 65.9,
+        "age25OrOlder": 2.3
+      },
+      "localeCode": 13
+    }
+  }
+}

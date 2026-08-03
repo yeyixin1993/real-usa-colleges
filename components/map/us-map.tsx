@@ -7,12 +7,21 @@ import usAtlas from 'us-atlas/states-10m.json';
 
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { getGrade } from '@/lib/grades';
 import { cn } from '@/lib/utils';
-import type { Locale, School } from '@/types/school';
+import type { Locale, PublicSchool } from '@/types/school';
 
 const MAP_WIDTH = 1000;
 const MAP_HEIGHT = 620;
+const fipsToStateCode: Record<string, string> = {
+  '01': 'AL', '02': 'AK', '04': 'AZ', '05': 'AR', '06': 'CA', '08': 'CO', '09': 'CT',
+  '10': 'DE', '11': 'DC', '12': 'FL', '13': 'GA', '15': 'HI', '16': 'ID', '17': 'IL',
+  '18': 'IN', '19': 'IA', '20': 'KS', '21': 'KY', '22': 'LA', '23': 'ME', '24': 'MD',
+  '25': 'MA', '26': 'MI', '27': 'MN', '28': 'MS', '29': 'MO', '30': 'MT', '31': 'NE',
+  '32': 'NV', '33': 'NH', '34': 'NJ', '35': 'NM', '36': 'NY', '37': 'NC', '38': 'ND',
+  '39': 'OH', '40': 'OK', '41': 'OR', '42': 'PA', '44': 'RI', '45': 'SC', '46': 'SD',
+  '47': 'TN', '48': 'TX', '49': 'UT', '50': 'VT', '51': 'VA', '53': 'WA', '54': 'WV',
+  '55': 'WI', '56': 'WY',
+};
 
 export function UsMap({
   schools,
@@ -21,40 +30,71 @@ export function UsMap({
   showLinks = true,
   fullPage = false,
 }: {
-  schools: School[];
+  schools: PublicSchool[];
   locale: Locale;
   selectedSlug?: string;
   showLinks?: boolean;
   fullPage?: boolean;
 }) {
   const [hovered, setHovered] = useState<string | null>(selectedSlug ?? null);
+  const [selectedStateCode, setSelectedStateCode] = useState<string | null>(null);
+
+  const stateOptions = useMemo(
+    () =>
+      [...new Map(schools.map((school) => [school.stateCode, school.state])).entries()]
+        .map(([code, name]) => ({ code, name }))
+        .sort((left, right) => left.name.localeCompare(right.name)),
+    [schools],
+  );
+  const activeStateCode = stateOptions.some((state) => state.code === selectedStateCode)
+    ? selectedStateCode
+    : null;
+  const stateSchools = useMemo(
+    () => (activeStateCode ? schools.filter((school) => school.stateCode === activeStateCode) : schools),
+    [activeStateCode, schools],
+  );
 
   const activeSchool = useMemo(
-    () => schools.find((school) => school.slug === (hovered ?? selectedSlug)) ?? schools[0],
-    [hovered, schools, selectedSlug],
+    () => stateSchools.find((school) => school.slug === (hovered ?? selectedSlug)) ?? stateSchools[0],
+    [hovered, selectedSlug, stateSchools],
   );
+
+  const selectState = (stateCode: string | null) => {
+    setSelectedStateCode(stateCode);
+    const firstSchool = stateCode ? schools.find((school) => school.stateCode === stateCode) : schools[0];
+    setHovered(firstSchool?.slug ?? null);
+  };
 
   const mapData = useMemo(() => {
     const topology = (usAtlas as any)?.objects ? (usAtlas as any) : (usAtlas as any)?.default;
 
     if (!topology?.objects?.states) {
-      return { statePaths: [], markers: [] as Array<{ slug: string; school: School; x: number; y: number }> };
+      return { statePaths: [], markers: [] as Array<{ slug: string; school: PublicSchool; x: number; y: number }> };
     }
 
     const states = feature(topology, topology.objects.states) as any;
 
-    const projection = geoAlbersUsa().fitSize([MAP_WIDTH, MAP_HEIGHT], states as any);
+    const selectedFeature = activeStateCode
+      ? (states.features as any[]).find(
+          (state) => fipsToStateCode[String(state.id).padStart(2, '0')] === activeStateCode,
+        )
+      : null;
+    const projection = selectedFeature
+      ? geoAlbersUsa().fitExtent([[60, 40], [MAP_WIDTH - 60, MAP_HEIGHT - 40]], selectedFeature as any)
+      : geoAlbersUsa().fitSize([MAP_WIDTH, MAP_HEIGHT], states as any);
     const pathGenerator = geoPath(projection);
 
-    const statePaths = (states.features as any[])
+    const statePaths = (selectedFeature ? [selectedFeature] : (states.features as any[]))
       .map((state) => {
         const d = pathGenerator(state as never);
         if (!d) return null;
-        return { id: state.id, d };
+        const stateCode = fipsToStateCode[String(state.id).padStart(2, '0')] ?? null;
+        return { id: state.id, d, stateCode };
       })
-      .filter(Boolean) as Array<{ id: string; d: string }>;
+      .filter(Boolean) as Array<{ id: string; d: string; stateCode: string | null }>;
 
-    const markers = schools
+    const markers = stateSchools
+      .filter((school) => school.verification?.verifiedFields.includes('coordinates'))
       .map((school) => {
         const point = projection([school.coordinates.lng, school.coordinates.lat]);
         if (!point) return null;
@@ -66,15 +106,35 @@ export function UsMap({
           y,
         };
       })
-      .filter(Boolean) as Array<{ slug: string; school: School; x: number; y: number }>;
+      .filter(Boolean) as Array<{ slug: string; school: PublicSchool; x: number; y: number }>;
 
     return { statePaths, markers };
-  }, [schools]);
+  }, [activeStateCode, stateSchools]);
 
   return (
     <div className={cn('grid gap-4', fullPage ? 'xl:grid-cols-[1.8fr_0.7fr]' : 'lg:grid-cols-[1.4fr_0.6fr]')}>
       <Card className="relative overflow-hidden p-4 md:p-6">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.12),_transparent_45%),linear-gradient(180deg,_rgba(248,250,252,0.95),_rgba(241,245,249,0.9))]" />
+
+        <div className="relative z-10 mb-4 flex flex-wrap items-center gap-3">
+          <label className="text-sm font-medium text-slate-600">
+            <span className="sr-only">Select a state</span>
+            <select
+              value={activeStateCode ?? ''}
+              onChange={(event) => selectState(event.target.value || null)}
+              className="h-10 rounded-xl border border-slate-300 bg-white px-3"
+            >
+              <option value="">All United States</option>
+              {stateOptions.map((state) => <option key={state.code} value={state.code}>{state.name}</option>)}
+            </select>
+          </label>
+          {activeStateCode ? (
+            <button type="button" onClick={() => selectState(null)} className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+              Reset U.S. view
+            </button>
+          ) : null}
+          <span className="text-xs text-slate-500">Select a state or click it on the map to zoom and list schools.</span>
+        </div>
 
         <div className={cn('relative z-10 w-full overflow-hidden rounded-2xl border border-slate-200/70 bg-white', fullPage ? 'h-[72vh] min-h-[560px]' : 'aspect-[16/10]')}>
           <svg viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} className="absolute inset-0 h-full w-full">
@@ -90,10 +150,18 @@ export function UsMap({
               <path
                 key={state.id}
                 d={state.d}
-                fill="#f8fafc"
+                fill={activeStateCode ? '#dbeafe' : state.stateCode && stateOptions.some((item) => item.code === state.stateCode) ? '#f8fafc' : '#f1f5f9'}
                 stroke="#64748b"
                 strokeOpacity="0.65"
                 strokeWidth="0.9"
+                role={state.stateCode && stateOptions.some((item) => item.code === state.stateCode) ? 'button' : undefined}
+                aria-label={state.stateCode ? `Zoom to ${state.stateCode}` : undefined}
+                tabIndex={state.stateCode && stateOptions.some((item) => item.code === state.stateCode) ? 0 : undefined}
+                className={state.stateCode && stateOptions.some((item) => item.code === state.stateCode) ? 'cursor-pointer transition hover:fill-blue-100' : undefined}
+                onClick={() => state.stateCode && stateOptions.some((item) => item.code === state.stateCode) && selectState(state.stateCode)}
+                onKeyDown={(event) => {
+                  if ((event.key === 'Enter' || event.key === ' ') && state.stateCode) selectState(state.stateCode);
+                }}
               />
             ))}
 
@@ -153,8 +221,26 @@ export function UsMap({
       {activeSchool ? (
         <Card className={cn('p-6', fullPage ? 'xl:h-full' : undefined)}>
           <div className="space-y-4">
+            {activeStateCode ? (
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">Schools in {activeSchool.state}</p>
+                <div className="mt-3 max-h-56 space-y-2 overflow-y-auto pr-1">
+                  {stateSchools.map((school) => (
+                    <a
+                      key={school.slug}
+                      href={`/${locale}/schools/${school.slug}`}
+                      onMouseEnter={() => setHovered(school.slug)}
+                      onFocus={() => setHovered(school.slug)}
+                      className={cn('block rounded-2xl border px-3 py-2 text-sm transition', school.slug === activeSchool.slug ? 'border-blue-300 bg-blue-50 text-blue-950' : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50')}
+                    >
+                      {school.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
             <div className="space-y-2">
-              <Badge>{activeSchool.schoolType}</Badge>
+              <Badge>{activeSchool.sector}</Badge>
               <h3 className="text-xl font-semibold text-slate-950">{activeSchool.name}</h3>
               <p className="text-sm text-slate-500">
                 {activeSchool.city}, {activeSchool.state}
@@ -162,21 +248,14 @@ export function UsMap({
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               <div className="rounded-3xl bg-slate-950 px-4 py-5 text-white">
-                <p className="text-xs uppercase tracking-[0.2em] text-white/65">Overall</p>
-                <div className="mt-3 flex items-end gap-3">
-                  <span className="text-4xl font-semibold">{activeSchool.scores.overall}</span>
-                  <span className="text-base font-medium text-white/70">{activeSchool.scoreGrades?.overall ?? getGrade(activeSchool.scores.overall)}</span>
-                </div>
+                <p className="text-xs uppercase tracking-[0.2em] text-white/65">Verified location</p>
+                <p className="mt-3 text-sm leading-6 text-white/80">
+                  U.S. Department of Education College Scorecard · UNITID {activeSchool.verification?.unitId}
+                </p>
               </div>
               <div className="space-y-2">
-                <p className="text-sm font-medium text-slate-500">{activeSchool.rankingLabel}</p>
-                <div className="flex flex-wrap gap-2">
-                  {activeSchool.tags.map((tag) => (
-                    <span key={tag} className={cn('rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600')}>
-                      {tag.replaceAll('_', ' ')}
-                    </span>
-                  ))}
-                </div>
+                <p className="text-sm font-medium text-slate-500">{activeSchool.sector}</p>
+                <p className="text-xs leading-5 text-slate-500">Map pins use the federal dataset coordinates and never a city or state fallback.</p>
               </div>
             </div>
           </div>

@@ -6,16 +6,23 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { MobilityProfile } from '@/types/mobility';
 import type { ScoringConfig } from '@/types/scoring';
-import type { AccessibilityPoint, Grade, School, ScoreKey } from '@/types/school';
+import type { AccessibilityPoint, AirportMetricKey, Grade, School, ScoreKey, VerificationGroup } from '@/types/school';
 
 type SchoolListItem = Pick<School, 'slug' | 'name' | 'city' | 'state'>;
 
-function NumberInput({ value, onChange, step = '0.1' }: { value: number; onChange: (v: number) => void; step?: string }) {
+const verificationGroupLabels: Record<VerificationGroup, string> = {
+  climateDetails: 'Climate details（降水 / 降雪 / 湿度）',
+  convenience: 'Convenience（附近地点 / 路线 / Uber 可用性）',
+  airport: 'Airport（机场 / 距离 / 行程时间）',
+  scores: 'Scores（各项评分）',
+};
+
+function NumberInput({ value, onChange, step = '0.1' }: { value?: number | null; onChange: (v: number) => void; step?: string }) {
   return (
     <input
       type="number"
       step={step}
-      value={Number.isFinite(value) ? value : 0}
+      value={typeof value === 'number' && Number.isFinite(value) ? value : ''}
       onChange={(event) => onChange(Number(event.target.value))}
       className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
     />
@@ -33,6 +40,11 @@ function TextInput({ value, onChange }: { value: string; onChange: (v: string) =
   );
 }
 
+function validWeightGroup(values: number[]) {
+  return values.every((value) => Number.isFinite(value) && value >= 0 && value <= 1)
+    && Math.abs(values.reduce((sum, value) => sum + value, 0) - 1) < 0.0001;
+}
+
 export function AdminConsole({ locale, authenticated }: { locale: string; authenticated: boolean }) {
   const [username, setUsername] = useState('admin');
   const [password, setPassword] = useState('admin');
@@ -40,7 +52,7 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
   const [schools, setSchools] = useState<SchoolListItem[]>([]);
   const [selectedSlug, setSelectedSlug] = useState('');
   const [draft, setDraft] = useState<School | null>(null);
-  const [mobilityDraft, setMobilityDraft] = useState<MobilityProfile | null>(null);
+  const [mobilityDraft, setMobilityDraft] = useState<Partial<MobilityProfile> | null>(null);
   const [scoringConfig, setScoringConfig] = useState<ScoringConfig | null>(null);
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -100,7 +112,7 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
     const run = async () => {
       const response = await fetch(`/api/admin/mobility/${selectedSlug}`, { cache: 'no-store' });
       if (!response.ok) return;
-      const data = (await response.json()) as { mobility: MobilityProfile };
+      const data = (await response.json()) as { mobility: Partial<MobilityProfile> };
       setMobilityDraft(data.mobility);
     };
 
@@ -180,8 +192,51 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
     });
   }
 
+  function updateFieldSource(
+    section: VerificationGroup,
+    key: 'label' | 'url' | 'checkedAt' | 'notes',
+    value: string,
+  ) {
+    if (!draft) return;
+    setDraft({
+      ...draft,
+      fieldSources: {
+        ...(draft.fieldSources ?? {}),
+        [section]: {
+          label: draft.fieldSources?.[section]?.label ?? '',
+          url: draft.fieldSources?.[section]?.url ?? '',
+          ...(draft.fieldSources?.[section] ?? {}),
+          [key]: value,
+        },
+      },
+    });
+  }
+
+  function updateAirportMetricSource(metric: AirportMetricKey, key: 'label' | 'url' | 'checkedAt', value: string) {
+    if (!draft) return;
+    const current = draft.airportAccess.metricSources?.[metric];
+    setDraft({
+      ...draft,
+      airportAccess: {
+        ...draft.airportAccess,
+        metricSources: {
+          ...(draft.airportAccess.metricSources ?? {}),
+          [metric]: { label: current?.label ?? '', url: current?.url ?? '', checkedAt: current?.checkedAt, [key]: value },
+        },
+      },
+    });
+  }
+
   async function save() {
     if (!draft) return;
+    if (scoringConfig && !validWeightGroup(Object.values(scoringConfig.rankingWeights))) {
+      setStatus('冷 / 村 / 白三个排名权重必须都在 0–1 之间，且合计为 1.00。');
+      return;
+    }
+    if (scoringConfig && !validWeightGroup(Object.values(scoringConfig.coldRankingWeights))) {
+      setStatus('1 月低温 / 年降雪量两个冷排名权重必须都在 0–1 之间，且合计为 1.00。');
+      return;
+    }
     setSaving(true);
     setStatus(null);
 
@@ -219,8 +274,9 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
       });
 
       if (!configResponse.ok) {
+        const configError = await configResponse.json().catch(() => null) as { error?: string } | null;
         setSaving(false);
-        setStatus('评分常量保存失败，请稍后重试。');
+        setStatus(configError?.error ?? '评分常量保存失败，请稍后重试。');
         return;
       }
     }
@@ -294,6 +350,35 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
 
       {draft ? (
         <div className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>数据核实来源（填写来源名称和网址后，前台显示“已核实”）</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-5">
+              {(['climateDetails', 'convenience', 'airport', 'scores'] as const).map((section) => (
+                <div key={section} className="grid gap-3 rounded-2xl border border-slate-200 p-4 md:grid-cols-3">
+                  <p className="font-medium text-slate-800">{verificationGroupLabels[section]}</p>
+                  <div>
+                    <p className="mb-1 text-xs text-slate-500">Source label</p>
+                    <TextInput value={draft.fieldSources?.[section]?.label ?? ''} onChange={(value) => updateFieldSource(section, 'label', value)} />
+                  </div>
+                  <div>
+                    <p className="mb-1 text-xs text-slate-500">Source URL</p>
+                    <TextInput value={draft.fieldSources?.[section]?.url ?? ''} onChange={(value) => updateFieldSource(section, 'url', value)} />
+                  </div>
+                  <div>
+                    <p className="mb-1 text-xs text-slate-500">Checked date (YYYY-MM-DD)</p>
+                    <TextInput value={draft.fieldSources?.[section]?.checkedAt ?? ''} onChange={(value) => updateFieldSource(section, 'checkedAt', value)} />
+                  </div>
+                  <div className="md:col-span-2">
+                    <p className="mb-1 text-xs text-slate-500">Notes / method</p>
+                    <TextInput value={draft.fieldSources?.[section]?.notes ?? ''} onChange={(value) => updateFieldSource(section, 'notes', value)} />
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <CardTitle>基本信息 / 摘要</CardTitle>
@@ -455,6 +540,17 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                   className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
                 />
               </div>
+              <div className="space-y-3 md:col-span-2">
+                <p className="text-sm font-medium text-slate-700">逐项核实来源（只标记对应指标）</p>
+                {(['airport', 'distance', 'drive', 'transit', 'connectivity'] as const).map((metric) => (
+                  <div key={metric} className="grid gap-3 rounded-2xl border border-slate-200 p-3 md:grid-cols-[0.6fr_1fr_1fr_0.7fr]">
+                    <p className="text-sm font-medium text-slate-700">{metric}</p>
+                    <TextInput value={draft.airportAccess.metricSources?.[metric]?.label ?? ''} onChange={(value) => updateAirportMetricSource(metric, 'label', value)} />
+                    <TextInput value={draft.airportAccess.metricSources?.[metric]?.url ?? ''} onChange={(value) => updateAirportMetricSource(metric, 'url', value)} />
+                    <TextInput value={draft.airportAccess.metricSources?.[metric]?.checkedAt ?? ''} onChange={(value) => updateAirportMetricSource(metric, 'checkedAt', value)} />
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
 
@@ -465,12 +561,37 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
               </CardHeader>
               <CardContent className="grid gap-4 md:grid-cols-2">
                 <div>
+                  <p className="mb-2 text-sm text-slate-600">Mobility source label（与网址均填写后标记“已核实”）</p>
+                  <TextInput value={mobilityDraft.source?.label ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, source: { label: value, url: mobilityDraft.source?.url ?? '', checkedAt: mobilityDraft.source?.checkedAt } })} />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Mobility source URL（用户可在前台打开核对）</p>
+                  <TextInput value={mobilityDraft.source?.url ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, source: { label: mobilityDraft.source?.label ?? '', url: value, checkedAt: mobilityDraft.source?.checkedAt } })} />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Mobility checked date</p>
+                  <TextInput value={mobilityDraft.source?.checkedAt ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, source: { label: mobilityDraft.source?.label ?? '', url: mobilityDraft.source?.url ?? '', checkedAt: value } })} />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Uber availability source label</p>
+                  <TextInput value={mobilityDraft.uberAvailabilitySource?.label ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, uberAvailabilitySource: { label: value, url: mobilityDraft.uberAvailabilitySource?.url ?? '', checkedAt: mobilityDraft.uberAvailabilitySource?.checkedAt } })} />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Uber availability source URL</p>
+                  <TextInput value={mobilityDraft.uberAvailabilitySource?.url ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, uberAvailabilitySource: { label: mobilityDraft.uberAvailabilitySource?.label ?? '', url: value, checkedAt: mobilityDraft.uberAvailabilitySource?.checkedAt } })} />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Uber availability checked date</p>
+                  <TextInput value={mobilityDraft.uberAvailabilitySource?.checkedAt ?? ''} onChange={(value) => setMobilityDraft({ ...mobilityDraft, uberAvailabilitySource: { label: mobilityDraft.uberAvailabilitySource?.label ?? '', url: mobilityDraft.uberAvailabilitySource?.url ?? '', checkedAt: value } })} />
+                </div>
+                <div>
                   <p className="mb-2 text-sm text-slate-600">Location type</p>
                   <select
-                    value={mobilityDraft.location_type}
+                    value={mobilityDraft.location_type ?? ''}
                     onChange={(event) => setMobilityDraft({ ...mobilityDraft, location_type: event.target.value as MobilityProfile['location_type'] })}
                     className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
                   >
+                    <option value="">—</option>
                     <option value="urban">urban</option>
                     <option value="suburban">suburban</option>
                     <option value="rural">rural</option>
@@ -479,10 +600,11 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                 <div>
                   <p className="mb-2 text-sm text-slate-600">Uber tier</p>
                   <select
-                    value={mobilityDraft.uber_tier}
+                    value={mobilityDraft.uber_tier ?? ''}
                     onChange={(event) => setMobilityDraft({ ...mobilityDraft, uber_tier: event.target.value as MobilityProfile['uber_tier'] })}
                     className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
                   >
+                    <option value="">—</option>
                     <option value="tier_1">tier_1</option>
                     <option value="tier_2">tier_2</option>
                     <option value="tier_3">tier_3</option>
@@ -516,10 +638,21 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                   <p className="mb-2 text-sm text-slate-600">Mobility score（可手动覆盖）</p>
                   <NumberInput value={mobilityDraft.mobility_score} onChange={(v) => setMobilityDraft({ ...mobilityDraft, mobility_score: v })} step="1" />
                 </div>
+                <div>
+                  <p className="mb-2 text-sm text-slate-600">Mobility grade</p>
+                  <select
+                    value={mobilityDraft.mobility_grade ?? ''}
+                    onChange={(event) => setMobilityDraft({ ...mobilityDraft, mobility_grade: event.target.value as MobilityProfile['mobility_grade'] })}
+                    className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
+                  >
+                    <option value="">—</option>
+                    {(['A', 'B', 'C', 'D', 'F'] as const).map((grade) => <option key={grade} value={grade}>{grade}</option>)}
+                  </select>
+                </div>
                 <div className="md:col-span-2">
                   <p className="mb-2 text-sm text-slate-600">Tags（逗号分隔）</p>
                   <TextInput
-                    value={mobilityDraft.tags.join(', ')}
+                    value={(mobilityDraft.tags ?? []).join(', ')}
                     onChange={(value) =>
                       setMobilityDraft({
                         ...mobilityDraft,
@@ -534,7 +667,7 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                 <div className="md:col-span-2">
                   <p className="mb-2 text-sm text-slate-600">Summary</p>
                   <textarea
-                    value={mobilityDraft.summary}
+                    value={mobilityDraft.summary ?? ''}
                     onChange={(event) => setMobilityDraft({ ...mobilityDraft, summary: event.target.value })}
                     className="min-h-[84px] w-full rounded-xl border border-slate-300 bg-white p-3 text-sm"
                   />
@@ -546,9 +679,53 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
           {scoringConfig ? (
             <Card>
               <CardHeader>
-                <CardTitle>评分常量（可后台修改）</CardTitle>
+                <CardTitle>评分与排名常量（可后台修改）</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div className="space-y-3 rounded-2xl border border-primary/20 bg-primary/5 p-4">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-800">冷村白综合排名权重</p>
+                    <p className="mt-1 text-xs text-slate-500">输入 0–1 的小数；三项合计必须为 1.00。排名页会在下一次打开时使用新权重。</p>
+                  </div>
+                  <div className="grid gap-3 md:grid-cols-3">
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">冷百分位（默认 0.40）</p>
+                      <NumberInput value={scoringConfig.rankingWeights.cold} onChange={(v) => setScoringConfig({ ...scoringConfig, rankingWeights: { ...scoringConfig.rankingWeights, cold: v } })} step="0.01" />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">村百分位（默认 0.35）</p>
+                      <NumberInput value={scoringConfig.rankingWeights.village} onChange={(v) => setScoringConfig({ ...scoringConfig, rankingWeights: { ...scoringConfig.rankingWeights, village: v } })} step="0.01" />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">白人占比百分位（默认 0.25）</p>
+                      <NumberInput value={scoringConfig.rankingWeights.white} onChange={(v) => setScoringConfig({ ...scoringConfig, rankingWeights: { ...scoringConfig.rankingWeights, white: v } })} step="0.01" />
+                    </div>
+                  </div>
+                  <p className={`text-sm font-semibold ${validWeightGroup(Object.values(scoringConfig.rankingWeights)) ? 'text-emerald-700' : 'text-rose-700'}`}>
+                    当前合计：{Object.values(scoringConfig.rankingWeights).reduce((sum, value) => sum + value, 0).toFixed(2)}
+                  </p>
+                </div>
+
+                <div className="space-y-3 rounded-2xl border border-blue-200 bg-blue-50/60 p-4">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-800">冷排名内部权重</p>
+                    <p className="mt-1 text-xs text-slate-500">气温越低分越高，降雪越多分越高；两项合计必须为 1.00。</p>
+                  </div>
+                  <div className="grid gap-3 md:grid-cols-2">
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">1 月月均最低气温（默认 0.50）</p>
+                      <NumberInput value={scoringConfig.coldRankingWeights.januaryTemperature} onChange={(v) => setScoringConfig({ ...scoringConfig, coldRankingWeights: { ...scoringConfig.coldRankingWeights, januaryTemperature: v } })} step="0.01" />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">年降雪量（默认 0.50）</p>
+                      <NumberInput value={scoringConfig.coldRankingWeights.annualSnowfall} onChange={(v) => setScoringConfig({ ...scoringConfig, coldRankingWeights: { ...scoringConfig.coldRankingWeights, annualSnowfall: v } })} step="0.01" />
+                    </div>
+                  </div>
+                  <p className={`text-sm font-semibold ${validWeightGroup(Object.values(scoringConfig.coldRankingWeights)) ? 'text-emerald-700' : 'text-rose-700'}`}>
+                    当前合计：{Object.values(scoringConfig.coldRankingWeights).reduce((sum, value) => sum + value, 0).toFixed(2)}
+                  </p>
+                </div>
+
                 <div className="space-y-3">
                   <p className="text-sm font-semibold text-slate-800">学校分数等级阈值（A/B/C/D）</p>
                   <div className="grid gap-3 md:grid-cols-4">
@@ -700,6 +877,20 @@ export function AdminConsole({ locale, authenticated }: { locale: string; authen
                         }}
                         className="h-10 w-full rounded-xl border border-slate-300 bg-white px-3 text-sm"
                       />
+                    </div>
+                  </div>
+                  <div className="mt-4 grid gap-3 md:grid-cols-3">
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">Official place source label</p>
+                      <TextInput value={item.value.placeSource?.label ?? ''} onChange={(value) => updatePoint(item.group, item.key, { placeSource: { label: value, url: item.value.placeSource?.url ?? '', checkedAt: item.value.placeSource?.checkedAt } })} />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">Official place source URL</p>
+                      <TextInput value={item.value.placeSource?.url ?? ''} onChange={(value) => updatePoint(item.group, item.key, { placeSource: { label: item.value.placeSource?.label ?? '', url: value, checkedAt: item.value.placeSource?.checkedAt } })} />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs text-slate-500">Checked date</p>
+                      <TextInput value={item.value.placeSource?.checkedAt ?? ''} onChange={(value) => updatePoint(item.group, item.key, { placeSource: { label: item.value.placeSource?.label ?? '', url: item.value.placeSource?.url ?? '', checkedAt: value } })} />
                     </div>
                   </div>
                 </div>

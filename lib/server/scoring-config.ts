@@ -24,6 +24,15 @@ export const defaultScoringConfig: ScoringConfig = {
     tier3DayMin: 20,
     tier3UberEatsMax: 35,
   },
+  rankingWeights: {
+    cold: 0.4,
+    village: 0.35,
+    white: 0.25,
+  },
+  coldRankingWeights: {
+    januaryTemperature: 0.5,
+    annualSnowfall: 0.5,
+  },
 };
 
 function isPlainObject(value: unknown): value is Record<string, unknown> {
@@ -93,7 +102,31 @@ function normalizeConfig(raw: Partial<ScoringConfig> | undefined): ScoringConfig
       tier3DayMin: toFiniteNumber(merged.mobilityTierRules?.tier3DayMin, defaultScoringConfig.mobilityTierRules.tier3DayMin),
       tier3UberEatsMax: toFiniteNumber(merged.mobilityTierRules?.tier3UberEatsMax, defaultScoringConfig.mobilityTierRules.tier3UberEatsMax),
     },
+    rankingWeights: {
+      cold: toFiniteNumber(merged.rankingWeights?.cold, defaultScoringConfig.rankingWeights.cold),
+      village: toFiniteNumber(merged.rankingWeights?.village, defaultScoringConfig.rankingWeights.village),
+      white: toFiniteNumber(merged.rankingWeights?.white, defaultScoringConfig.rankingWeights.white),
+    },
+    coldRankingWeights: {
+      januaryTemperature: toFiniteNumber(merged.coldRankingWeights?.januaryTemperature, defaultScoringConfig.coldRankingWeights.januaryTemperature),
+      annualSnowfall: toFiniteNumber(merged.coldRankingWeights?.annualSnowfall, defaultScoringConfig.coldRankingWeights.annualSnowfall),
+    },
   };
+}
+
+function isWeightGroupValid(values: number[]) {
+  return values.every((value) => Number.isFinite(value) && value >= 0 && value <= 1)
+    && Math.abs(values.reduce((sum, value) => sum + value, 0) - 1) <= 0.0001;
+}
+
+export function validateRankingWeights(config: ScoringConfig) {
+  if (!isWeightGroupValid(Object.values(config.rankingWeights))) {
+    return '冷、村、白权重必须分别在 0–1 之间，并且合计为 1.00。';
+  }
+  if (!isWeightGroupValid(Object.values(config.coldRankingWeights))) {
+    return '1 月气温与年降雪权重必须分别在 0–1 之间，并且合计为 1.00。';
+  }
+  return null;
 }
 
 async function ensureConfigFile() {
@@ -120,6 +153,8 @@ export async function getScoringConfig(): Promise<ScoringConfig> {
 export async function upsertScoringConfig(patch: Partial<ScoringConfig>) {
   const current = await getScoringConfig();
   const merged = normalizeConfig(mergeDeep(current, patch));
+  const validationError = validateRankingWeights(merged);
+  if (validationError) throw new Error(validationError);
   await fs.writeFile(CONFIG_PATH, JSON.stringify(merged, null, 2), 'utf-8');
   return merged;
 }

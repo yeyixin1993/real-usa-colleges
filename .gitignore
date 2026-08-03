@@ -18,3 +18,5 @@
 # misc
 .DS_Store
 *.pem
+.env*
+!.env.example

@@ -10,6 +10,7 @@ export interface Dictionary {
   nav: {
     home: string;
     schools: string;
+    rankings: string;
     compare: string;
     methodology: string;
     collections: string;
@@ -113,7 +114,11 @@ export interface Dictionary {
     avgMonthlyLow: string;
     annualPrecipitation: string;
     annualSnowfall: string;
+    annualMeanRelativeHumidity: string;
     humidityBand: string;
+    humidityDry: string;
+    humidityBalanced: string;
+    humidityHumid: string;
     summerHeat: string;
     winterSeverity: string;
     sunshine: string;
@@ -123,6 +128,16 @@ export interface Dictionary {
     hispanicLatino: string;
     asian: string;
     internationalStudents: string;
+    maleUndergraduates: string;
+    femaleUndergraduates: string;
+    age25OrOlder: string;
+    populationWithin30Km: string;
+    campusSetting: string;
+    ipedsLocaleExplanation: string;
+    ipedsLocaleSource: string;
+    urban: string;
+    suburban: string;
+    rural: string;
     foreignBornShare: string;
     medianHouseholdIncome: string;
     populationDensityBand: string;
@@ -130,6 +145,12 @@ export interface Dictionary {
     distance: string;
     drivingTime: string;
     transitTime: string;
+    airportRoutesHeading: string;
+    airportToCampus: string;
+    campusToAirport: string;
+    petalBackup: string;
+    googleMapsAccessWarning: string;
+    routeVerificationWarning: string;
     walkingTime: string;
     countWithin5: string;
     countWithin10: string;

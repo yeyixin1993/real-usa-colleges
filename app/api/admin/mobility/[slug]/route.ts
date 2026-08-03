@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { getSchoolBySlug } from '@/lib/data';
-import { buildMobilityProfile } from '@/lib/mobility';
+import { getAdminSchoolBySlug } from '@/lib/data';
 import { isAdminAuthenticatedFromRequest } from '@/lib/server/admin-auth';
 import { getMobilityOverride, upsertMobilityOverride } from '@/lib/server/mobility-overrides';
 import type { MobilityProfile } from '@/types/mobility';
@@ -14,13 +13,18 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   }
 
   const { slug } = await params;
-  const school = await getSchoolBySlug(slug);
+  const school = await getAdminSchoolBySlug(slug);
   if (!school) {
     return NextResponse.json({ error: 'School not found' }, { status: 404 });
   }
 
   const override = await getMobilityOverride(slug);
-  const mobility = await buildMobilityProfile(school, override ?? undefined);
+  const mobility: Partial<MobilityProfile> = {
+    school_name: school.name,
+    tags: [],
+    summary: '',
+    ...(override ?? {}),
+  };
 
   return NextResponse.json({ mobility, override });
 }
@@ -31,14 +35,13 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   }
 
   const { slug } = await params;
-  const school = await getSchoolBySlug(slug);
+  const school = await getAdminSchoolBySlug(slug);
   if (!school) {
     return NextResponse.json({ error: 'School not found' }, { status: 404 });
   }
 
   const patch = (await request.json()) as Partial<MobilityProfile>;
-  const override = await upsertMobilityOverride(slug, patch);
-  const mobility = await buildMobilityProfile(school, override);
+  const override = await upsertMobilityOverride(slug, { school_name: school.name, ...patch });
 
-  return NextResponse.json({ ok: true, slug, override, mobility });
+  return NextResponse.json({ ok: true, slug, override });
 }

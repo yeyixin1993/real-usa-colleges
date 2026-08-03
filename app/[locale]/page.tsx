@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { UsMap } from '@/components/map/us-map';
 import { SectionHeading } from '@/components/shared/section-heading';
-import { ScoreBadge } from '@/components/shared/score-badge';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -56,20 +55,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <CardContent className="flex h-full flex-col gap-4 p-5">
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <Badge>{school.schoolType}</Badge>
+                      <Badge>{school.sector}</Badge>
                       <h3 className="mt-3 text-xl font-semibold text-slate-950">{school.name}</h3>
                       <p className="mt-1 text-sm text-slate-500">
                         {school.city}, {school.state}
                       </p>
                     </div>
-                    <ScoreBadge score={school.scores.overall} grade={school.scoreGrades?.overall} compact />
+                    <Badge>Verified</Badge>
                   </div>
-                  <p className="text-sm leading-6 text-slate-600">{school.summary[locale]}</p>
-                  <div className="mt-auto flex flex-wrap gap-2">
-                    {school.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag}>{dictionary.tagLabels[tag]}</Badge>
-                    ))}
-                  </div>
+                  <p className="text-sm leading-6 text-slate-600">U.S. Department of Education College Scorecard · UNITID {school.verification?.unitId}</p>
                   <Button asChild variant="ghost" className="justify-start px-0 text-primary hover:bg-transparent">
                     <Link href={`/${locale}/schools/${school.slug}`}>{dictionary.common.learnMore}</Link>
                   </Button>
@@ -80,7 +74,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <section className="section-space bg-white/60">
+      {discoveryCollections.length ? <section className="section-space bg-white/60">
         <div className="container space-y-8">
           <SectionHeading title={dictionary.homepage.collectionsTitle} description={dictionary.collections.description} />
           <div className="grid gap-5 lg:grid-cols-2">
@@ -101,22 +95,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             ))}
           </div>
         </div>
-      </section>
+      </section> : null}
 
       <section className="section-space">
         <div className="container grid gap-6 lg:grid-cols-2">
           <Card>
             <CardContent className="space-y-4 p-8">
               <SectionHeading title={dictionary.homepage.methodologyTitle} description={dictionary.homepage.methodologyDescription} />
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="rounded-3xl bg-slate-950 p-5 text-white">
-                  <p className="text-sm text-white/70">Climate + daily life</p>
-                  <p className="mt-2 text-3xl font-semibold">0–100</p>
-                </div>
-                <div className="rounded-3xl bg-slate-100 p-5 text-slate-900">
-                  <p className="text-sm text-slate-500">Grade bands</p>
-                  <p className="mt-2 text-3xl font-semibold">A to F</p>
-                </div>
+              <div className="rounded-3xl bg-slate-950 p-5 text-white">
+                <p className="text-sm text-white/70">Current published baseline</p>
+                <p className="mt-2 text-3xl font-semibold">112 verified institutions</p>
+                <p className="mt-2 text-sm text-white/70">Original values remain visible with an Unverified label until a reviewable source is attached.</p>
               </div>
               <Button asChild variant="secondary">
                 <Link href={`/${locale}/methodology`}>{dictionary.common.viewMethodology}</Link>

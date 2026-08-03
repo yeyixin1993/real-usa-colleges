@@ -1,0 +1,3167 @@
+{
+  "generatedAt": "2026-08-03T02:48:30.412Z",
+  "recordCount": 112,
+  "sources": {
+    "airportCoordinates": {
+      "label": "FAA 28-Day NASR Airport CSV — 2026-05-14",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-05-14/",
+      "checkedAt": "2026-08-03"
+    },
+    "petalMaps": {
+      "label": "HUAWEI Petal Maps",
+      "url": "https://consumer.huawei.com/en/mobileservices/petalmaps/",
+      "webUrl": "https://www.petalmaps.com/",
+      "checkedAt": "2026-08-03",
+      "notes": "Links open Petal Maps' HTTPS route-planning page with the stored origin and destination coordinates. This website does not call a paid routing API. The site operator has tested that Petal can display U.S. maps and plan some U.S. driving routes. Actual availability still depends on the user's device and region. The shortcut is not evidence that any displayed travel time is verified."
+    },
+    "googleMaps": {
+      "label": "Google Maps URLs — Directions",
+      "url": "https://developers.google.com/maps/documentation/urls/get-started",
+      "webUrl": "https://www.google.com/maps/",
+      "checkedAt": "2026-08-03",
+      "notes": "Google Maps Directions URLs open a route preview with stored origin and destination coordinates. They require no API key and do not call a paid routing API from this website. Google Maps accessibility from mainland China is not guaranteed."
+    }
+  },
+  "methodology": {
+    "en": "Airport and campus coordinates are stored once. Google Maps is the primary route-preview link, with Petal Maps retained as a fallback. Neither link calls a routing API from this website. Public-transit links are intentionally not generated because provider coverage varies by region.",
+    "zh": "机场与校园坐标只保存一次。Google Maps 作为主要路线预览入口，Petal Maps 作为备用；两者都不会由本网站调用路线 API。由于服务覆盖因地区而异，系统暂不自动生成公交预链接。"
+  },
+  "records": {
+    "princeton-university": {
+      "airportName": "Newark Liberty International Airport",
+      "airport": {
+        "faaId": "EWR",
+        "icaoId": "KEWR",
+        "faaName": "NEWARK LIBERTY INTL",
+        "coordinates": {
+          "lat": 40.69248055,
+          "lng": -74.16868777
+        }
+      },
+      "campus": {
+        "lat": 40.348732,
+        "lng": -74.659365
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.69248055%2C-74.16868777&destination=40.348732%2C-74.659365&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.348732%2C-74.659365&destination=40.69248055%2C-74.16868777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.69248055%2C-74.16868777&daddr=40.348732%2C-74.659365&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.348732%2C-74.659365&daddr=40.69248055%2C-74.16868777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "ucla": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.07178,
+        "lng": -118.442179
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.07178%2C-118.442179&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.07178%2C-118.442179&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.07178%2C-118.442179&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.07178%2C-118.442179&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "rice-university": {
+      "airportName": "George Bush Intercontinental Airport",
+      "airport": {
+        "faaId": "IAH",
+        "icaoId": "KIAH",
+        "faaName": "GEORGE BUSH INTCNTL/HOUSTON",
+        "coordinates": {
+          "lat": 29.98443527,
+          "lng": -95.3414425
+        }
+      },
+      "campus": {
+        "lat": 29.717897,
+        "lng": -95.402035
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=29.98443527%2C-95.3414425&destination=29.717897%2C-95.402035&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=29.717897%2C-95.402035&destination=29.98443527%2C-95.3414425&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=29.98443527%2C-95.3414425&daddr=29.717897%2C-95.402035&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=29.717897%2C-95.402035&daddr=29.98443527%2C-95.3414425&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-washington": {
+      "airportName": "Seattle-Tacoma International Airport",
+      "airport": {
+        "faaId": "SEA",
+        "icaoId": "KSEA",
+        "faaName": "SEATTLE-TACOMA INTL",
+        "coordinates": {
+          "lat": 47.44988888,
+          "lng": -122.31177777
+        }
+      },
+      "campus": {
+        "lat": 47.65538,
+        "lng": -122.30514
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=47.44988888%2C-122.31177777&destination=47.65538%2C-122.30514&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=47.65538%2C-122.30514&destination=47.44988888%2C-122.31177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=47.44988888%2C-122.31177777&daddr=47.65538%2C-122.30514&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=47.65538%2C-122.30514&daddr=47.44988888%2C-122.31177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "amherst-college": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.372459,
+        "lng": -72.518493
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.372459%2C-72.518493&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.372459%2C-72.518493&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.372459%2C-72.518493&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.372459%2C-72.518493&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "pomona-college": {
+      "airportName": "Ontario International Airport",
+      "airport": {
+        "faaId": "ONT",
+        "icaoId": "KONT",
+        "faaName": "ONTARIO INTL",
+        "coordinates": {
+          "lat": 34.05601416,
+          "lng": -117.6011875
+        }
+      },
+      "campus": {
+        "lat": 34.099027,
+        "lng": -117.714556
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=34.05601416%2C-117.6011875&destination=34.099027%2C-117.714556&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.099027%2C-117.714556&destination=34.05601416%2C-117.6011875&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=34.05601416%2C-117.6011875&daddr=34.099027%2C-117.714556&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.099027%2C-117.714556&daddr=34.05601416%2C-117.6011875&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-michigan": {
+      "airportName": "Detroit Metropolitan Wayne County Airport",
+      "airport": {
+        "faaId": "DTW",
+        "icaoId": "KDTW",
+        "faaName": "DETROIT METRO WAYNE COUNTY",
+        "coordinates": {
+          "lat": 42.21243111,
+          "lng": -83.35339333
+        }
+      },
+      "campus": {
+        "lat": 42.278374,
+        "lng": -83.73481
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.21243111%2C-83.35339333&destination=42.278374%2C-83.73481&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.278374%2C-83.73481&destination=42.21243111%2C-83.35339333&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.21243111%2C-83.35339333&daddr=42.278374%2C-83.73481&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.278374%2C-83.73481&daddr=42.21243111%2C-83.35339333&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "northeastern-university": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.339992,
+        "lng": -71.088782
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.339992%2C-71.088782&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.339992%2C-71.088782&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.339992%2C-71.088782&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.339992%2C-71.088782&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "harvard-university": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.374471,
+        "lng": -71.118313
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.374471%2C-71.118313&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.374471%2C-71.118313&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.374471%2C-71.118313&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.374471%2C-71.118313&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "mit": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.359243,
+        "lng": -71.093226
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.359243%2C-71.093226&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.359243%2C-71.093226&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.359243%2C-71.093226&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.359243%2C-71.093226&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "stanford-university": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 37.429434,
+        "lng": -122.167359
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=37.429434%2C-122.167359&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=37.429434%2C-122.167359&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=37.429434%2C-122.167359&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=37.429434%2C-122.167359&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "yale-university": {
+      "airportName": "Bradley International Airport",
+      "airport": {
+        "faaId": "BDL",
+        "icaoId": "KBDL",
+        "faaName": "BRADLEY INTL",
+        "coordinates": {
+          "lat": 41.93903222,
+          "lng": -72.68431583
+        }
+      },
+      "campus": {
+        "lat": 41.311158,
+        "lng": -72.926688
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.93903222%2C-72.68431583&destination=41.311158%2C-72.926688&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.311158%2C-72.926688&destination=41.93903222%2C-72.68431583&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.93903222%2C-72.68431583&daddr=41.311158%2C-72.926688&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.311158%2C-72.926688&daddr=41.93903222%2C-72.68431583&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-pennsylvania": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 39.950929,
+        "lng": -75.19391
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=39.950929%2C-75.19391&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.950929%2C-75.19391&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=39.950929%2C-75.19391&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.950929%2C-75.19391&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "california-institute-of-technology": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.137349,
+        "lng": -118.125878
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.137349%2C-118.125878&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.137349%2C-118.125878&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.137349%2C-118.125878&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.137349%2C-118.125878&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "duke-university": {
+      "airportName": "Raleigh-Durham International Airport",
+      "airport": {
+        "faaId": "RDU",
+        "icaoId": "KRDU",
+        "faaName": "RALEIGH-DURHAM INTL",
+        "coordinates": {
+          "lat": 35.87763888,
+          "lng": -78.78747222
+        }
+      },
+      "campus": {
+        "lat": 36.001135,
+        "lng": -78.937624
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=35.87763888%2C-78.78747222&destination=36.001135%2C-78.937624&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=36.001135%2C-78.937624&destination=35.87763888%2C-78.78747222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=35.87763888%2C-78.78747222&daddr=36.001135%2C-78.937624&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=36.001135%2C-78.937624&daddr=35.87763888%2C-78.78747222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "brown-university": {
+      "airportName": "T.F. Green International Airport",
+      "airport": {
+        "faaId": "PVD",
+        "icaoId": "KPVD",
+        "faaName": "RHODE ISLAND TF GREEN INTL",
+        "coordinates": {
+          "lat": 41.72233333,
+          "lng": -71.42772222
+        }
+      },
+      "campus": {
+        "lat": 41.82617,
+        "lng": -71.40385
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.72233333%2C-71.42772222&destination=41.82617%2C-71.40385&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.82617%2C-71.40385&destination=41.72233333%2C-71.42772222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.72233333%2C-71.42772222&daddr=41.82617%2C-71.40385&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.82617%2C-71.40385&daddr=41.72233333%2C-71.42772222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "johns-hopkins-university": {
+      "airportName": "Baltimore/Washington International Airport",
+      "airport": {
+        "faaId": "BWI",
+        "icaoId": "KBWI",
+        "faaName": "BALTIMORE/WASHINGTON INTL THURGOOD MARSHALL",
+        "coordinates": {
+          "lat": 39.17572833,
+          "lng": -76.66899111
+        }
+      },
+      "campus": {
+        "lat": 39.328977,
+        "lng": -76.621595
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.17572833%2C-76.66899111&destination=39.328977%2C-76.621595&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.328977%2C-76.621595&destination=39.17572833%2C-76.66899111&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.17572833%2C-76.66899111&daddr=39.328977%2C-76.621595&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.328977%2C-76.621595&daddr=39.17572833%2C-76.66899111&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "northwestern-university": {
+      "airportName": "Chicago O'Hare International Airport",
+      "airport": {
+        "faaId": "ORD",
+        "icaoId": "KORD",
+        "faaName": "CHICAGO O'HARE INTL",
+        "coordinates": {
+          "lat": 41.97694027,
+          "lng": -87.90814972
+        }
+      },
+      "campus": {
+        "lat": 42.050356,
+        "lng": -87.679858
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.97694027%2C-87.90814972&destination=42.050356%2C-87.679858&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.050356%2C-87.679858&destination=41.97694027%2C-87.90814972&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.97694027%2C-87.90814972&daddr=42.050356%2C-87.679858&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.050356%2C-87.679858&daddr=41.97694027%2C-87.90814972&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "columbia-university": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 40.808286,
+        "lng": -73.961885
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=40.808286%2C-73.961885&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.808286%2C-73.961885&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=40.808286%2C-73.961885&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.808286%2C-73.961885&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "cornell-university": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 42.4472,
+        "lng": -76.483084
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=42.4472%2C-76.483084&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.4472%2C-76.483084&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=42.4472%2C-76.483084&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.4472%2C-76.483084&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-chicago": {
+      "airportName": "Chicago O'Hare International Airport",
+      "airport": {
+        "faaId": "ORD",
+        "icaoId": "KORD",
+        "faaName": "CHICAGO O'HARE INTL",
+        "coordinates": {
+          "lat": 41.97694027,
+          "lng": -87.90814972
+        }
+      },
+      "campus": {
+        "lat": 41.787994,
+        "lng": -87.599539
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.97694027%2C-87.90814972&destination=41.787994%2C-87.599539&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.787994%2C-87.599539&destination=41.97694027%2C-87.90814972&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.97694027%2C-87.90814972&daddr=41.787994%2C-87.599539&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.787994%2C-87.599539&daddr=41.97694027%2C-87.90814972&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-california-berkeley": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 37.871918,
+        "lng": -122.260463
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=37.871918%2C-122.260463&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=37.871918%2C-122.260463&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=37.871918%2C-122.260463&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=37.871918%2C-122.260463&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "dartmouth-college": {
+      "airportName": "Manchester-Boston Regional Airport",
+      "airport": {
+        "faaId": "MHT",
+        "icaoId": "KMHT",
+        "faaName": "MANCHESTER BOSTON RGNL",
+        "coordinates": {
+          "lat": 42.93280555,
+          "lng": -71.43575
+        }
+      },
+      "campus": {
+        "lat": 43.704115,
+        "lng": -72.289949
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.93280555%2C-71.43575&destination=43.704115%2C-72.289949&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.704115%2C-72.289949&destination=42.93280555%2C-71.43575&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.93280555%2C-71.43575&daddr=43.704115%2C-72.289949&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.704115%2C-72.289949&daddr=42.93280555%2C-71.43575&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "vanderbilt-university": {
+      "airportName": "Nashville International Airport",
+      "airport": {
+        "faaId": "BNA",
+        "icaoId": "KBNA",
+        "faaName": "NASHVILLE INTL",
+        "coordinates": {
+          "lat": 36.124475,
+          "lng": -86.67818055
+        }
+      },
+      "campus": {
+        "lat": 36.14659,
+        "lng": -86.803369
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=36.124475%2C-86.67818055&destination=36.14659%2C-86.803369&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=36.14659%2C-86.803369&destination=36.124475%2C-86.67818055&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=36.124475%2C-86.67818055&daddr=36.14659%2C-86.803369&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=36.14659%2C-86.803369&daddr=36.124475%2C-86.67818055&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-notre-dame": {
+      "airportName": "Indianapolis International Airport",
+      "airport": {
+        "faaId": "IND",
+        "icaoId": "KIND",
+        "faaName": "INDIANAPOLIS INTL",
+        "coordinates": {
+          "lat": 39.71730555,
+          "lng": -86.29463888
+        }
+      },
+      "campus": {
+        "lat": 41.703058,
+        "lng": -86.238959
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.71730555%2C-86.29463888&destination=41.703058%2C-86.238959&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.703058%2C-86.238959&destination=39.71730555%2C-86.29463888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.71730555%2C-86.29463888&daddr=41.703058%2C-86.238959&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.703058%2C-86.238959&daddr=39.71730555%2C-86.29463888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "georgetown-university": {
+      "airportName": "Washington Dulles International Airport",
+      "airport": {
+        "faaId": "IAD",
+        "icaoId": "KIAD",
+        "faaName": "WASHINGTON DULLES INTL",
+        "coordinates": {
+          "lat": 38.94745638,
+          "lng": -77.45992861
+        }
+      },
+      "campus": {
+        "lat": 38.908809,
+        "lng": -77.073463
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=38.94745638%2C-77.45992861&destination=38.908809%2C-77.073463&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.908809%2C-77.073463&destination=38.94745638%2C-77.45992861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=38.94745638%2C-77.45992861&daddr=38.908809%2C-77.073463&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.908809%2C-77.073463&daddr=38.94745638%2C-77.45992861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "unc-chapel-hill": {
+      "airportName": "Raleigh-Durham International Airport",
+      "airport": {
+        "faaId": "RDU",
+        "icaoId": "KRDU",
+        "faaName": "RALEIGH-DURHAM INTL",
+        "coordinates": {
+          "lat": 35.87763888,
+          "lng": -78.78747222
+        }
+      },
+      "campus": {
+        "lat": 35.911769,
+        "lng": -79.050969
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=35.87763888%2C-78.78747222&destination=35.911769%2C-79.050969&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=35.911769%2C-79.050969&destination=35.87763888%2C-78.78747222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=35.87763888%2C-78.78747222&daddr=35.911769%2C-79.050969&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=35.911769%2C-79.050969&daddr=35.87763888%2C-78.78747222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "carnegie-mellon-university": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.44357,
+        "lng": -79.941993
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.44357%2C-79.941993&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.44357%2C-79.941993&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.44357%2C-79.941993&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.44357%2C-79.941993&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "emory-university": {
+      "airportName": "Hartsfield-Jackson Atlanta International Airport",
+      "airport": {
+        "faaId": "ATL",
+        "icaoId": "KATL",
+        "faaName": "HARTSFIELD/JACKSON ATLANTA INTL",
+        "coordinates": {
+          "lat": 33.63669961,
+          "lng": -84.427864
+        }
+      },
+      "campus": {
+        "lat": 33.790183,
+        "lng": -84.325512
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.63669961%2C-84.427864&destination=33.790183%2C-84.325512&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=33.790183%2C-84.325512&destination=33.63669961%2C-84.427864&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.63669961%2C-84.427864&daddr=33.790183%2C-84.325512&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=33.790183%2C-84.325512&daddr=33.63669961%2C-84.427864&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-virginia": {
+      "airportName": "Washington Dulles International Airport",
+      "airport": {
+        "faaId": "IAD",
+        "icaoId": "KIAD",
+        "faaName": "WASHINGTON DULLES INTL",
+        "coordinates": {
+          "lat": 38.94745638,
+          "lng": -77.45992861
+        }
+      },
+      "campus": {
+        "lat": 38.035665,
+        "lng": -78.503428
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=38.94745638%2C-77.45992861&destination=38.035665%2C-78.503428&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.035665%2C-78.503428&destination=38.94745638%2C-77.45992861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=38.94745638%2C-77.45992861&daddr=38.035665%2C-78.503428&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.035665%2C-78.503428&daddr=38.94745638%2C-77.45992861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "washington-university-in-st-louis": {
+      "airportName": "St. Louis Lambert International Airport",
+      "airport": {
+        "faaId": "STL",
+        "icaoId": "KSTL",
+        "faaName": "ST LOUIS LAMBERT INTL",
+        "coordinates": {
+          "lat": 38.74869822,
+          "lng": -90.37002572
+        }
+      },
+      "campus": {
+        "lat": 38.647929,
+        "lng": -90.310604
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=38.74869822%2C-90.37002572&destination=38.647929%2C-90.310604&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.647929%2C-90.310604&destination=38.74869822%2C-90.37002572&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=38.74869822%2C-90.37002572&daddr=38.647929%2C-90.310604&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.647929%2C-90.310604&daddr=38.74869822%2C-90.37002572&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-southern-california": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.021281,
+        "lng": -118.284169
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.021281%2C-118.284169&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.021281%2C-118.284169&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.021281%2C-118.284169&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.021281%2C-118.284169&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "new-york-university": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 40.729452,
+        "lng": -73.997264
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=40.729452%2C-73.997264&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.729452%2C-73.997264&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=40.729452%2C-73.997264&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.729452%2C-73.997264&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "tufts-university": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.40855,
+        "lng": -71.118293
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.40855%2C-71.118293&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.40855%2C-71.118293&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.40855%2C-71.118293&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.40855%2C-71.118293&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "boston-university": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.351118,
+        "lng": -71.107942
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.351118%2C-71.107942&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.351118%2C-71.107942&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.351118%2C-71.107942&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.351118%2C-71.107942&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-california-san-diego": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 32.877749,
+        "lng": -117.235866
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=32.877749%2C-117.235866&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=32.877749%2C-117.235866&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=32.877749%2C-117.235866&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=32.877749%2C-117.235866&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-florida": {
+      "airportName": "Orlando International Airport",
+      "airport": {
+        "faaId": "MCO",
+        "icaoId": "KMCO",
+        "faaName": "ORLANDO INTL",
+        "coordinates": {
+          "lat": 28.42938888,
+          "lng": -81.309
+        }
+      },
+      "campus": {
+        "lat": 29.64629,
+        "lng": -82.347911
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=28.42938888%2C-81.309&destination=29.64629%2C-82.347911&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=29.64629%2C-82.347911&destination=28.42938888%2C-81.309&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=28.42938888%2C-81.309&daddr=29.64629%2C-82.347911&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=29.64629%2C-82.347911&daddr=28.42938888%2C-81.309&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-texas-austin": {
+      "airportName": "Dallas/Fort Worth International Airport",
+      "airport": {
+        "faaId": "DFW",
+        "icaoId": "KDFW",
+        "faaName": "DALLAS-FORT WORTH INTL",
+        "coordinates": {
+          "lat": 32.89723305,
+          "lng": -97.03769472
+        }
+      },
+      "campus": {
+        "lat": 30.282825,
+        "lng": -97.738273
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=32.89723305%2C-97.03769472&destination=30.282825%2C-97.738273&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=30.282825%2C-97.738273&destination=32.89723305%2C-97.03769472&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=32.89723305%2C-97.03769472&daddr=30.282825%2C-97.738273&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=30.282825%2C-97.738273&daddr=32.89723305%2C-97.03769472&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "georgia-institute-of-technology": {
+      "airportName": "Hartsfield-Jackson Atlanta International Airport",
+      "airport": {
+        "faaId": "ATL",
+        "icaoId": "KATL",
+        "faaName": "HARTSFIELD/JACKSON ATLANTA INTL",
+        "coordinates": {
+          "lat": 33.63669961,
+          "lng": -84.427864
+        }
+      },
+      "campus": {
+        "lat": 33.77242,
+        "lng": -84.394832
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.63669961%2C-84.427864&destination=33.77242%2C-84.394832&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=33.77242%2C-84.394832&destination=33.63669961%2C-84.427864&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.63669961%2C-84.427864&daddr=33.77242%2C-84.394832&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=33.77242%2C-84.394832&daddr=33.63669961%2C-84.427864&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-california-davis": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 38.539667,
+        "lng": -121.749567
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=38.539667%2C-121.749567&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.539667%2C-121.749567&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=38.539667%2C-121.749567&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.539667%2C-121.749567&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-california-irvine": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 33.648434,
+        "lng": -117.841248
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=33.648434%2C-117.841248&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=33.648434%2C-117.841248&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=33.648434%2C-117.841248&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=33.648434%2C-117.841248&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-illinois-urbana-champaign": {
+      "airportName": "Chicago O'Hare International Airport",
+      "airport": {
+        "faaId": "ORD",
+        "icaoId": "KORD",
+        "faaName": "CHICAGO O'HARE INTL",
+        "coordinates": {
+          "lat": 41.97694027,
+          "lng": -87.90814972
+        }
+      },
+      "campus": {
+        "lat": 40.104718,
+        "lng": -88.229114
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.97694027%2C-87.90814972&destination=40.104718%2C-88.229114&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.104718%2C-88.229114&destination=41.97694027%2C-87.90814972&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.97694027%2C-87.90814972&daddr=40.104718%2C-88.229114&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.104718%2C-88.229114&daddr=41.97694027%2C-87.90814972&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-wisconsin-madison": {
+      "airportName": "Milwaukee Mitchell International Airport",
+      "airport": {
+        "faaId": "MKE",
+        "icaoId": "KMKE",
+        "faaName": "GENERAL MITCHELL INTL",
+        "coordinates": {
+          "lat": 42.94693194,
+          "lng": -87.89706444
+        }
+      },
+      "campus": {
+        "lat": 43.075409,
+        "lng": -89.404098
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.94693194%2C-87.89706444&destination=43.075409%2C-89.404098&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.075409%2C-89.404098&destination=42.94693194%2C-87.89706444&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.94693194%2C-87.89706444&daddr=43.075409%2C-89.404098&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.075409%2C-89.404098&daddr=42.94693194%2C-87.89706444&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "ohio-state-university": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 39.999803,
+        "lng": -83.007525
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=39.999803%2C-83.007525&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.999803%2C-83.007525&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=39.999803%2C-83.007525&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.999803%2C-83.007525&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "rutgers-university": {
+      "airportName": "Newark Liberty International Airport",
+      "airport": {
+        "faaId": "EWR",
+        "icaoId": "KEWR",
+        "faaName": "NEWARK LIBERTY INTL",
+        "coordinates": {
+          "lat": 40.69248055,
+          "lng": -74.16868777
+        }
+      },
+      "campus": {
+        "lat": 40.498769,
+        "lng": -74.446251
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.69248055%2C-74.16868777&destination=40.498769%2C-74.446251&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.498769%2C-74.446251&destination=40.69248055%2C-74.16868777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.69248055%2C-74.16868777&daddr=40.498769%2C-74.446251&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.498769%2C-74.446251&daddr=40.69248055%2C-74.16868777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-maryland-college-park": {
+      "airportName": "Baltimore/Washington International Airport",
+      "airport": {
+        "faaId": "BWI",
+        "icaoId": "KBWI",
+        "faaName": "BALTIMORE/WASHINGTON INTL THURGOOD MARSHALL",
+        "coordinates": {
+          "lat": 39.17572833,
+          "lng": -76.66899111
+        }
+      },
+      "campus": {
+        "lat": 38.988178,
+        "lng": -76.944721
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.17572833%2C-76.66899111&destination=38.988178%2C-76.944721&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.988178%2C-76.944721&destination=39.17572833%2C-76.66899111&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.17572833%2C-76.66899111&daddr=38.988178%2C-76.944721&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.988178%2C-76.944721&daddr=39.17572833%2C-76.66899111&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "purdue-university": {
+      "airportName": "Indianapolis International Airport",
+      "airport": {
+        "faaId": "IND",
+        "icaoId": "KIND",
+        "faaName": "INDIANAPOLIS INTL",
+        "coordinates": {
+          "lat": 39.71730555,
+          "lng": -86.29463888
+        }
+      },
+      "campus": {
+        "lat": 40.428206,
+        "lng": -86.914435
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.71730555%2C-86.29463888&destination=40.428206%2C-86.914435&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.428206%2C-86.914435&destination=39.71730555%2C-86.29463888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.71730555%2C-86.29463888&daddr=40.428206%2C-86.914435&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.428206%2C-86.914435&daddr=39.71730555%2C-86.29463888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "wake-forest-university": {
+      "airportName": "Raleigh-Durham International Airport",
+      "airport": {
+        "faaId": "RDU",
+        "icaoId": "KRDU",
+        "faaName": "RALEIGH-DURHAM INTL",
+        "coordinates": {
+          "lat": 35.87763888,
+          "lng": -78.78747222
+        }
+      },
+      "campus": {
+        "lat": 36.133609,
+        "lng": -80.277446
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=35.87763888%2C-78.78747222&destination=36.133609%2C-80.277446&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=36.133609%2C-80.277446&destination=35.87763888%2C-78.78747222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=35.87763888%2C-78.78747222&daddr=36.133609%2C-80.277446&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=36.133609%2C-80.277446&daddr=35.87763888%2C-78.78747222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "case-western-reserve-university": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 41.507419,
+        "lng": -81.609596
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=41.507419%2C-81.609596&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.507419%2C-81.609596&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=41.507419%2C-81.609596&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.507419%2C-81.609596&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "lehigh-university": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.606822,
+        "lng": -75.380236
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.606822%2C-75.380236&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.606822%2C-75.380236&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.606822%2C-75.380236&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.606822%2C-75.380236&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "william-and-mary": {
+      "airportName": "Washington Dulles International Airport",
+      "airport": {
+        "faaId": "IAD",
+        "icaoId": "KIAD",
+        "faaName": "WASHINGTON DULLES INTL",
+        "coordinates": {
+          "lat": 38.94745638,
+          "lng": -77.45992861
+        }
+      },
+      "campus": {
+        "lat": 37.269489,
+        "lng": -76.708214
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=38.94745638%2C-77.45992861&destination=37.269489%2C-76.708214&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=37.269489%2C-76.708214&destination=38.94745638%2C-77.45992861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=38.94745638%2C-77.45992861&daddr=37.269489%2C-76.708214&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=37.269489%2C-76.708214&daddr=38.94745638%2C-77.45992861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "villanova-university": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.036463,
+        "lng": -75.340502
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.036463%2C-75.340502&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.036463%2C-75.340502&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.036463%2C-75.340502&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.036463%2C-75.340502&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-minnesota-twin-cities": {
+      "airportName": "Minneapolis-Saint Paul International Airport",
+      "airport": {
+        "faaId": "MSP",
+        "icaoId": "KMSP",
+        "faaName": "MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN",
+        "coordinates": {
+          "lat": 44.88197222,
+          "lng": -93.22177777
+        }
+      },
+      "campus": {
+        "lat": 44.972851,
+        "lng": -93.235464
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=44.88197222%2C-93.22177777&destination=44.972851%2C-93.235464&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.972851%2C-93.235464&destination=44.88197222%2C-93.22177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=44.88197222%2C-93.22177777&daddr=44.972851%2C-93.235464&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.972851%2C-93.235464&daddr=44.88197222%2C-93.22177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "university-of-rochester": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 43.126397,
+        "lng": -77.631202
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=43.126397%2C-77.631202&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.126397%2C-77.631202&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=43.126397%2C-77.631202&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.126397%2C-77.631202&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "brandeis-university": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.365727,
+        "lng": -71.260155
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.365727%2C-71.260155&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.365727%2C-71.260155&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.365727%2C-71.260155&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.365727%2C-71.260155&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "uc-santa-barbara": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.416297,
+        "lng": -119.846426
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.416297%2C-119.846426&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.416297%2C-119.846426&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.416297%2C-119.846426&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.416297%2C-119.846426&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "uc-santa-cruz": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 36.995584,
+        "lng": -122.058801
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=36.995584%2C-122.058801&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=36.995584%2C-122.058801&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=36.995584%2C-122.058801&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=36.995584%2C-122.058801&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "pepperdine-university": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.037786,
+        "lng": -118.707077
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.037786%2C-118.707077&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.037786%2C-118.707077&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.037786%2C-118.707077&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.037786%2C-118.707077&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "williams-college": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.712725,
+        "lng": -73.203132
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.712725%2C-73.203132&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.712725%2C-73.203132&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.712725%2C-73.203132&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.712725%2C-73.203132&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "swarthmore-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 39.905159,
+        "lng": -75.354278
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=39.905159%2C-75.354278&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.905159%2C-75.354278&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=39.905159%2C-75.354278&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.905159%2C-75.354278&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "wellesley-college": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.291554,
+        "lng": -71.306605
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.291554%2C-71.306605&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.291554%2C-71.306605&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.291554%2C-71.306605&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.291554%2C-71.306605&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "bowdoin-college": {
+      "airportName": "Portland International Jetport",
+      "airport": {
+        "faaId": "PWM",
+        "icaoId": "KPWM",
+        "faaName": "PORTLAND INTL JETPORT",
+        "coordinates": {
+          "lat": 43.6456435,
+          "lng": -70.30861636
+        }
+      },
+      "campus": {
+        "lat": 43.907134,
+        "lng": -69.963942
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=43.6456435%2C-70.30861636&destination=43.907134%2C-69.963942&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.907134%2C-69.963942&destination=43.6456435%2C-70.30861636&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=43.6456435%2C-70.30861636&daddr=43.907134%2C-69.963942&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.907134%2C-69.963942&daddr=43.6456435%2C-70.30861636&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "carleton-college": {
+      "airportName": "Minneapolis-Saint Paul International Airport",
+      "airport": {
+        "faaId": "MSP",
+        "icaoId": "KMSP",
+        "faaName": "MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN",
+        "coordinates": {
+          "lat": 44.88197222,
+          "lng": -93.22177777
+        }
+      },
+      "campus": {
+        "lat": 44.462318,
+        "lng": -93.154666
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=44.88197222%2C-93.22177777&destination=44.462318%2C-93.154666&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.462318%2C-93.154666&destination=44.88197222%2C-93.22177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=44.88197222%2C-93.22177777&daddr=44.462318%2C-93.154666&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.462318%2C-93.154666&daddr=44.88197222%2C-93.22177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "claremont-mckenna-college": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.102154,
+        "lng": -117.711188
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.102154%2C-117.711188&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.102154%2C-117.711188&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.102154%2C-117.711188&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.102154%2C-117.711188&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "davidson-college": {
+      "airportName": "Raleigh-Durham International Airport",
+      "airport": {
+        "faaId": "RDU",
+        "icaoId": "KRDU",
+        "faaName": "RALEIGH-DURHAM INTL",
+        "coordinates": {
+          "lat": 35.87763888,
+          "lng": -78.78747222
+        }
+      },
+      "campus": {
+        "lat": 35.499767,
+        "lng": -80.843979
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=35.87763888%2C-78.78747222&destination=35.499767%2C-80.843979&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=35.499767%2C-80.843979&destination=35.87763888%2C-78.78747222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=35.87763888%2C-78.78747222&daddr=35.499767%2C-80.843979&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=35.499767%2C-80.843979&daddr=35.87763888%2C-78.78747222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "haverford-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.007452,
+        "lng": -75.305207
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.007452%2C-75.305207&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.007452%2C-75.305207&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.007452%2C-75.305207&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.007452%2C-75.305207&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "vassar-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 41.686895,
+        "lng": -73.895088
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=41.686895%2C-73.895088&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.686895%2C-73.895088&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=41.686895%2C-73.895088&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.686895%2C-73.895088&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "washington-and-lee-university": {
+      "airportName": "Washington Dulles International Airport",
+      "airport": {
+        "faaId": "IAD",
+        "icaoId": "KIAD",
+        "faaName": "WASHINGTON DULLES INTL",
+        "coordinates": {
+          "lat": 38.94745638,
+          "lng": -77.45992861
+        }
+      },
+      "campus": {
+        "lat": 37.788939,
+        "lng": -79.443018
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=38.94745638%2C-77.45992861&destination=37.788939%2C-79.443018&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=37.788939%2C-79.443018&destination=38.94745638%2C-77.45992861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=38.94745638%2C-77.45992861&daddr=37.788939%2C-79.443018&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=37.788939%2C-79.443018&daddr=38.94745638%2C-77.45992861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "hamilton-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 43.050245,
+        "lng": -75.408195
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=43.050245%2C-75.408195&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.050245%2C-75.408195&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=43.050245%2C-75.408195&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.050245%2C-75.408195&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "colby-college": {
+      "airportName": "Portland International Jetport",
+      "airport": {
+        "faaId": "PWM",
+        "icaoId": "KPWM",
+        "faaName": "PORTLAND INTL JETPORT",
+        "coordinates": {
+          "lat": 43.6456435,
+          "lng": -70.30861636
+        }
+      },
+      "campus": {
+        "lat": 44.564211,
+        "lng": -69.66337
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=43.6456435%2C-70.30861636&destination=44.564211%2C-69.66337&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.564211%2C-69.66337&destination=43.6456435%2C-70.30861636&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=43.6456435%2C-70.30861636&daddr=44.564211%2C-69.66337&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.564211%2C-69.66337&daddr=43.6456435%2C-70.30861636&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "middlebury-college": {
+      "airportName": "Burlington International Airport",
+      "airport": {
+        "faaId": "BTV",
+        "icaoId": "KBTV",
+        "faaName": "PATRICK LEAHY BURLINGTON INTL",
+        "coordinates": {
+          "lat": 44.471955,
+          "lng": -73.15327611
+        }
+      },
+      "campus": {
+        "lat": 44.009117,
+        "lng": -73.176068
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=44.471955%2C-73.15327611&destination=44.009117%2C-73.176068&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.009117%2C-73.176068&destination=44.471955%2C-73.15327611&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=44.471955%2C-73.15327611&daddr=44.009117%2C-73.176068&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.009117%2C-73.176068&daddr=44.471955%2C-73.15327611&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "grinnell-college": {
+      "airportName": "Des Moines International Airport",
+      "airport": {
+        "faaId": "DSM",
+        "icaoId": "KDSM",
+        "faaName": "DES MOINES INTL",
+        "coordinates": {
+          "lat": 41.53397277,
+          "lng": -93.66307222
+        }
+      },
+      "campus": {
+        "lat": 41.747952,
+        "lng": -92.722094
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.53397277%2C-93.66307222&destination=41.747952%2C-92.722094&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.747952%2C-92.722094&destination=41.53397277%2C-93.66307222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.53397277%2C-93.66307222&daddr=41.747952%2C-92.722094&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.747952%2C-92.722094&daddr=41.53397277%2C-93.66307222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "colgate-university": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 42.819475,
+        "lng": -75.536346
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=42.819475%2C-75.536346&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.819475%2C-75.536346&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=42.819475%2C-75.536346&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.819475%2C-75.536346&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "smith-college": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.318111,
+        "lng": -72.638097
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.318111%2C-72.638097&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.318111%2C-72.638097&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.318111%2C-72.638097&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.318111%2C-72.638097&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "harvey-mudd-college": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.106515,
+        "lng": -117.709837
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.106515%2C-117.709837&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.106515%2C-117.709837&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.106515%2C-117.709837&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.106515%2C-117.709837&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "bryn-mawr-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.02736,
+        "lng": -75.313223
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.02736%2C-75.313223&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.02736%2C-75.313223&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.02736%2C-75.313223&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.02736%2C-75.313223&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "wesleyan-university": {
+      "airportName": "Bradley International Airport",
+      "airport": {
+        "faaId": "BDL",
+        "icaoId": "KBDL",
+        "faaName": "BRADLEY INTL",
+        "coordinates": {
+          "lat": 41.93903222,
+          "lng": -72.68431583
+        }
+      },
+      "campus": {
+        "lat": 41.554665,
+        "lng": -72.657146
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.93903222%2C-72.68431583&destination=41.554665%2C-72.657146&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.554665%2C-72.657146&destination=41.93903222%2C-72.68431583&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.93903222%2C-72.68431583&daddr=41.554665%2C-72.657146&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.554665%2C-72.657146&daddr=41.93903222%2C-72.68431583&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "barnard-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 40.810098,
+        "lng": -73.963346
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=40.810098%2C-73.963346&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.810098%2C-73.963346&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=40.810098%2C-73.963346&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.810098%2C-73.963346&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "macalester-college": {
+      "airportName": "Minneapolis-Saint Paul International Airport",
+      "airport": {
+        "faaId": "MSP",
+        "icaoId": "KMSP",
+        "faaName": "MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN",
+        "coordinates": {
+          "lat": 44.88197222,
+          "lng": -93.22177777
+        }
+      },
+      "campus": {
+        "lat": 44.938565,
+        "lng": -93.168053
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=44.88197222%2C-93.22177777&destination=44.938565%2C-93.168053&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.938565%2C-93.168053&destination=44.88197222%2C-93.22177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=44.88197222%2C-93.22177777&daddr=44.938565%2C-93.168053&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.938565%2C-93.168053&daddr=44.88197222%2C-93.22177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "bates-college": {
+      "airportName": "Portland International Jetport",
+      "airport": {
+        "faaId": "PWM",
+        "icaoId": "KPWM",
+        "faaName": "PORTLAND INTL JETPORT",
+        "coordinates": {
+          "lat": 43.6456435,
+          "lng": -70.30861636
+        }
+      },
+      "campus": {
+        "lat": 44.105299,
+        "lng": -70.203333
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=43.6456435%2C-70.30861636&destination=44.105299%2C-70.203333&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.105299%2C-70.203333&destination=43.6456435%2C-70.30861636&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=43.6456435%2C-70.30861636&daddr=44.105299%2C-70.203333&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.105299%2C-70.203333&daddr=43.6456435%2C-70.30861636&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "colorado-college": {
+      "airportName": "Denver International Airport",
+      "airport": {
+        "faaId": "DEN",
+        "icaoId": "KDEN",
+        "faaName": "DENVER INTL",
+        "coordinates": {
+          "lat": 39.86166666,
+          "lng": -104.67316666
+        }
+      },
+      "campus": {
+        "lat": 38.84886,
+        "lng": -104.822697
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.86166666%2C-104.67316666&destination=38.84886%2C-104.822697&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.84886%2C-104.822697&destination=39.86166666%2C-104.67316666&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.86166666%2C-104.67316666&daddr=38.84886%2C-104.822697&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.84886%2C-104.822697&daddr=39.86166666%2C-104.67316666&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "oberlin-college": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 41.291992,
+        "lng": -82.216795
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=41.291992%2C-82.216795&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.291992%2C-82.216795&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=41.291992%2C-82.216795&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.291992%2C-82.216795&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "scripps-college": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.104147,
+        "lng": -117.711294
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.104147%2C-117.711294&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.104147%2C-117.711294&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.104147%2C-117.711294&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.104147%2C-117.711294&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "franklin-and-marshall-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.048045,
+        "lng": -76.319037
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.048045%2C-76.319037&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.048045%2C-76.319037&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.048045%2C-76.319037&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.048045%2C-76.319037&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "college-of-the-holy-cross": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.23752,
+        "lng": -71.808214
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.23752%2C-71.808214&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.23752%2C-71.808214&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.23752%2C-71.808214&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.23752%2C-71.808214&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "kenyon-college": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 40.374408,
+        "lng": -82.397977
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=40.374408%2C-82.397977&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.374408%2C-82.397977&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=40.374408%2C-82.397977&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.374408%2C-82.397977&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "whitman-college": {
+      "airportName": "Seattle-Tacoma International Airport",
+      "airport": {
+        "faaId": "SEA",
+        "icaoId": "KSEA",
+        "faaName": "SEATTLE-TACOMA INTL",
+        "coordinates": {
+          "lat": 47.44988888,
+          "lng": -122.31177777
+        }
+      },
+      "campus": {
+        "lat": 46.069815,
+        "lng": -118.331546
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=47.44988888%2C-122.31177777&destination=46.069815%2C-118.331546&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=46.069815%2C-118.331546&destination=47.44988888%2C-122.31177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=47.44988888%2C-122.31177777&daddr=46.069815%2C-118.331546&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=46.069815%2C-118.331546&daddr=47.44988888%2C-122.31177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "mount-holyoke-college": {
+      "airportName": "Boston Logan International Airport",
+      "airport": {
+        "faaId": "BOS",
+        "icaoId": "KBOS",
+        "faaName": "GENERAL EDWARD LAWRENCE LOGAN INTL",
+        "coordinates": {
+          "lat": 42.36294444,
+          "lng": -71.00638888
+        }
+      },
+      "campus": {
+        "lat": 42.25489,
+        "lng": -72.573916
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=42.36294444%2C-71.00638888&destination=42.25489%2C-72.573916&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.25489%2C-72.573916&destination=42.36294444%2C-71.00638888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=42.36294444%2C-71.00638888&daddr=42.25489%2C-72.573916&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.25489%2C-72.573916&daddr=42.36294444%2C-71.00638888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "skidmore-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 43.097035,
+        "lng": -73.785335
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=43.097035%2C-73.785335&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=43.097035%2C-73.785335&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=43.097035%2C-73.785335&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=43.097035%2C-73.785335&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "pitzer-college": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.104107,
+        "lng": -117.706675
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.104107%2C-117.706675&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.104107%2C-117.706675&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.104107%2C-117.706675&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.104107%2C-117.706675&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "trinity-college-ct": {
+      "airportName": "Bradley International Airport",
+      "airport": {
+        "faaId": "BDL",
+        "icaoId": "KBDL",
+        "faaName": "BRADLEY INTL",
+        "coordinates": {
+          "lat": 41.93903222,
+          "lng": -72.68431583
+        }
+      },
+      "campus": {
+        "lat": 41.747451,
+        "lng": -72.690882
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.93903222%2C-72.68431583&destination=41.747451%2C-72.690882&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.747451%2C-72.690882&destination=41.93903222%2C-72.68431583&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.93903222%2C-72.68431583&daddr=41.747451%2C-72.690882&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.747451%2C-72.690882&daddr=41.93903222%2C-72.68431583&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "lafayette-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.69956,
+        "lng": -75.209786
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.69956%2C-75.209786&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.69956%2C-75.209786&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.69956%2C-75.209786&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.69956%2C-75.209786&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "bucknell-university": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.954317,
+        "lng": -76.882616
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.954317%2C-76.882616&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.954317%2C-76.882616&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.954317%2C-76.882616&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.954317%2C-76.882616&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "denison-university": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 40.071505,
+        "lng": -82.523272
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=40.071505%2C-82.523272&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.071505%2C-82.523272&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=40.071505%2C-82.523272&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.071505%2C-82.523272&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "sewanee-university-of-the-south": {
+      "airportName": "Nashville International Airport",
+      "airport": {
+        "faaId": "BNA",
+        "icaoId": "KBNA",
+        "faaName": "NASHVILLE INTL",
+        "coordinates": {
+          "lat": 36.124475,
+          "lng": -86.67818055
+        }
+      },
+      "campus": {
+        "lat": 35.204719,
+        "lng": -85.920179
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=36.124475%2C-86.67818055&destination=35.204719%2C-85.920179&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=35.204719%2C-85.920179&destination=36.124475%2C-86.67818055&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=36.124475%2C-86.67818055&daddr=35.204719%2C-85.920179&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=35.204719%2C-85.920179&daddr=36.124475%2C-86.67818055&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "union-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 42.818097,
+        "lng": -73.928788
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=42.818097%2C-73.928788&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=42.818097%2C-73.928788&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=42.818097%2C-73.928788&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=42.818097%2C-73.928788&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "connecticut-college": {
+      "airportName": "Bradley International Airport",
+      "airport": {
+        "faaId": "BDL",
+        "icaoId": "KBDL",
+        "faaName": "BRADLEY INTL",
+        "coordinates": {
+          "lat": 41.93903222,
+          "lng": -72.68431583
+        }
+      },
+      "campus": {
+        "lat": 41.379833,
+        "lng": -72.107321
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=41.93903222%2C-72.68431583&destination=41.379833%2C-72.107321&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=41.379833%2C-72.107321&destination=41.93903222%2C-72.68431583&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=41.93903222%2C-72.68431583&daddr=41.379833%2C-72.107321&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=41.379833%2C-72.107321&daddr=41.93903222%2C-72.68431583&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "rhodes-college": {
+      "airportName": "Nashville International Airport",
+      "airport": {
+        "faaId": "BNA",
+        "icaoId": "KBNA",
+        "faaName": "NASHVILLE INTL",
+        "coordinates": {
+          "lat": 36.124475,
+          "lng": -86.67818055
+        }
+      },
+      "campus": {
+        "lat": 35.154405,
+        "lng": -89.990803
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=36.124475%2C-86.67818055&destination=35.154405%2C-89.990803&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=35.154405%2C-89.990803&destination=36.124475%2C-86.67818055&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=36.124475%2C-86.67818055&daddr=35.154405%2C-89.990803&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=35.154405%2C-89.990803&daddr=36.124475%2C-86.67818055&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "st-olaf-college": {
+      "airportName": "Minneapolis-Saint Paul International Airport",
+      "airport": {
+        "faaId": "MSP",
+        "icaoId": "KMSP",
+        "faaName": "MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN",
+        "coordinates": {
+          "lat": 44.88197222,
+          "lng": -93.22177777
+        }
+      },
+      "campus": {
+        "lat": 44.461529,
+        "lng": -93.182039
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=44.88197222%2C-93.22177777&destination=44.461529%2C-93.182039&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=44.461529%2C-93.182039&destination=44.88197222%2C-93.22177777&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=44.88197222%2C-93.22177777&daddr=44.461529%2C-93.182039&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=44.461529%2C-93.182039&daddr=44.88197222%2C-93.22177777&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "reed-college": {
+      "airportName": "Portland International Airport",
+      "airport": {
+        "faaId": "PDX",
+        "icaoId": "KPDX",
+        "faaName": "PORTLAND INTL",
+        "coordinates": {
+          "lat": 45.58870886,
+          "lng": -122.59686941
+        }
+      },
+      "campus": {
+        "lat": 45.480959,
+        "lng": -122.630348
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=45.58870886%2C-122.59686941&destination=45.480959%2C-122.630348&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=45.480959%2C-122.630348&destination=45.58870886%2C-122.59686941&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=45.58870886%2C-122.59686941&daddr=45.480959%2C-122.630348&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=45.480959%2C-122.630348&daddr=45.58870886%2C-122.59686941&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "gettysburg-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 39.836597,
+        "lng": -77.236792
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=39.836597%2C-77.236792&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.836597%2C-77.236792&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=39.836597%2C-77.236792&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.836597%2C-77.236792&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "dickinson-college": {
+      "airportName": "Philadelphia International Airport",
+      "airport": {
+        "faaId": "PHL",
+        "icaoId": "KPHL",
+        "faaName": "PHILADELPHIA INTL",
+        "coordinates": {
+          "lat": 39.87208388,
+          "lng": -75.24066305
+        }
+      },
+      "campus": {
+        "lat": 40.202796,
+        "lng": -77.197854
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.87208388%2C-75.24066305&destination=40.202796%2C-77.197854&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.202796%2C-77.197854&destination=39.87208388%2C-75.24066305&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.87208388%2C-75.24066305&daddr=40.202796%2C-77.197854&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.202796%2C-77.197854&daddr=39.87208388%2C-75.24066305&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "furman-university": {
+      "airportName": "Charlotte Douglas International Airport",
+      "airport": {
+        "faaId": "CLT",
+        "icaoId": "KCLT",
+        "faaName": "CHARLOTTE/DOUGLAS INTL",
+        "coordinates": {
+          "lat": 35.21318694,
+          "lng": -80.95137916
+        }
+      },
+      "campus": {
+        "lat": 34.924676,
+        "lng": -82.440458
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=35.21318694%2C-80.95137916&destination=34.924676%2C-82.440458&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.924676%2C-82.440458&destination=35.21318694%2C-80.95137916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=35.21318694%2C-80.95137916&daddr=34.924676%2C-82.440458&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.924676%2C-82.440458&daddr=35.21318694%2C-80.95137916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "sarah-lawrence-college": {
+      "airportName": "John F. Kennedy International Airport",
+      "airport": {
+        "faaId": "JFK",
+        "icaoId": "KJFK",
+        "faaName": "JOHN F KENNEDY INTL",
+        "coordinates": {
+          "lat": 40.63992805,
+          "lng": -73.77869222
+        }
+      },
+      "campus": {
+        "lat": 40.9355,
+        "lng": -73.843727
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=40.63992805%2C-73.77869222&destination=40.9355%2C-73.843727&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.9355%2C-73.843727&destination=40.63992805%2C-73.77869222&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=40.63992805%2C-73.77869222&daddr=40.9355%2C-73.843727&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.9355%2C-73.843727&daddr=40.63992805%2C-73.77869222&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "depauw-university": {
+      "airportName": "Indianapolis International Airport",
+      "airport": {
+        "faaId": "IND",
+        "icaoId": "KIND",
+        "faaName": "INDIANAPOLIS INTL",
+        "coordinates": {
+          "lat": 39.71730555,
+          "lng": -86.29463888
+        }
+      },
+      "campus": {
+        "lat": 39.640904,
+        "lng": -86.860363
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.71730555%2C-86.29463888&destination=39.640904%2C-86.860363&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.640904%2C-86.860363&destination=39.71730555%2C-86.29463888&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.71730555%2C-86.29463888&daddr=39.640904%2C-86.860363&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.640904%2C-86.860363&daddr=39.71730555%2C-86.29463888&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "centre-college": {
+      "airportName": "Cincinnati/Northern Kentucky International Airport",
+      "airport": {
+        "faaId": "CVG",
+        "icaoId": "KCVG",
+        "faaName": "CINCINNATI/NORTHERN KENTUCKY INTL",
+        "coordinates": {
+          "lat": 39.0488375,
+          "lng": -84.66782083
+        }
+      },
+      "campus": {
+        "lat": 37.645709,
+        "lng": -84.779392
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.0488375%2C-84.66782083&destination=37.645709%2C-84.779392&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=37.645709%2C-84.779392&destination=39.0488375%2C-84.66782083&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.0488375%2C-84.66782083&daddr=37.645709%2C-84.779392&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=37.645709%2C-84.779392&daddr=39.0488375%2C-84.66782083&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "occidental-college": {
+      "airportName": "Los Angeles International Airport",
+      "airport": {
+        "faaId": "LAX",
+        "icaoId": "KLAX",
+        "faaName": "LOS ANGELES INTL",
+        "coordinates": {
+          "lat": 33.94249638,
+          "lng": -118.40804861
+        }
+      },
+      "campus": {
+        "lat": 34.127124,
+        "lng": -118.210908
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.94249638%2C-118.40804861&destination=34.127124%2C-118.210908&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=34.127124%2C-118.210908&destination=33.94249638%2C-118.40804861&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.94249638%2C-118.40804861&daddr=34.127124%2C-118.210908&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=34.127124%2C-118.210908&daddr=33.94249638%2C-118.40804861&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "st-johns-college": {
+      "airportName": "Baltimore/Washington International Airport",
+      "airport": {
+        "faaId": "BWI",
+        "icaoId": "KBWI",
+        "faaName": "BALTIMORE/WASHINGTON INTL THURGOOD MARSHALL",
+        "coordinates": {
+          "lat": 39.17572833,
+          "lng": -76.66899111
+        }
+      },
+      "campus": {
+        "lat": 38.981598,
+        "lng": -76.491359
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.17572833%2C-76.66899111&destination=38.981598%2C-76.491359&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=38.981598%2C-76.491359&destination=39.17572833%2C-76.66899111&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.17572833%2C-76.66899111&daddr=38.981598%2C-76.491359&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=38.981598%2C-76.491359&daddr=39.17572833%2C-76.66899111&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "agnes-scott-college": {
+      "airportName": "Hartsfield-Jackson Atlanta International Airport",
+      "airport": {
+        "faaId": "ATL",
+        "icaoId": "KATL",
+        "faaName": "HARTSFIELD/JACKSON ATLANTA INTL",
+        "coordinates": {
+          "lat": 33.63669961,
+          "lng": -84.427864
+        }
+      },
+      "campus": {
+        "lat": 33.769268,
+        "lng": -84.295459
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=33.63669961%2C-84.427864&destination=33.769268%2C-84.295459&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=33.769268%2C-84.295459&destination=33.63669961%2C-84.427864&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=33.63669961%2C-84.427864&daddr=33.769268%2C-84.295459&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=33.769268%2C-84.295459&daddr=33.63669961%2C-84.427864&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "trinity-university": {
+      "airportName": "Dallas/Fort Worth International Airport",
+      "airport": {
+        "faaId": "DFW",
+        "icaoId": "KDFW",
+        "faaName": "DALLAS-FORT WORTH INTL",
+        "coordinates": {
+          "lat": 32.89723305,
+          "lng": -97.03769472
+        }
+      },
+      "campus": {
+        "lat": 29.462682,
+        "lng": -98.48186
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=32.89723305%2C-97.03769472&destination=29.462682%2C-98.48186&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=29.462682%2C-98.48186&destination=32.89723305%2C-97.03769472&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=32.89723305%2C-97.03769472&daddr=29.462682%2C-98.48186&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=29.462682%2C-98.48186&daddr=32.89723305%2C-97.03769472&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "wooster-college": {
+      "airportName": "John Glenn Columbus International Airport",
+      "airport": {
+        "faaId": "CMH",
+        "icaoId": "KCMH",
+        "faaName": "JOHN GLENN COLUMBUS INTL",
+        "coordinates": {
+          "lat": 39.99694666,
+          "lng": -82.89215916
+        }
+      },
+      "campus": {
+        "lat": 40.81046,
+        "lng": -81.934674
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.99694666%2C-82.89215916&destination=40.81046%2C-81.934674&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=40.81046%2C-81.934674&destination=39.99694666%2C-82.89215916&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.99694666%2C-82.89215916&daddr=40.81046%2C-81.934674&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=40.81046%2C-81.934674&daddr=39.99694666%2C-82.89215916&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    },
+    "goucher-college": {
+      "airportName": "Baltimore/Washington International Airport",
+      "airport": {
+        "faaId": "BWI",
+        "icaoId": "KBWI",
+        "faaName": "BALTIMORE/WASHINGTON INTL THURGOOD MARSHALL",
+        "coordinates": {
+          "lat": 39.17572833,
+          "lng": -76.66899111
+        }
+      },
+      "campus": {
+        "lat": 39.410175,
+        "lng": -76.594843
+      },
+      "googleMaps": {
+        "airportToCampusUrl": "https://www.google.com/maps/dir/?api=1&origin=39.17572833%2C-76.66899111&destination=39.410175%2C-76.594843&travelmode=driving",
+        "campusToAirportUrl": "https://www.google.com/maps/dir/?api=1&origin=39.410175%2C-76.594843&destination=39.17572833%2C-76.66899111&travelmode=driving",
+        "transportMode": "driving"
+      },
+      "petalMaps": {
+        "airportToCampusUrl": "https://www.petalmaps.com/routes/?saddr=39.17572833%2C-76.66899111&daddr=39.410175%2C-76.594843&type=drive",
+        "campusToAirportUrl": "https://www.petalmaps.com/routes/?saddr=39.410175%2C-76.594843&daddr=39.17572833%2C-76.66899111&type=drive",
+        "webFallbackUrl": "https://www.petalmaps.com/",
+        "transportMode": "drive",
+        "officialUsCoverageDeclared": false
+      }
+    }
+  }
+}

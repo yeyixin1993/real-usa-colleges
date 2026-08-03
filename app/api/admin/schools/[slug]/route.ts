@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { getSchoolBySlug } from '@/lib/data';
+import { getAdminSchoolBySlug } from '@/lib/data';
 import { isAdminAuthenticatedFromRequest } from '@/lib/server/admin-auth';
 import { getSchoolOverride, upsertSchoolOverride } from '@/lib/server/school-overrides';
 import type { School } from '@/types/school';
@@ -13,7 +13,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   }
 
   const { slug } = await params;
-  const school = await getSchoolBySlug(slug);
+  const school = await getAdminSchoolBySlug(slug);
 
   if (!school) {
     return NextResponse.json({ error: 'School not found' }, { status: 404 });
@@ -30,7 +30,7 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   }
 
   const { slug } = await params;
-  const school = await getSchoolBySlug(slug);
+  const school = await getAdminSchoolBySlug(slug);
 
   if (!school) {
     return NextResponse.json({ error: 'School not found' }, { status: 404 });

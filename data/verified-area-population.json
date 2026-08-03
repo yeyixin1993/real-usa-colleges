@@ -1,0 +1,577 @@
+{
+  "generatedAt": "2026-08-02T16:47:05.881Z",
+  "source": {
+    "label": "WorldPop — Global High Resolution Population Denominators",
+    "url": "https://worldpop.arcgis.com/arcgis/rest/services/WorldPop_Total_Population_1km/ImageServer",
+    "doi": "10.5258/SOTON/WP00647",
+    "vintage": "2020 population counts, approximately 1 km grid",
+    "checkedAt": "2026-08-02"
+  },
+  "methodology": {
+    "en": "WorldPop ArcGIS computes the sum of its 2020 population-count grid inside a 72-vertex geodesic polygon approximating a 30.0 km circle around the verified campus coordinate. This is a reproducible gridded estimate, not a Census enumeration or an exact building-level count.",
+    "zh": "以已核实校园坐标为圆心，用 72 个顶点构造 30.0 km 测地圆，并由 WorldPop ArcGIS 汇总圆内 2020 人口计数栅格。该值是可复算的约 1 km 栅格估计，并非人口普查逐户计数或建筑级精确人数。"
+  },
+  "recordCount": 112,
+  "records": {
+    "ucla": {
+      "population": 5699999,
+      "radiusKm": 30,
+      "includedCellCount": 3183
+    },
+    "princeton-university": {
+      "population": 1272491,
+      "radiusKm": 30,
+      "includedCellCount": 4323
+    },
+    "university-of-washington": {
+      "population": 1852645,
+      "radiusKm": 30,
+      "includedCellCount": 4016
+    },
+    "amherst-college": {
+      "population": 447077,
+      "radiusKm": 30,
+      "includedCellCount": 4416
+    },
+    "university-of-michigan": {
+      "population": 759521,
+      "radiusKm": 30,
+      "includedCellCount": 4446
+    },
+    "rice-university": {
+      "population": 2691010,
+      "radiusKm": 30,
+      "includedCellCount": 3789
+    },
+    "stanford-university": {
+      "population": 2079803,
+      "radiusKm": 30,
+      "includedCellCount": 3534
+    },
+    "northeastern-university": {
+      "population": 2695265,
+      "radiusKm": 30,
+      "includedCellCount": 3787
+    },
+    "mit": {
+      "population": 2664881,
+      "radiusKm": 30,
+      "includedCellCount": 3797
+    },
+    "duke-university": {
+      "population": 545614,
+      "radiusKm": 30,
+      "includedCellCount": 4067
+    },
+    "california-institute-of-technology": {
+      "population": 5758825,
+      "radiusKm": 30,
+      "includedCellCount": 3976
+    },
+    "university-of-pennsylvania": {
+      "population": 3569921,
+      "radiusKm": 30,
+      "includedCellCount": 4275
+    },
+    "brown-university": {
+      "population": 1257312,
+      "radiusKm": 30,
+      "includedCellCount": 4202
+    },
+    "johns-hopkins-university": {
+      "population": 1932933,
+      "radiusKm": 30,
+      "includedCellCount": 3928
+    },
+    "northwestern-university": {
+      "population": 3694430,
+      "radiusKm": 30,
+      "includedCellCount": 2142
+    },
+    "columbia-university": {
+      "population": 11753974,
+      "radiusKm": 30,
+      "includedCellCount": 4008
+    },
+    "university-of-chicago": {
+      "population": 4418166,
+      "radiusKm": 30,
+      "includedCellCount": 2711
+    },
+    "cornell-university": {
+      "population": 139310,
+      "radiusKm": 30,
+      "includedCellCount": 4401
+    },
+    "university-of-california-berkeley": {
+      "population": 2680361,
+      "radiusKm": 30,
+      "includedCellCount": 3070
+    },
+    "vanderbilt-university": {
+      "population": 800697,
+      "radiusKm": 30,
+      "includedCellCount": 4069
+    },
+    "dartmouth-college": {
+      "population": 78569,
+      "radiusKm": 30,
+      "includedCellCount": 4551
+    },
+    "university-of-notre-dame": {
+      "population": 451149,
+      "radiusKm": 30,
+      "includedCellCount": 4409
+    },
+    "georgetown-university": {
+      "population": 3286058,
+      "radiusKm": 30,
+      "includedCellCount": 4211
+    },
+    "unc-chapel-hill": {
+      "population": 515378,
+      "radiusKm": 30,
+      "includedCellCount": 4063
+    },
+    "carnegie-mellon-university": {
+      "population": 1524437,
+      "radiusKm": 30,
+      "includedCellCount": 4329
+    },
+    "emory-university": {
+      "population": 2166464,
+      "radiusKm": 30,
+      "includedCellCount": 3966
+    },
+    "university-of-virginia": {
+      "population": 160459,
+      "radiusKm": 30,
+      "includedCellCount": 4177
+    },
+    "new-york-university": {
+      "population": 11674415,
+      "radiusKm": 30,
+      "includedCellCount": 3677
+    },
+    "university-of-southern-california": {
+      "population": 7213029,
+      "radiusKm": 30,
+      "includedCellCount": 3548
+    },
+    "washington-university-in-st-louis": {
+      "population": 1757135,
+      "radiusKm": 30,
+      "includedCellCount": 4216
+    },
+    "university-of-california-san-diego": {
+      "population": 1757828,
+      "radiusKm": 30,
+      "includedCellCount": 2166
+    },
+    "boston-university": {
+      "population": 2690114,
+      "radiusKm": 30,
+      "includedCellCount": 3869
+    },
+    "tufts-university": {
+      "population": 2682906,
+      "radiusKm": 30,
+      "includedCellCount": 3879
+    },
+    "pomona-college": {
+      "population": 2377381,
+      "radiusKm": 30,
+      "includedCellCount": 3975
+    },
+    "university-of-florida": {
+      "population": 222167,
+      "radiusKm": 30,
+      "includedCellCount": 3704
+    },
+    "university-of-texas-austin": {
+      "population": 960723,
+      "radiusKm": 30,
+      "includedCellCount": 3814
+    },
+    "georgia-institute-of-technology": {
+      "population": 2107548,
+      "radiusKm": 30,
+      "includedCellCount": 3966
+    },
+    "university-of-california-davis": {
+      "population": 732423,
+      "radiusKm": 30,
+      "includedCellCount": 4210
+    },
+    "university-of-california-irvine": {
+      "population": 2766939,
+      "radiusKm": 30,
+      "includedCellCount": 2629
+    },
+    "university-of-wisconsin-madison": {
+      "population": 421917,
+      "radiusKm": 30,
+      "includedCellCount": 4452
+    },
+    "university-of-illinois-urbana-champaign": {
+      "population": 187860,
+      "radiusKm": 30,
+      "includedCellCount": 4306
+    },
+    "ohio-state-university": {
+      "population": 1249400,
+      "radiusKm": 30,
+      "includedCellCount": 4291
+    },
+    "rutgers-university": {
+      "population": 2218993,
+      "radiusKm": 30,
+      "includedCellCount": 4192
+    },
+    "university-of-maryland-college-park": {
+      "population": 3025100,
+      "radiusKm": 30,
+      "includedCellCount": 4229
+    },
+    "purdue-university": {
+      "population": 174403,
+      "radiusKm": 30,
+      "includedCellCount": 4327
+    },
+    "yale-university": {
+      "population": 1090188,
+      "radiusKm": 30,
+      "includedCellCount": 3142
+    },
+    "wake-forest-university": {
+      "population": 467745,
+      "radiusKm": 30,
+      "includedCellCount": 4076
+    },
+    "case-western-reserve-university": {
+      "population": 1578389,
+      "radiusKm": 30,
+      "includedCellCount": 2936
+    },
+    "lehigh-university": {
+      "population": 724782,
+      "radiusKm": 30,
+      "includedCellCount": 4336
+    },
+    "william-and-mary": {
+      "population": 259653,
+      "radiusKm": 30,
+      "includedCellCount": 3683
+    },
+    "villanova-university": {
+      "population": 3288141,
+      "radiusKm": 30,
+      "includedCellCount": 4285
+    },
+    "university-of-minnesota-twin-cities": {
+      "population": 2247548,
+      "radiusKm": 30,
+      "includedCellCount": 4642
+    },
+    "university-of-rochester": {
+      "population": 794086,
+      "radiusKm": 30,
+      "includedCellCount": 3893
+    },
+    "brandeis-university": {
+      "population": 2609139,
+      "radiusKm": 30,
+      "includedCellCount": 4295
+    },
+    "uc-santa-barbara": {
+      "population": 180793,
+      "radiusKm": 30,
+      "includedCellCount": 1887
+    },
+    "uc-santa-cruz": {
+      "population": 315409,
+      "radiusKm": 30,
+      "includedCellCount": 2245
+    },
+    "pepperdine-university": {
+      "population": 1532038,
+      "radiusKm": 30,
+      "includedCellCount": 2183
+    },
+    "williams-college": {
+      "population": 126023,
+      "radiusKm": 30,
+      "includedCellCount": 4479
+    },
+    "swarthmore-college": {
+      "population": 3021007,
+      "radiusKm": 30,
+      "includedCellCount": 4251
+    },
+    "wellesley-college": {
+      "population": 2464487,
+      "radiusKm": 30,
+      "includedCellCount": 4405
+    },
+    "bowdoin-college": {
+      "population": 171024,
+      "radiusKm": 30,
+      "includedCellCount": 3925
+    },
+    "carleton-college": {
+      "population": 171093,
+      "radiusKm": 30,
+      "includedCellCount": 4610
+    },
+    "harvard-university": {
+      "population": 2676570,
+      "radiusKm": 30,
+      "includedCellCount": 3890
+    },
+    "claremont-mckenna-college": {
+      "population": 2302071,
+      "radiusKm": 30,
+      "includedCellCount": 3975
+    },
+    "haverford-college": {
+      "population": 3422365,
+      "radiusKm": 30,
+      "includedCellCount": 4277
+    },
+    "davidson-college": {
+      "population": 584186,
+      "radiusKm": 30,
+      "includedCellCount": 4028
+    },
+    "vassar-college": {
+      "population": 453416,
+      "radiusKm": 30,
+      "includedCellCount": 4378
+    },
+    "washington-and-lee-university": {
+      "population": 40998,
+      "radiusKm": 30,
+      "includedCellCount": 4167
+    },
+    "hamilton-college": {
+      "population": 265664,
+      "radiusKm": 30,
+      "includedCellCount": 4502
+    },
+    "colby-college": {
+      "population": 104098,
+      "radiusKm": 30,
+      "includedCellCount": 4582
+    },
+    "middlebury-college": {
+      "population": 53587,
+      "radiusKm": 30,
+      "includedCellCount": 4499
+    },
+    "colgate-university": {
+      "population": 79363,
+      "radiusKm": 30,
+      "includedCellCount": 4489
+    },
+    "bryn-mawr-college": {
+      "population": 3407590,
+      "radiusKm": 30,
+      "includedCellCount": 4282
+    },
+    "grinnell-college": {
+      "population": 50416,
+      "radiusKm": 30,
+      "includedCellCount": 4410
+    },
+    "wesleyan-university": {
+      "population": 1070280,
+      "radiusKm": 30,
+      "includedCellCount": 4394
+    },
+    "smith-college": {
+      "population": 566301,
+      "radiusKm": 30,
+      "includedCellCount": 4417
+    },
+    "harvey-mudd-college": {
+      "population": 2302071,
+      "radiusKm": 30,
+      "includedCellCount": 3975
+    },
+    "barnard-college": {
+      "population": 11734058,
+      "radiusKm": 30,
+      "includedCellCount": 4040
+    },
+    "colorado-college": {
+      "population": 508753,
+      "radiusKm": 30,
+      "includedCellCount": 4230
+    },
+    "bates-college": {
+      "population": 178671,
+      "radiusKm": 30,
+      "includedCellCount": 4558
+    },
+    "macalester-college": {
+      "population": 2160331,
+      "radiusKm": 30,
+      "includedCellCount": 4630
+    },
+    "oberlin-college": {
+      "population": 402857,
+      "radiusKm": 30,
+      "includedCellCount": 3789
+    },
+    "scripps-college": {
+      "population": 2302071,
+      "radiusKm": 30,
+      "includedCellCount": 3975
+    },
+    "franklin-and-marshall-college": {
+      "population": 519004,
+      "radiusKm": 30,
+      "includedCellCount": 4292
+    },
+    "college-of-the-holy-cross": {
+      "population": 670803,
+      "radiusKm": 30,
+      "includedCellCount": 4438
+    },
+    "kenyon-college": {
+      "population": 87269,
+      "radiusKm": 30,
+      "includedCellCount": 4324
+    },
+    "whitman-college": {
+      "population": 62333,
+      "radiusKm": 30,
+      "includedCellCount": 4745
+    },
+    "skidmore-college": {
+      "population": 265093,
+      "radiusKm": 30,
+      "includedCellCount": 4487
+    },
+    "mount-holyoke-college": {
+      "population": 644623,
+      "radiusKm": 30,
+      "includedCellCount": 4411
+    },
+    "pitzer-college": {
+      "population": 2302071,
+      "radiusKm": 30,
+      "includedCellCount": 3975
+    },
+    "trinity-college-ct": {
+      "population": 1072578,
+      "radiusKm": 30,
+      "includedCellCount": 4410
+    },
+    "bucknell-university": {
+      "population": 160556,
+      "radiusKm": 30,
+      "includedCellCount": 4363
+    },
+    "lafayette-college": {
+      "population": 628854,
+      "radiusKm": 30,
+      "includedCellCount": 4341
+    },
+    "denison-university": {
+      "population": 310162,
+      "radiusKm": 30,
+      "includedCellCount": 4303
+    },
+    "sewanee-university-of-the-south": {
+      "population": 59257,
+      "radiusKm": 30,
+      "includedCellCount": 4028
+    },
+    "union-college": {
+      "population": 675685,
+      "radiusKm": 30,
+      "includedCellCount": 4477
+    },
+    "connecticut-college": {
+      "population": 300033,
+      "radiusKm": 30,
+      "includedCellCount": 3120
+    },
+    "st-olaf-college": {
+      "population": 175977,
+      "radiusKm": 30,
+      "includedCellCount": 4610
+    },
+    "rhodes-college": {
+      "population": 990695,
+      "radiusKm": 30,
+      "includedCellCount": 4012
+    },
+    "reed-college": {
+      "population": 1640194,
+      "radiusKm": 30,
+      "includedCellCount": 4686
+    },
+    "dickinson-college": {
+      "population": 322655,
+      "radiusKm": 30,
+      "includedCellCount": 4314
+    },
+    "centre-college": {
+      "population": 93331,
+      "radiusKm": 30,
+      "includedCellCount": 4159
+    },
+    "furman-university": {
+      "population": 492494,
+      "radiusKm": 30,
+      "includedCellCount": 4016
+    },
+    "gettysburg-college": {
+      "population": 202892,
+      "radiusKm": 30,
+      "includedCellCount": 4287
+    },
+    "sarah-lawrence-college": {
+      "population": 8572183,
+      "radiusKm": 30,
+      "includedCellCount": 3913
+    },
+    "depauw-university": {
+      "population": 71745,
+      "radiusKm": 30,
+      "includedCellCount": 4273
+    },
+    "agnes-scott-college": {
+      "population": 2112045,
+      "radiusKm": 30,
+      "includedCellCount": 3965
+    },
+    "occidental-college": {
+      "population": 6541861,
+      "radiusKm": 30,
+      "includedCellCount": 3976
+    },
+    "st-johns-college": {
+      "population": 664416,
+      "radiusKm": 30,
+      "includedCellCount": 2905
+    },
+    "trinity-university": {
+      "population": 1396049,
+      "radiusKm": 30,
+      "includedCellCount": 3781
+    },
+    "goucher-college": {
+      "population": 1767287,
+      "radiusKm": 30,
+      "includedCellCount": 4062
+    },
+    "wooster-college": {
+      "population": 184401,
+      "radiusKm": 30,
+      "includedCellCount": 4350
+    }
+  }
+}

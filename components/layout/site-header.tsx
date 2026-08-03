@@ -10,8 +10,8 @@ export function SiteHeader({ locale, dictionary }: { locale: Locale; dictionary:
   const navItems = [
     { href: `/${locale}`, label: dictionary.nav.home },
     { href: `/${locale}/schools`, label: dictionary.nav.schools },
+    { href: `/${locale}/rankings`, label: dictionary.nav.rankings },
     { href: `/${locale}/compare`, label: dictionary.nav.compare },
-    { href: `/${locale}/collections`, label: dictionary.nav.collections },
     { href: `/${locale}/methodology`, label: dictionary.nav.methodology },
   ];
 

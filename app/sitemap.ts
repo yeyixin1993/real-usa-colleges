@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = locales.flatMap((locale) => [
     `/${locale}`,
     `/${locale}/schools`,
+    `/${locale}/rankings`,
     `/${locale}/compare`,
     `/${locale}/methodology`,
     `/${locale}/collections`,

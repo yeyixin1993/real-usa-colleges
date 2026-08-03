@@ -1,1 +1,18 @@
-{}
+{
+  "ucla": {
+    "uberAvailabilitySource": {
+      "label": "UCLA Transportation — Ride-Hailing at UCLA",
+      "url": "https://transportation.ucla.edu/getting-around-campus/ride-hailing-ucla",
+      "checkedAt": "2026-08-02",
+      "notes": "UCLA states that it partnered with Uber for campus pickup zones active 24 hours a day, seven days a week. This verifies campus service availability, not wait-time estimates or mobility scores."
+    }
+  },
+  "colgate-university": {
+    "uberAvailabilitySource": {
+      "label": "Colgate University — Reunion transportation guidance",
+      "url": "https://www.colgate.edu/alumni/campus-events/reunion",
+      "checkedAt": "2026-08-02",
+      "notes": "Colgate explicitly says Uber/Lyft are not reliable in Hamilton and that advance transportation reservations are required to guarantee availability. This supports a Limited/Unreliable qualitative classification, but does not verify the existing 35/95-minute wait estimates or Mobility Score. Uber's official Hamilton page confirms requests are supported while warning pickup times may be longer than in larger cities."
+    }
+  }
+}

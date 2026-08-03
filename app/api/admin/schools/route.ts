@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { getSchools } from '@/lib/data';
+import { getAdminSchools } from '@/lib/data';
 import { isAdminAuthenticatedFromRequest } from '@/lib/server/admin-auth';
 
 export const dynamic = 'force-dynamic';
@@ -10,6 +10,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const schools = await getSchools();
+  const schools = await getAdminSchools();
   return NextResponse.json({ schools });
 }

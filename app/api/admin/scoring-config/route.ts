@@ -20,8 +20,11 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const patch = (await request.json()) as Partial<ScoringConfig>;
-  const config = await upsertScoringConfig(patch);
-
-  return NextResponse.json({ ok: true, config });
+  try {
+    const patch = (await request.json()) as Partial<ScoringConfig>;
+    const config = await upsertScoringConfig(patch);
+    return NextResponse.json({ ok: true, config });
+  } catch (error) {
+    return NextResponse.json({ error: error instanceof Error ? error.message : 'Invalid scoring configuration' }, { status: 400 });
+  }
 }

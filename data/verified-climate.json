@@ -1,0 +1,8416 @@
+{
+  "source": {
+    "label": "NOAA National Centers for Environmental Information",
+    "release": "U.S. Monthly Climate Normals, 1991–2020, version 1.0.1",
+    "normalPeriod": "1991–2020",
+    "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+    "datasetUrl": "https://www.ncei.noaa.gov/data/normals-monthly/1991-2020/",
+    "inventoryUrl": "https://www.ncei.noaa.gov/data/normals-monthly/1991-2020/doc/inventory_30yr.txt",
+    "apiUrl": "https://www.ncei.noaa.gov/access/services/data/v1"
+  },
+  "generatedAt": "2026-08-02T08:19:07.198Z",
+  "recordCount": 112,
+  "candidateStationCount": 635,
+  "records": {
+    "princeton-university": {
+      "station": {
+        "id": "USC00283951",
+        "name": "HIGHTSTOWN 2 W",
+        "stateCode": "NJ",
+        "coordinates": {
+          "lat": 40.2664,
+          "lng": -74.5642
+        },
+        "elevationMeters": 30.5,
+        "distanceMiles": 7.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 40.5,
+          "lowF": 21.4
+        },
+        {
+          "month": "Feb",
+          "highF": 43,
+          "lowF": 22.7
+        },
+        {
+          "month": "Mar",
+          "highF": 50.9,
+          "lowF": 29.7
+        },
+        {
+          "month": "Apr",
+          "highF": 62.9,
+          "lowF": 39
+        },
+        {
+          "month": "May",
+          "highF": 72.8,
+          "lowF": 48.4
+        },
+        {
+          "month": "Jun",
+          "highF": 81.7,
+          "lowF": 57.8
+        },
+        {
+          "month": "Jul",
+          "highF": 86.7,
+          "lowF": 63
+        },
+        {
+          "month": "Aug",
+          "highF": 84.9,
+          "lowF": 60.8
+        },
+        {
+          "month": "Sep",
+          "highF": 78.3,
+          "lowF": 53.8
+        },
+        {
+          "month": "Oct",
+          "highF": 66.4,
+          "lowF": 42.2
+        },
+        {
+          "month": "Nov",
+          "highF": 55.3,
+          "lowF": 33
+        },
+        {
+          "month": "Dec",
+          "highF": 45.5,
+          "lowF": 26.6
+        }
+      ]
+    },
+    "ucla": {
+      "station": {
+        "id": "USC00049152",
+        "name": "U C L A",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0697,
+          "lng": -118.4428
+        },
+        "elevationMeters": 131.1,
+        "distanceMiles": 0.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.7,
+          "lowF": 51.9
+        },
+        {
+          "month": "Feb",
+          "highF": 67,
+          "lowF": 51.1
+        },
+        {
+          "month": "Mar",
+          "highF": 68,
+          "lowF": 52.1
+        },
+        {
+          "month": "Apr",
+          "highF": 69.6,
+          "lowF": 53.6
+        },
+        {
+          "month": "May",
+          "highF": 70.2,
+          "lowF": 56.3
+        },
+        {
+          "month": "Jun",
+          "highF": 72.9,
+          "lowF": 59.1
+        },
+        {
+          "month": "Jul",
+          "highF": 76.9,
+          "lowF": 62.4
+        },
+        {
+          "month": "Aug",
+          "highF": 78.8,
+          "lowF": 63.1
+        },
+        {
+          "month": "Sep",
+          "highF": 78.7,
+          "lowF": 62.5
+        },
+        {
+          "month": "Oct",
+          "highF": 76.2,
+          "lowF": 59.6
+        },
+        {
+          "month": "Nov",
+          "highF": 72.1,
+          "lowF": 55.4
+        },
+        {
+          "month": "Dec",
+          "highF": 67.1,
+          "lowF": 51.4
+        }
+      ]
+    },
+    "rice-university": {
+      "station": {
+        "id": "USC00414326",
+        "name": "HOUSTON-PORT",
+        "stateCode": "TX",
+        "coordinates": {
+          "lat": 29.7456,
+          "lng": -95.28
+        },
+        "elevationMeters": 5.8,
+        "distanceMiles": 7.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 62.8,
+          "lowF": 44.3
+        },
+        {
+          "month": "Feb",
+          "highF": 66.7,
+          "lowF": 48.9
+        },
+        {
+          "month": "Mar",
+          "highF": 73.3,
+          "lowF": 53.7
+        },
+        {
+          "month": "Apr",
+          "highF": 79.2,
+          "lowF": 60.9
+        },
+        {
+          "month": "May",
+          "highF": 85.7,
+          "lowF": 68.7
+        },
+        {
+          "month": "Jun",
+          "highF": 91.3,
+          "lowF": 74.8
+        },
+        {
+          "month": "Jul",
+          "highF": 93.2,
+          "lowF": 76.8
+        },
+        {
+          "month": "Aug",
+          "highF": 94.3,
+          "lowF": 76.8
+        },
+        {
+          "month": "Sep",
+          "highF": 89.8,
+          "lowF": 71.8
+        },
+        {
+          "month": "Oct",
+          "highF": 81.9,
+          "lowF": 62.7
+        },
+        {
+          "month": "Nov",
+          "highF": 72,
+          "lowF": 52.9
+        },
+        {
+          "month": "Dec",
+          "highF": 65.2,
+          "lowF": 46
+        }
+      ]
+    },
+    "university-of-washington": {
+      "station": {
+        "id": "USW00094290",
+        "name": "SEATTLE SAND PT WSFO",
+        "stateCode": "WA",
+        "coordinates": {
+          "lat": 47.6872,
+          "lng": -122.2553
+        },
+        "elevationMeters": 18.3,
+        "distanceMiles": 3.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 47.4,
+          "lowF": 37.2
+        },
+        {
+          "month": "Feb",
+          "highF": 49.8,
+          "lowF": 37
+        },
+        {
+          "month": "Mar",
+          "highF": 53.9,
+          "lowF": 39.2
+        },
+        {
+          "month": "Apr",
+          "highF": 58.8,
+          "lowF": 42.8
+        },
+        {
+          "month": "May",
+          "highF": 65.3,
+          "lowF": 48.3
+        },
+        {
+          "month": "Jun",
+          "highF": 70.2,
+          "lowF": 52.7
+        },
+        {
+          "month": "Jul",
+          "highF": 76.5,
+          "lowF": 56.5
+        },
+        {
+          "month": "Aug",
+          "highF": 77,
+          "lowF": 57.1
+        },
+        {
+          "month": "Sep",
+          "highF": 71.3,
+          "lowF": 53.2
+        },
+        {
+          "month": "Oct",
+          "highF": 60.5,
+          "lowF": 46.7
+        },
+        {
+          "month": "Nov",
+          "highF": 51.9,
+          "lowF": 40.9
+        },
+        {
+          "month": "Dec",
+          "highF": 46.5,
+          "lowF": 37
+        }
+      ]
+    },
+    "amherst-college": {
+      "station": {
+        "id": "USC00190120",
+        "name": "AMHERST",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3861,
+          "lng": -72.5375
+        },
+        "elevationMeters": 44.2,
+        "distanceMiles": 1.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 34,
+          "lowF": 13.8
+        },
+        {
+          "month": "Feb",
+          "highF": 37,
+          "lowF": 15.3
+        },
+        {
+          "month": "Mar",
+          "highF": 45.2,
+          "lowF": 24.1
+        },
+        {
+          "month": "Apr",
+          "highF": 58.2,
+          "lowF": 34.4
+        },
+        {
+          "month": "May",
+          "highF": 69.5,
+          "lowF": 45.4
+        },
+        {
+          "month": "Jun",
+          "highF": 78,
+          "lowF": 55
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 60.2
+        },
+        {
+          "month": "Aug",
+          "highF": 81.5,
+          "lowF": 58.3
+        },
+        {
+          "month": "Sep",
+          "highF": 74.4,
+          "lowF": 50.3
+        },
+        {
+          "month": "Oct",
+          "highF": 61.9,
+          "lowF": 38.6
+        },
+        {
+          "month": "Nov",
+          "highF": 49.7,
+          "lowF": 29.1
+        },
+        {
+          "month": "Dec",
+          "highF": 39.2,
+          "lowF": 20.8
+        }
+      ]
+    },
+    "pomona-college": {
+      "station": {
+        "id": "USC00047050",
+        "name": "POMONA/FAIRPLEX",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0817,
+          "lng": -117.7658
+        },
+        "elevationMeters": 304.5,
+        "distanceMiles": 3.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.9,
+          "lowF": 43.1
+        },
+        {
+          "month": "Feb",
+          "highF": 67.3,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 72,
+          "lowF": 47
+        },
+        {
+          "month": "Apr",
+          "highF": 75.8,
+          "lowF": 49.6
+        },
+        {
+          "month": "May",
+          "highF": 78.4,
+          "lowF": 54
+        },
+        {
+          "month": "Jun",
+          "highF": 84.3,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 90.3,
+          "lowF": 62.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.4,
+          "lowF": 62.7
+        },
+        {
+          "month": "Sep",
+          "highF": 88.7,
+          "lowF": 60.4
+        },
+        {
+          "month": "Oct",
+          "highF": 80.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Nov",
+          "highF": 73.5,
+          "lowF": 47
+        },
+        {
+          "month": "Dec",
+          "highF": 66.9,
+          "lowF": 41.5
+        }
+      ]
+    },
+    "university-of-michigan": {
+      "station": {
+        "id": "USC00200228",
+        "name": "ANN ARBOR SE",
+        "stateCode": "MI",
+        "coordinates": {
+          "lat": 42.2417,
+          "lng": -83.6933
+        },
+        "elevationMeters": 253.6,
+        "distanceMiles": 3.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 31.7,
+          "lowF": 16.3
+        },
+        {
+          "month": "Feb",
+          "highF": 34.8,
+          "lowF": 16.3
+        },
+        {
+          "month": "Mar",
+          "highF": 45.1,
+          "lowF": 24.9
+        },
+        {
+          "month": "Apr",
+          "highF": 58.2,
+          "lowF": 34.2
+        },
+        {
+          "month": "May",
+          "highF": 70.4,
+          "lowF": 45.5
+        },
+        {
+          "month": "Jun",
+          "highF": 79.7,
+          "lowF": 55.5
+        },
+        {
+          "month": "Jul",
+          "highF": 84,
+          "lowF": 59
+        },
+        {
+          "month": "Aug",
+          "highF": 81.5,
+          "lowF": 57.9
+        },
+        {
+          "month": "Sep",
+          "highF": 75.1,
+          "lowF": 49.7
+        },
+        {
+          "month": "Oct",
+          "highF": 62,
+          "lowF": 39
+        },
+        {
+          "month": "Nov",
+          "highF": 48,
+          "lowF": 29.6
+        },
+        {
+          "month": "Dec",
+          "highF": 36.2,
+          "lowF": 22.2
+        }
+      ]
+    },
+    "northeastern-university": {
+      "station": {
+        "id": "USC00193890",
+        "name": "JAMAICA PLAIN",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3031,
+          "lng": -71.1242
+        },
+        "elevationMeters": 29,
+        "distanceMiles": 3.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37,
+          "lowF": 19.4
+        },
+        {
+          "month": "Feb",
+          "highF": 39.6,
+          "lowF": 21
+        },
+        {
+          "month": "Mar",
+          "highF": 46.6,
+          "lowF": 28.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58.8,
+          "lowF": 38.1
+        },
+        {
+          "month": "May",
+          "highF": 69.4,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.8,
+          "lowF": 57.9
+        },
+        {
+          "month": "Jul",
+          "highF": 84.7,
+          "lowF": 64
+        },
+        {
+          "month": "Aug",
+          "highF": 83.1,
+          "lowF": 62.5
+        },
+        {
+          "month": "Sep",
+          "highF": 75.5,
+          "lowF": 54.9
+        },
+        {
+          "month": "Oct",
+          "highF": 63.7,
+          "lowF": 43
+        },
+        {
+          "month": "Nov",
+          "highF": 52.6,
+          "lowF": 34.2
+        },
+        {
+          "month": "Dec",
+          "highF": 42.4,
+          "lowF": 25.7
+        }
+      ]
+    },
+    "harvard-university": {
+      "station": {
+        "id": "USC00193890",
+        "name": "JAMAICA PLAIN",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3031,
+          "lng": -71.1242
+        },
+        "elevationMeters": 29,
+        "distanceMiles": 4.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37,
+          "lowF": 19.4
+        },
+        {
+          "month": "Feb",
+          "highF": 39.6,
+          "lowF": 21
+        },
+        {
+          "month": "Mar",
+          "highF": 46.6,
+          "lowF": 28.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58.8,
+          "lowF": 38.1
+        },
+        {
+          "month": "May",
+          "highF": 69.4,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.8,
+          "lowF": 57.9
+        },
+        {
+          "month": "Jul",
+          "highF": 84.7,
+          "lowF": 64
+        },
+        {
+          "month": "Aug",
+          "highF": 83.1,
+          "lowF": 62.5
+        },
+        {
+          "month": "Sep",
+          "highF": 75.5,
+          "lowF": 54.9
+        },
+        {
+          "month": "Oct",
+          "highF": 63.7,
+          "lowF": 43
+        },
+        {
+          "month": "Nov",
+          "highF": 52.6,
+          "lowF": 34.2
+        },
+        {
+          "month": "Dec",
+          "highF": 42.4,
+          "lowF": 25.7
+        }
+      ]
+    },
+    "mit": {
+      "station": {
+        "id": "USC00193890",
+        "name": "JAMAICA PLAIN",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3031,
+          "lng": -71.1242
+        },
+        "elevationMeters": 29,
+        "distanceMiles": 4.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37,
+          "lowF": 19.4
+        },
+        {
+          "month": "Feb",
+          "highF": 39.6,
+          "lowF": 21
+        },
+        {
+          "month": "Mar",
+          "highF": 46.6,
+          "lowF": 28.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58.8,
+          "lowF": 38.1
+        },
+        {
+          "month": "May",
+          "highF": 69.4,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.8,
+          "lowF": 57.9
+        },
+        {
+          "month": "Jul",
+          "highF": 84.7,
+          "lowF": 64
+        },
+        {
+          "month": "Aug",
+          "highF": 83.1,
+          "lowF": 62.5
+        },
+        {
+          "month": "Sep",
+          "highF": 75.5,
+          "lowF": 54.9
+        },
+        {
+          "month": "Oct",
+          "highF": 63.7,
+          "lowF": 43
+        },
+        {
+          "month": "Nov",
+          "highF": 52.6,
+          "lowF": 34.2
+        },
+        {
+          "month": "Dec",
+          "highF": 42.4,
+          "lowF": 25.7
+        }
+      ]
+    },
+    "stanford-university": {
+      "station": {
+        "id": "USC00046646",
+        "name": "PALO ALTO",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 37.4436,
+          "lng": -122.1403
+        },
+        "elevationMeters": 7.6,
+        "distanceMiles": 1.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 57.8,
+          "lowF": 39
+        },
+        {
+          "month": "Feb",
+          "highF": 60.7,
+          "lowF": 41.3
+        },
+        {
+          "month": "Mar",
+          "highF": 65.5,
+          "lowF": 43.6
+        },
+        {
+          "month": "Apr",
+          "highF": 69.6,
+          "lowF": 45.3
+        },
+        {
+          "month": "May",
+          "highF": 73.3,
+          "lowF": 49.5
+        },
+        {
+          "month": "Jun",
+          "highF": 78.5,
+          "lowF": 52.7
+        },
+        {
+          "month": "Jul",
+          "highF": 79.4,
+          "lowF": 55.7
+        },
+        {
+          "month": "Aug",
+          "highF": 78.7,
+          "lowF": 55.3
+        },
+        {
+          "month": "Sep",
+          "highF": 79.6,
+          "lowF": 53
+        },
+        {
+          "month": "Oct",
+          "highF": 74,
+          "lowF": 48.4
+        },
+        {
+          "month": "Nov",
+          "highF": 63.7,
+          "lowF": 42.5
+        },
+        {
+          "month": "Dec",
+          "highF": 57.6,
+          "lowF": 38.6
+        }
+      ]
+    },
+    "yale-university": {
+      "station": {
+        "id": "USW00014758",
+        "name": "NEW HAVEN TWEED AP",
+        "stateCode": "CT",
+        "coordinates": {
+          "lat": 41.2639,
+          "lng": -72.8872
+        },
+        "elevationMeters": 0.9,
+        "distanceMiles": 3.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.1,
+          "lowF": 23
+        },
+        {
+          "month": "Feb",
+          "highF": 40.2,
+          "lowF": 23.9
+        },
+        {
+          "month": "Mar",
+          "highF": 47,
+          "lowF": 30.1
+        },
+        {
+          "month": "Apr",
+          "highF": 57.8,
+          "lowF": 39.3
+        },
+        {
+          "month": "May",
+          "highF": 67.7,
+          "lowF": 49.4
+        },
+        {
+          "month": "Jun",
+          "highF": 76.4,
+          "lowF": 59.3
+        },
+        {
+          "month": "Jul",
+          "highF": 82.1,
+          "lowF": 65.7
+        },
+        {
+          "month": "Aug",
+          "highF": 81,
+          "lowF": 64.7
+        },
+        {
+          "month": "Sep",
+          "highF": 74.7,
+          "lowF": 57.3
+        },
+        {
+          "month": "Oct",
+          "highF": 63.8,
+          "lowF": 45.5
+        },
+        {
+          "month": "Nov",
+          "highF": 53.4,
+          "lowF": 35.9
+        },
+        {
+          "month": "Dec",
+          "highF": 43.7,
+          "lowF": 28.9
+        }
+      ]
+    },
+    "university-of-pennsylvania": {
+      "station": {
+        "id": "USC00366886",
+        "name": "PHILA FRANKLIN INST",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 39.9586,
+          "lng": -75.1728
+        },
+        "elevationMeters": 18.3,
+        "distanceMiles": 1.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 41.6,
+          "lowF": 27.8
+        },
+        {
+          "month": "Feb",
+          "highF": 44.9,
+          "lowF": 29.6
+        },
+        {
+          "month": "Mar",
+          "highF": 53.5,
+          "lowF": 36.4
+        },
+        {
+          "month": "Apr",
+          "highF": 65.9,
+          "lowF": 46.3
+        },
+        {
+          "month": "May",
+          "highF": 75.7,
+          "lowF": 56.3
+        },
+        {
+          "month": "Jun",
+          "highF": 84.9,
+          "lowF": 65.9
+        },
+        {
+          "month": "Jul",
+          "highF": 89.3,
+          "lowF": 71.4
+        },
+        {
+          "month": "Aug",
+          "highF": 87.2,
+          "lowF": 69.5
+        },
+        {
+          "month": "Sep",
+          "highF": 80.3,
+          "lowF": 62.7
+        },
+        {
+          "month": "Oct",
+          "highF": 68.1,
+          "lowF": 51.1
+        },
+        {
+          "month": "Nov",
+          "highF": 56.4,
+          "lowF": 41.3
+        },
+        {
+          "month": "Dec",
+          "highF": 46.5,
+          "lowF": 33.2
+        }
+      ]
+    },
+    "california-institute-of-technology": {
+      "station": {
+        "id": "USC00046719",
+        "name": "PASADENA",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.1483,
+          "lng": -118.1447
+        },
+        "elevationMeters": 263.3,
+        "distanceMiles": 1.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 68.1,
+          "lowF": 45.5
+        },
+        {
+          "month": "Feb",
+          "highF": 69.3,
+          "lowF": 46.1
+        },
+        {
+          "month": "Mar",
+          "highF": 72.6,
+          "lowF": 48.4
+        },
+        {
+          "month": "Apr",
+          "highF": 76.2,
+          "lowF": 50.6
+        },
+        {
+          "month": "May",
+          "highF": 78.3,
+          "lowF": 53.9
+        },
+        {
+          "month": "Jun",
+          "highF": 83.7,
+          "lowF": 57.8
+        },
+        {
+          "month": "Jul",
+          "highF": 89.1,
+          "lowF": 62
+        },
+        {
+          "month": "Aug",
+          "highF": 91.3,
+          "lowF": 63.2
+        },
+        {
+          "month": "Sep",
+          "highF": 89.9,
+          "lowF": 61.6
+        },
+        {
+          "month": "Oct",
+          "highF": 83,
+          "lowF": 56.3
+        },
+        {
+          "month": "Nov",
+          "highF": 74.7,
+          "lowF": 49.6
+        },
+        {
+          "month": "Dec",
+          "highF": 67.2,
+          "lowF": 44.7
+        }
+      ]
+    },
+    "duke-university": {
+      "station": {
+        "id": "USC00312515",
+        "name": "DURHAM",
+        "stateCode": "NC",
+        "coordinates": {
+          "lat": 36.0425,
+          "lng": -78.9625
+        },
+        "elevationMeters": 121.9,
+        "distanceMiles": 3.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 48.9,
+          "lowF": 27.9
+        },
+        {
+          "month": "Feb",
+          "highF": 52.5,
+          "lowF": 30.3
+        },
+        {
+          "month": "Mar",
+          "highF": 60.7,
+          "lowF": 37.2
+        },
+        {
+          "month": "Apr",
+          "highF": 70.3,
+          "lowF": 46
+        },
+        {
+          "month": "May",
+          "highF": 76.6,
+          "lowF": 55.4
+        },
+        {
+          "month": "Jun",
+          "highF": 83.3,
+          "lowF": 64.2
+        },
+        {
+          "month": "Jul",
+          "highF": 87,
+          "lowF": 68.8
+        },
+        {
+          "month": "Aug",
+          "highF": 84.6,
+          "lowF": 67.2
+        },
+        {
+          "month": "Sep",
+          "highF": 79.3,
+          "lowF": 60.9
+        },
+        {
+          "month": "Oct",
+          "highF": 69.5,
+          "lowF": 48
+        },
+        {
+          "month": "Nov",
+          "highF": 60,
+          "lowF": 37.1
+        },
+        {
+          "month": "Dec",
+          "highF": 52.1,
+          "lowF": 32.2
+        }
+      ]
+    },
+    "brown-university": {
+      "station": {
+        "id": "USW00014765",
+        "name": "PROVIDENCE T F GREEN AP",
+        "stateCode": "RI",
+        "coordinates": {
+          "lat": 41.7219,
+          "lng": -71.4325
+        },
+        "elevationMeters": 18.3,
+        "distanceMiles": 7.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.3,
+          "lowF": 22.1
+        },
+        {
+          "month": "Feb",
+          "highF": 40.5,
+          "lowF": 23.5
+        },
+        {
+          "month": "Mar",
+          "highF": 47.7,
+          "lowF": 30.2
+        },
+        {
+          "month": "Apr",
+          "highF": 58.9,
+          "lowF": 39.6
+        },
+        {
+          "month": "May",
+          "highF": 68.9,
+          "lowF": 49.2
+        },
+        {
+          "month": "Jun",
+          "highF": 77.7,
+          "lowF": 58.8
+        },
+        {
+          "month": "Jul",
+          "highF": 83.6,
+          "lowF": 65.2
+        },
+        {
+          "month": "Aug",
+          "highF": 82.2,
+          "lowF": 63.9
+        },
+        {
+          "month": "Sep",
+          "highF": 74.8,
+          "lowF": 56.5
+        },
+        {
+          "month": "Oct",
+          "highF": 63.8,
+          "lowF": 45.1
+        },
+        {
+          "month": "Nov",
+          "highF": 53.2,
+          "lowF": 35.8
+        },
+        {
+          "month": "Dec",
+          "highF": 43.4,
+          "lowF": 27.6
+        }
+      ]
+    },
+    "johns-hopkins-university": {
+      "station": {
+        "id": "USC00182308",
+        "name": "CYLBURN",
+        "stateCode": "MD",
+        "coordinates": {
+          "lat": 39.3531,
+          "lng": -76.6539
+        },
+        "elevationMeters": 71.6,
+        "distanceMiles": 2.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.4,
+          "lowF": 26.6
+        },
+        {
+          "month": "Feb",
+          "highF": 46.3,
+          "lowF": 28.3
+        },
+        {
+          "month": "Mar",
+          "highF": 53.8,
+          "lowF": 34.2
+        },
+        {
+          "month": "Apr",
+          "highF": 65.5,
+          "lowF": 44.9
+        },
+        {
+          "month": "May",
+          "highF": 73.2,
+          "lowF": 54.5
+        },
+        {
+          "month": "Jun",
+          "highF": 82,
+          "lowF": 63.9
+        },
+        {
+          "month": "Jul",
+          "highF": 86.5,
+          "lowF": 69.3
+        },
+        {
+          "month": "Aug",
+          "highF": 83.9,
+          "lowF": 67
+        },
+        {
+          "month": "Sep",
+          "highF": 76.8,
+          "lowF": 59.8
+        },
+        {
+          "month": "Oct",
+          "highF": 66.3,
+          "lowF": 48.5
+        },
+        {
+          "month": "Nov",
+          "highF": 56.4,
+          "lowF": 38.7
+        },
+        {
+          "month": "Dec",
+          "highF": 46.4,
+          "lowF": 31.5
+        }
+      ]
+    },
+    "northwestern-university": {
+      "station": {
+        "id": "USC00111497",
+        "name": "CHICAGO BOTANIC GARDEN",
+        "stateCode": "IL",
+        "coordinates": {
+          "lat": 42.14,
+          "lng": -87.7853
+        },
+        "elevationMeters": 192,
+        "distanceMiles": 8.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 32.3,
+          "lowF": 16.3
+        },
+        {
+          "month": "Feb",
+          "highF": 36,
+          "lowF": 19.1
+        },
+        {
+          "month": "Mar",
+          "highF": 45.8,
+          "lowF": 28.2
+        },
+        {
+          "month": "Apr",
+          "highF": 56.8,
+          "lowF": 37.6
+        },
+        {
+          "month": "May",
+          "highF": 68.2,
+          "lowF": 47.6
+        },
+        {
+          "month": "Jun",
+          "highF": 78.4,
+          "lowF": 57.3
+        },
+        {
+          "month": "Jul",
+          "highF": 83.5,
+          "lowF": 63.4
+        },
+        {
+          "month": "Aug",
+          "highF": 82,
+          "lowF": 62.3
+        },
+        {
+          "month": "Sep",
+          "highF": 75.2,
+          "lowF": 54.7
+        },
+        {
+          "month": "Oct",
+          "highF": 62.8,
+          "lowF": 42.7
+        },
+        {
+          "month": "Nov",
+          "highF": 49,
+          "lowF": 32.5
+        },
+        {
+          "month": "Dec",
+          "highF": 37.5,
+          "lowF": 22.3
+        }
+      ]
+    },
+    "columbia-university": {
+      "station": {
+        "id": "USW00094728",
+        "name": "NEW YORK CNTRL PK TWR",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 40.7789,
+          "lng": -73.9692
+        },
+        "elevationMeters": 39.6,
+        "distanceMiles": 2.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.5,
+          "lowF": 27.9
+        },
+        {
+          "month": "Feb",
+          "highF": 42.2,
+          "lowF": 29.5
+        },
+        {
+          "month": "Mar",
+          "highF": 49.9,
+          "lowF": 35.8
+        },
+        {
+          "month": "Apr",
+          "highF": 61.8,
+          "lowF": 45.5
+        },
+        {
+          "month": "May",
+          "highF": 71.4,
+          "lowF": 55
+        },
+        {
+          "month": "Jun",
+          "highF": 79.7,
+          "lowF": 64.4
+        },
+        {
+          "month": "Jul",
+          "highF": 84.9,
+          "lowF": 70.1
+        },
+        {
+          "month": "Aug",
+          "highF": 83.3,
+          "lowF": 68.9
+        },
+        {
+          "month": "Sep",
+          "highF": 76.2,
+          "lowF": 62.3
+        },
+        {
+          "month": "Oct",
+          "highF": 64.5,
+          "lowF": 51.4
+        },
+        {
+          "month": "Nov",
+          "highF": 54,
+          "lowF": 42
+        },
+        {
+          "month": "Dec",
+          "highF": 44.3,
+          "lowF": 33.8
+        }
+      ]
+    },
+    "cornell-university": {
+      "station": {
+        "id": "USC00304174",
+        "name": "ITHACA CORNELL UNIV",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 42.4492,
+          "lng": -76.4492
+        },
+        "elevationMeters": 292.6,
+        "distanceMiles": 1.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 31,
+          "lowF": 14.6
+        },
+        {
+          "month": "Feb",
+          "highF": 33.1,
+          "lowF": 15.1
+        },
+        {
+          "month": "Mar",
+          "highF": 40.8,
+          "lowF": 21.8
+        },
+        {
+          "month": "Apr",
+          "highF": 54.5,
+          "lowF": 32.9
+        },
+        {
+          "month": "May",
+          "highF": 67.3,
+          "lowF": 44
+        },
+        {
+          "month": "Jun",
+          "highF": 75.7,
+          "lowF": 53.4
+        },
+        {
+          "month": "Jul",
+          "highF": 79.9,
+          "lowF": 57.9
+        },
+        {
+          "month": "Aug",
+          "highF": 78.5,
+          "lowF": 56.3
+        },
+        {
+          "month": "Sep",
+          "highF": 71.6,
+          "lowF": 48.8
+        },
+        {
+          "month": "Oct",
+          "highF": 59,
+          "lowF": 38.9
+        },
+        {
+          "month": "Nov",
+          "highF": 46.8,
+          "lowF": 30.4
+        },
+        {
+          "month": "Dec",
+          "highF": 36.2,
+          "lowF": 22
+        }
+      ]
+    },
+    "university-of-chicago": {
+      "station": {
+        "id": "USC00111550",
+        "name": "CHICAGO NORTHERLY IS",
+        "stateCode": "IL",
+        "coordinates": {
+          "lat": 41.8558,
+          "lng": -87.6094
+        },
+        "elevationMeters": 177.7,
+        "distanceMiles": 4.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 31.9,
+          "lowF": 20.1
+        },
+        {
+          "month": "Feb",
+          "highF": 35.7,
+          "lowF": 23.1
+        },
+        {
+          "month": "Mar",
+          "highF": 44.9,
+          "lowF": 30.9
+        },
+        {
+          "month": "Apr",
+          "highF": 55.2,
+          "lowF": 40.4
+        },
+        {
+          "month": "May",
+          "highF": 65.7,
+          "lowF": 50.1
+        },
+        {
+          "month": "Jun",
+          "highF": 75.8,
+          "lowF": 60
+        },
+        {
+          "month": "Jul",
+          "highF": 81,
+          "lowF": 67.3
+        },
+        {
+          "month": "Aug",
+          "highF": 80,
+          "lowF": 67.4
+        },
+        {
+          "month": "Sep",
+          "highF": 73.2,
+          "lowF": 60.2
+        },
+        {
+          "month": "Oct",
+          "highF": 60.9,
+          "lowF": 47.7
+        },
+        {
+          "month": "Nov",
+          "highF": 48.5,
+          "lowF": 36.4
+        },
+        {
+          "month": "Dec",
+          "highF": 36.6,
+          "lowF": 25.2
+        }
+      ]
+    },
+    "university-of-california-berkeley": {
+      "station": {
+        "id": "USC00040693",
+        "name": "BERKELEY",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 37.8744,
+          "lng": -122.2606
+        },
+        "elevationMeters": 94.5,
+        "distanceMiles": 0.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 58.9,
+          "lowF": 43.3
+        },
+        {
+          "month": "Feb",
+          "highF": 61.6,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 64.6,
+          "lowF": 45.9
+        },
+        {
+          "month": "Apr",
+          "highF": 67.3,
+          "lowF": 46.7
+        },
+        {
+          "month": "May",
+          "highF": 70,
+          "lowF": 49.4
+        },
+        {
+          "month": "Jun",
+          "highF": 74.1,
+          "lowF": 51.7
+        },
+        {
+          "month": "Jul",
+          "highF": 74.2,
+          "lowF": 53.2
+        },
+        {
+          "month": "Aug",
+          "highF": 74.7,
+          "lowF": 54.2
+        },
+        {
+          "month": "Sep",
+          "highF": 76.3,
+          "lowF": 53.6
+        },
+        {
+          "month": "Oct",
+          "highF": 73.4,
+          "lowF": 51.6
+        },
+        {
+          "month": "Nov",
+          "highF": 65.2,
+          "lowF": 46.9
+        },
+        {
+          "month": "Dec",
+          "highF": 58.6,
+          "lowF": 43.2
+        }
+      ]
+    },
+    "dartmouth-college": {
+      "station": {
+        "id": "USC00273850",
+        "name": "HANOVER",
+        "stateCode": "NH",
+        "coordinates": {
+          "lat": 43.7053,
+          "lng": -72.2856
+        },
+        "elevationMeters": 178,
+        "distanceMiles": 0.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 30.3,
+          "lowF": 13
+        },
+        {
+          "month": "Feb",
+          "highF": 34.3,
+          "lowF": 14.4
+        },
+        {
+          "month": "Mar",
+          "highF": 43.7,
+          "lowF": 23.6
+        },
+        {
+          "month": "Apr",
+          "highF": 58.1,
+          "lowF": 34.8
+        },
+        {
+          "month": "May",
+          "highF": 70.9,
+          "lowF": 46.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.8,
+          "lowF": 55.4
+        },
+        {
+          "month": "Jul",
+          "highF": 83.4,
+          "lowF": 60.9
+        },
+        {
+          "month": "Aug",
+          "highF": 81.6,
+          "lowF": 59.3
+        },
+        {
+          "month": "Sep",
+          "highF": 73.8,
+          "lowF": 52.1
+        },
+        {
+          "month": "Oct",
+          "highF": 60.2,
+          "lowF": 40.2
+        },
+        {
+          "month": "Nov",
+          "highF": 47.2,
+          "lowF": 30.7
+        },
+        {
+          "month": "Dec",
+          "highF": 35.6,
+          "lowF": 20.4
+        }
+      ]
+    },
+    "vanderbilt-university": {
+      "station": {
+        "id": "USC00408238",
+        "name": "SHELBY BOTTOMS NATURE",
+        "stateCode": "TN",
+        "coordinates": {
+          "lat": 36.1661,
+          "lng": -86.7247
+        },
+        "elevationMeters": 123.4,
+        "distanceMiles": 4.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 48,
+          "lowF": 27.5
+        },
+        {
+          "month": "Feb",
+          "highF": 52.2,
+          "lowF": 31.2
+        },
+        {
+          "month": "Mar",
+          "highF": 61.9,
+          "lowF": 38.6
+        },
+        {
+          "month": "Apr",
+          "highF": 72,
+          "lowF": 47.4
+        },
+        {
+          "month": "May",
+          "highF": 79.9,
+          "lowF": 55.7
+        },
+        {
+          "month": "Jun",
+          "highF": 86.7,
+          "lowF": 63.9
+        },
+        {
+          "month": "Jul",
+          "highF": 89.3,
+          "lowF": 67.9
+        },
+        {
+          "month": "Aug",
+          "highF": 88.6,
+          "lowF": 67
+        },
+        {
+          "month": "Sep",
+          "highF": 83.6,
+          "lowF": 59.3
+        },
+        {
+          "month": "Oct",
+          "highF": 73.2,
+          "lowF": 47.2
+        },
+        {
+          "month": "Nov",
+          "highF": 61.6,
+          "lowF": 36.7
+        },
+        {
+          "month": "Dec",
+          "highF": 51.1,
+          "lowF": 31.7
+        }
+      ]
+    },
+    "university-of-notre-dame": {
+      "station": {
+        "id": "USC00128437",
+        "name": "S BEND",
+        "stateCode": "IN",
+        "coordinates": {
+          "lat": 41.7006,
+          "lng": -86.2486
+        },
+        "elevationMeters": 216.4,
+        "distanceMiles": 0.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 31.8,
+          "lowF": 17.1
+        },
+        {
+          "month": "Feb",
+          "highF": 35,
+          "lowF": 18.8
+        },
+        {
+          "month": "Mar",
+          "highF": 46.6,
+          "lowF": 27.4
+        },
+        {
+          "month": "Apr",
+          "highF": 59.2,
+          "lowF": 38.1
+        },
+        {
+          "month": "May",
+          "highF": 70.4,
+          "lowF": 49.5
+        },
+        {
+          "month": "Jun",
+          "highF": 79.9,
+          "lowF": 59.4
+        },
+        {
+          "month": "Jul",
+          "highF": 83,
+          "lowF": 63
+        },
+        {
+          "month": "Aug",
+          "highF": 81.2,
+          "lowF": 61.3
+        },
+        {
+          "month": "Sep",
+          "highF": 75.5,
+          "lowF": 53.6
+        },
+        {
+          "month": "Oct",
+          "highF": 62.6,
+          "lowF": 41.9
+        },
+        {
+          "month": "Nov",
+          "highF": 48.2,
+          "lowF": 32
+        },
+        {
+          "month": "Dec",
+          "highF": 36.8,
+          "lowF": 23.2
+        }
+      ]
+    },
+    "georgetown-university": {
+      "station": {
+        "id": "USC00182325",
+        "name": "DALECARLIA RSVR",
+        "stateCode": "MD",
+        "coordinates": {
+          "lat": 38.9386,
+          "lng": -77.1133
+        },
+        "elevationMeters": 45.7,
+        "distanceMiles": 3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.9,
+          "lowF": 25.5
+        },
+        {
+          "month": "Feb",
+          "highF": 46.4,
+          "lowF": 27.3
+        },
+        {
+          "month": "Mar",
+          "highF": 54.8,
+          "lowF": 33.5
+        },
+        {
+          "month": "Apr",
+          "highF": 67.6,
+          "lowF": 43.6
+        },
+        {
+          "month": "May",
+          "highF": 75.7,
+          "lowF": 53.7
+        },
+        {
+          "month": "Jun",
+          "highF": 84,
+          "lowF": 62.8
+        },
+        {
+          "month": "Jul",
+          "highF": 88.2,
+          "lowF": 68
+        },
+        {
+          "month": "Aug",
+          "highF": 86.2,
+          "lowF": 66.3
+        },
+        {
+          "month": "Sep",
+          "highF": 79.4,
+          "lowF": 59.2
+        },
+        {
+          "month": "Oct",
+          "highF": 68,
+          "lowF": 46.8
+        },
+        {
+          "month": "Nov",
+          "highF": 56.4,
+          "lowF": 36.4
+        },
+        {
+          "month": "Dec",
+          "highF": 46.9,
+          "lowF": 29.6
+        }
+      ]
+    },
+    "unc-chapel-hill": {
+      "station": {
+        "id": "USC00311677",
+        "name": "CHAPEL HILL 2 W",
+        "stateCode": "NC",
+        "coordinates": {
+          "lat": 35.9086,
+          "lng": -79.0794
+        },
+        "elevationMeters": 152.4,
+        "distanceMiles": 1.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 50.7,
+          "lowF": 29.4
+        },
+        {
+          "month": "Feb",
+          "highF": 54.3,
+          "lowF": 31.3
+        },
+        {
+          "month": "Mar",
+          "highF": 61.8,
+          "lowF": 38
+        },
+        {
+          "month": "Apr",
+          "highF": 71.5,
+          "lowF": 46.8
+        },
+        {
+          "month": "May",
+          "highF": 78.6,
+          "lowF": 56.3
+        },
+        {
+          "month": "Jun",
+          "highF": 85.7,
+          "lowF": 65
+        },
+        {
+          "month": "Jul",
+          "highF": 89.5,
+          "lowF": 69.3
+        },
+        {
+          "month": "Aug",
+          "highF": 87.5,
+          "lowF": 67.7
+        },
+        {
+          "month": "Sep",
+          "highF": 81.8,
+          "lowF": 61.5
+        },
+        {
+          "month": "Oct",
+          "highF": 72.1,
+          "lowF": 48.5
+        },
+        {
+          "month": "Nov",
+          "highF": 62,
+          "lowF": 37.8
+        },
+        {
+          "month": "Dec",
+          "highF": 53.7,
+          "lowF": 32.4
+        }
+      ]
+    },
+    "carnegie-mellon-university": {
+      "station": {
+        "id": "USC00360861",
+        "name": "BRADDOCK LOCK 2",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.3917,
+          "lng": -79.8594
+        },
+        "elevationMeters": 222.5,
+        "distanceMiles": 5.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37.6,
+          "lowF": 21.5
+        },
+        {
+          "month": "Feb",
+          "highF": 39.9,
+          "lowF": 22.3
+        },
+        {
+          "month": "Mar",
+          "highF": 49.7,
+          "lowF": 29.4
+        },
+        {
+          "month": "Apr",
+          "highF": 61.9,
+          "lowF": 40.4
+        },
+        {
+          "month": "May",
+          "highF": 71.8,
+          "lowF": 50.6
+        },
+        {
+          "month": "Jun",
+          "highF": 80,
+          "lowF": 59.5
+        },
+        {
+          "month": "Jul",
+          "highF": 84,
+          "lowF": 64.2
+        },
+        {
+          "month": "Aug",
+          "highF": 83.2,
+          "lowF": 62.8
+        },
+        {
+          "month": "Sep",
+          "highF": 76.5,
+          "lowF": 56.1
+        },
+        {
+          "month": "Oct",
+          "highF": 64.8,
+          "lowF": 44.4
+        },
+        {
+          "month": "Nov",
+          "highF": 52.7,
+          "lowF": 34.9
+        },
+        {
+          "month": "Dec",
+          "highF": 42.3,
+          "lowF": 27.6
+        }
+      ]
+    },
+    "emory-university": {
+      "station": {
+        "id": "USW00053863",
+        "name": "ATLANTA PEACHTREE AP",
+        "stateCode": "GA",
+        "coordinates": {
+          "lat": 33.875,
+          "lng": -84.3022
+        },
+        "elevationMeters": 305.4,
+        "distanceMiles": 6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 51.9,
+          "lowF": 32.7
+        },
+        {
+          "month": "Feb",
+          "highF": 56.4,
+          "lowF": 35.9
+        },
+        {
+          "month": "Mar",
+          "highF": 64.4,
+          "lowF": 42.2
+        },
+        {
+          "month": "Apr",
+          "highF": 72.7,
+          "lowF": 49.2
+        },
+        {
+          "month": "May",
+          "highF": 80.3,
+          "lowF": 58.5
+        },
+        {
+          "month": "Jun",
+          "highF": 86.2,
+          "lowF": 66.3
+        },
+        {
+          "month": "Jul",
+          "highF": 89.4,
+          "lowF": 69.9
+        },
+        {
+          "month": "Aug",
+          "highF": 88.2,
+          "lowF": 69.1
+        },
+        {
+          "month": "Sep",
+          "highF": 82.9,
+          "lowF": 62.8
+        },
+        {
+          "month": "Oct",
+          "highF": 72.8,
+          "lowF": 50.9
+        },
+        {
+          "month": "Nov",
+          "highF": 62.5,
+          "lowF": 40.6
+        },
+        {
+          "month": "Dec",
+          "highF": 54.4,
+          "lowF": 35.5
+        }
+      ]
+    },
+    "university-of-virginia": {
+      "station": {
+        "id": "USC00441593",
+        "name": "CHARLOTTESVILLE 2W",
+        "stateCode": "VA",
+        "coordinates": {
+          "lat": 38.0328,
+          "lng": -78.5225
+        },
+        "elevationMeters": 264,
+        "distanceMiles": 1.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 44.7,
+          "lowF": 27.7
+        },
+        {
+          "month": "Feb",
+          "highF": 48.7,
+          "lowF": 29.5
+        },
+        {
+          "month": "Mar",
+          "highF": 56.5,
+          "lowF": 36.3
+        },
+        {
+          "month": "Apr",
+          "highF": 68.3,
+          "lowF": 45.9
+        },
+        {
+          "month": "May",
+          "highF": 75.4,
+          "lowF": 55.4
+        },
+        {
+          "month": "Jun",
+          "highF": 83.1,
+          "lowF": 63.8
+        },
+        {
+          "month": "Jul",
+          "highF": 87.4,
+          "lowF": 67.9
+        },
+        {
+          "month": "Aug",
+          "highF": 85.6,
+          "lowF": 66.3
+        },
+        {
+          "month": "Sep",
+          "highF": 79.2,
+          "lowF": 59.6
+        },
+        {
+          "month": "Oct",
+          "highF": 68.5,
+          "lowF": 48.9
+        },
+        {
+          "month": "Nov",
+          "highF": 57.7,
+          "lowF": 39.3
+        },
+        {
+          "month": "Dec",
+          "highF": 48.1,
+          "lowF": 31.9
+        }
+      ]
+    },
+    "washington-university-in-st-louis": {
+      "station": {
+        "id": "USC00237452",
+        "name": "ST LOUIS SCI CTR",
+        "stateCode": "MO",
+        "coordinates": {
+          "lat": 38.6308,
+          "lng": -90.2708
+        },
+        "elevationMeters": 157,
+        "distanceMiles": 2.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 40.6,
+          "lowF": 24.6
+        },
+        {
+          "month": "Feb",
+          "highF": 46.2,
+          "lowF": 28.4
+        },
+        {
+          "month": "Mar",
+          "highF": 56.3,
+          "lowF": 37.8
+        },
+        {
+          "month": "Apr",
+          "highF": 67.7,
+          "lowF": 48
+        },
+        {
+          "month": "May",
+          "highF": 77.3,
+          "lowF": 58.6
+        },
+        {
+          "month": "Jun",
+          "highF": 86,
+          "lowF": 67.4
+        },
+        {
+          "month": "Jul",
+          "highF": 89.6,
+          "lowF": 71.6
+        },
+        {
+          "month": "Aug",
+          "highF": 88.5,
+          "lowF": 69.9
+        },
+        {
+          "month": "Sep",
+          "highF": 81.5,
+          "lowF": 61.7
+        },
+        {
+          "month": "Oct",
+          "highF": 69.7,
+          "lowF": 50
+        },
+        {
+          "month": "Nov",
+          "highF": 56.2,
+          "lowF": 39
+        },
+        {
+          "month": "Dec",
+          "highF": 45,
+          "lowF": 29.9
+        }
+      ]
+    },
+    "university-of-southern-california": {
+      "station": {
+        "id": "USW00093134",
+        "name": "LOS ANGELES DWTN USC CAMPUS",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0511,
+          "lng": -118.2353
+        },
+        "elevationMeters": 70.1,
+        "distanceMiles": 3.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 68,
+          "lowF": 48.9
+        },
+        {
+          "month": "Feb",
+          "highF": 68,
+          "lowF": 50
+        },
+        {
+          "month": "Mar",
+          "highF": 69.9,
+          "lowF": 52.4
+        },
+        {
+          "month": "Apr",
+          "highF": 72.4,
+          "lowF": 54.8
+        },
+        {
+          "month": "May",
+          "highF": 73.7,
+          "lowF": 58.1
+        },
+        {
+          "month": "Jun",
+          "highF": 77.2,
+          "lowF": 61.4
+        },
+        {
+          "month": "Jul",
+          "highF": 82,
+          "lowF": 64.7
+        },
+        {
+          "month": "Aug",
+          "highF": 84,
+          "lowF": 65.4
+        },
+        {
+          "month": "Sep",
+          "highF": 83,
+          "lowF": 64.2
+        },
+        {
+          "month": "Oct",
+          "highF": 78.6,
+          "lowF": 59.9
+        },
+        {
+          "month": "Nov",
+          "highF": 72.9,
+          "lowF": 53.1
+        },
+        {
+          "month": "Dec",
+          "highF": 67.4,
+          "lowF": 48.2
+        }
+      ]
+    },
+    "new-york-university": {
+      "station": {
+        "id": "USW00094728",
+        "name": "NEW YORK CNTRL PK TWR",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 40.7789,
+          "lng": -73.9692
+        },
+        "elevationMeters": 39.6,
+        "distanceMiles": 3.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.5,
+          "lowF": 27.9
+        },
+        {
+          "month": "Feb",
+          "highF": 42.2,
+          "lowF": 29.5
+        },
+        {
+          "month": "Mar",
+          "highF": 49.9,
+          "lowF": 35.8
+        },
+        {
+          "month": "Apr",
+          "highF": 61.8,
+          "lowF": 45.5
+        },
+        {
+          "month": "May",
+          "highF": 71.4,
+          "lowF": 55
+        },
+        {
+          "month": "Jun",
+          "highF": 79.7,
+          "lowF": 64.4
+        },
+        {
+          "month": "Jul",
+          "highF": 84.9,
+          "lowF": 70.1
+        },
+        {
+          "month": "Aug",
+          "highF": 83.3,
+          "lowF": 68.9
+        },
+        {
+          "month": "Sep",
+          "highF": 76.2,
+          "lowF": 62.3
+        },
+        {
+          "month": "Oct",
+          "highF": 64.5,
+          "lowF": 51.4
+        },
+        {
+          "month": "Nov",
+          "highF": 54,
+          "lowF": 42
+        },
+        {
+          "month": "Dec",
+          "highF": 44.3,
+          "lowF": 33.8
+        }
+      ]
+    },
+    "tufts-university": {
+      "station": {
+        "id": "USW00014739",
+        "name": "BOSTON LOGAN INTL AP",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3606,
+          "lng": -71.0106
+        },
+        "elevationMeters": 3.7,
+        "distanceMiles": 6.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 36.8,
+          "lowF": 23.1
+        },
+        {
+          "month": "Feb",
+          "highF": 39,
+          "lowF": 24.6
+        },
+        {
+          "month": "Mar",
+          "highF": 45.5,
+          "lowF": 31.1
+        },
+        {
+          "month": "Apr",
+          "highF": 56.4,
+          "lowF": 40.8
+        },
+        {
+          "month": "May",
+          "highF": 66.5,
+          "lowF": 50.3
+        },
+        {
+          "month": "Jun",
+          "highF": 76.2,
+          "lowF": 59.7
+        },
+        {
+          "month": "Jul",
+          "highF": 82.1,
+          "lowF": 66
+        },
+        {
+          "month": "Aug",
+          "highF": 80.4,
+          "lowF": 65.1
+        },
+        {
+          "month": "Sep",
+          "highF": 73.1,
+          "lowF": 58.2
+        },
+        {
+          "month": "Oct",
+          "highF": 62.1,
+          "lowF": 47.5
+        },
+        {
+          "month": "Nov",
+          "highF": 51.6,
+          "lowF": 37.9
+        },
+        {
+          "month": "Dec",
+          "highF": 42.2,
+          "lowF": 29.2
+        }
+      ]
+    },
+    "boston-university": {
+      "station": {
+        "id": "USC00193890",
+        "name": "JAMAICA PLAIN",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3031,
+          "lng": -71.1242
+        },
+        "elevationMeters": 29,
+        "distanceMiles": 3.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37,
+          "lowF": 19.4
+        },
+        {
+          "month": "Feb",
+          "highF": 39.6,
+          "lowF": 21
+        },
+        {
+          "month": "Mar",
+          "highF": 46.6,
+          "lowF": 28.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58.8,
+          "lowF": 38.1
+        },
+        {
+          "month": "May",
+          "highF": 69.4,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.8,
+          "lowF": 57.9
+        },
+        {
+          "month": "Jul",
+          "highF": 84.7,
+          "lowF": 64
+        },
+        {
+          "month": "Aug",
+          "highF": 83.1,
+          "lowF": 62.5
+        },
+        {
+          "month": "Sep",
+          "highF": 75.5,
+          "lowF": 54.9
+        },
+        {
+          "month": "Oct",
+          "highF": 63.7,
+          "lowF": 43
+        },
+        {
+          "month": "Nov",
+          "highF": 52.6,
+          "lowF": 34.2
+        },
+        {
+          "month": "Dec",
+          "highF": 42.4,
+          "lowF": 25.7
+        }
+      ]
+    },
+    "university-of-california-san-diego": {
+      "station": {
+        "id": "USW00093107",
+        "name": "SAN DIEGO MIRAMAR NAS",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 32.8667,
+          "lng": -117.1333
+        },
+        "elevationMeters": 145.4,
+        "distanceMiles": 6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.4,
+          "lowF": 47
+        },
+        {
+          "month": "Feb",
+          "highF": 67.2,
+          "lowF": 48.1
+        },
+        {
+          "month": "Mar",
+          "highF": 67.5,
+          "lowF": 49.9
+        },
+        {
+          "month": "Apr",
+          "highF": 70.3,
+          "lowF": 52.2
+        },
+        {
+          "month": "May",
+          "highF": 71.9,
+          "lowF": 56.6
+        },
+        {
+          "month": "Jun",
+          "highF": 75.3,
+          "lowF": 60
+        },
+        {
+          "month": "Jul",
+          "highF": 80,
+          "lowF": 64.1
+        },
+        {
+          "month": "Aug",
+          "highF": 82.4,
+          "lowF": 65.2
+        },
+        {
+          "month": "Sep",
+          "highF": 81.5,
+          "lowF": 63.2
+        },
+        {
+          "month": "Oct",
+          "highF": 77.6,
+          "lowF": 57.5
+        },
+        {
+          "month": "Nov",
+          "highF": 72.4,
+          "lowF": 50.8
+        },
+        {
+          "month": "Dec",
+          "highF": 66.6,
+          "lowF": 46.1
+        }
+      ]
+    },
+    "university-of-florida": {
+      "station": {
+        "id": "USW00012816",
+        "name": "GAINESVILLE RGNL AP",
+        "stateCode": "FL",
+        "coordinates": {
+          "lat": 29.6919,
+          "lng": -82.2756
+        },
+        "elevationMeters": 37.5,
+        "distanceMiles": 5.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.1,
+          "lowF": 42.6
+        },
+        {
+          "month": "Feb",
+          "highF": 70.9,
+          "lowF": 45.9
+        },
+        {
+          "month": "Mar",
+          "highF": 75.8,
+          "lowF": 49.7
+        },
+        {
+          "month": "Apr",
+          "highF": 81.5,
+          "lowF": 55.5
+        },
+        {
+          "month": "May",
+          "highF": 87.4,
+          "lowF": 62.6
+        },
+        {
+          "month": "Jun",
+          "highF": 90.3,
+          "lowF": 69.5
+        },
+        {
+          "month": "Jul",
+          "highF": 91.1,
+          "lowF": 71.6
+        },
+        {
+          "month": "Aug",
+          "highF": 90.5,
+          "lowF": 72
+        },
+        {
+          "month": "Sep",
+          "highF": 88.1,
+          "lowF": 69.4
+        },
+        {
+          "month": "Oct",
+          "highF": 82.1,
+          "lowF": 60.6
+        },
+        {
+          "month": "Nov",
+          "highF": 74.7,
+          "lowF": 50.6
+        },
+        {
+          "month": "Dec",
+          "highF": 69.3,
+          "lowF": 45.2
+        }
+      ]
+    },
+    "university-of-texas-austin": {
+      "station": {
+        "id": "USW00013958",
+        "name": "AUSTIN-CAMP MABRY",
+        "stateCode": "TX",
+        "coordinates": {
+          "lat": 30.3208,
+          "lng": -97.7603
+        },
+        "elevationMeters": 204.2,
+        "distanceMiles": 2.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 62.5,
+          "lowF": 41.8
+        },
+        {
+          "month": "Feb",
+          "highF": 66.5,
+          "lowF": 45.8
+        },
+        {
+          "month": "Mar",
+          "highF": 73.3,
+          "lowF": 52.2
+        },
+        {
+          "month": "Apr",
+          "highF": 80.3,
+          "lowF": 58.9
+        },
+        {
+          "month": "May",
+          "highF": 86.9,
+          "lowF": 66.8
+        },
+        {
+          "month": "Jun",
+          "highF": 93.2,
+          "lowF": 72.9
+        },
+        {
+          "month": "Jul",
+          "highF": 96.6,
+          "lowF": 75
+        },
+        {
+          "month": "Aug",
+          "highF": 97.8,
+          "lowF": 75.1
+        },
+        {
+          "month": "Sep",
+          "highF": 91.4,
+          "lowF": 70.1
+        },
+        {
+          "month": "Oct",
+          "highF": 82.5,
+          "lowF": 60.8
+        },
+        {
+          "month": "Nov",
+          "highF": 71.5,
+          "lowF": 50.5
+        },
+        {
+          "month": "Dec",
+          "highF": 63.9,
+          "lowF": 43.4
+        }
+      ]
+    },
+    "georgia-institute-of-technology": {
+      "station": {
+        "id": "USW00003888",
+        "name": "ATLANTA FULTON CO AP",
+        "stateCode": "GA",
+        "coordinates": {
+          "lat": 33.7792,
+          "lng": -84.5214
+        },
+        "elevationMeters": 256,
+        "distanceMiles": 7.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 53.7,
+          "lowF": 33.5
+        },
+        {
+          "month": "Feb",
+          "highF": 58.4,
+          "lowF": 36.6
+        },
+        {
+          "month": "Mar",
+          "highF": 65.8,
+          "lowF": 42.9
+        },
+        {
+          "month": "Apr",
+          "highF": 73.9,
+          "lowF": 49.5
+        },
+        {
+          "month": "May",
+          "highF": 81.2,
+          "lowF": 58.4
+        },
+        {
+          "month": "Jun",
+          "highF": 87.1,
+          "lowF": 66.6
+        },
+        {
+          "month": "Jul",
+          "highF": 90,
+          "lowF": 70.2
+        },
+        {
+          "month": "Aug",
+          "highF": 89.1,
+          "lowF": 69.4
+        },
+        {
+          "month": "Sep",
+          "highF": 83.9,
+          "lowF": 63
+        },
+        {
+          "month": "Oct",
+          "highF": 74.5,
+          "lowF": 51.3
+        },
+        {
+          "month": "Nov",
+          "highF": 64,
+          "lowF": 40.7
+        },
+        {
+          "month": "Dec",
+          "highF": 55.9,
+          "lowF": 36
+        }
+      ]
+    },
+    "university-of-california-davis": {
+      "station": {
+        "id": "USC00042294",
+        "name": "DAVIS 2 WSW EXP FARM",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 38.535,
+          "lng": -121.7761
+        },
+        "elevationMeters": 18.3,
+        "distanceMiles": 1.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 55.5,
+          "lowF": 38.4
+        },
+        {
+          "month": "Feb",
+          "highF": 60.7,
+          "lowF": 41
+        },
+        {
+          "month": "Mar",
+          "highF": 66.3,
+          "lowF": 43.9
+        },
+        {
+          "month": "Apr",
+          "highF": 72.5,
+          "lowF": 46.6
+        },
+        {
+          "month": "May",
+          "highF": 81.1,
+          "lowF": 51.6
+        },
+        {
+          "month": "Jun",
+          "highF": 88.6,
+          "lowF": 55.8
+        },
+        {
+          "month": "Jul",
+          "highF": 93.3,
+          "lowF": 57.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.8,
+          "lowF": 56.3
+        },
+        {
+          "month": "Sep",
+          "highF": 89.8,
+          "lowF": 54.8
+        },
+        {
+          "month": "Oct",
+          "highF": 79.9,
+          "lowF": 49.6
+        },
+        {
+          "month": "Nov",
+          "highF": 65.4,
+          "lowF": 42.5
+        },
+        {
+          "month": "Dec",
+          "highF": 56,
+          "lowF": 37.9
+        }
+      ]
+    },
+    "university-of-california-irvine": {
+      "station": {
+        "id": "USW00093184",
+        "name": "SANTA ANA JOHN WAYNE AP",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 33.68,
+          "lng": -117.8664
+        },
+        "elevationMeters": 16.5,
+        "distanceMiles": 2.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67,
+          "lowF": 48.6
+        },
+        {
+          "month": "Feb",
+          "highF": 66.7,
+          "lowF": 50.1
+        },
+        {
+          "month": "Mar",
+          "highF": 67.7,
+          "lowF": 52.3
+        },
+        {
+          "month": "Apr",
+          "highF": 70.2,
+          "lowF": 54.9
+        },
+        {
+          "month": "May",
+          "highF": 71.3,
+          "lowF": 59.3
+        },
+        {
+          "month": "Jun",
+          "highF": 74.1,
+          "lowF": 62.6
+        },
+        {
+          "month": "Jul",
+          "highF": 78.9,
+          "lowF": 66.2
+        },
+        {
+          "month": "Aug",
+          "highF": 80.4,
+          "lowF": 67.1
+        },
+        {
+          "month": "Sep",
+          "highF": 79.9,
+          "lowF": 65
+        },
+        {
+          "month": "Oct",
+          "highF": 76.5,
+          "lowF": 59.2
+        },
+        {
+          "month": "Nov",
+          "highF": 71.9,
+          "lowF": 53.3
+        },
+        {
+          "month": "Dec",
+          "highF": 66.5,
+          "lowF": 48.3
+        }
+      ]
+    },
+    "university-of-illinois-urbana-champaign": {
+      "station": {
+        "id": "USC00118740",
+        "name": "CHAMPAIGN 3S",
+        "stateCode": "IL",
+        "coordinates": {
+          "lat": 40.0839,
+          "lng": -88.2403
+        },
+        "elevationMeters": 219.8,
+        "distanceMiles": 1.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 33.5,
+          "lowF": 17.9
+        },
+        {
+          "month": "Feb",
+          "highF": 38.4,
+          "lowF": 21.2
+        },
+        {
+          "month": "Mar",
+          "highF": 50.4,
+          "lowF": 31.2
+        },
+        {
+          "month": "Apr",
+          "highF": 63.1,
+          "lowF": 41.6
+        },
+        {
+          "month": "May",
+          "highF": 73.8,
+          "lowF": 52.7
+        },
+        {
+          "month": "Jun",
+          "highF": 82.7,
+          "lowF": 62.1
+        },
+        {
+          "month": "Jul",
+          "highF": 85.2,
+          "lowF": 65.2
+        },
+        {
+          "month": "Aug",
+          "highF": 84,
+          "lowF": 63.6
+        },
+        {
+          "month": "Sep",
+          "highF": 78.8,
+          "lowF": 55.6
+        },
+        {
+          "month": "Oct",
+          "highF": 65.8,
+          "lowF": 43.9
+        },
+        {
+          "month": "Nov",
+          "highF": 50.7,
+          "lowF": 32.2
+        },
+        {
+          "month": "Dec",
+          "highF": 38.5,
+          "lowF": 23.6
+        }
+      ]
+    },
+    "university-of-wisconsin-madison": {
+      "station": {
+        "id": "USC00470273",
+        "name": "UW ARBORETUM - MADISON",
+        "stateCode": "WI",
+        "coordinates": {
+          "lat": 43.0411,
+          "lng": -89.4286
+        },
+        "elevationMeters": 265.2,
+        "distanceMiles": 2.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 27.7,
+          "lowF": 11.1
+        },
+        {
+          "month": "Feb",
+          "highF": 31.5,
+          "lowF": 14
+        },
+        {
+          "month": "Mar",
+          "highF": 44,
+          "lowF": 24.7
+        },
+        {
+          "month": "Apr",
+          "highF": 57.4,
+          "lowF": 35.7
+        },
+        {
+          "month": "May",
+          "highF": 69.2,
+          "lowF": 47.4
+        },
+        {
+          "month": "Jun",
+          "highF": 78.4,
+          "lowF": 57.1
+        },
+        {
+          "month": "Jul",
+          "highF": 82.2,
+          "lowF": 61.4
+        },
+        {
+          "month": "Aug",
+          "highF": 80.6,
+          "lowF": 59.4
+        },
+        {
+          "month": "Sep",
+          "highF": 73.9,
+          "lowF": 50.7
+        },
+        {
+          "month": "Oct",
+          "highF": 61.1,
+          "lowF": 39.4
+        },
+        {
+          "month": "Nov",
+          "highF": 46.1,
+          "lowF": 28.5
+        },
+        {
+          "month": "Dec",
+          "highF": 33,
+          "lowF": 17.8
+        }
+      ]
+    },
+    "ohio-state-university": {
+      "station": {
+        "id": "USC00331785",
+        "name": "COLUMBUS WCMH",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 40.025,
+          "lng": -83.0269
+        },
+        "elevationMeters": 225.6,
+        "distanceMiles": 2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 36.5,
+          "lowF": 20.9
+        },
+        {
+          "month": "Feb",
+          "highF": 40.3,
+          "lowF": 22.6
+        },
+        {
+          "month": "Mar",
+          "highF": 50.6,
+          "lowF": 31
+        },
+        {
+          "month": "Apr",
+          "highF": 64.2,
+          "lowF": 40.8
+        },
+        {
+          "month": "May",
+          "highF": 74.1,
+          "lowF": 51.4
+        },
+        {
+          "month": "Jun",
+          "highF": 82,
+          "lowF": 61.1
+        },
+        {
+          "month": "Jul",
+          "highF": 85,
+          "lowF": 64.6
+        },
+        {
+          "month": "Aug",
+          "highF": 84.1,
+          "lowF": 62.5
+        },
+        {
+          "month": "Sep",
+          "highF": 78.1,
+          "lowF": 54.6
+        },
+        {
+          "month": "Oct",
+          "highF": 65.8,
+          "lowF": 43.4
+        },
+        {
+          "month": "Nov",
+          "highF": 52.3,
+          "lowF": 32.9
+        },
+        {
+          "month": "Dec",
+          "highF": 40.9,
+          "lowF": 26.8
+        }
+      ]
+    },
+    "rutgers-university": {
+      "station": {
+        "id": "USC00286055",
+        "name": "NEW BRUNSWICK 3 SE",
+        "stateCode": "NJ",
+        "coordinates": {
+          "lat": 40.4728,
+          "lng": -74.4225
+        },
+        "elevationMeters": 33.8,
+        "distanceMiles": 2.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 40.3,
+          "lowF": 22.9
+        },
+        {
+          "month": "Feb",
+          "highF": 42.8,
+          "lowF": 24
+        },
+        {
+          "month": "Mar",
+          "highF": 50.6,
+          "lowF": 31
+        },
+        {
+          "month": "Apr",
+          "highF": 62.5,
+          "lowF": 40.8
+        },
+        {
+          "month": "May",
+          "highF": 72.1,
+          "lowF": 50.6
+        },
+        {
+          "month": "Jun",
+          "highF": 81.2,
+          "lowF": 60.4
+        },
+        {
+          "month": "Jul",
+          "highF": 86.5,
+          "lowF": 65.6
+        },
+        {
+          "month": "Aug",
+          "highF": 84.7,
+          "lowF": 64
+        },
+        {
+          "month": "Sep",
+          "highF": 78.4,
+          "lowF": 56.5
+        },
+        {
+          "month": "Oct",
+          "highF": 66.5,
+          "lowF": 44.2
+        },
+        {
+          "month": "Nov",
+          "highF": 55.5,
+          "lowF": 35.2
+        },
+        {
+          "month": "Dec",
+          "highF": 45.4,
+          "lowF": 28.4
+        }
+      ]
+    },
+    "university-of-maryland-college-park": {
+      "station": {
+        "id": "USC00180700",
+        "name": "BELTSVILLE",
+        "stateCode": "MD",
+        "coordinates": {
+          "lat": 39.0303,
+          "lng": -76.9314
+        },
+        "elevationMeters": 44.2,
+        "distanceMiles": 3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.7,
+          "lowF": 25.3
+        },
+        {
+          "month": "Feb",
+          "highF": 45.5,
+          "lowF": 27
+        },
+        {
+          "month": "Mar",
+          "highF": 53.4,
+          "lowF": 34.1
+        },
+        {
+          "month": "Apr",
+          "highF": 65.3,
+          "lowF": 43.8
+        },
+        {
+          "month": "May",
+          "highF": 74.2,
+          "lowF": 53.6
+        },
+        {
+          "month": "Jun",
+          "highF": 83,
+          "lowF": 63
+        },
+        {
+          "month": "Jul",
+          "highF": 87.1,
+          "lowF": 67.6
+        },
+        {
+          "month": "Aug",
+          "highF": 85.6,
+          "lowF": 66.1
+        },
+        {
+          "month": "Sep",
+          "highF": 79.2,
+          "lowF": 59.4
+        },
+        {
+          "month": "Oct",
+          "highF": 67.8,
+          "lowF": 46.8
+        },
+        {
+          "month": "Nov",
+          "highF": 56.7,
+          "lowF": 36.7
+        },
+        {
+          "month": "Dec",
+          "highF": 46.8,
+          "lowF": 29.8
+        }
+      ]
+    },
+    "purdue-university": {
+      "station": {
+        "id": "USW00014835",
+        "name": "LAFAYETTE PURDUE UNIV AP",
+        "stateCode": "IN",
+        "coordinates": {
+          "lat": 40.4122,
+          "lng": -86.9369
+        },
+        "elevationMeters": 182.6,
+        "distanceMiles": 1.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 33.4,
+          "lowF": 18.2
+        },
+        {
+          "month": "Feb",
+          "highF": 38,
+          "lowF": 21.4
+        },
+        {
+          "month": "Mar",
+          "highF": 49.5,
+          "lowF": 30.4
+        },
+        {
+          "month": "Apr",
+          "highF": 61.9,
+          "lowF": 40.3
+        },
+        {
+          "month": "May",
+          "highF": 72.5,
+          "lowF": 50.7
+        },
+        {
+          "month": "Jun",
+          "highF": 81.2,
+          "lowF": 60.1
+        },
+        {
+          "month": "Jul",
+          "highF": 83.8,
+          "lowF": 63.4
+        },
+        {
+          "month": "Aug",
+          "highF": 82.7,
+          "lowF": 61.7
+        },
+        {
+          "month": "Sep",
+          "highF": 77.2,
+          "lowF": 53.9
+        },
+        {
+          "month": "Oct",
+          "highF": 64.5,
+          "lowF": 43
+        },
+        {
+          "month": "Nov",
+          "highF": 50,
+          "lowF": 32.6
+        },
+        {
+          "month": "Dec",
+          "highF": 38.2,
+          "lowF": 23.8
+        }
+      ]
+    },
+    "wake-forest-university": {
+      "station": {
+        "id": "USW00093807",
+        "name": "WINSTON SALEM RYNLDS AP",
+        "stateCode": "NC",
+        "coordinates": {
+          "lat": 36.1336,
+          "lng": -80.2222
+        },
+        "elevationMeters": 295.7,
+        "distanceMiles": 3.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 48.8,
+          "lowF": 30.7
+        },
+        {
+          "month": "Feb",
+          "highF": 52.8,
+          "lowF": 33.2
+        },
+        {
+          "month": "Mar",
+          "highF": 60.8,
+          "lowF": 40.1
+        },
+        {
+          "month": "Apr",
+          "highF": 70.6,
+          "lowF": 48.3
+        },
+        {
+          "month": "May",
+          "highF": 77.9,
+          "lowF": 57
+        },
+        {
+          "month": "Jun",
+          "highF": 84.9,
+          "lowF": 65.4
+        },
+        {
+          "month": "Jul",
+          "highF": 88,
+          "lowF": 69.2
+        },
+        {
+          "month": "Aug",
+          "highF": 86.1,
+          "lowF": 67.9
+        },
+        {
+          "month": "Sep",
+          "highF": 80.1,
+          "lowF": 61.2
+        },
+        {
+          "month": "Oct",
+          "highF": 70.6,
+          "lowF": 49.3
+        },
+        {
+          "month": "Nov",
+          "highF": 60.1,
+          "lowF": 39.1
+        },
+        {
+          "month": "Dec",
+          "highF": 51.7,
+          "lowF": 33.6
+        }
+      ]
+    },
+    "case-western-reserve-university": {
+      "station": {
+        "id": "USW00004853",
+        "name": "CLEVELAND BURKE AP",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 41.5175,
+          "lng": -81.6836
+        },
+        "elevationMeters": 178,
+        "distanceMiles": 3.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35.3,
+          "lowF": 23.5
+        },
+        {
+          "month": "Feb",
+          "highF": 37.3,
+          "lowF": 24.5
+        },
+        {
+          "month": "Mar",
+          "highF": 44.9,
+          "lowF": 31.2
+        },
+        {
+          "month": "Apr",
+          "highF": 57.1,
+          "lowF": 41.3
+        },
+        {
+          "month": "May",
+          "highF": 67.9,
+          "lowF": 53.1
+        },
+        {
+          "month": "Jun",
+          "highF": 76.7,
+          "lowF": 63.3
+        },
+        {
+          "month": "Jul",
+          "highF": 80.7,
+          "lowF": 67.9
+        },
+        {
+          "month": "Aug",
+          "highF": 79.7,
+          "lowF": 67
+        },
+        {
+          "month": "Sep",
+          "highF": 73.5,
+          "lowF": 60.1
+        },
+        {
+          "month": "Oct",
+          "highF": 62.5,
+          "lowF": 49.2
+        },
+        {
+          "month": "Nov",
+          "highF": 50.5,
+          "lowF": 38.4
+        },
+        {
+          "month": "Dec",
+          "highF": 40.1,
+          "lowF": 29.8
+        }
+      ]
+    },
+    "lehigh-university": {
+      "station": {
+        "id": "USW00014737",
+        "name": "ALLENTOWN INTL AP",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.6508,
+          "lng": -75.4492
+        },
+        "elevationMeters": 118.9,
+        "distanceMiles": 4.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.4,
+          "lowF": 21.8
+        },
+        {
+          "month": "Feb",
+          "highF": 41.6,
+          "lowF": 23.2
+        },
+        {
+          "month": "Mar",
+          "highF": 50.8,
+          "lowF": 30.5
+        },
+        {
+          "month": "Apr",
+          "highF": 63.4,
+          "lowF": 40.3
+        },
+        {
+          "month": "May",
+          "highF": 73.5,
+          "lowF": 50.6
+        },
+        {
+          "month": "Jun",
+          "highF": 81.9,
+          "lowF": 59.9
+        },
+        {
+          "month": "Jul",
+          "highF": 86.4,
+          "lowF": 64.7
+        },
+        {
+          "month": "Aug",
+          "highF": 84.3,
+          "lowF": 62.8
+        },
+        {
+          "month": "Sep",
+          "highF": 77.4,
+          "lowF": 55.2
+        },
+        {
+          "month": "Oct",
+          "highF": 65.5,
+          "lowF": 43.8
+        },
+        {
+          "month": "Nov",
+          "highF": 53.8,
+          "lowF": 34.1
+        },
+        {
+          "month": "Dec",
+          "highF": 43.1,
+          "lowF": 26.8
+        }
+      ]
+    },
+    "william-and-mary": {
+      "station": {
+        "id": "USC00449151",
+        "name": "WILLIAMSBURG 2 N",
+        "stateCode": "VA",
+        "coordinates": {
+          "lat": 37.3017,
+          "lng": -76.7039
+        },
+        "elevationMeters": 21.3,
+        "distanceMiles": 2.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 49.1,
+          "lowF": 30.6
+        },
+        {
+          "month": "Feb",
+          "highF": 52.3,
+          "lowF": 32
+        },
+        {
+          "month": "Mar",
+          "highF": 59.8,
+          "lowF": 38.5
+        },
+        {
+          "month": "Apr",
+          "highF": 70,
+          "lowF": 47.7
+        },
+        {
+          "month": "May",
+          "highF": 77.2,
+          "lowF": 57
+        },
+        {
+          "month": "Jun",
+          "highF": 84.4,
+          "lowF": 65.3
+        },
+        {
+          "month": "Jul",
+          "highF": 88.5,
+          "lowF": 70.2
+        },
+        {
+          "month": "Aug",
+          "highF": 86.5,
+          "lowF": 68.7
+        },
+        {
+          "month": "Sep",
+          "highF": 80.5,
+          "lowF": 63.1
+        },
+        {
+          "month": "Oct",
+          "highF": 71,
+          "lowF": 51.3
+        },
+        {
+          "month": "Nov",
+          "highF": 61.1,
+          "lowF": 40.9
+        },
+        {
+          "month": "Dec",
+          "highF": 52.6,
+          "lowF": 34.1
+        }
+      ]
+    },
+    "villanova-university": {
+      "station": {
+        "id": "USC00366370",
+        "name": "NORRISTOWN",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.1097,
+          "lng": -75.3369
+        },
+        "elevationMeters": 18.9,
+        "distanceMiles": 5.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 41.7,
+          "lowF": 22.6
+        },
+        {
+          "month": "Feb",
+          "highF": 43.5,
+          "lowF": 24.7
+        },
+        {
+          "month": "Mar",
+          "highF": 52.1,
+          "lowF": 31.6
+        },
+        {
+          "month": "Apr",
+          "highF": 64.8,
+          "lowF": 41.5
+        },
+        {
+          "month": "May",
+          "highF": 74.8,
+          "lowF": 52.1
+        },
+        {
+          "month": "Jun",
+          "highF": 84,
+          "lowF": 62
+        },
+        {
+          "month": "Jul",
+          "highF": 88.8,
+          "lowF": 66.6
+        },
+        {
+          "month": "Aug",
+          "highF": 86.5,
+          "lowF": 65.2
+        },
+        {
+          "month": "Sep",
+          "highF": 80,
+          "lowF": 57.6
+        },
+        {
+          "month": "Oct",
+          "highF": 68.4,
+          "lowF": 44.6
+        },
+        {
+          "month": "Nov",
+          "highF": 56.8,
+          "lowF": 35.1
+        },
+        {
+          "month": "Dec",
+          "highF": 46.3,
+          "lowF": 28.3
+        }
+      ]
+    },
+    "university-of-minnesota-twin-cities": {
+      "station": {
+        "id": "USC00214884",
+        "name": "LOWER ST ANTHONY FALLS",
+        "stateCode": "MN",
+        "coordinates": {
+          "lat": 44.9783,
+          "lng": -93.2469
+        },
+        "elevationMeters": 229.8,
+        "distanceMiles": 0.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 21.7,
+          "lowF": 8.1
+        },
+        {
+          "month": "Feb",
+          "highF": 26.6,
+          "lowF": 12.2
+        },
+        {
+          "month": "Mar",
+          "highF": 40.2,
+          "lowF": 23.8
+        },
+        {
+          "month": "Apr",
+          "highF": 55.2,
+          "lowF": 36
+        },
+        {
+          "month": "May",
+          "highF": 69,
+          "lowF": 48.8
+        },
+        {
+          "month": "Jun",
+          "highF": 78.6,
+          "lowF": 58.5
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 64.1
+        },
+        {
+          "month": "Aug",
+          "highF": 80.1,
+          "lowF": 61.9
+        },
+        {
+          "month": "Sep",
+          "highF": 71.7,
+          "lowF": 53.8
+        },
+        {
+          "month": "Oct",
+          "highF": 56,
+          "lowF": 40.5
+        },
+        {
+          "month": "Nov",
+          "highF": 39.7,
+          "lowF": 27
+        },
+        {
+          "month": "Dec",
+          "highF": 27,
+          "lowF": 15
+        }
+      ]
+    },
+    "university-of-rochester": {
+      "station": {
+        "id": "USW00014768",
+        "name": "ROCHESTER GTR INTL AP",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 43.1167,
+          "lng": -77.6767
+        },
+        "elevationMeters": 162.5,
+        "distanceMiles": 2.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 33.4,
+          "lowF": 19
+        },
+        {
+          "month": "Feb",
+          "highF": 35.2,
+          "lowF": 19.6
+        },
+        {
+          "month": "Mar",
+          "highF": 43.6,
+          "lowF": 26.8
+        },
+        {
+          "month": "Apr",
+          "highF": 56.6,
+          "lowF": 37.1
+        },
+        {
+          "month": "May",
+          "highF": 69.4,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 77.9,
+          "lowF": 57.4
+        },
+        {
+          "month": "Jul",
+          "highF": 82.5,
+          "lowF": 62.2
+        },
+        {
+          "month": "Aug",
+          "highF": 80.5,
+          "lowF": 61
+        },
+        {
+          "month": "Sep",
+          "highF": 73.6,
+          "lowF": 53.6
+        },
+        {
+          "month": "Oct",
+          "highF": 61.2,
+          "lowF": 43.3
+        },
+        {
+          "month": "Nov",
+          "highF": 49.1,
+          "lowF": 34
+        },
+        {
+          "month": "Dec",
+          "highF": 38.5,
+          "lowF": 25.4
+        }
+      ]
+    },
+    "brandeis-university": {
+      "station": {
+        "id": "USC00195175",
+        "name": "NATICK",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.2825,
+          "lng": -71.3439
+        },
+        "elevationMeters": 54.9,
+        "distanceMiles": 7.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35.2,
+          "lowF": 17.5
+        },
+        {
+          "month": "Feb",
+          "highF": 38.2,
+          "lowF": 17.6
+        },
+        {
+          "month": "Mar",
+          "highF": 46.1,
+          "lowF": 25.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58,
+          "lowF": 35.1
+        },
+        {
+          "month": "May",
+          "highF": 67.7,
+          "lowF": 45.6
+        },
+        {
+          "month": "Jun",
+          "highF": 76.5,
+          "lowF": 55.9
+        },
+        {
+          "month": "Jul",
+          "highF": 81.8,
+          "lowF": 61.7
+        },
+        {
+          "month": "Aug",
+          "highF": 80.4,
+          "lowF": 59.4
+        },
+        {
+          "month": "Sep",
+          "highF": 73,
+          "lowF": 51.8
+        },
+        {
+          "month": "Oct",
+          "highF": 61.7,
+          "lowF": 39.7
+        },
+        {
+          "month": "Nov",
+          "highF": 51.3,
+          "lowF": 31.1
+        },
+        {
+          "month": "Dec",
+          "highF": 40.7,
+          "lowF": 22.9
+        }
+      ]
+    },
+    "uc-santa-barbara": {
+      "station": {
+        "id": "USW00023190",
+        "name": "SANTA BARBARA MUNI AP",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.4258,
+          "lng": -119.8425
+        },
+        "elevationMeters": 2.7,
+        "distanceMiles": 0.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 64.2,
+          "lowF": 41.3
+        },
+        {
+          "month": "Feb",
+          "highF": 63.8,
+          "lowF": 43.6
+        },
+        {
+          "month": "Mar",
+          "highF": 65.9,
+          "lowF": 46.2
+        },
+        {
+          "month": "Apr",
+          "highF": 67.8,
+          "lowF": 48.1
+        },
+        {
+          "month": "May",
+          "highF": 69.2,
+          "lowF": 51.3
+        },
+        {
+          "month": "Jun",
+          "highF": 70.3,
+          "lowF": 54.5
+        },
+        {
+          "month": "Jul",
+          "highF": 73.3,
+          "lowF": 58.1
+        },
+        {
+          "month": "Aug",
+          "highF": 74.5,
+          "lowF": 58
+        },
+        {
+          "month": "Sep",
+          "highF": 74.3,
+          "lowF": 55.7
+        },
+        {
+          "month": "Oct",
+          "highF": 73.4,
+          "lowF": 50.9
+        },
+        {
+          "month": "Nov",
+          "highF": 69.2,
+          "lowF": 44.3
+        },
+        {
+          "month": "Dec",
+          "highF": 64.3,
+          "lowF": 40.4
+        }
+      ]
+    },
+    "uc-santa-cruz": {
+      "station": {
+        "id": "USC00047916",
+        "name": "SANTA CRUZ",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 36.9878,
+          "lng": -121.9994
+        },
+        "elevationMeters": 21.3,
+        "distanceMiles": 3.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 62.5,
+          "lowF": 41.4
+        },
+        {
+          "month": "Feb",
+          "highF": 63.9,
+          "lowF": 42.7
+        },
+        {
+          "month": "Mar",
+          "highF": 66.5,
+          "lowF": 44.1
+        },
+        {
+          "month": "Apr",
+          "highF": 69.3,
+          "lowF": 45.7
+        },
+        {
+          "month": "May",
+          "highF": 71.4,
+          "lowF": 49
+        },
+        {
+          "month": "Jun",
+          "highF": 74,
+          "lowF": 51.6
+        },
+        {
+          "month": "Jul",
+          "highF": 74.3,
+          "lowF": 54.3
+        },
+        {
+          "month": "Aug",
+          "highF": 75.8,
+          "lowF": 54.6
+        },
+        {
+          "month": "Sep",
+          "highF": 76.7,
+          "lowF": 52.9
+        },
+        {
+          "month": "Oct",
+          "highF": 73.9,
+          "lowF": 49.5
+        },
+        {
+          "month": "Nov",
+          "highF": 66.7,
+          "lowF": 44.4
+        },
+        {
+          "month": "Dec",
+          "highF": 61.5,
+          "lowF": 40.9
+        }
+      ]
+    },
+    "pepperdine-university": {
+      "station": {
+        "id": "USC00047953",
+        "name": "SANTA MONICA PIER",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0075,
+          "lng": -118.4997
+        },
+        "elevationMeters": 4.3,
+        "distanceMiles": 12.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 62,
+          "lowF": 49.6
+        },
+        {
+          "month": "Feb",
+          "highF": 62.2,
+          "lowF": 49.7
+        },
+        {
+          "month": "Mar",
+          "highF": 61.8,
+          "lowF": 51.8
+        },
+        {
+          "month": "Apr",
+          "highF": 63.4,
+          "lowF": 53.2
+        },
+        {
+          "month": "May",
+          "highF": 63.4,
+          "lowF": 55.8
+        },
+        {
+          "month": "Jun",
+          "highF": 66.3,
+          "lowF": 59.2
+        },
+        {
+          "month": "Jul",
+          "highF": 69.4,
+          "lowF": 61.5
+        },
+        {
+          "month": "Aug",
+          "highF": 69.7,
+          "lowF": 62.3
+        },
+        {
+          "month": "Sep",
+          "highF": 70,
+          "lowF": 60.9
+        },
+        {
+          "month": "Oct",
+          "highF": 67.5,
+          "lowF": 58.5
+        },
+        {
+          "month": "Nov",
+          "highF": 66.9,
+          "lowF": 53.6
+        },
+        {
+          "month": "Dec",
+          "highF": 63.4,
+          "lowF": 49.5
+        }
+      ]
+    },
+    "williams-college": {
+      "station": {
+        "id": "USW00054768",
+        "name": "NORTH ADAMS HARRIMAN AP",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.6958,
+          "lng": -73.1708
+        },
+        "elevationMeters": 199.3,
+        "distanceMiles": 2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 32.4,
+          "lowF": 14.3
+        },
+        {
+          "month": "Feb",
+          "highF": 35.3,
+          "lowF": 15.5
+        },
+        {
+          "month": "Mar",
+          "highF": 43.6,
+          "lowF": 23.5
+        },
+        {
+          "month": "Apr",
+          "highF": 56.9,
+          "lowF": 33.5
+        },
+        {
+          "month": "May",
+          "highF": 68.6,
+          "lowF": 43.9
+        },
+        {
+          "month": "Jun",
+          "highF": 76.4,
+          "lowF": 53
+        },
+        {
+          "month": "Jul",
+          "highF": 80.9,
+          "lowF": 57.7
+        },
+        {
+          "month": "Aug",
+          "highF": 79,
+          "lowF": 56.1
+        },
+        {
+          "month": "Sep",
+          "highF": 72.1,
+          "lowF": 48.8
+        },
+        {
+          "month": "Oct",
+          "highF": 60,
+          "lowF": 38.4
+        },
+        {
+          "month": "Nov",
+          "highF": 48.4,
+          "lowF": 29.7
+        },
+        {
+          "month": "Dec",
+          "highF": 37.6,
+          "lowF": 21.5
+        }
+      ]
+    },
+    "swarthmore-college": {
+      "station": {
+        "id": "USC00365390",
+        "name": "MARCUS HOOK",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 39.8253,
+          "lng": -75.4283
+        },
+        "elevationMeters": 3,
+        "distanceMiles": 6.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.9,
+          "lowF": 26.8
+        },
+        {
+          "month": "Feb",
+          "highF": 45.9,
+          "lowF": 27.8
+        },
+        {
+          "month": "Mar",
+          "highF": 53.4,
+          "lowF": 34.5
+        },
+        {
+          "month": "Apr",
+          "highF": 65.6,
+          "lowF": 45.1
+        },
+        {
+          "month": "May",
+          "highF": 74.9,
+          "lowF": 55.1
+        },
+        {
+          "month": "Jun",
+          "highF": 83.7,
+          "lowF": 64.6
+        },
+        {
+          "month": "Jul",
+          "highF": 88.8,
+          "lowF": 70.1
+        },
+        {
+          "month": "Aug",
+          "highF": 86.8,
+          "lowF": 68.7
+        },
+        {
+          "month": "Sep",
+          "highF": 80,
+          "lowF": 61.3
+        },
+        {
+          "month": "Oct",
+          "highF": 68.4,
+          "lowF": 49.6
+        },
+        {
+          "month": "Nov",
+          "highF": 57.3,
+          "lowF": 40
+        },
+        {
+          "month": "Dec",
+          "highF": 47.5,
+          "lowF": 32.3
+        }
+      ]
+    },
+    "wellesley-college": {
+      "station": {
+        "id": "USC00195175",
+        "name": "NATICK",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.2825,
+          "lng": -71.3439
+        },
+        "elevationMeters": 54.9,
+        "distanceMiles": 2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35.2,
+          "lowF": 17.5
+        },
+        {
+          "month": "Feb",
+          "highF": 38.2,
+          "lowF": 17.6
+        },
+        {
+          "month": "Mar",
+          "highF": 46.1,
+          "lowF": 25.4
+        },
+        {
+          "month": "Apr",
+          "highF": 58,
+          "lowF": 35.1
+        },
+        {
+          "month": "May",
+          "highF": 67.7,
+          "lowF": 45.6
+        },
+        {
+          "month": "Jun",
+          "highF": 76.5,
+          "lowF": 55.9
+        },
+        {
+          "month": "Jul",
+          "highF": 81.8,
+          "lowF": 61.7
+        },
+        {
+          "month": "Aug",
+          "highF": 80.4,
+          "lowF": 59.4
+        },
+        {
+          "month": "Sep",
+          "highF": 73,
+          "lowF": 51.8
+        },
+        {
+          "month": "Oct",
+          "highF": 61.7,
+          "lowF": 39.7
+        },
+        {
+          "month": "Nov",
+          "highF": 51.3,
+          "lowF": 31.1
+        },
+        {
+          "month": "Dec",
+          "highF": 40.7,
+          "lowF": 22.9
+        }
+      ]
+    },
+    "bowdoin-college": {
+      "station": {
+        "id": "USW00014611",
+        "name": "BRUNSWICK NAS",
+        "stateCode": "ME",
+        "coordinates": {
+          "lat": 43.9,
+          "lng": -69.9333
+        },
+        "elevationMeters": 21.3,
+        "distanceMiles": 1.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 30.1,
+          "lowF": 11.9
+        },
+        {
+          "month": "Feb",
+          "highF": 32.8,
+          "lowF": 13.6
+        },
+        {
+          "month": "Mar",
+          "highF": 40.9,
+          "lowF": 23.5
+        },
+        {
+          "month": "Apr",
+          "highF": 52.8,
+          "lowF": 32.3
+        },
+        {
+          "month": "May",
+          "highF": 64.2,
+          "lowF": 43.7
+        },
+        {
+          "month": "Jun",
+          "highF": 72.9,
+          "lowF": 53.3
+        },
+        {
+          "month": "Jul",
+          "highF": 79.4,
+          "lowF": 59.3
+        },
+        {
+          "month": "Aug",
+          "highF": 77.9,
+          "lowF": 58.2
+        },
+        {
+          "month": "Sep",
+          "highF": 70.3,
+          "lowF": 50.4
+        },
+        {
+          "month": "Oct",
+          "highF": 57.9,
+          "lowF": 39.2
+        },
+        {
+          "month": "Nov",
+          "highF": 46.7,
+          "lowF": 29.6
+        },
+        {
+          "month": "Dec",
+          "highF": 36.8,
+          "lowF": 19.7
+        }
+      ]
+    },
+    "carleton-college": {
+      "station": {
+        "id": "USC00212721",
+        "name": "FARIBAULT",
+        "stateCode": "MN",
+        "coordinates": {
+          "lat": 44.3092,
+          "lng": -93.2661
+        },
+        "elevationMeters": 295.7,
+        "distanceMiles": 11.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 23.2,
+          "lowF": 4.8
+        },
+        {
+          "month": "Feb",
+          "highF": 28,
+          "lowF": 7.9
+        },
+        {
+          "month": "Mar",
+          "highF": 40.4,
+          "lowF": 20.4
+        },
+        {
+          "month": "Apr",
+          "highF": 55.5,
+          "lowF": 32.9
+        },
+        {
+          "month": "May",
+          "highF": 68.2,
+          "lowF": 45.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.4,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 82,
+          "lowF": 60.6
+        },
+        {
+          "month": "Aug",
+          "highF": 79.9,
+          "lowF": 57.9
+        },
+        {
+          "month": "Sep",
+          "highF": 72.7,
+          "lowF": 49.7
+        },
+        {
+          "month": "Oct",
+          "highF": 58.9,
+          "lowF": 35.7
+        },
+        {
+          "month": "Nov",
+          "highF": 42.4,
+          "lowF": 23.8
+        },
+        {
+          "month": "Dec",
+          "highF": 28.9,
+          "lowF": 12.6
+        }
+      ]
+    },
+    "claremont-mckenna-college": {
+      "station": {
+        "id": "USC00047050",
+        "name": "POMONA/FAIRPLEX",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0817,
+          "lng": -117.7658
+        },
+        "elevationMeters": 304.5,
+        "distanceMiles": 3.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.9,
+          "lowF": 43.1
+        },
+        {
+          "month": "Feb",
+          "highF": 67.3,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 72,
+          "lowF": 47
+        },
+        {
+          "month": "Apr",
+          "highF": 75.8,
+          "lowF": 49.6
+        },
+        {
+          "month": "May",
+          "highF": 78.4,
+          "lowF": 54
+        },
+        {
+          "month": "Jun",
+          "highF": 84.3,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 90.3,
+          "lowF": 62.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.4,
+          "lowF": 62.7
+        },
+        {
+          "month": "Sep",
+          "highF": 88.7,
+          "lowF": 60.4
+        },
+        {
+          "month": "Oct",
+          "highF": 80.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Nov",
+          "highF": 73.5,
+          "lowF": 47
+        },
+        {
+          "month": "Dec",
+          "highF": 66.9,
+          "lowF": 41.5
+        }
+      ]
+    },
+    "davidson-college": {
+      "station": {
+        "id": "USC00311975",
+        "name": "CONCORD",
+        "stateCode": "NC",
+        "coordinates": {
+          "lat": 35.4111,
+          "lng": -80.5833
+        },
+        "elevationMeters": 213.4,
+        "distanceMiles": 15.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 52.8,
+          "lowF": 28.9
+        },
+        {
+          "month": "Feb",
+          "highF": 56.7,
+          "lowF": 31.4
+        },
+        {
+          "month": "Mar",
+          "highF": 64.5,
+          "lowF": 38.1
+        },
+        {
+          "month": "Apr",
+          "highF": 74.1,
+          "lowF": 46.8
+        },
+        {
+          "month": "May",
+          "highF": 81.4,
+          "lowF": 56.1
+        },
+        {
+          "month": "Jun",
+          "highF": 88.4,
+          "lowF": 64.9
+        },
+        {
+          "month": "Jul",
+          "highF": 91.8,
+          "lowF": 68.7
+        },
+        {
+          "month": "Aug",
+          "highF": 89.8,
+          "lowF": 67.2
+        },
+        {
+          "month": "Sep",
+          "highF": 84,
+          "lowF": 60.5
+        },
+        {
+          "month": "Oct",
+          "highF": 74.4,
+          "lowF": 47.9
+        },
+        {
+          "month": "Nov",
+          "highF": 63.9,
+          "lowF": 37.2
+        },
+        {
+          "month": "Dec",
+          "highF": 55.6,
+          "lowF": 31.6
+        }
+      ]
+    },
+    "haverford-college": {
+      "station": {
+        "id": "USC00366370",
+        "name": "NORRISTOWN",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.1097,
+          "lng": -75.3369
+        },
+        "elevationMeters": 18.9,
+        "distanceMiles": 7.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 41.7,
+          "lowF": 22.6
+        },
+        {
+          "month": "Feb",
+          "highF": 43.5,
+          "lowF": 24.7
+        },
+        {
+          "month": "Mar",
+          "highF": 52.1,
+          "lowF": 31.6
+        },
+        {
+          "month": "Apr",
+          "highF": 64.8,
+          "lowF": 41.5
+        },
+        {
+          "month": "May",
+          "highF": 74.8,
+          "lowF": 52.1
+        },
+        {
+          "month": "Jun",
+          "highF": 84,
+          "lowF": 62
+        },
+        {
+          "month": "Jul",
+          "highF": 88.8,
+          "lowF": 66.6
+        },
+        {
+          "month": "Aug",
+          "highF": 86.5,
+          "lowF": 65.2
+        },
+        {
+          "month": "Sep",
+          "highF": 80,
+          "lowF": 57.6
+        },
+        {
+          "month": "Oct",
+          "highF": 68.4,
+          "lowF": 44.6
+        },
+        {
+          "month": "Nov",
+          "highF": 56.8,
+          "lowF": 35.1
+        },
+        {
+          "month": "Dec",
+          "highF": 46.3,
+          "lowF": 28.3
+        }
+      ]
+    },
+    "vassar-college": {
+      "station": {
+        "id": "USC00306820",
+        "name": "POUGHKEEPSIE",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 41.7269,
+          "lng": -73.9203
+        },
+        "elevationMeters": 76.5,
+        "distanceMiles": 3.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35,
+          "lowF": 18.7
+        },
+        {
+          "month": "Feb",
+          "highF": 38.5,
+          "lowF": 20.1
+        },
+        {
+          "month": "Mar",
+          "highF": 46.8,
+          "lowF": 27.3
+        },
+        {
+          "month": "Apr",
+          "highF": 60,
+          "lowF": 38
+        },
+        {
+          "month": "May",
+          "highF": 70.6,
+          "lowF": 48.8
+        },
+        {
+          "month": "Jun",
+          "highF": 78.1,
+          "lowF": 58
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 63.1
+        },
+        {
+          "month": "Aug",
+          "highF": 81.5,
+          "lowF": 61.9
+        },
+        {
+          "month": "Sep",
+          "highF": 73.7,
+          "lowF": 54.2
+        },
+        {
+          "month": "Oct",
+          "highF": 61.8,
+          "lowF": 42.4
+        },
+        {
+          "month": "Nov",
+          "highF": 51,
+          "lowF": 33.3
+        },
+        {
+          "month": "Dec",
+          "highF": 40.1,
+          "lowF": 25.1
+        }
+      ]
+    },
+    "washington-and-lee-university": {
+      "station": {
+        "id": "USC00444876",
+        "name": "LEXINGTON",
+        "stateCode": "VA",
+        "coordinates": {
+          "lat": 37.7767,
+          "lng": -79.4386
+        },
+        "elevationMeters": 334.4,
+        "distanceMiles": 0.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 45.2,
+          "lowF": 23.3
+        },
+        {
+          "month": "Feb",
+          "highF": 49.3,
+          "lowF": 24.8
+        },
+        {
+          "month": "Mar",
+          "highF": 57.4,
+          "lowF": 31.2
+        },
+        {
+          "month": "Apr",
+          "highF": 68.4,
+          "lowF": 40.4
+        },
+        {
+          "month": "May",
+          "highF": 75.7,
+          "lowF": 50.5
+        },
+        {
+          "month": "Jun",
+          "highF": 83.1,
+          "lowF": 59.4
+        },
+        {
+          "month": "Jul",
+          "highF": 86.6,
+          "lowF": 64
+        },
+        {
+          "month": "Aug",
+          "highF": 85.4,
+          "lowF": 62.6
+        },
+        {
+          "month": "Sep",
+          "highF": 79.1,
+          "lowF": 55.5
+        },
+        {
+          "month": "Oct",
+          "highF": 69.1,
+          "lowF": 42.9
+        },
+        {
+          "month": "Nov",
+          "highF": 57.8,
+          "lowF": 31.9
+        },
+        {
+          "month": "Dec",
+          "highF": 48.3,
+          "lowF": 26.4
+        }
+      ]
+    },
+    "hamilton-college": {
+      "station": {
+        "id": "USW00094794",
+        "name": "UTICA ONEIDA CO AP",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 43.145,
+          "lng": -75.3839
+        },
+        "elevationMeters": 216.7,
+        "distanceMiles": 6.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 29.6,
+          "lowF": 13.8
+        },
+        {
+          "month": "Feb",
+          "highF": 32.1,
+          "lowF": 15.1
+        },
+        {
+          "month": "Mar",
+          "highF": 40.5,
+          "lowF": 23.1
+        },
+        {
+          "month": "Apr",
+          "highF": 54.7,
+          "lowF": 34.5
+        },
+        {
+          "month": "May",
+          "highF": 67.7,
+          "lowF": 45.9
+        },
+        {
+          "month": "Jun",
+          "highF": 76.1,
+          "lowF": 54.9
+        },
+        {
+          "month": "Jul",
+          "highF": 80.5,
+          "lowF": 59.6
+        },
+        {
+          "month": "Aug",
+          "highF": 78.7,
+          "lowF": 58.1
+        },
+        {
+          "month": "Sep",
+          "highF": 71.8,
+          "lowF": 50.7
+        },
+        {
+          "month": "Oct",
+          "highF": 59.1,
+          "lowF": 40.8
+        },
+        {
+          "month": "Nov",
+          "highF": 46.4,
+          "lowF": 30.7
+        },
+        {
+          "month": "Dec",
+          "highF": 34.9,
+          "lowF": 21.4
+        }
+      ]
+    },
+    "colby-college": {
+      "station": {
+        "id": "USC00179151",
+        "name": "WATERVILLE TRTMT PLT",
+        "stateCode": "ME",
+        "coordinates": {
+          "lat": 44.5272,
+          "lng": -69.6544
+        },
+        "elevationMeters": 22.3,
+        "distanceMiles": 2.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 28.5,
+          "lowF": 8.8
+        },
+        {
+          "month": "Feb",
+          "highF": 31.8,
+          "lowF": 9.9
+        },
+        {
+          "month": "Mar",
+          "highF": 40.3,
+          "lowF": 20.5
+        },
+        {
+          "month": "Apr",
+          "highF": 53.5,
+          "lowF": 32.2
+        },
+        {
+          "month": "May",
+          "highF": 65.8,
+          "lowF": 43.2
+        },
+        {
+          "month": "Jun",
+          "highF": 74.7,
+          "lowF": 53.1
+        },
+        {
+          "month": "Jul",
+          "highF": 80.1,
+          "lowF": 59.1
+        },
+        {
+          "month": "Aug",
+          "highF": 79.5,
+          "lowF": 57.4
+        },
+        {
+          "month": "Sep",
+          "highF": 71.7,
+          "lowF": 49.5
+        },
+        {
+          "month": "Oct",
+          "highF": 58.7,
+          "lowF": 38.4
+        },
+        {
+          "month": "Nov",
+          "highF": 46.1,
+          "lowF": 28.7
+        },
+        {
+          "month": "Dec",
+          "highF": 34.5,
+          "lowF": 17.2
+        }
+      ]
+    },
+    "middlebury-college": {
+      "station": {
+        "id": "USC00431580",
+        "name": "CORNWALL",
+        "stateCode": "VT",
+        "coordinates": {
+          "lat": 43.9572,
+          "lng": -73.2106
+        },
+        "elevationMeters": 105.2,
+        "distanceMiles": 4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 27.1,
+          "lowF": 9.2
+        },
+        {
+          "month": "Feb",
+          "highF": 30.3,
+          "lowF": 10.3
+        },
+        {
+          "month": "Mar",
+          "highF": 39.5,
+          "lowF": 20.1
+        },
+        {
+          "month": "Apr",
+          "highF": 53.6,
+          "lowF": 32.7
+        },
+        {
+          "month": "May",
+          "highF": 67,
+          "lowF": 45
+        },
+        {
+          "month": "Jun",
+          "highF": 75.5,
+          "lowF": 54.5
+        },
+        {
+          "month": "Jul",
+          "highF": 80.4,
+          "lowF": 59.6
+        },
+        {
+          "month": "Aug",
+          "highF": 78.6,
+          "lowF": 57
+        },
+        {
+          "month": "Sep",
+          "highF": 71.3,
+          "lowF": 49.1
+        },
+        {
+          "month": "Oct",
+          "highF": 57.4,
+          "lowF": 38
+        },
+        {
+          "month": "Nov",
+          "highF": 44.3,
+          "lowF": 28.4
+        },
+        {
+          "month": "Dec",
+          "highF": 33,
+          "lowF": 17.5
+        }
+      ]
+    },
+    "grinnell-college": {
+      "station": {
+        "id": "USC00133473",
+        "name": "GRINNELL 3 SW",
+        "stateCode": "IA",
+        "coordinates": {
+          "lat": 41.72,
+          "lng": -92.7489
+        },
+        "elevationMeters": 275.8,
+        "distanceMiles": 2.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 28.3,
+          "lowF": 10.2
+        },
+        {
+          "month": "Feb",
+          "highF": 33,
+          "lowF": 13.6
+        },
+        {
+          "month": "Mar",
+          "highF": 46.1,
+          "lowF": 24.7
+        },
+        {
+          "month": "Apr",
+          "highF": 59.4,
+          "lowF": 35.1
+        },
+        {
+          "month": "May",
+          "highF": 69.9,
+          "lowF": 47.1
+        },
+        {
+          "month": "Jun",
+          "highF": 79.5,
+          "lowF": 57.8
+        },
+        {
+          "month": "Jul",
+          "highF": 83.3,
+          "lowF": 61.8
+        },
+        {
+          "month": "Aug",
+          "highF": 81.2,
+          "lowF": 59.2
+        },
+        {
+          "month": "Sep",
+          "highF": 75.2,
+          "lowF": 50.2
+        },
+        {
+          "month": "Oct",
+          "highF": 62.3,
+          "lowF": 38.2
+        },
+        {
+          "month": "Nov",
+          "highF": 46.8,
+          "lowF": 26.4
+        },
+        {
+          "month": "Dec",
+          "highF": 34,
+          "lowF": 16.3
+        }
+      ]
+    },
+    "colgate-university": {
+      "station": {
+        "id": "USC00305512",
+        "name": "MORRISVILLE 6 SW",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 42.8417,
+          "lng": -75.7264
+        },
+        "elevationMeters": 512.4,
+        "distanceMiles": 9.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 27.6,
+          "lowF": 11.3
+        },
+        {
+          "month": "Feb",
+          "highF": 30.2,
+          "lowF": 12.4
+        },
+        {
+          "month": "Mar",
+          "highF": 38.2,
+          "lowF": 19.7
+        },
+        {
+          "month": "Apr",
+          "highF": 51.8,
+          "lowF": 32.4
+        },
+        {
+          "month": "May",
+          "highF": 64.4,
+          "lowF": 44.4
+        },
+        {
+          "month": "Jun",
+          "highF": 72.6,
+          "lowF": 53.3
+        },
+        {
+          "month": "Jul",
+          "highF": 77.2,
+          "lowF": 57.4
+        },
+        {
+          "month": "Aug",
+          "highF": 75.9,
+          "lowF": 56.2
+        },
+        {
+          "month": "Sep",
+          "highF": 69.2,
+          "lowF": 49.2
+        },
+        {
+          "month": "Oct",
+          "highF": 56,
+          "lowF": 38
+        },
+        {
+          "month": "Nov",
+          "highF": 44.4,
+          "lowF": 28.6
+        },
+        {
+          "month": "Dec",
+          "highF": 33.1,
+          "lowF": 19
+        }
+      ]
+    },
+    "smith-college": {
+      "station": {
+        "id": "USC00190120",
+        "name": "AMHERST",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3861,
+          "lng": -72.5375
+        },
+        "elevationMeters": 44.2,
+        "distanceMiles": 7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 34,
+          "lowF": 13.8
+        },
+        {
+          "month": "Feb",
+          "highF": 37,
+          "lowF": 15.3
+        },
+        {
+          "month": "Mar",
+          "highF": 45.2,
+          "lowF": 24.1
+        },
+        {
+          "month": "Apr",
+          "highF": 58.2,
+          "lowF": 34.4
+        },
+        {
+          "month": "May",
+          "highF": 69.5,
+          "lowF": 45.4
+        },
+        {
+          "month": "Jun",
+          "highF": 78,
+          "lowF": 55
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 60.2
+        },
+        {
+          "month": "Aug",
+          "highF": 81.5,
+          "lowF": 58.3
+        },
+        {
+          "month": "Sep",
+          "highF": 74.4,
+          "lowF": 50.3
+        },
+        {
+          "month": "Oct",
+          "highF": 61.9,
+          "lowF": 38.6
+        },
+        {
+          "month": "Nov",
+          "highF": 49.7,
+          "lowF": 29.1
+        },
+        {
+          "month": "Dec",
+          "highF": 39.2,
+          "lowF": 20.8
+        }
+      ]
+    },
+    "harvey-mudd-college": {
+      "station": {
+        "id": "USC00047050",
+        "name": "POMONA/FAIRPLEX",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0817,
+          "lng": -117.7658
+        },
+        "elevationMeters": 304.5,
+        "distanceMiles": 3.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.9,
+          "lowF": 43.1
+        },
+        {
+          "month": "Feb",
+          "highF": 67.3,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 72,
+          "lowF": 47
+        },
+        {
+          "month": "Apr",
+          "highF": 75.8,
+          "lowF": 49.6
+        },
+        {
+          "month": "May",
+          "highF": 78.4,
+          "lowF": 54
+        },
+        {
+          "month": "Jun",
+          "highF": 84.3,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 90.3,
+          "lowF": 62.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.4,
+          "lowF": 62.7
+        },
+        {
+          "month": "Sep",
+          "highF": 88.7,
+          "lowF": 60.4
+        },
+        {
+          "month": "Oct",
+          "highF": 80.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Nov",
+          "highF": 73.5,
+          "lowF": 47
+        },
+        {
+          "month": "Dec",
+          "highF": 66.9,
+          "lowF": 41.5
+        }
+      ]
+    },
+    "bryn-mawr-college": {
+      "station": {
+        "id": "USC00366370",
+        "name": "NORRISTOWN",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.1097,
+          "lng": -75.3369
+        },
+        "elevationMeters": 18.9,
+        "distanceMiles": 5.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 41.7,
+          "lowF": 22.6
+        },
+        {
+          "month": "Feb",
+          "highF": 43.5,
+          "lowF": 24.7
+        },
+        {
+          "month": "Mar",
+          "highF": 52.1,
+          "lowF": 31.6
+        },
+        {
+          "month": "Apr",
+          "highF": 64.8,
+          "lowF": 41.5
+        },
+        {
+          "month": "May",
+          "highF": 74.8,
+          "lowF": 52.1
+        },
+        {
+          "month": "Jun",
+          "highF": 84,
+          "lowF": 62
+        },
+        {
+          "month": "Jul",
+          "highF": 88.8,
+          "lowF": 66.6
+        },
+        {
+          "month": "Aug",
+          "highF": 86.5,
+          "lowF": 65.2
+        },
+        {
+          "month": "Sep",
+          "highF": 80,
+          "lowF": 57.6
+        },
+        {
+          "month": "Oct",
+          "highF": 68.4,
+          "lowF": 44.6
+        },
+        {
+          "month": "Nov",
+          "highF": 56.8,
+          "lowF": 35.1
+        },
+        {
+          "month": "Dec",
+          "highF": 46.3,
+          "lowF": 28.3
+        }
+      ]
+    },
+    "wesleyan-university": {
+      "station": {
+        "id": "USW00054788",
+        "name": "MERIDEN MARKHAM MUNI AP",
+        "stateCode": "CT",
+        "coordinates": {
+          "lat": 41.5097,
+          "lng": -72.8278
+        },
+        "elevationMeters": 31.4,
+        "distanceMiles": 9.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37,
+          "lowF": 18.7
+        },
+        {
+          "month": "Feb",
+          "highF": 39.1,
+          "lowF": 20.2
+        },
+        {
+          "month": "Mar",
+          "highF": 47.5,
+          "lowF": 28.2
+        },
+        {
+          "month": "Apr",
+          "highF": 59.9,
+          "lowF": 37.8
+        },
+        {
+          "month": "May",
+          "highF": 70.4,
+          "lowF": 47.8
+        },
+        {
+          "month": "Jun",
+          "highF": 78.7,
+          "lowF": 57
+        },
+        {
+          "month": "Jul",
+          "highF": 84,
+          "lowF": 62.5
+        },
+        {
+          "month": "Aug",
+          "highF": 82.4,
+          "lowF": 61.1
+        },
+        {
+          "month": "Sep",
+          "highF": 75.4,
+          "lowF": 53.6
+        },
+        {
+          "month": "Oct",
+          "highF": 63.6,
+          "lowF": 41.8
+        },
+        {
+          "month": "Nov",
+          "highF": 52,
+          "lowF": 32.1
+        },
+        {
+          "month": "Dec",
+          "highF": 41.7,
+          "lowF": 24.5
+        }
+      ]
+    },
+    "barnard-college": {
+      "station": {
+        "id": "USW00094728",
+        "name": "NEW YORK CNTRL PK TWR",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 40.7789,
+          "lng": -73.9692
+        },
+        "elevationMeters": 39.6,
+        "distanceMiles": 2.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.5,
+          "lowF": 27.9
+        },
+        {
+          "month": "Feb",
+          "highF": 42.2,
+          "lowF": 29.5
+        },
+        {
+          "month": "Mar",
+          "highF": 49.9,
+          "lowF": 35.8
+        },
+        {
+          "month": "Apr",
+          "highF": 61.8,
+          "lowF": 45.5
+        },
+        {
+          "month": "May",
+          "highF": 71.4,
+          "lowF": 55
+        },
+        {
+          "month": "Jun",
+          "highF": 79.7,
+          "lowF": 64.4
+        },
+        {
+          "month": "Jul",
+          "highF": 84.9,
+          "lowF": 70.1
+        },
+        {
+          "month": "Aug",
+          "highF": 83.3,
+          "lowF": 68.9
+        },
+        {
+          "month": "Sep",
+          "highF": 76.2,
+          "lowF": 62.3
+        },
+        {
+          "month": "Oct",
+          "highF": 64.5,
+          "lowF": 51.4
+        },
+        {
+          "month": "Nov",
+          "highF": 54,
+          "lowF": 42
+        },
+        {
+          "month": "Dec",
+          "highF": 44.3,
+          "lowF": 33.8
+        }
+      ]
+    },
+    "macalester-college": {
+      "station": {
+        "id": "USC00217379",
+        "name": "ST PAUL 3SW",
+        "stateCode": "MN",
+        "coordinates": {
+          "lat": 44.9311,
+          "lng": -93.1539
+        },
+        "elevationMeters": 281.9,
+        "distanceMiles": 0.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 23,
+          "lowF": 6.6
+        },
+        {
+          "month": "Feb",
+          "highF": 28.4,
+          "lowF": 11.6
+        },
+        {
+          "month": "Mar",
+          "highF": 40.9,
+          "lowF": 22.9
+        },
+        {
+          "month": "Apr",
+          "highF": 55.4,
+          "lowF": 36.8
+        },
+        {
+          "month": "May",
+          "highF": 68,
+          "lowF": 48.2
+        },
+        {
+          "month": "Jun",
+          "highF": 77.4,
+          "lowF": 58.9
+        },
+        {
+          "month": "Jul",
+          "highF": 81.6,
+          "lowF": 64.3
+        },
+        {
+          "month": "Aug",
+          "highF": 79.4,
+          "lowF": 61.7
+        },
+        {
+          "month": "Sep",
+          "highF": 71.5,
+          "lowF": 52.2
+        },
+        {
+          "month": "Oct",
+          "highF": 57.9,
+          "lowF": 38.1
+        },
+        {
+          "month": "Nov",
+          "highF": 41.3,
+          "lowF": 25.7
+        },
+        {
+          "month": "Dec",
+          "highF": 28,
+          "lowF": 14.2
+        }
+      ]
+    },
+    "bates-college": {
+      "station": {
+        "id": "USC00174566",
+        "name": "LEWISTON",
+        "stateCode": "ME",
+        "coordinates": {
+          "lat": 44.1,
+          "lng": -70.2167
+        },
+        "elevationMeters": 54.9,
+        "distanceMiles": 0.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 28.4,
+          "lowF": 11.6
+        },
+        {
+          "month": "Feb",
+          "highF": 31.6,
+          "lowF": 13.7
+        },
+        {
+          "month": "Mar",
+          "highF": 40.3,
+          "lowF": 22.6
+        },
+        {
+          "month": "Apr",
+          "highF": 52.9,
+          "lowF": 34.8
+        },
+        {
+          "month": "May",
+          "highF": 65.3,
+          "lowF": 46
+        },
+        {
+          "month": "Jun",
+          "highF": 74.1,
+          "lowF": 55.8
+        },
+        {
+          "month": "Jul",
+          "highF": 79.9,
+          "lowF": 61.8
+        },
+        {
+          "month": "Aug",
+          "highF": 79.2,
+          "lowF": 60.4
+        },
+        {
+          "month": "Sep",
+          "highF": 70.3,
+          "lowF": 52.2
+        },
+        {
+          "month": "Oct",
+          "highF": 57.6,
+          "lowF": 41.2
+        },
+        {
+          "month": "Nov",
+          "highF": 45,
+          "lowF": 31.4
+        },
+        {
+          "month": "Dec",
+          "highF": 34.2,
+          "lowF": 20.4
+        }
+      ]
+    },
+    "colorado-college": {
+      "station": {
+        "id": "USW00093037",
+        "name": "COLORADO SPRINGS MUNI AP",
+        "stateCode": "CO",
+        "coordinates": {
+          "lat": 38.81,
+          "lng": -104.6883
+        },
+        "elevationMeters": 1884,
+        "distanceMiles": 7.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 45,
+          "lowF": 18.5
+        },
+        {
+          "month": "Feb",
+          "highF": 46.5,
+          "lowF": 20.2
+        },
+        {
+          "month": "Mar",
+          "highF": 54.9,
+          "lowF": 27.3
+        },
+        {
+          "month": "Apr",
+          "highF": 61,
+          "lowF": 34
+        },
+        {
+          "month": "May",
+          "highF": 70.7,
+          "lowF": 43.5
+        },
+        {
+          "month": "Jun",
+          "highF": 81.6,
+          "lowF": 52.8
+        },
+        {
+          "month": "Jul",
+          "highF": 86.5,
+          "lowF": 58.2
+        },
+        {
+          "month": "Aug",
+          "highF": 83.6,
+          "lowF": 56.6
+        },
+        {
+          "month": "Sep",
+          "highF": 77.1,
+          "lowF": 48.9
+        },
+        {
+          "month": "Oct",
+          "highF": 64.7,
+          "lowF": 36.6
+        },
+        {
+          "month": "Nov",
+          "highF": 52.9,
+          "lowF": 26
+        },
+        {
+          "month": "Dec",
+          "highF": 44.6,
+          "lowF": 18.7
+        }
+      ]
+    },
+    "oberlin-college": {
+      "station": {
+        "id": "USC00336196",
+        "name": "OBERLIN",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 41.2803,
+          "lng": -82.2186
+        },
+        "elevationMeters": 248.7,
+        "distanceMiles": 0.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 33.8,
+          "lowF": 18
+        },
+        {
+          "month": "Feb",
+          "highF": 36.9,
+          "lowF": 19.5
+        },
+        {
+          "month": "Mar",
+          "highF": 45.9,
+          "lowF": 28.1
+        },
+        {
+          "month": "Apr",
+          "highF": 59.3,
+          "lowF": 37.9
+        },
+        {
+          "month": "May",
+          "highF": 70.9,
+          "lowF": 48.7
+        },
+        {
+          "month": "Jun",
+          "highF": 79.6,
+          "lowF": 58.1
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 62.2
+        },
+        {
+          "month": "Aug",
+          "highF": 81.3,
+          "lowF": 59.9
+        },
+        {
+          "month": "Sep",
+          "highF": 75.3,
+          "lowF": 52.4
+        },
+        {
+          "month": "Oct",
+          "highF": 63.1,
+          "lowF": 41.9
+        },
+        {
+          "month": "Nov",
+          "highF": 49.6,
+          "lowF": 32.6
+        },
+        {
+          "month": "Dec",
+          "highF": 38.7,
+          "lowF": 24.4
+        }
+      ]
+    },
+    "scripps-college": {
+      "station": {
+        "id": "USC00047050",
+        "name": "POMONA/FAIRPLEX",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0817,
+          "lng": -117.7658
+        },
+        "elevationMeters": 304.5,
+        "distanceMiles": 3.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.9,
+          "lowF": 43.1
+        },
+        {
+          "month": "Feb",
+          "highF": 67.3,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 72,
+          "lowF": 47
+        },
+        {
+          "month": "Apr",
+          "highF": 75.8,
+          "lowF": 49.6
+        },
+        {
+          "month": "May",
+          "highF": 78.4,
+          "lowF": 54
+        },
+        {
+          "month": "Jun",
+          "highF": 84.3,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 90.3,
+          "lowF": 62.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.4,
+          "lowF": 62.7
+        },
+        {
+          "month": "Sep",
+          "highF": 88.7,
+          "lowF": 60.4
+        },
+        {
+          "month": "Oct",
+          "highF": 80.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Nov",
+          "highF": 73.5,
+          "lowF": 47
+        },
+        {
+          "month": "Dec",
+          "highF": 66.9,
+          "lowF": 41.5
+        }
+      ]
+    },
+    "franklin-and-marshall-college": {
+      "station": {
+        "id": "USC00364763",
+        "name": "LANCASTER 2NE FLTR PLT",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.05,
+          "lng": -76.2742
+        },
+        "elevationMeters": 82.3,
+        "distanceMiles": 2.4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.9,
+          "lowF": 22.2
+        },
+        {
+          "month": "Feb",
+          "highF": 42.8,
+          "lowF": 23.6
+        },
+        {
+          "month": "Mar",
+          "highF": 52,
+          "lowF": 30.9
+        },
+        {
+          "month": "Apr",
+          "highF": 64.6,
+          "lowF": 40.5
+        },
+        {
+          "month": "May",
+          "highF": 74.5,
+          "lowF": 50.4
+        },
+        {
+          "month": "Jun",
+          "highF": 82.7,
+          "lowF": 59.7
+        },
+        {
+          "month": "Jul",
+          "highF": 87,
+          "lowF": 64.7
+        },
+        {
+          "month": "Aug",
+          "highF": 85.1,
+          "lowF": 63
+        },
+        {
+          "month": "Sep",
+          "highF": 78.2,
+          "lowF": 55.6
+        },
+        {
+          "month": "Oct",
+          "highF": 66.4,
+          "lowF": 43.7
+        },
+        {
+          "month": "Nov",
+          "highF": 54.8,
+          "lowF": 34
+        },
+        {
+          "month": "Dec",
+          "highF": 44.4,
+          "lowF": 27.1
+        }
+      ]
+    },
+    "college-of-the-holy-cross": {
+      "station": {
+        "id": "USW00094746",
+        "name": "WORCESTER RGNL AP",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.2706,
+          "lng": -71.8731
+        },
+        "elevationMeters": 304.8,
+        "distanceMiles": 4
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 32.3,
+          "lowF": 17.1
+        },
+        {
+          "month": "Feb",
+          "highF": 35.1,
+          "lowF": 18.9
+        },
+        {
+          "month": "Mar",
+          "highF": 43,
+          "lowF": 26
+        },
+        {
+          "month": "Apr",
+          "highF": 55.7,
+          "lowF": 36.5
+        },
+        {
+          "month": "May",
+          "highF": 66.6,
+          "lowF": 46.8
+        },
+        {
+          "month": "Jun",
+          "highF": 74.5,
+          "lowF": 55.9
+        },
+        {
+          "month": "Jul",
+          "highF": 79.8,
+          "lowF": 61.7
+        },
+        {
+          "month": "Aug",
+          "highF": 78.1,
+          "lowF": 60.5
+        },
+        {
+          "month": "Sep",
+          "highF": 70.7,
+          "lowF": 53.2
+        },
+        {
+          "month": "Oct",
+          "highF": 58.9,
+          "lowF": 42.2
+        },
+        {
+          "month": "Nov",
+          "highF": 47.9,
+          "lowF": 32.5
+        },
+        {
+          "month": "Dec",
+          "highF": 37.5,
+          "lowF": 23.4
+        }
+      ]
+    },
+    "kenyon-college": {
+      "station": {
+        "id": "USC00332044",
+        "name": "DANVILLE 2 W",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 40.4389,
+          "lng": -82.3042
+        },
+        "elevationMeters": 295.7,
+        "distanceMiles": 6.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 34.3,
+          "lowF": 16.7
+        },
+        {
+          "month": "Feb",
+          "highF": 37.7,
+          "lowF": 18.3
+        },
+        {
+          "month": "Mar",
+          "highF": 47.9,
+          "lowF": 26.4
+        },
+        {
+          "month": "Apr",
+          "highF": 60.7,
+          "lowF": 35.5
+        },
+        {
+          "month": "May",
+          "highF": 70.4,
+          "lowF": 46.4
+        },
+        {
+          "month": "Jun",
+          "highF": 78.9,
+          "lowF": 56
+        },
+        {
+          "month": "Jul",
+          "highF": 82.3,
+          "lowF": 59.2
+        },
+        {
+          "month": "Aug",
+          "highF": 81.4,
+          "lowF": 57
+        },
+        {
+          "month": "Sep",
+          "highF": 75.4,
+          "lowF": 49.2
+        },
+        {
+          "month": "Oct",
+          "highF": 63.4,
+          "lowF": 38
+        },
+        {
+          "month": "Nov",
+          "highF": 50.3,
+          "lowF": 29.4
+        },
+        {
+          "month": "Dec",
+          "highF": 39.3,
+          "lowF": 22.7
+        }
+      ]
+    },
+    "whitman-college": {
+      "station": {
+        "id": "USW00024160",
+        "name": "WALLA WALLA RGNL AP",
+        "stateCode": "WA",
+        "coordinates": {
+          "lat": 46.0947,
+          "lng": -118.2869
+        },
+        "elevationMeters": 355.4,
+        "distanceMiles": 2.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 41.9,
+          "lowF": 30.7
+        },
+        {
+          "month": "Feb",
+          "highF": 46.5,
+          "lowF": 32.9
+        },
+        {
+          "month": "Mar",
+          "highF": 55.8,
+          "lowF": 37.8
+        },
+        {
+          "month": "Apr",
+          "highF": 62.5,
+          "lowF": 42.5
+        },
+        {
+          "month": "May",
+          "highF": 71.4,
+          "lowF": 49.3
+        },
+        {
+          "month": "Jun",
+          "highF": 79,
+          "lowF": 55.1
+        },
+        {
+          "month": "Jul",
+          "highF": 90.1,
+          "lowF": 62.4
+        },
+        {
+          "month": "Aug",
+          "highF": 88.6,
+          "lowF": 61.7
+        },
+        {
+          "month": "Sep",
+          "highF": 78.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Oct",
+          "highF": 63.4,
+          "lowF": 43.9
+        },
+        {
+          "month": "Nov",
+          "highF": 49.2,
+          "lowF": 35.6
+        },
+        {
+          "month": "Dec",
+          "highF": 41,
+          "lowF": 30.2
+        }
+      ]
+    },
+    "mount-holyoke-college": {
+      "station": {
+        "id": "USC00190120",
+        "name": "AMHERST",
+        "stateCode": "MA",
+        "coordinates": {
+          "lat": 42.3861,
+          "lng": -72.5375
+        },
+        "elevationMeters": 44.2,
+        "distanceMiles": 9.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 34,
+          "lowF": 13.8
+        },
+        {
+          "month": "Feb",
+          "highF": 37,
+          "lowF": 15.3
+        },
+        {
+          "month": "Mar",
+          "highF": 45.2,
+          "lowF": 24.1
+        },
+        {
+          "month": "Apr",
+          "highF": 58.2,
+          "lowF": 34.4
+        },
+        {
+          "month": "May",
+          "highF": 69.5,
+          "lowF": 45.4
+        },
+        {
+          "month": "Jun",
+          "highF": 78,
+          "lowF": 55
+        },
+        {
+          "month": "Jul",
+          "highF": 83.1,
+          "lowF": 60.2
+        },
+        {
+          "month": "Aug",
+          "highF": 81.5,
+          "lowF": 58.3
+        },
+        {
+          "month": "Sep",
+          "highF": 74.4,
+          "lowF": 50.3
+        },
+        {
+          "month": "Oct",
+          "highF": 61.9,
+          "lowF": 38.6
+        },
+        {
+          "month": "Nov",
+          "highF": 49.7,
+          "lowF": 29.1
+        },
+        {
+          "month": "Dec",
+          "highF": 39.2,
+          "lowF": 20.8
+        }
+      ]
+    },
+    "skidmore-college": {
+      "station": {
+        "id": "USC00307484",
+        "name": "SARATOGA SPRINGS 4 SW",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 43.0411,
+          "lng": -73.8211
+        },
+        "elevationMeters": 99.4,
+        "distanceMiles": 4.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 32,
+          "lowF": 14.3
+        },
+        {
+          "month": "Feb",
+          "highF": 35.4,
+          "lowF": 16
+        },
+        {
+          "month": "Mar",
+          "highF": 45.3,
+          "lowF": 24.8
+        },
+        {
+          "month": "Apr",
+          "highF": 60.3,
+          "lowF": 35.9
+        },
+        {
+          "month": "May",
+          "highF": 72.5,
+          "lowF": 47
+        },
+        {
+          "month": "Jun",
+          "highF": 79.9,
+          "lowF": 56.2
+        },
+        {
+          "month": "Jul",
+          "highF": 83.8,
+          "lowF": 60.9
+        },
+        {
+          "month": "Aug",
+          "highF": 82.1,
+          "lowF": 59.4
+        },
+        {
+          "month": "Sep",
+          "highF": 74.9,
+          "lowF": 51.8
+        },
+        {
+          "month": "Oct",
+          "highF": 62.1,
+          "lowF": 40.5
+        },
+        {
+          "month": "Nov",
+          "highF": 48.7,
+          "lowF": 30.8
+        },
+        {
+          "month": "Dec",
+          "highF": 37,
+          "lowF": 21.6
+        }
+      ]
+    },
+    "pitzer-college": {
+      "station": {
+        "id": "USC00047050",
+        "name": "POMONA/FAIRPLEX",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.0817,
+          "lng": -117.7658
+        },
+        "elevationMeters": 304.5,
+        "distanceMiles": 3.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 67.9,
+          "lowF": 43.1
+        },
+        {
+          "month": "Feb",
+          "highF": 67.3,
+          "lowF": 44.5
+        },
+        {
+          "month": "Mar",
+          "highF": 72,
+          "lowF": 47
+        },
+        {
+          "month": "Apr",
+          "highF": 75.8,
+          "lowF": 49.6
+        },
+        {
+          "month": "May",
+          "highF": 78.4,
+          "lowF": 54
+        },
+        {
+          "month": "Jun",
+          "highF": 84.3,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 90.3,
+          "lowF": 62.3
+        },
+        {
+          "month": "Aug",
+          "highF": 92.4,
+          "lowF": 62.7
+        },
+        {
+          "month": "Sep",
+          "highF": 88.7,
+          "lowF": 60.4
+        },
+        {
+          "month": "Oct",
+          "highF": 80.5,
+          "lowF": 53.9
+        },
+        {
+          "month": "Nov",
+          "highF": 73.5,
+          "lowF": 47
+        },
+        {
+          "month": "Dec",
+          "highF": 66.9,
+          "lowF": 41.5
+        }
+      ]
+    },
+    "trinity-college-ct": {
+      "station": {
+        "id": "USW00014752",
+        "name": "HARTFORD BRAINARD FLD",
+        "stateCode": "CT",
+        "coordinates": {
+          "lat": 41.7361,
+          "lng": -72.6506
+        },
+        "elevationMeters": 5.8,
+        "distanceMiles": 2.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 36.8,
+          "lowF": 20.3
+        },
+        {
+          "month": "Feb",
+          "highF": 39.5,
+          "lowF": 22.1
+        },
+        {
+          "month": "Mar",
+          "highF": 47.6,
+          "lowF": 29.6
+        },
+        {
+          "month": "Apr",
+          "highF": 60.1,
+          "lowF": 40
+        },
+        {
+          "month": "May",
+          "highF": 70.9,
+          "lowF": 50.1
+        },
+        {
+          "month": "Jun",
+          "highF": 79.6,
+          "lowF": 59.8
+        },
+        {
+          "month": "Jul",
+          "highF": 84.6,
+          "lowF": 65.7
+        },
+        {
+          "month": "Aug",
+          "highF": 83,
+          "lowF": 64.2
+        },
+        {
+          "month": "Sep",
+          "highF": 75.6,
+          "lowF": 56
+        },
+        {
+          "month": "Oct",
+          "highF": 63.7,
+          "lowF": 44.3
+        },
+        {
+          "month": "Nov",
+          "highF": 52.1,
+          "lowF": 34.6
+        },
+        {
+          "month": "Dec",
+          "highF": 41.7,
+          "lowF": 25.9
+        }
+      ]
+    },
+    "lafayette-college": {
+      "station": {
+        "id": "USC00286979",
+        "name": "PHILLIPSBURG-EASTON BRG",
+        "stateCode": "NJ",
+        "coordinates": {
+          "lat": 40.6956,
+          "lng": -75.2
+        },
+        "elevationMeters": 70.7,
+        "distanceMiles": 0.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 37.7,
+          "lowF": 21.5
+        },
+        {
+          "month": "Feb",
+          "highF": 40.4,
+          "lowF": 22.1
+        },
+        {
+          "month": "Mar",
+          "highF": 48.8,
+          "lowF": 29.3
+        },
+        {
+          "month": "Apr",
+          "highF": 62.3,
+          "lowF": 39.4
+        },
+        {
+          "month": "May",
+          "highF": 71.8,
+          "lowF": 49.4
+        },
+        {
+          "month": "Jun",
+          "highF": 80.9,
+          "lowF": 59
+        },
+        {
+          "month": "Jul",
+          "highF": 85.6,
+          "lowF": 63.7
+        },
+        {
+          "month": "Aug",
+          "highF": 82.5,
+          "lowF": 62
+        },
+        {
+          "month": "Sep",
+          "highF": 76.8,
+          "lowF": 54.5
+        },
+        {
+          "month": "Oct",
+          "highF": 64.8,
+          "lowF": 43.5
+        },
+        {
+          "month": "Nov",
+          "highF": 53.4,
+          "lowF": 32.5
+        },
+        {
+          "month": "Dec",
+          "highF": 42.5,
+          "lowF": 25.9
+        }
+      ]
+    },
+    "bucknell-university": {
+      "station": {
+        "id": "USC00364976",
+        "name": "LEWISBURG",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.9475,
+          "lng": -76.8786
+        },
+        "elevationMeters": 152.4,
+        "distanceMiles": 0.5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35.2,
+          "lowF": 18.9
+        },
+        {
+          "month": "Feb",
+          "highF": 38.4,
+          "lowF": 19.8
+        },
+        {
+          "month": "Mar",
+          "highF": 48,
+          "lowF": 27.1
+        },
+        {
+          "month": "Apr",
+          "highF": 61.9,
+          "lowF": 36.9
+        },
+        {
+          "month": "May",
+          "highF": 71.9,
+          "lowF": 47.9
+        },
+        {
+          "month": "Jun",
+          "highF": 79.7,
+          "lowF": 57.4
+        },
+        {
+          "month": "Jul",
+          "highF": 84.3,
+          "lowF": 61.5
+        },
+        {
+          "month": "Aug",
+          "highF": 82.5,
+          "lowF": 59.7
+        },
+        {
+          "month": "Sep",
+          "highF": 75.3,
+          "lowF": 52.3
+        },
+        {
+          "month": "Oct",
+          "highF": 63,
+          "lowF": 41.2
+        },
+        {
+          "month": "Nov",
+          "highF": 50.5,
+          "lowF": 31.3
+        },
+        {
+          "month": "Dec",
+          "highF": 39.6,
+          "lowF": 24.3
+        }
+      ]
+    },
+    "denison-university": {
+      "station": {
+        "id": "USW00004858",
+        "name": "NEWARK HEATH AP",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 40.0228,
+          "lng": -82.4625
+        },
+        "elevationMeters": 269.4,
+        "distanceMiles": 4.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.6,
+          "lowF": 21.2
+        },
+        {
+          "month": "Feb",
+          "highF": 42,
+          "lowF": 23.3
+        },
+        {
+          "month": "Mar",
+          "highF": 52.3,
+          "lowF": 31.2
+        },
+        {
+          "month": "Apr",
+          "highF": 65.3,
+          "lowF": 40.8
+        },
+        {
+          "month": "May",
+          "highF": 74.9,
+          "lowF": 51.3
+        },
+        {
+          "month": "Jun",
+          "highF": 83.1,
+          "lowF": 60
+        },
+        {
+          "month": "Jul",
+          "highF": 86,
+          "lowF": 63.4
+        },
+        {
+          "month": "Aug",
+          "highF": 84.4,
+          "lowF": 60.9
+        },
+        {
+          "month": "Sep",
+          "highF": 78.9,
+          "lowF": 53.2
+        },
+        {
+          "month": "Oct",
+          "highF": 67.1,
+          "lowF": 42.2
+        },
+        {
+          "month": "Nov",
+          "highF": 53.7,
+          "lowF": 33.2
+        },
+        {
+          "month": "Dec",
+          "highF": 42.9,
+          "lowF": 26.7
+        }
+      ]
+    },
+    "sewanee-university-of-the-south": {
+      "station": {
+        "id": "USC00408184",
+        "name": "SEWANEE",
+        "stateCode": "TN",
+        "coordinates": {
+          "lat": 35.2028,
+          "lng": -85.9172
+        },
+        "elevationMeters": 587.7,
+        "distanceMiles": 0.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 45.4,
+          "lowF": 29
+        },
+        {
+          "month": "Feb",
+          "highF": 49.3,
+          "lowF": 31.9
+        },
+        {
+          "month": "Mar",
+          "highF": 58.2,
+          "lowF": 39.8
+        },
+        {
+          "month": "Apr",
+          "highF": 67.4,
+          "lowF": 47.8
+        },
+        {
+          "month": "May",
+          "highF": 74.3,
+          "lowF": 55.8
+        },
+        {
+          "month": "Jun",
+          "highF": 80.9,
+          "lowF": 62.9
+        },
+        {
+          "month": "Jul",
+          "highF": 84.1,
+          "lowF": 66.2
+        },
+        {
+          "month": "Aug",
+          "highF": 83.7,
+          "lowF": 65.5
+        },
+        {
+          "month": "Sep",
+          "highF": 78.1,
+          "lowF": 60
+        },
+        {
+          "month": "Oct",
+          "highF": 68.4,
+          "lowF": 49.6
+        },
+        {
+          "month": "Nov",
+          "highF": 57.6,
+          "lowF": 40.2
+        },
+        {
+          "month": "Dec",
+          "highF": 48.2,
+          "lowF": 33
+        }
+      ]
+    },
+    "union-college": {
+      "station": {
+        "id": "USW00014735",
+        "name": "ALBANY AP",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 42.7431,
+          "lng": -73.8092
+        },
+        "elevationMeters": 95.1,
+        "distanceMiles": 8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 32.8,
+          "lowF": 15.9
+        },
+        {
+          "month": "Feb",
+          "highF": 36,
+          "lowF": 17.6
+        },
+        {
+          "month": "Mar",
+          "highF": 45.3,
+          "lowF": 26.1
+        },
+        {
+          "month": "Apr",
+          "highF": 59.2,
+          "lowF": 36.9
+        },
+        {
+          "month": "May",
+          "highF": 71.2,
+          "lowF": 48.1
+        },
+        {
+          "month": "Jun",
+          "highF": 79.4,
+          "lowF": 57.4
+        },
+        {
+          "month": "Jul",
+          "highF": 83.9,
+          "lowF": 62.4
+        },
+        {
+          "month": "Aug",
+          "highF": 82,
+          "lowF": 60.7
+        },
+        {
+          "month": "Sep",
+          "highF": 74.4,
+          "lowF": 52.6
+        },
+        {
+          "month": "Oct",
+          "highF": 61.6,
+          "lowF": 41.1
+        },
+        {
+          "month": "Nov",
+          "highF": 49.3,
+          "lowF": 31.6
+        },
+        {
+          "month": "Dec",
+          "highF": 38.2,
+          "lowF": 22.7
+        }
+      ]
+    },
+    "connecticut-college": {
+      "station": {
+        "id": "USC00063207",
+        "name": "GROTON",
+        "stateCode": "CT",
+        "coordinates": {
+          "lat": 41.3503,
+          "lng": -72.0378
+        },
+        "elevationMeters": 12.2,
+        "distanceMiles": 4.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.8,
+          "lowF": 23.8
+        },
+        {
+          "month": "Feb",
+          "highF": 40.8,
+          "lowF": 24.9
+        },
+        {
+          "month": "Mar",
+          "highF": 47.3,
+          "lowF": 31.6
+        },
+        {
+          "month": "Apr",
+          "highF": 56.9,
+          "lowF": 40.9
+        },
+        {
+          "month": "May",
+          "highF": 66.4,
+          "lowF": 49.9
+        },
+        {
+          "month": "Jun",
+          "highF": 75.2,
+          "lowF": 59.3
+        },
+        {
+          "month": "Jul",
+          "highF": 80.8,
+          "lowF": 65.9
+        },
+        {
+          "month": "Aug",
+          "highF": 79.8,
+          "lowF": 65.1
+        },
+        {
+          "month": "Sep",
+          "highF": 73.6,
+          "lowF": 58
+        },
+        {
+          "month": "Oct",
+          "highF": 63.3,
+          "lowF": 47.1
+        },
+        {
+          "month": "Nov",
+          "highF": 53.2,
+          "lowF": 37.9
+        },
+        {
+          "month": "Dec",
+          "highF": 44.1,
+          "lowF": 29.5
+        }
+      ]
+    },
+    "rhodes-college": {
+      "station": {
+        "id": "USW00013893",
+        "name": "MEMPHIS INTL AP",
+        "stateCode": "TN",
+        "coordinates": {
+          "lat": 35.0564,
+          "lng": -89.9864
+        },
+        "elevationMeters": 77.4,
+        "distanceMiles": 6.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 50.9,
+          "lowF": 33.3
+        },
+        {
+          "month": "Feb",
+          "highF": 55.5,
+          "lowF": 36.7
+        },
+        {
+          "month": "Mar",
+          "highF": 64.2,
+          "lowF": 44.3
+        },
+        {
+          "month": "Apr",
+          "highF": 73.4,
+          "lowF": 53
+        },
+        {
+          "month": "May",
+          "highF": 81.7,
+          "lowF": 62.4
+        },
+        {
+          "month": "Jun",
+          "highF": 89.4,
+          "lowF": 70.4
+        },
+        {
+          "month": "Jul",
+          "highF": 91.9,
+          "lowF": 73.6
+        },
+        {
+          "month": "Aug",
+          "highF": 91.5,
+          "lowF": 72.6
+        },
+        {
+          "month": "Sep",
+          "highF": 86,
+          "lowF": 65.9
+        },
+        {
+          "month": "Oct",
+          "highF": 75.1,
+          "lowF": 54
+        },
+        {
+          "month": "Nov",
+          "highF": 62.6,
+          "lowF": 42.9
+        },
+        {
+          "month": "Dec",
+          "highF": 53.4,
+          "lowF": 36.2
+        }
+      ]
+    },
+    "st-olaf-college": {
+      "station": {
+        "id": "USC00212721",
+        "name": "FARIBAULT",
+        "stateCode": "MN",
+        "coordinates": {
+          "lat": 44.3092,
+          "lng": -93.2661
+        },
+        "elevationMeters": 295.7,
+        "distanceMiles": 11.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 23.2,
+          "lowF": 4.8
+        },
+        {
+          "month": "Feb",
+          "highF": 28,
+          "lowF": 7.9
+        },
+        {
+          "month": "Mar",
+          "highF": 40.4,
+          "lowF": 20.4
+        },
+        {
+          "month": "Apr",
+          "highF": 55.5,
+          "lowF": 32.9
+        },
+        {
+          "month": "May",
+          "highF": 68.2,
+          "lowF": 45.2
+        },
+        {
+          "month": "Jun",
+          "highF": 78.4,
+          "lowF": 57.2
+        },
+        {
+          "month": "Jul",
+          "highF": 82,
+          "lowF": 60.6
+        },
+        {
+          "month": "Aug",
+          "highF": 79.9,
+          "lowF": 57.9
+        },
+        {
+          "month": "Sep",
+          "highF": 72.7,
+          "lowF": 49.7
+        },
+        {
+          "month": "Oct",
+          "highF": 58.9,
+          "lowF": 35.7
+        },
+        {
+          "month": "Nov",
+          "highF": 42.4,
+          "lowF": 23.8
+        },
+        {
+          "month": "Dec",
+          "highF": 28.9,
+          "lowF": 12.6
+        }
+      ]
+    },
+    "reed-college": {
+      "station": {
+        "id": "USC00356749",
+        "name": "PORTLAND KGW-TV",
+        "stateCode": "OR",
+        "coordinates": {
+          "lat": 45.5181,
+          "lng": -122.6894
+        },
+        "elevationMeters": 48.5,
+        "distanceMiles": 3.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 46.9,
+          "lowF": 37.3
+        },
+        {
+          "month": "Feb",
+          "highF": 50.5,
+          "lowF": 38.8
+        },
+        {
+          "month": "Mar",
+          "highF": 55.8,
+          "lowF": 40.9
+        },
+        {
+          "month": "Apr",
+          "highF": 60.7,
+          "lowF": 44.2
+        },
+        {
+          "month": "May",
+          "highF": 68,
+          "lowF": 49.4
+        },
+        {
+          "month": "Jun",
+          "highF": 72.9,
+          "lowF": 53.3
+        },
+        {
+          "month": "Jul",
+          "highF": 80.3,
+          "lowF": 57.9
+        },
+        {
+          "month": "Aug",
+          "highF": 80.6,
+          "lowF": 58.6
+        },
+        {
+          "month": "Sep",
+          "highF": 74.9,
+          "lowF": 55.1
+        },
+        {
+          "month": "Oct",
+          "highF": 62.9,
+          "lowF": 47.9
+        },
+        {
+          "month": "Nov",
+          "highF": 52.3,
+          "lowF": 41.6
+        },
+        {
+          "month": "Dec",
+          "highF": 45.9,
+          "lowF": 37.3
+        }
+      ]
+    },
+    "gettysburg-college": {
+      "station": {
+        "id": "USC00362537",
+        "name": "EISENHOWER NHS",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 39.805,
+          "lng": -77.2292
+        },
+        "elevationMeters": 164.6,
+        "distanceMiles": 2.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.6,
+          "lowF": 20.8
+        },
+        {
+          "month": "Feb",
+          "highF": 43.2,
+          "lowF": 22.3
+        },
+        {
+          "month": "Mar",
+          "highF": 52.2,
+          "lowF": 30.1
+        },
+        {
+          "month": "Apr",
+          "highF": 64.3,
+          "lowF": 39.7
+        },
+        {
+          "month": "May",
+          "highF": 73.3,
+          "lowF": 49.1
+        },
+        {
+          "month": "Jun",
+          "highF": 81.8,
+          "lowF": 57.4
+        },
+        {
+          "month": "Jul",
+          "highF": 86.2,
+          "lowF": 62.8
+        },
+        {
+          "month": "Aug",
+          "highF": 84.7,
+          "lowF": 60.8
+        },
+        {
+          "month": "Sep",
+          "highF": 77.8,
+          "lowF": 54
+        },
+        {
+          "month": "Oct",
+          "highF": 66.4,
+          "lowF": 42.6
+        },
+        {
+          "month": "Nov",
+          "highF": 55.5,
+          "lowF": 32.4
+        },
+        {
+          "month": "Dec",
+          "highF": 44.7,
+          "lowF": 26
+        }
+      ]
+    },
+    "dickinson-college": {
+      "station": {
+        "id": "USC00361920",
+        "name": "CARLISLE WTP",
+        "stateCode": "PA",
+        "coordinates": {
+          "lat": 40.2258,
+          "lng": -77.1894
+        },
+        "elevationMeters": 131.1,
+        "distanceMiles": 1.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 38.1,
+          "lowF": 20.5
+        },
+        {
+          "month": "Feb",
+          "highF": 41,
+          "lowF": 21.6
+        },
+        {
+          "month": "Mar",
+          "highF": 50,
+          "lowF": 28.9
+        },
+        {
+          "month": "Apr",
+          "highF": 62.6,
+          "lowF": 38.5
+        },
+        {
+          "month": "May",
+          "highF": 72.5,
+          "lowF": 48.9
+        },
+        {
+          "month": "Jun",
+          "highF": 81.1,
+          "lowF": 58.5
+        },
+        {
+          "month": "Jul",
+          "highF": 85.5,
+          "lowF": 62.5
+        },
+        {
+          "month": "Aug",
+          "highF": 83.8,
+          "lowF": 60.8
+        },
+        {
+          "month": "Sep",
+          "highF": 77.4,
+          "lowF": 53.2
+        },
+        {
+          "month": "Oct",
+          "highF": 65.9,
+          "lowF": 41.5
+        },
+        {
+          "month": "Nov",
+          "highF": 53.5,
+          "lowF": 32.3
+        },
+        {
+          "month": "Dec",
+          "highF": 42.2,
+          "lowF": 25.3
+        }
+      ]
+    },
+    "furman-university": {
+      "station": {
+        "id": "USW00013886",
+        "name": "GREENVILLE DWTN AP",
+        "stateCode": "SC",
+        "coordinates": {
+          "lat": 34.8461,
+          "lng": -82.3461
+        },
+        "elevationMeters": 319.4,
+        "distanceMiles": 7.6
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 53.5,
+          "lowF": 34.6
+        },
+        {
+          "month": "Feb",
+          "highF": 57.8,
+          "lowF": 37.6
+        },
+        {
+          "month": "Mar",
+          "highF": 65.4,
+          "lowF": 44
+        },
+        {
+          "month": "Apr",
+          "highF": 74.5,
+          "lowF": 52.1
+        },
+        {
+          "month": "May",
+          "highF": 81.3,
+          "lowF": 61.2
+        },
+        {
+          "month": "Jun",
+          "highF": 87.9,
+          "lowF": 68.3
+        },
+        {
+          "month": "Jul",
+          "highF": 90.9,
+          "lowF": 71.8
+        },
+        {
+          "month": "Aug",
+          "highF": 89.2,
+          "lowF": 71
+        },
+        {
+          "month": "Sep",
+          "highF": 83.5,
+          "lowF": 65.2
+        },
+        {
+          "month": "Oct",
+          "highF": 73.9,
+          "lowF": 53.5
+        },
+        {
+          "month": "Nov",
+          "highF": 63.8,
+          "lowF": 43.6
+        },
+        {
+          "month": "Dec",
+          "highF": 55.9,
+          "lowF": 37.3
+        }
+      ]
+    },
+    "sarah-lawrence-college": {
+      "station": {
+        "id": "USC00302129",
+        "name": "DOBBS FERRY-ARDSLEY",
+        "stateCode": "NY",
+        "coordinates": {
+          "lat": 41.0072,
+          "lng": -73.8344
+        },
+        "elevationMeters": 61,
+        "distanceMiles": 5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 39.8,
+          "lowF": 23.1
+        },
+        {
+          "month": "Feb",
+          "highF": 42.9,
+          "lowF": 24.5
+        },
+        {
+          "month": "Mar",
+          "highF": 50.7,
+          "lowF": 31
+        },
+        {
+          "month": "Apr",
+          "highF": 62.8,
+          "lowF": 40.1
+        },
+        {
+          "month": "May",
+          "highF": 73,
+          "lowF": 49.5
+        },
+        {
+          "month": "Jun",
+          "highF": 80.8,
+          "lowF": 58.8
+        },
+        {
+          "month": "Jul",
+          "highF": 85.6,
+          "lowF": 64.4
+        },
+        {
+          "month": "Aug",
+          "highF": 83.9,
+          "lowF": 63.2
+        },
+        {
+          "month": "Sep",
+          "highF": 76.9,
+          "lowF": 56.1
+        },
+        {
+          "month": "Oct",
+          "highF": 65.4,
+          "lowF": 45.1
+        },
+        {
+          "month": "Nov",
+          "highF": 54.4,
+          "lowF": 36
+        },
+        {
+          "month": "Dec",
+          "highF": 44.5,
+          "lowF": 28.6
+        }
+      ]
+    },
+    "depauw-university": {
+      "station": {
+        "id": "USC00123513",
+        "name": "GREENCASTLE 1 W",
+        "stateCode": "IN",
+        "coordinates": {
+          "lat": 39.6439,
+          "lng": -86.8767
+        },
+        "elevationMeters": 224,
+        "distanceMiles": 0.9
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 34.4,
+          "lowF": 16.9
+        },
+        {
+          "month": "Feb",
+          "highF": 39.2,
+          "lowF": 19.7
+        },
+        {
+          "month": "Mar",
+          "highF": 50.3,
+          "lowF": 28.6
+        },
+        {
+          "month": "Apr",
+          "highF": 62.2,
+          "lowF": 38.5
+        },
+        {
+          "month": "May",
+          "highF": 72,
+          "lowF": 49.1
+        },
+        {
+          "month": "Jun",
+          "highF": 80.4,
+          "lowF": 58.2
+        },
+        {
+          "month": "Jul",
+          "highF": 83.2,
+          "lowF": 61.2
+        },
+        {
+          "month": "Aug",
+          "highF": 82.2,
+          "lowF": 59.4
+        },
+        {
+          "month": "Sep",
+          "highF": 76.9,
+          "lowF": 52
+        },
+        {
+          "month": "Oct",
+          "highF": 64.8,
+          "lowF": 40.8
+        },
+        {
+          "month": "Nov",
+          "highF": 51,
+          "lowF": 30.2
+        },
+        {
+          "month": "Dec",
+          "highF": 39.4,
+          "lowF": 22.2
+        }
+      ]
+    },
+    "centre-college": {
+      "station": {
+        "id": "USC00152040",
+        "name": "DANVILLE",
+        "stateCode": "KY",
+        "coordinates": {
+          "lat": 37.6528,
+          "lng": -84.7708
+        },
+        "elevationMeters": 274.3,
+        "distanceMiles": 0.7
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.7,
+          "lowF": 23.3
+        },
+        {
+          "month": "Feb",
+          "highF": 47.1,
+          "lowF": 25.8
+        },
+        {
+          "month": "Mar",
+          "highF": 56.3,
+          "lowF": 33.3
+        },
+        {
+          "month": "Apr",
+          "highF": 67.5,
+          "lowF": 43.6
+        },
+        {
+          "month": "May",
+          "highF": 75.4,
+          "lowF": 54.1
+        },
+        {
+          "month": "Jun",
+          "highF": 83.4,
+          "lowF": 61.4
+        },
+        {
+          "month": "Jul",
+          "highF": 86.5,
+          "lowF": 65.3
+        },
+        {
+          "month": "Aug",
+          "highF": 86,
+          "lowF": 63.7
+        },
+        {
+          "month": "Sep",
+          "highF": 80.2,
+          "lowF": 56.8
+        },
+        {
+          "month": "Oct",
+          "highF": 68.6,
+          "lowF": 44.8
+        },
+        {
+          "month": "Nov",
+          "highF": 55.8,
+          "lowF": 34
+        },
+        {
+          "month": "Dec",
+          "highF": 46.1,
+          "lowF": 28
+        }
+      ]
+    },
+    "occidental-college": {
+      "station": {
+        "id": "USC00046719",
+        "name": "PASADENA",
+        "stateCode": "CA",
+        "coordinates": {
+          "lat": 34.1483,
+          "lng": -118.1447
+        },
+        "elevationMeters": 263.3,
+        "distanceMiles": 4.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 68.1,
+          "lowF": 45.5
+        },
+        {
+          "month": "Feb",
+          "highF": 69.3,
+          "lowF": 46.1
+        },
+        {
+          "month": "Mar",
+          "highF": 72.6,
+          "lowF": 48.4
+        },
+        {
+          "month": "Apr",
+          "highF": 76.2,
+          "lowF": 50.6
+        },
+        {
+          "month": "May",
+          "highF": 78.3,
+          "lowF": 53.9
+        },
+        {
+          "month": "Jun",
+          "highF": 83.7,
+          "lowF": 57.8
+        },
+        {
+          "month": "Jul",
+          "highF": 89.1,
+          "lowF": 62
+        },
+        {
+          "month": "Aug",
+          "highF": 91.3,
+          "lowF": 63.2
+        },
+        {
+          "month": "Sep",
+          "highF": 89.9,
+          "lowF": 61.6
+        },
+        {
+          "month": "Oct",
+          "highF": 83,
+          "lowF": 56.3
+        },
+        {
+          "month": "Nov",
+          "highF": 74.7,
+          "lowF": 49.6
+        },
+        {
+          "month": "Dec",
+          "highF": 67.2,
+          "lowF": 44.7
+        }
+      ]
+    },
+    "st-johns-college": {
+      "station": {
+        "id": "USC00180193",
+        "name": "ANNAPOLIS POLICE BRKS",
+        "stateCode": "MD",
+        "coordinates": {
+          "lat": 38.9936,
+          "lng": -76.5075
+        },
+        "elevationMeters": 7.6,
+        "distanceMiles": 1.2
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 44.3,
+          "lowF": 29.2
+        },
+        {
+          "month": "Feb",
+          "highF": 47.9,
+          "lowF": 30.8
+        },
+        {
+          "month": "Mar",
+          "highF": 55,
+          "lowF": 38.3
+        },
+        {
+          "month": "Apr",
+          "highF": 68.2,
+          "lowF": 47.9
+        },
+        {
+          "month": "May",
+          "highF": 76.6,
+          "lowF": 57.1
+        },
+        {
+          "month": "Jun",
+          "highF": 85.3,
+          "lowF": 66.6
+        },
+        {
+          "month": "Jul",
+          "highF": 89.1,
+          "lowF": 71.3
+        },
+        {
+          "month": "Aug",
+          "highF": 86.4,
+          "lowF": 70.3
+        },
+        {
+          "month": "Sep",
+          "highF": 80.1,
+          "lowF": 64.5
+        },
+        {
+          "month": "Oct",
+          "highF": 68.5,
+          "lowF": 52.1
+        },
+        {
+          "month": "Nov",
+          "highF": 57.6,
+          "lowF": 41.3
+        },
+        {
+          "month": "Dec",
+          "highF": 48.3,
+          "lowF": 34
+        }
+      ]
+    },
+    "agnes-scott-college": {
+      "station": {
+        "id": "USW00053863",
+        "name": "ATLANTA PEACHTREE AP",
+        "stateCode": "GA",
+        "coordinates": {
+          "lat": 33.875,
+          "lng": -84.3022
+        },
+        "elevationMeters": 305.4,
+        "distanceMiles": 7.3
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 51.9,
+          "lowF": 32.7
+        },
+        {
+          "month": "Feb",
+          "highF": 56.4,
+          "lowF": 35.9
+        },
+        {
+          "month": "Mar",
+          "highF": 64.4,
+          "lowF": 42.2
+        },
+        {
+          "month": "Apr",
+          "highF": 72.7,
+          "lowF": 49.2
+        },
+        {
+          "month": "May",
+          "highF": 80.3,
+          "lowF": 58.5
+        },
+        {
+          "month": "Jun",
+          "highF": 86.2,
+          "lowF": 66.3
+        },
+        {
+          "month": "Jul",
+          "highF": 89.4,
+          "lowF": 69.9
+        },
+        {
+          "month": "Aug",
+          "highF": 88.2,
+          "lowF": 69.1
+        },
+        {
+          "month": "Sep",
+          "highF": 82.9,
+          "lowF": 62.8
+        },
+        {
+          "month": "Oct",
+          "highF": 72.8,
+          "lowF": 50.9
+        },
+        {
+          "month": "Nov",
+          "highF": 62.5,
+          "lowF": 40.6
+        },
+        {
+          "month": "Dec",
+          "highF": 54.4,
+          "lowF": 35.5
+        }
+      ]
+    },
+    "trinity-university": {
+      "station": {
+        "id": "USC00417947",
+        "name": "SAN ANTONIO INCARNATE WORD",
+        "stateCode": "TX",
+        "coordinates": {
+          "lat": 29.4703,
+          "lng": -98.4728
+        },
+        "elevationMeters": 213.4,
+        "distanceMiles": 0.8
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 63.2,
+          "lowF": 40.2
+        },
+        {
+          "month": "Feb",
+          "highF": 67.5,
+          "lowF": 43.8
+        },
+        {
+          "month": "Mar",
+          "highF": 73.8,
+          "lowF": 51
+        },
+        {
+          "month": "Apr",
+          "highF": 80.1,
+          "lowF": 57.4
+        },
+        {
+          "month": "May",
+          "highF": 85.7,
+          "lowF": 65.7
+        },
+        {
+          "month": "Jun",
+          "highF": 91.7,
+          "lowF": 72
+        },
+        {
+          "month": "Jul",
+          "highF": 94,
+          "lowF": 74.1
+        },
+        {
+          "month": "Aug",
+          "highF": 95.3,
+          "lowF": 74.1
+        },
+        {
+          "month": "Sep",
+          "highF": 89.5,
+          "lowF": 68.8
+        },
+        {
+          "month": "Oct",
+          "highF": 81.7,
+          "lowF": 59.2
+        },
+        {
+          "month": "Nov",
+          "highF": 71.4,
+          "lowF": 49
+        },
+        {
+          "month": "Dec",
+          "highF": 64.2,
+          "lowF": 41.4
+        }
+      ]
+    },
+    "wooster-college": {
+      "station": {
+        "id": "USC00339312",
+        "name": "WOOSTER EXP STATION",
+        "stateCode": "OH",
+        "coordinates": {
+          "lat": 40.7833,
+          "lng": -81.9167
+        },
+        "elevationMeters": 310.9,
+        "distanceMiles": 2.1
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 35.1,
+          "lowF": 18.2
+        },
+        {
+          "month": "Feb",
+          "highF": 38.4,
+          "lowF": 19.8
+        },
+        {
+          "month": "Mar",
+          "highF": 48.1,
+          "lowF": 27.4
+        },
+        {
+          "month": "Apr",
+          "highF": 61.3,
+          "lowF": 37.7
+        },
+        {
+          "month": "May",
+          "highF": 71.8,
+          "lowF": 48
+        },
+        {
+          "month": "Jun",
+          "highF": 80.1,
+          "lowF": 57
+        },
+        {
+          "month": "Jul",
+          "highF": 83.6,
+          "lowF": 60.5
+        },
+        {
+          "month": "Aug",
+          "highF": 82.3,
+          "lowF": 58.8
+        },
+        {
+          "month": "Sep",
+          "highF": 75.8,
+          "lowF": 51.5
+        },
+        {
+          "month": "Oct",
+          "highF": 63.6,
+          "lowF": 40.5
+        },
+        {
+          "month": "Nov",
+          "highF": 50.6,
+          "lowF": 31.5
+        },
+        {
+          "month": "Dec",
+          "highF": 39.8,
+          "lowF": 24
+        }
+      ]
+    },
+    "goucher-college": {
+      "station": {
+        "id": "USC00182308",
+        "name": "CYLBURN",
+        "stateCode": "MD",
+        "coordinates": {
+          "lat": 39.3531,
+          "lng": -76.6539
+        },
+        "elevationMeters": 71.6,
+        "distanceMiles": 5
+      },
+      "monthly": [
+        {
+          "month": "Jan",
+          "highF": 42.4,
+          "lowF": 26.6
+        },
+        {
+          "month": "Feb",
+          "highF": 46.3,
+          "lowF": 28.3
+        },
+        {
+          "month": "Mar",
+          "highF": 53.8,
+          "lowF": 34.2
+        },
+        {
+          "month": "Apr",
+          "highF": 65.5,
+          "lowF": 44.9
+        },
+        {
+          "month": "May",
+          "highF": 73.2,
+          "lowF": 54.5
+        },
+        {
+          "month": "Jun",
+          "highF": 82,
+          "lowF": 63.9
+        },
+        {
+          "month": "Jul",
+          "highF": 86.5,
+          "lowF": 69.3
+        },
+        {
+          "month": "Aug",
+          "highF": 83.9,
+          "lowF": 67
+        },
+        {
+          "month": "Sep",
+          "highF": 76.8,
+          "lowF": 59.8
+        },
+        {
+          "month": "Oct",
+          "highF": 66.3,
+          "lowF": 48.5
+        },
+        {
+          "month": "Nov",
+          "highF": 56.4,
+          "lowF": 38.7
+        },
+        {
+          "month": "Dec",
+          "highF": 46.4,
+          "lowF": 31.5
+        }
+      ]
+    }
+  }
+}

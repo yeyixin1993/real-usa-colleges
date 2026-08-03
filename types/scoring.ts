@@ -23,9 +23,22 @@ export interface MobilityTierRules {
   tier3UberEatsMax: number;
 }
 
+export interface RankingWeights {
+  cold: number;
+  village: number;
+  white: number;
+}
+
+export interface ColdRankingWeights {
+  januaryTemperature: number;
+  annualSnowfall: number;
+}
+
 export interface ScoringConfig {
   schoolGradeThresholds: GradeThresholds;
   mobilityGradeThresholds: GradeThresholds;
   mobilityWeights: MobilityWeights;
   mobilityTierRules: MobilityTierRules;
+  rankingWeights: RankingWeights;
+  coldRankingWeights: ColdRankingWeights;
 }
