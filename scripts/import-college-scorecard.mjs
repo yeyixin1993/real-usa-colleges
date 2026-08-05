@@ -97,6 +97,9 @@ const wantedColumns = [
   'UGDS_WOMEN',
   'UG25ABV',
   'LOCALE',
+  'TUITIONFEE_IN',
+  'TUITIONFEE_OUT',
+  'COSTT4_A',
 ];
 const columnIndexes = Object.fromEntries(wantedColumns.map((column) => [column, headers.indexOf(column)]));
 
@@ -106,8 +109,9 @@ for (const [column, index] of Object.entries(columnIndexes)) {
 
 const scorecardRows = headerAndRows.slice(1).map((line) => {
   const values = parseCsvLine(line);
+  const valueAt = (index) => (index >= 0 ? values[index] : undefined);
   return Object.fromEntries(
-    Object.entries(columnIndexes).map(([column, index]) => [column, values[index]]),
+    Object.entries(columnIndexes).map(([column, index]) => [column, valueAt(index)]),
   );
 });
 
@@ -183,6 +187,8 @@ for (const school of catalog) {
     sector: row.CONTROL === '1' ? 'Public' : row.CONTROL === '2' ? 'Private' : null,
     coordinates: { lat: latitude, lng: longitude },
     undergraduateEnrollment: numberOrNull(row.UGDS),
+    undergraduateTuitionUsd: numberOrNull(row.TUITIONFEE_OUT) ?? numberOrNull(row.TUITIONFEE_IN),
+    totalCostUsd: numberOrNull(row.COSTT4_A),
     campusDemographics: {
       white: percentOrNull(row.UGDS_WHITE),
       black: percentOrNull(row.UGDS_BLACK),

@@ -148,9 +148,8 @@ export interface Dictionary {
     airportRoutesHeading: string;
     airportToCampus: string;
     campusToAirport: string;
-    petalBackup: string;
-    googleMapsAccessWarning: string;
-    routeVerificationWarning: string;
+    airportToCampusTransit: string;
+    campusToAirportTransit: string;
     walkingTime: string;
     countWithin5: string;
     countWithin10: string;

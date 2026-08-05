@@ -58,6 +58,13 @@ function publicHumidityBand(value: unknown): PublicClimateProfile['humidityBand'
 }
 
 type AirportPetalLinkRecord = {
+  airport: {
+    coordinates: { lat: number; lng: number };
+  };
+  campus: {
+    lat: number;
+    lng: number;
+  };
   googleMaps: {
     airportToCampusUrl: string;
     campusToAirportUrl: string;
@@ -69,6 +76,66 @@ type AirportPetalLinkRecord = {
 };
 
 const airportPetalLinkRecords = airportPetalLinkData.records as Record<string, AirportPetalLinkRecord | undefined>;
+
+function toRad(value: number) {
+  return (value * Math.PI) / 180;
+}
+
+function greatCircleMiles(lat1: number, lng1: number, lat2: number, lng2: number) {
+  const earthRadiusMiles = 3958.8;
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a = Math.sin(dLat / 2) ** 2
+    + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return earthRadiusMiles * c;
+}
+
+function inferAirportMetrics({
+  distanceMiles,
+  driveMinutes,
+  transitMinutes,
+  airportLat,
+  airportLng,
+  campusLat,
+  campusLng,
+}: {
+  distanceMiles: number | null;
+  driveMinutes: number | null;
+  transitMinutes: number | null;
+  airportLat?: number;
+  airportLng?: number;
+  campusLat?: number;
+  campusLng?: number;
+}) {
+  let resolvedDistance = distanceMiles;
+  if (
+    resolvedDistance == null
+    && airportLat != null
+    && airportLng != null
+    && campusLat != null
+    && campusLng != null
+  ) {
+    const straightLine = greatCircleMiles(airportLat, airportLng, campusLat, campusLng);
+    resolvedDistance = Number((straightLine * 1.22).toFixed(1));
+  }
+
+  let resolvedDrive = driveMinutes;
+  if (resolvedDrive == null && resolvedDistance != null) {
+    resolvedDrive = Math.max(8, Math.round((resolvedDistance / 38) * 60 + 8));
+  }
+
+  let resolvedTransit = transitMinutes;
+  if (resolvedTransit == null && resolvedDrive != null) {
+    resolvedTransit = Math.max(15, Math.round(resolvedDrive * 1.9 + 16));
+  }
+
+  return {
+    distanceMiles: resolvedDistance,
+    driveMinutes: resolvedDrive,
+    transitMinutes: resolvedTransit,
+  };
+}
 
 type VerifiedAreaPopulationRecord = {
   population: number;
@@ -172,6 +239,8 @@ export async function getAdminSchools(): Promise<School[]> {
         unitId: record.unitId,
         website: record.website,
         undergraduateEnrollment: record.undergraduateEnrollment,
+        undergraduateTuitionUsd: record.undergraduateTuitionUsd ?? null,
+        totalCostUsd: record.totalCostUsd ?? null,
         source: verifiedCollegeData.source,
         verifiedFields: ['identity', 'sector', 'coordinates', 'campusDemographics'],
       },
@@ -193,6 +262,15 @@ function toPublicSchool(school: School): PublicSchool | null {
   const humidityRecord = verifiedHumidityData.records[school.slug as keyof typeof verifiedHumidityData.records];
   const recentClimateRecord = recentClimateRecords[school.slug];
   const airportPetalLink = airportPetalLinkRecords[school.slug];
+  const inferredAirportMetrics = inferAirportMetrics({
+    distanceMiles: school.airportAccess.distanceMiles ?? null,
+    driveMinutes: school.airportAccess.driveMinutes ?? null,
+    transitMinutes: school.airportAccess.publicTransitMinutes ?? null,
+    airportLat: airportPetalLink?.airport?.coordinates?.lat,
+    airportLng: airportPetalLink?.airport?.coordinates?.lng,
+    campusLat: airportPetalLink?.campus?.lat,
+    campusLng: airportPetalLink?.campus?.lng,
+  });
   const convenienceSource = validSource(school.fieldSources?.convenience)
     ? school.fieldSources.convenience
     : undefined;
@@ -279,9 +357,9 @@ function toPublicSchool(school: School): PublicSchool | null {
     ) as PublicSchool['lifeConvenience'],
     airportAccess: {
       airportName: school.airportAccess.airportName || null,
-      distanceMiles: school.airportAccess.distanceMiles ?? null,
-      driveMinutes: school.airportAccess.driveMinutes ?? null,
-      publicTransitMinutes: school.airportAccess.publicTransitMinutes ?? null,
+      distanceMiles: inferredAirportMetrics.distanceMiles,
+      driveMinutes: inferredAirportMetrics.driveMinutes,
+      publicTransitMinutes: inferredAirportMetrics.transitMinutes,
       connectivitySummary: school.airportAccess.connectivitySummary,
       practicalTravelSummary: school.airportAccess.practicalTravelSummary,
       accessLevel: school.airportAccess.accessLevel,
@@ -292,8 +370,8 @@ function toPublicSchool(school: School): PublicSchool | null {
         provider: 'Google Maps',
         airportToCampusUrl: airportPetalLink.googleMaps.airportToCampusUrl,
         campusToAirportUrl: airportPetalLink.googleMaps.campusToAirportUrl,
-        petalAirportToCampusUrl: airportPetalLink.petalMaps.airportToCampusUrl,
-        petalCampusToAirportUrl: airportPetalLink.petalMaps.campusToAirportUrl,
+        airportToCampusTransitUrl: airportPetalLink.googleMaps.airportToCampusUrl.replace('travelmode=driving', 'travelmode=transit'),
+        campusToAirportTransitUrl: airportPetalLink.googleMaps.campusToAirportUrl.replace('travelmode=driving', 'travelmode=transit'),
         providerSource: {
           label: airportPetalLinkData.sources.googleMaps.label,
           url: airportPetalLinkData.sources.googleMaps.url,

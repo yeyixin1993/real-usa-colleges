@@ -7,11 +7,31 @@ import usAtlas from 'us-atlas/states-10m.json';
 
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { cn, formatNumber } from '@/lib/utils';
 import type { Locale, PublicSchool } from '@/types/school';
 
 const MAP_WIDTH = 1000;
 const MAP_HEIGHT = 620;
+const verifiedLocationSourceCopy: Record<Locale, string> = {
+  en: 'U.S. Department of Education College Scorecard',
+  zh: '美国教育部 College Scorecard',
+  ja: '米国教育省 College Scorecard',
+};
+const undergraduateEnrollmentCopy: Record<Locale, string> = {
+  en: 'Undergraduate enrollment',
+  zh: '本科生人数',
+  ja: '学部生数',
+};
+const undergraduateTuitionCopy: Record<Locale, string> = {
+  en: 'Undergraduate tuition',
+  zh: '本科 Tuition',
+  ja: '学部 Tuition',
+};
+const totalCostCopy: Record<Locale, string> = {
+  en: 'Total cost',
+  zh: 'Total cost',
+  ja: 'Total cost',
+};
 const fipsToStateCode: Record<string, string> = {
   '01': 'AL', '02': 'AK', '04': 'AZ', '05': 'AR', '06': 'CA', '08': 'CO', '09': 'CT',
   '10': 'DE', '11': 'DC', '12': 'FL', '13': 'GA', '15': 'HI', '16': 'ID', '17': 'IL',
@@ -22,6 +42,15 @@ const fipsToStateCode: Record<string, string> = {
   '47': 'TN', '48': 'TX', '49': 'UT', '50': 'VT', '51': 'VA', '53': 'WA', '54': 'WV',
   '55': 'WI', '56': 'WY',
 };
+
+function formatUsd(value: number | null | undefined) {
+  if (value == null) return '—';
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  }).format(value);
+}
 
 export function UsMap({
   schools,
@@ -249,9 +278,15 @@ export function UsMap({
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               <div className="rounded-3xl bg-slate-950 px-4 py-5 text-white">
                 <p className="text-xs uppercase tracking-[0.2em] text-white/65">Verified location</p>
-                <p className="mt-3 text-sm leading-6 text-white/80">
-                  U.S. Department of Education College Scorecard · UNITID {activeSchool.verification?.unitId}
+                <p className="mt-3 text-sm leading-6 text-white/80">{verifiedLocationSourceCopy[locale]}</p>
+                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-white/65">{undergraduateEnrollmentCopy[locale]}</p>
+                <p className="mt-1 text-2xl font-semibold text-white">
+                  {activeSchool.verification?.undergraduateEnrollment == null ? '—' : formatNumber(activeSchool.verification.undergraduateEnrollment)}
                 </p>
+                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-white/65">{undergraduateTuitionCopy[locale]}</p>
+                <p className="mt-1 text-lg font-semibold text-white">{formatUsd(activeSchool.verification?.undergraduateTuitionUsd)}</p>
+                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-white/65">{totalCostCopy[locale]}</p>
+                <p className="mt-1 text-lg font-semibold text-white">{formatUsd(activeSchool.verification?.totalCostUsd)}</p>
               </div>
               <div className="space-y-2">
                 <p className="text-sm font-medium text-slate-500">{activeSchool.sector}</p>

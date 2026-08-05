@@ -5,7 +5,7 @@
     "url": "https://catalog.data.gov/dataset/college-scorecard",
     "downloadUrl": "https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_05192025.zip"
   },
-  "generatedAt": "2026-08-02T14:49:19.569Z",
+  "generatedAt": "2026-08-03T15:44:10.316Z",
   "recordCount": 112,
   "records": {
     "princeton-university": {
@@ -30,7 +30,9 @@
         "women": 50.8,
         "age25OrOlder": 1.5
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 62688,
+      "totalCostUsd": 84040
     },
     "ucla": {
       "unitId": "110662",
@@ -54,7 +56,9 @@
         "women": 61.1,
         "age25OrOlder": 3.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 49403,
+      "totalCostUsd": 38614
     },
     "rice-university": {
       "unitId": "227757",
@@ -78,7 +82,9 @@
         "women": 49.1,
         "age25OrOlder": 0.4
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 64144,
+      "totalCostUsd": 79788
     },
     "university-of-washington": {
       "unitId": "236948",
@@ -102,7 +108,9 @@
         "women": 56.8,
         "age25OrOlder": 5.3
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 43209,
+      "totalCostUsd": 32446
     },
     "amherst-college": {
       "unitId": "164465",
@@ -126,7 +134,9 @@
         "women": 53.8,
         "age25OrOlder": 1.1
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 70480,
+      "totalCostUsd": 87640
     },
     "pomona-college": {
       "unitId": "121345",
@@ -150,7 +160,9 @@
         "women": 54.8,
         "age25OrOlder": 0.8
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65420,
+      "totalCostUsd": 85300
     },
     "university-of-michigan": {
       "unitId": "170976",
@@ -174,7 +186,9 @@
         "women": 53.1,
         "age25OrOlder": 1.6
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 60946,
+      "totalCostUsd": 34654
     },
     "northeastern-university": {
       "unitId": "167358",
@@ -198,7 +212,9 @@
         "women": 56.4,
         "age25OrOlder": 0.7
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 66162,
+      "totalCostUsd": 84641
     },
     "harvard-university": {
       "unitId": "166027",
@@ -222,7 +238,9 @@
         "women": 53.1,
         "age25OrOlder": 16.6
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 61676,
+      "totalCostUsd": 85540
     },
     "mit": {
       "unitId": "166683",
@@ -246,7 +264,9 @@
         "women": 48.8,
         "age25OrOlder": 0.9
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 62396,
+      "totalCostUsd": 82730
     },
     "stanford-university": {
       "unitId": "243744",
@@ -270,7 +290,9 @@
         "women": 51.7,
         "age25OrOlder": 1.7
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65910,
+      "totalCostUsd": 87833
     },
     "yale-university": {
       "unitId": "130794",
@@ -294,7 +316,9 @@
         "women": 51.8,
         "age25OrOlder": 1
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 67250,
+      "totalCostUsd": 88300
     },
     "university-of-pennsylvania": {
       "unitId": "215062",
@@ -318,7 +342,9 @@
         "women": 55.3,
         "age25OrOlder": 6.8
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 68686,
+      "totalCostUsd": 89028
     },
     "california-institute-of-technology": {
       "unitId": "110404",
@@ -342,7 +368,9 @@
         "women": 43.3,
         "age25OrOlder": 0.3
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 65898,
+      "totalCostUsd": 86886
     },
     "duke-university": {
       "unitId": "198419",
@@ -366,7 +394,9 @@
         "women": 53.4,
         "age25OrOlder": 0.3
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 68758,
+      "totalCostUsd": 87072
     },
     "brown-university": {
       "unitId": "217156",
@@ -390,7 +420,9 @@
         "women": 50.7,
         "age25OrOlder": 1.7
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 71412,
+      "totalCostUsd": 87648
     },
     "johns-hopkins-university": {
       "unitId": "162928",
@@ -414,7 +446,9 @@
         "women": 54.1,
         "age25OrOlder": 5
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 65230,
+      "totalCostUsd": 85947
     },
     "northwestern-university": {
       "unitId": "147767",
@@ -438,7 +472,9 @@
         "women": 54.5,
         "age25OrOlder": 3
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 68322,
+      "totalCostUsd": 91250
     },
     "columbia-university": {
       "unitId": "190150",
@@ -462,7 +498,9 @@
         "women": 49.5,
         "age25OrOlder": 14.1
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 71845,
+      "totalCostUsd": 89472
     },
     "cornell-university": {
       "unitId": "190415",
@@ -486,7 +524,9 @@
         "women": 54.5,
         "age25OrOlder": 0.5
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 69314,
+      "totalCostUsd": 88140
     },
     "university-of-chicago": {
       "unitId": "144050",
@@ -510,7 +550,9 @@
         "women": 46.6,
         "age25OrOlder": 1.1
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 70662,
+      "totalCostUsd": 90360
     },
     "university-of-california-berkeley": {
       "unitId": "110635",
@@ -534,7 +576,9 @@
         "women": 55.9,
         "age25OrOlder": 5.1
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 50547,
+      "totalCostUsd": 45619
     },
     "dartmouth-college": {
       "unitId": "182670",
@@ -558,7 +602,9 @@
         "women": 48.9,
         "age25OrOlder": 0.7
       },
-      "localeCode": 33
+      "localeCode": 33,
+      "undergraduateTuitionUsd": 68268,
+      "totalCostUsd": 87793
     },
     "vanderbilt-university": {
       "unitId": "221999",
@@ -582,7 +628,9 @@
         "women": 52.3,
         "age25OrOlder": 0.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 67498,
+      "totalCostUsd": 89590
     },
     "university-of-notre-dame": {
       "unitId": "152080",
@@ -606,7 +654,9 @@
         "women": 48.8,
         "age25OrOlder": 0.1
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65025,
+      "totalCostUsd": 83271
     },
     "georgetown-university": {
       "unitId": "131496",
@@ -630,7 +680,9 @@
         "women": 58.5,
         "age25OrOlder": 5.4
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 68017,
+      "totalCostUsd": 88741
     },
     "unc-chapel-hill": {
       "unitId": "199120",
@@ -654,7 +706,9 @@
         "women": 60.8,
         "age25OrOlder": 2.1
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 41203,
+      "totalCostUsd": 26055
     },
     "carnegie-mellon-university": {
       "unitId": "211440",
@@ -678,7 +732,9 @@
         "women": 50,
         "age25OrOlder": 1.5
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 66246,
+      "totalCostUsd": 83654
     },
     "emory-university": {
       "unitId": "139658",
@@ -702,7 +758,9 @@
         "women": 57.1,
         "age25OrOlder": 1.5
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 64280,
+      "totalCostUsd": 83622
     },
     "university-of-virginia": {
       "unitId": "234076",
@@ -726,7 +784,9 @@
         "women": 56.6,
         "age25OrOlder": 3.5
       },
-      "localeCode": 22
+      "localeCode": 22,
+      "undergraduateTuitionUsd": 59512,
+      "totalCostUsd": 39926
     },
     "washington-university-in-st-louis": {
       "unitId": "179867",
@@ -750,7 +810,9 @@
         "women": 53.9,
         "age25OrOlder": 8
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65790,
+      "totalCostUsd": 88488
     },
     "university-of-southern-california": {
       "unitId": "123961",
@@ -774,7 +836,9 @@
         "women": 51.8,
         "age25OrOlder": 60.6
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 72097,
+      "totalCostUsd": 90300
     },
     "new-york-university": {
       "unitId": "193900",
@@ -798,7 +862,9 @@
         "women": 58.9,
         "age25OrOlder": 3.3
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 62796,
+      "totalCostUsd": 84374
     },
     "tufts-university": {
       "unitId": "168148",
@@ -822,7 +888,9 @@
         "women": 56.3,
         "age25OrOlder": 1.1
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 70704,
+      "totalCostUsd": 88300
     },
     "boston-university": {
       "unitId": "164988",
@@ -846,7 +914,9 @@
         "women": 58.3,
         "age25OrOlder": 2.9
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 68102,
+      "totalCostUsd": 86285
     },
     "university-of-california-san-diego": {
       "unitId": "110680",
@@ -870,7 +940,9 @@
         "women": 53.8,
         "age25OrOlder": 4.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 50958,
+      "totalCostUsd": 38701
     },
     "university-of-florida": {
       "unitId": "134130",
@@ -894,7 +966,9 @@
         "women": 55.5,
         "age25OrOlder": 2.8
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 28659,
+      "totalCostUsd": 22523
     },
     "university-of-texas-austin": {
       "unitId": "228778",
@@ -918,7 +992,9 @@
         "women": 58,
         "age25OrOlder": 1.8
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 44908,
+      "totalCostUsd": 31247
     },
     "georgia-institute-of-technology": {
       "unitId": "139755",
@@ -942,7 +1018,9 @@
         "women": 39.8,
         "age25OrOlder": 1.7
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 34484,
+      "totalCostUsd": 28167
     },
     "university-of-california-davis": {
       "unitId": "110644",
@@ -966,7 +1044,9 @@
         "women": 59.2,
         "age25OrOlder": 3.9
       },
-      "localeCode": 23
+      "localeCode": 23,
+      "undergraduateTuitionUsd": 50974,
+      "totalCostUsd": 41238
     },
     "university-of-california-irvine": {
       "unitId": "110653",
@@ -990,7 +1070,9 @@
         "women": 55.9,
         "age25OrOlder": 3.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 49922,
+      "totalCostUsd": 38632
     },
     "university-of-illinois-urbana-champaign": {
       "unitId": "145637",
@@ -1014,7 +1096,9 @@
         "women": 47.3,
         "age25OrOlder": 1.2
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 35124,
+      "totalCostUsd": 33642
     },
     "university-of-wisconsin-madison": {
       "unitId": "240444",
@@ -1038,7 +1122,9 @@
         "women": 53,
         "age25OrOlder": 3.4
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 42103,
+      "totalCostUsd": 28679
     },
     "ohio-state-university": {
       "unitId": "204796",
@@ -1062,7 +1148,9 @@
         "women": 50.5,
         "age25OrOlder": 5.6
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 40022,
+      "totalCostUsd": 30305
     },
     "rutgers-university": {
       "unitId": "186380",
@@ -1086,7 +1174,9 @@
         "women": 50.1,
         "age25OrOlder": 4.9
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 37441,
+      "totalCostUsd": 36993
     },
     "university-of-maryland-college-park": {
       "unitId": "163286",
@@ -1110,7 +1200,9 @@
         "women": 49.3,
         "age25OrOlder": 4.8
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 41186,
+      "totalCostUsd": 29299
     },
     "purdue-university": {
       "unitId": "243780",
@@ -1134,7 +1226,9 @@
         "women": 42.5,
         "age25OrOlder": 2.7
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 28794,
+      "totalCostUsd": 24591
     },
     "wake-forest-university": {
       "unitId": "199847",
@@ -1158,7 +1252,9 @@
         "women": 55.4,
         "age25OrOlder": 0.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 67642,
+      "totalCostUsd": 87499
     },
     "case-western-reserve-university": {
       "unitId": "201645",
@@ -1182,7 +1278,9 @@
         "women": 47.8,
         "age25OrOlder": 1.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 66608,
+      "totalCostUsd": 85851
     },
     "lehigh-university": {
       "unitId": "213543",
@@ -1206,7 +1304,9 @@
         "women": 47.5,
         "age25OrOlder": 0.2
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 64980,
+      "totalCostUsd": 80856
     },
     "william-and-mary": {
       "unitId": "231624",
@@ -1230,7 +1330,9 @@
         "women": 59,
         "age25OrOlder": 1.1
       },
-      "localeCode": 23
+      "localeCode": 23,
+      "undergraduateTuitionUsd": 51038,
+      "totalCostUsd": 43035
     },
     "villanova-university": {
       "unitId": "216597",
@@ -1254,7 +1356,9 @@
         "women": 53.9,
         "age25OrOlder": 3.7
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 67776,
+      "totalCostUsd": 84793
     },
     "university-of-minnesota-twin-cities": {
       "unitId": "174066",
@@ -1278,7 +1382,9 @@
         "women": 54,
         "age25OrOlder": 5.3
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 38362,
+      "totalCostUsd": 30061
     },
     "university-of-rochester": {
       "unitId": "195030",
@@ -1302,7 +1408,9 @@
         "women": 53.3,
         "age25OrOlder": 6.3
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 67080,
+      "totalCostUsd": 85962
     },
     "brandeis-university": {
       "unitId": "165015",
@@ -1326,7 +1434,9 @@
         "women": 57.5,
         "age25OrOlder": 0.4
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 68080,
+      "totalCostUsd": 86448
     },
     "uc-santa-barbara": {
       "unitId": "110705",
@@ -1350,7 +1460,9 @@
         "women": 57,
         "age25OrOlder": 2.2
       },
-      "localeCode": 22
+      "localeCode": 22,
+      "undergraduateTuitionUsd": 50614,
+      "totalCostUsd": 41573
     },
     "uc-santa-cruz": {
       "unitId": "110714",
@@ -1374,7 +1486,9 @@
         "women": 51.6,
         "age25OrOlder": 3.6
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 50205,
+      "totalCostUsd": 41179
     },
     "pepperdine-university": {
       "unitId": "121150",
@@ -1398,7 +1512,9 @@
         "women": 59,
         "age25OrOlder": 3.1
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 69918,
+      "totalCostUsd": 93512
     },
     "williams-college": {
       "unitId": "168342",
@@ -1422,7 +1538,9 @@
         "women": 51.3,
         "age25OrOlder": 1
       },
-      "localeCode": 31
+      "localeCode": 31,
+      "undergraduateTuitionUsd": 68560,
+      "totalCostUsd": 84860
     },
     "swarthmore-college": {
       "unitId": "216287",
@@ -1446,7 +1564,9 @@
         "women": 51.4,
         "age25OrOlder": 0.5
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65494,
+      "totalCostUsd": 84103
     },
     "wellesley-college": {
       "unitId": "168218",
@@ -1470,7 +1590,9 @@
         "women": 100,
         "age25OrOlder": 0.7
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 67176,
+      "totalCostUsd": 86290
     },
     "bowdoin-college": {
       "unitId": "161004",
@@ -1494,7 +1616,9 @@
         "women": 51.9,
         "age25OrOlder": 0.6
       },
-      "localeCode": 31
+      "localeCode": 31,
+      "undergraduateTuitionUsd": 67832,
+      "totalCostUsd": 85100
     },
     "carleton-college": {
       "unitId": "173258",
@@ -1518,7 +1642,9 @@
         "women": 50.5,
         "age25OrOlder": 0.2
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 68892,
+      "totalCostUsd": 84893
     },
     "claremont-mckenna-college": {
       "unitId": "112260",
@@ -1542,7 +1668,9 @@
         "women": 50.2,
         "age25OrOlder": 0.4
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 67980,
+      "totalCostUsd": 86500
     },
     "davidson-college": {
       "unitId": "198385",
@@ -1566,7 +1694,9 @@
         "women": 53.1,
         "age25OrOlder": 0.1
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 64410,
+      "totalCostUsd": 79475
     },
     "haverford-college": {
       "unitId": "212911",
@@ -1590,7 +1720,9 @@
         "women": 56.6,
         "age25OrOlder": 0.2
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 70688,
+      "totalCostUsd": 90382
     },
     "vassar-college": {
       "unitId": "197133",
@@ -1614,7 +1746,9 @@
         "women": 62.1,
         "age25OrOlder": 1.3
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 71030,
+      "totalCostUsd": 87419
     },
     "washington-and-lee-university": {
       "unitId": "234207",
@@ -1638,7 +1772,9 @@
         "women": 51.4,
         "age25OrOlder": 0.6
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 68045,
+      "totalCostUsd": 87000
     },
     "hamilton-college": {
       "unitId": "191515",
@@ -1662,7 +1798,9 @@
         "women": 55.5,
         "age25OrOlder": 0.2
       },
-      "localeCode": 22
+      "localeCode": 22,
+      "undergraduateTuitionUsd": 68960,
+      "totalCostUsd": 84230
     },
     "colby-college": {
       "unitId": "161086",
@@ -1686,7 +1824,9 @@
         "women": 51.1,
         "age25OrOlder": 0.1
       },
-      "localeCode": 33
+      "localeCode": 33,
+      "undergraduateTuitionUsd": 69600,
+      "totalCostUsd": 85420
     },
     "middlebury-college": {
       "unitId": "230959",
@@ -1710,7 +1850,9 @@
         "women": 53.3,
         "age25OrOlder": 0.4
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 67600,
+      "totalCostUsd": 85880
     },
     "grinnell-college": {
       "unitId": "153384",
@@ -1734,7 +1876,9 @@
         "women": 54.1,
         "age25OrOlder": 0.2
       },
-      "localeCode": 33
+      "localeCode": 33,
+      "undergraduateTuitionUsd": 68106,
+      "totalCostUsd": 83440
     },
     "colgate-university": {
       "unitId": "190099",
@@ -1758,7 +1902,9 @@
         "women": 56,
         "age25OrOlder": 0.2
       },
-      "localeCode": 42
+      "localeCode": 42,
+      "undergraduateTuitionUsd": 70306,
+      "totalCostUsd": 87070
     },
     "smith-college": {
       "unitId": "167835",
@@ -1782,7 +1928,9 @@
         "women": 99.9,
         "age25OrOlder": 2.1
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 65178,
+      "totalCostUsd": 86030
     },
     "harvey-mudd-college": {
       "unitId": "115409",
@@ -1806,7 +1954,9 @@
         "women": 49.6,
         "age25OrOlder": 0.4
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 68613,
+      "totalCostUsd": 90165
     },
     "bryn-mawr-college": {
       "unitId": "211273",
@@ -1830,7 +1980,9 @@
         "women": 100,
         "age25OrOlder": 0.7
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65920,
+      "totalCostUsd": 83250
     },
     "wesleyan-university": {
       "unitId": "130697",
@@ -1854,7 +2006,9 @@
         "women": 53.1,
         "age25OrOlder": 1.6
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 70342,
+      "totalCostUsd": 89020
     },
     "barnard-college": {
       "unitId": "189097",
@@ -1878,7 +2032,9 @@
         "women": 100,
         "age25OrOlder": 0.3
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 69888,
+      "totalCostUsd": 89538
     },
     "macalester-college": {
       "unitId": "173902",
@@ -1902,7 +2058,9 @@
         "women": 57.7,
         "age25OrOlder": 0.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 68104,
+      "totalCostUsd": 82991
     },
     "bates-college": {
       "unitId": "160977",
@@ -1926,7 +2084,9 @@
         "women": 50.7,
         "age25OrOlder": 0.1
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 66590,
+      "totalCostUsd": 83532
     },
     "colorado-college": {
       "unitId": "126678",
@@ -1950,7 +2110,9 @@
         "women": 57.3,
         "age25OrOlder": 0.2
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 70734,
+      "totalCostUsd": 86921
     },
     "oberlin-college": {
       "unitId": "204501",
@@ -1974,7 +2136,9 @@
         "women": 58.5,
         "age25OrOlder": 0.3
       },
-      "localeCode": 31
+      "localeCode": 31,
+      "undergraduateTuitionUsd": 67366,
+      "totalCostUsd": 87404
     },
     "scripps-college": {
       "unitId": "123165",
@@ -1998,7 +2162,9 @@
         "women": 100,
         "age25OrOlder": 0.3
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65950,
+      "totalCostUsd": 87564
     },
     "franklin-and-marshall-college": {
       "unitId": "212577",
@@ -2022,7 +2188,9 @@
         "women": 52.7,
         "age25OrOlder": 0.2
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 70794,
+      "totalCostUsd": 85776
     },
     "college-of-the-holy-cross": {
       "unitId": "166124",
@@ -2046,7 +2214,9 @@
         "women": 54.5,
         "age25OrOlder": 0.2
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 64500,
+      "totalCostUsd": 80334
     },
     "kenyon-college": {
       "unitId": "203535",
@@ -2070,7 +2240,9 @@
         "women": 56.4,
         "age25OrOlder": 0.1
       },
-      "localeCode": 41
+      "localeCode": 41,
+      "undergraduateTuitionUsd": 71520,
+      "totalCostUsd": 87590
     },
     "whitman-college": {
       "unitId": "237057",
@@ -2094,7 +2266,9 @@
         "women": 56.9,
         "age25OrOlder": 1.6
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 64050,
+      "totalCostUsd": 78092
     },
     "mount-holyoke-college": {
       "unitId": "166939",
@@ -2118,7 +2292,9 @@
         "women": 100,
         "age25OrOlder": 2.4
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 67018,
+      "totalCostUsd": 84926
     },
     "skidmore-college": {
       "unitId": "195526",
@@ -2142,7 +2318,9 @@
         "women": 58.7,
         "age25OrOlder": 0.7
       },
-      "localeCode": 23
+      "localeCode": 23,
+      "undergraduateTuitionUsd": 67290,
+      "totalCostUsd": 85270
     },
     "pitzer-college": {
       "unitId": "121257",
@@ -2166,7 +2344,9 @@
         "women": 59.6,
         "age25OrOlder": 1.4
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65192,
+      "totalCostUsd": 86466
     },
     "trinity-college-ct": {
       "unitId": "130590",
@@ -2190,7 +2370,9 @@
         "women": 52.6,
         "age25OrOlder": 1.1
       },
-      "localeCode": 12
+      "localeCode": 12,
+      "undergraduateTuitionUsd": 70770,
+      "totalCostUsd": 87840
     },
     "lafayette-college": {
       "unitId": "213385",
@@ -2214,7 +2396,9 @@
         "women": 48.9,
         "age25OrOlder": 0.3
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 65398,
+      "totalCostUsd": 83133
     },
     "bucknell-university": {
       "unitId": "211291",
@@ -2238,7 +2422,9 @@
         "women": 52.8,
         "age25OrOlder": 0.5
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 67812,
+      "totalCostUsd": 83756
     },
     "denison-university": {
       "unitId": "202523",
@@ -2262,7 +2448,9 @@
         "women": 52.4,
         "age25OrOlder": 0.3
       },
-      "localeCode": 23
+      "localeCode": 23,
+      "undergraduateTuitionUsd": 67000,
+      "totalCostUsd": 81900
     },
     "sewanee-university-of-the-south": {
       "unitId": "221519",
@@ -2286,7 +2474,9 @@
         "women": 53.1,
         "age25OrOlder": 0.2
       },
-      "localeCode": 42
+      "localeCode": 42,
+      "undergraduateTuitionUsd": 56120,
+      "totalCostUsd": 71986
     },
     "union-college": {
       "unitId": "196866",
@@ -2310,7 +2500,9 @@
         "women": 45,
         "age25OrOlder": 1.6
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 69039,
+      "totalCostUsd": 84561
     },
     "connecticut-college": {
       "unitId": "128902",
@@ -2334,7 +2526,9 @@
         "women": 61.1,
         "age25OrOlder": 0.4
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 67242,
+      "totalCostUsd": 84623
     },
     "rhodes-college": {
       "unitId": "221351",
@@ -2358,7 +2552,9 @@
         "women": 58.2,
         "age25OrOlder": 1.8
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 57110,
+      "totalCostUsd": 71136
     },
     "st-olaf-college": {
       "unitId": "174844",
@@ -2382,7 +2578,9 @@
         "women": 57.8,
         "age25OrOlder": 0.5
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 59760,
+      "totalCostUsd": 71843
     },
     "reed-college": {
       "unitId": "209922",
@@ -2406,7 +2604,9 @@
         "women": 58.4,
         "age25OrOlder": 1.1
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 69350,
+      "totalCostUsd": 86376
     },
     "gettysburg-college": {
       "unitId": "212674",
@@ -2430,7 +2630,9 @@
         "women": 51.1,
         "age25OrOlder": 0.2
       },
-      "localeCode": 31
+      "localeCode": 31,
+      "undergraduateTuitionUsd": 66640,
+      "totalCostUsd": 81960
     },
     "dickinson-college": {
       "unitId": "212009",
@@ -2454,7 +2656,9 @@
         "women": 60.2,
         "age25OrOlder": 0.4
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 65650,
+      "totalCostUsd": 82902
     },
     "furman-university": {
       "unitId": "218070",
@@ -2478,7 +2682,9 @@
         "women": 57.4,
         "age25OrOlder": 0.4
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 59770,
+      "totalCostUsd": 76798
     },
     "sarah-lawrence-college": {
       "unitId": "195304",
@@ -2502,7 +2708,9 @@
         "women": 80.3,
         "age25OrOlder": 0.7
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 66862,
+      "totalCostUsd": 82467
     },
     "depauw-university": {
       "unitId": "150400",
@@ -2526,7 +2734,9 @@
         "women": 49.6,
         "age25OrOlder": 0.2
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 59070,
+      "totalCostUsd": 74320
     },
     "centre-college": {
       "unitId": "156408",
@@ -2550,7 +2760,9 @@
         "women": 52.1,
         "age25OrOlder": 0.3
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 52820,
+      "totalCostUsd": 67787
     },
     "occidental-college": {
       "unitId": "120254",
@@ -2574,7 +2786,9 @@
         "women": 58.8,
         "age25OrOlder": 0.5
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 66274,
+      "totalCostUsd": 84800
     },
     "st-johns-college": {
       "unitId": "163976",
@@ -2598,7 +2812,9 @@
         "women": 49.4,
         "age25OrOlder": 3.5
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 40684,
+      "totalCostUsd": 55540
     },
     "agnes-scott-college": {
       "unitId": "138600",
@@ -2622,7 +2838,9 @@
         "women": 100,
         "age25OrOlder": 0.8
       },
-      "localeCode": 21
+      "localeCode": 21,
+      "undergraduateTuitionUsd": 50604,
+      "totalCostUsd": 63283
     },
     "trinity-university": {
       "unitId": "229267",
@@ -2646,7 +2864,9 @@
         "women": 53.6,
         "age25OrOlder": 0.8
       },
-      "localeCode": 11
+      "localeCode": 11,
+      "undergraduateTuitionUsd": 53676,
+      "totalCostUsd": 68224
     },
     "wooster-college": {
       "unitId": "206589",
@@ -2670,7 +2890,9 @@
         "women": 52.2,
         "age25OrOlder": 0.2
       },
-      "localeCode": 32
+      "localeCode": 32,
+      "undergraduateTuitionUsd": 61640,
+      "totalCostUsd": 75656
     },
     "goucher-college": {
       "unitId": "162654",
@@ -2694,7 +2916,9 @@
         "women": 65.9,
         "age25OrOlder": 2.3
       },
-      "localeCode": 13
+      "localeCode": 13,
+      "undergraduateTuitionUsd": 53350,
+      "totalCostUsd": 70544
     }
   }
 }

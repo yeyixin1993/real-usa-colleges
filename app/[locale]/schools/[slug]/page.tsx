@@ -16,7 +16,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getSchoolBySlug, getSchools } from '@/lib/data';
 import { getDictionary, getLocaleOrThrow } from '@/lib/i18n';
 import { getPublicMobilityProfileForSlug } from '@/lib/server/mobility';
-import { formatNumber } from '@/lib/utils';
 import type { CategoryKey, DataSourceRef, Locale, NullableAccessibilityPoint, ScoreKey } from '@/types/school';
 import { locales } from '@/types/school';
 
@@ -109,7 +108,7 @@ const copy = {
   },
 } satisfies Record<Locale, Record<string, string>>;
 
-const scoreKeys: ScoreKey[] = ['overall', 'climate', 'demographics', 'food', 'life', 'airport'];
+const scoreKeys: ScoreKey[] = ['overall', 'climate', 'demographics', 'life'];
 
 function VerificationStatus({ source, verifiedLabel, unverifiedLabel, unverifiedNote, sourceLabel, checked }: {
   source?: DataSourceRef;
@@ -210,10 +209,17 @@ export default async function SchoolDetailPage({ params }: { params: Promise<{ l
 
       <UsMap schools={[school]} locale={locale} />
 
-      <section className="grid gap-4 md:grid-cols-3">
-        <Card><CardContent className="p-6"><p className="text-sm text-slate-500">UNITID</p><p className="mt-2 text-2xl font-semibold text-slate-950">{verification.unitId}</p></CardContent></Card>
-        <Card><CardContent className="p-6"><p className="text-sm text-slate-500">{text.enrollment}</p><p className="mt-2 text-2xl font-semibold text-slate-950">{verification.undergraduateEnrollment == null ? '—' : formatNumber(verification.undergraduateEnrollment)}</p></CardContent></Card>
-        <Card><CardContent className="p-6"><p className="text-sm text-slate-500">{text.coordinates}</p><p className="mt-2 text-lg font-semibold text-slate-950">{school.coordinates.lat.toFixed(6)}, {school.coordinates.lng.toFixed(6)}</p></CardContent></Card>
+      <section className="space-y-5">
+        <SectionHeading title={text.scores} description={text.scoresDescription} />
+        <Card><CardContent className="grid gap-3 p-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="sm:col-span-2 lg:col-span-4"><VerificationStatus {...statusCopy} source={school.fieldSources.scores} /></div>
+          {scoreKeys.map((key) => (
+            <div key={key} className="rounded-2xl bg-slate-50 p-4">
+              <p className="text-sm text-slate-500">{scoreLabels[key]}</p>
+              <p className="mt-2 text-3xl font-semibold text-slate-950">{school.scores[key] == null ? '—' : school.scores[key]}</p>
+            </div>
+          ))}
+        </CardContent></Card>
       </section>
 
       <section className="space-y-5">
@@ -284,19 +290,6 @@ export default async function SchoolDetailPage({ params }: { params: Promise<{ l
           </CardContent></Card>
         </section>
       )}
-
-      <section className="space-y-5">
-        <SectionHeading title={text.scores} description={text.scoresDescription} />
-        <Card><CardContent className="grid gap-3 p-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="sm:col-span-2 lg:col-span-3"><VerificationStatus {...statusCopy} source={school.fieldSources.scores} /></div>
-          {scoreKeys.map((key) => (
-            <div key={key} className="rounded-2xl bg-slate-50 p-4">
-              <p className="text-sm text-slate-500">{scoreLabels[key]}</p>
-              <p className="mt-2 text-3xl font-semibold text-slate-950">{school.scores[key] == null ? '—' : school.scores[key]}</p>
-            </div>
-          ))}
-        </CardContent></Card>
-      </section>
 
       <section className="space-y-5" id="source-notes">
         <SectionHeading title={text.sourceCoverage} description={text.sourceNote} />

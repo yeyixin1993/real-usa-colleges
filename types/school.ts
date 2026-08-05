@@ -176,6 +176,8 @@ export interface SchoolVerification {
   unitId: string;
   website: string | null;
   undergraduateEnrollment: number | null;
+  undergraduateTuitionUsd: number | null;
+  totalCostUsd: number | null;
   source: {
     label: string;
     release: string;
@@ -230,9 +232,9 @@ export interface AirportRouteLinks {
   provider: 'Google Maps';
   airportToCampusUrl: string;
   campusToAirportUrl: string;
+  airportToCampusTransitUrl: string;
+  campusToAirportTransitUrl: string;
   providerSource: DataSourceRef;
-  petalAirportToCampusUrl: string;
-  petalCampusToAirportUrl: string;
   airportCoordinatesSource: DataSourceRef;
 }
 

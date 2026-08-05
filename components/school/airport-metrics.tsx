@@ -47,20 +47,18 @@ export function AirportMetrics({
       </div>
       {routeLinks ? (
         <div className="space-y-3 rounded-2xl border border-sky-200 bg-sky-50 p-4 sm:col-span-3">
-          <div>
-            <p className="font-medium text-slate-950">{dictionary.metrics.airportRoutesHeading}</p>
-            <a className="mt-1 inline-block text-xs font-medium text-emerald-700 underline underline-offset-2" href={routeLinks.airportCoordinatesSource.url} target="_blank" rel="noreferrer">✓ {routeLinks.airportCoordinatesSource.label}</a>
-            <span className="mx-2 text-slate-300">·</span>
-            <a className="mt-1 inline-block text-xs font-medium text-emerald-700 underline underline-offset-2" href={routeLinks.providerSource.url} target="_blank" rel="noreferrer">✓ {routeLinks.providerSource.label}</a>
-          </div>
+          <p className="font-medium text-slate-950">{dictionary.metrics.airportRoutesHeading}</p>
           <div className="flex flex-wrap gap-2">
             <a className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white" href={routeLinks.airportToCampusUrl} target="_blank" rel="noreferrer">{dictionary.metrics.airportToCampus}</a>
             <a className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white" href={routeLinks.campusToAirportUrl} target="_blank" rel="noreferrer">{dictionary.metrics.campusToAirport}</a>
-            <a className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700" href={routeLinks.petalAirportToCampusUrl} target="_blank" rel="noreferrer">{dictionary.metrics.petalBackup} · A→C</a>
-            <a className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700" href={routeLinks.petalCampusToAirportUrl} target="_blank" rel="noreferrer">{dictionary.metrics.petalBackup} · C→A</a>
+            <a className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700" href={routeLinks.airportToCampusTransitUrl} target="_blank" rel="noreferrer">{dictionary.metrics.airportToCampusTransit}</a>
+            <a className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700" href={routeLinks.campusToAirportTransitUrl} target="_blank" rel="noreferrer">{dictionary.metrics.campusToAirportTransit}</a>
           </div>
-          <p className="text-xs leading-5 text-slate-600">{dictionary.metrics.googleMapsAccessWarning}</p>
-          <p className="text-xs leading-5 text-slate-600">{dictionary.metrics.routeVerificationWarning}</p>
+          <div className="text-xs font-medium text-emerald-700">
+            <a className="underline underline-offset-2" href={routeLinks.airportCoordinatesSource.url} target="_blank" rel="noreferrer">✓ {routeLinks.airportCoordinatesSource.label}</a>
+            <span className="mx-2 text-slate-300">·</span>
+            <a className="underline underline-offset-2" href={routeLinks.providerSource.url} target="_blank" rel="noreferrer">✓ {routeLinks.providerSource.label}</a>
+          </div>
         </div>
       ) : null}
     </div>
